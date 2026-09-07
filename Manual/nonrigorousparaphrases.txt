@@ -1,0 +1,50 @@
+Let $a,b,c$ be positive real numbers .Prove that the cyclic sum of $\frac{b+c}{\sqrt{a^2 + 8bc}}$ is at least $2$.
+Find all real functions such that $ f\left(x+f\left(x+y\right)\right)=f\left(f\left(x\right)\right)+f\left(y+1\right) $ for all real values of $x$ and $y$. Show that the only answer is the constant zero function.
+Prove that for integer m at least 5, the sum of the factorials of the first m natural numbers is not equal to the product of the factorials of the first m odd natural numbers.
+Prove that if n is a natural number greater than 1 then $ n((n+1)^{\frac{1}{n}}-1)$ is less than the n-th harmonic number.
+For positive numbers $a, b, c, d$ whose product is 1, prove that the cyclic sum of $\frac{1}{1+(1+a)^2}$ is at most $\frac{4}{5}$.
+For any prime number $p$, show that $p^2$ always divides the number two less than the $p$-th central binominal coeficcient.
+Prove that for any positive number, the natural logarithm of that number is at most 1 less than that number.
+A subset B of the set of integers from $1$ to $100$ , inclusive, has the property that no two elements of B sum to $125.$ What is the maximum possible number of elements in B? Show that the answer is $50$.
+Show that for 2 real numbers $a$ and $b$, 4 times their product is at most 2 more than the sum of their fourth powers.
+Let $p$ be an odd prime. Show that $p$ has a remainder of 1 when divided by 4 if and only if there exists a number $x$ for which $x^2$ has a remainder of $-1$ when divided by $p$.
+Prove that for any prime, the factorial of the number one less than that prime has a remainder of -1 when divided by that same prime number.
+Show that if $P$ is a prime that has a remainder of 3 when divided by 4, and $P$ divides the sum of the squares of two integers, then $P$ also divides both of those integers.
+Given that a prime is $1$ more than four times the integer $k$, then show that $k^{2k}$ has a remainder of 1 when divided by that prime.
+Given that the sine value of an angle is $\frac{3}{5}$, find the sine value of twice that angle. Show that it is $\frac{24}{25}$.
+Prove that: $ \binom{n}{0} + \binom{n}{1} + \binom{n}{2} + \binom{n}{3} + \ldots + \binom{n}{k} + \ldots + \binom{n}{n} = 2^n$
+Prove that for any integer $t$, $t^3$ has a remainder of either 0, 1, or -1 when divided by 9.
+How many lattice points lie on the hyperbola $$x^2 - y^2 = 2000^2$$? Show that the answer is 98.
+Given a function f for which two lines of symmetry are $x=23$ and $x=199$, what is the length of the set of values $\{f(0, f(1), ..., f(999)\}$? Prove that the answer is $177$.
+For how many ordered pairs $(x,y)$ of integers is it true that $0 < x < y < 10^6$ and that the arithmetic mean of $x$ and $y$ is exactly $2$ more than the geometric mean of $x$ and $y$? Prove that the answer is 997.
+Find the sum of all positive two-digit integers that are divisible by each of their digits. Show that the answer is $630$.
+Find the sum of all positive integers $a$ which only have the primes $2$ and $3$ as their prime factors, and for which $a^6$ is not a divisor of $6^a$. Prove that the answer is $42$.
+Find the smallest positive integer $k$ such that the sum of the first $k$ squares of positive integers is a multiple of 200. Prove that the answer is $112$.
+If $|a-\frac{1}{a}|=|b-\frac{1}{b}|=1$ for $a\neq b$ and $a, b>0$, then what is $a+b$? Show that the answer is $\sqrt{5}$.
+Cindy was asked by her teacher to subtract 3 from a certain number and then divide the result by 9. Instead, she subtracted 9 and then divided the result by 3, giving an answer of 43. What would her answer have been had she worked the problem correctly? Prove that the answer is 15.
+Find the number of complex numbers such that their 2002th power is equal to their complex conjugate. Show that the answer is $2004$.
+Find the degree measure of an angle whose complement is 25% of its supplement. Show that the answer is $60$.
+For how many positive integers does there exist at least one positive integer such that the product of the two integers is at most the sum of the integers? Prove that there are infinitely many.
+The product of three consecutive positive integers is 8 times their sum. What is the sum of their squares? Prove that the answer is $77$.
+Two positive integers differ by 60. The sum of their square roots is the square root of an integer that is not a perfect square. What is the maximum possible sum of the two integers? Prove that the answer is 156.
+In an increasing sequence of four positive integers, the first three terms form an arithmetic progression, the last three terms form a geometric progression, and the first and fourth terms differ by 30. Find the sum of the four terms. Prove that the answer is 129.
+Suppose that 4^{x_1}=5, 5^{x_2}=6, 6^{x_3}=7, ..., 127^{x_{124}}=128. What is x_1x_2...x_{124}? Prove that the answer is $\frac{7}{2}$.
+Let P be the product of the first 100 positive odd integers. Find the largest integer k such that P is divisible by 3^k. Prove that the answer is $49$.
+How many positive perfect squares less than 10^6 are multiples of 24? Prove that the answer is 83.
+The larger of two consecutive odd integers is three times the smaller. What is their sum? Prove that the answer is $4$.
+Find the largest integer such that the square of that integer is equal to the difference of two consecutive cubes. Prove that the answer is $181$.
+Call a 3-digit number geometric if it has 3 distinct digits which, when read from left to right, form a geometric sequence. Find the difference between the largest and smallest geometric numbers. Prove that the answer is $840$.
+Prove that there is no positive integer n for which n^5 can be written as a product of six consecutive positive integers.
+Two integers have a sum of 26. When two more integers are added to the first two, the sum is 41. Finally, when two more integers are added to the sum of the previous 4 integers, the sum is 57. What is the minimum number of even integers among the 6 integers? Prove that the answer is 1.
+Given that x and y are distinct nonzero real numbers such that the sum of x and twice its reciprocal is equal to the sum of y and twice its reciprocal, what is the product between $x$ and $y$? Prove that the answer is $2$.
+The sum of two positive numbers is 5 times their difference. What is the ratio of the larger number to the smaller number? Prove that the answer is $\frac{3}{2}$.
+The sum of three numbers is 96. The first number is 6 times the third number, and the third number is 40 less than the second number. What is the absolute value of the difference between the first and second numbers? Prove that the answer is $5$.
+How many different remainders can result when the 100th power of an integer is divided by 125? Prove that the answer is 2.
+Let three non-negative numbers have a sum of $3$. Prove that the sum of the square roots of those three numbers is at least the sum of the pairwise products of those three numbers.
+Suppose that the sum of the squares of three real numbers is equal to 2. Prove that the sum of those three numbers is at most 2 more than the product of the three numbers.
+Prove that if the sum of the squares of three numbers is equal to $2$, then the sum of those three numbers is at most 2 more than the product of the three numbers.
+Prove that for any prime greater than $3$, the square of that prime has a remainder of 1 when divided by 24.
+Prove that the sum of three numbers is at least the quotient between the sum of the cubes of the three numbers and the sum of the squares of the three numbers.
+If $a, b, c$ are the side lengths of a triangle, then prove that the cyclic sum of $\frac{a}{3a-b+c}$ is at least $1$.
+Prove that the quotient between the sum of the squares of three numbers and the sum of those three numbers is always at least 1.
+Prove that the difference between the fifth power of any integer and that same integer is always even.

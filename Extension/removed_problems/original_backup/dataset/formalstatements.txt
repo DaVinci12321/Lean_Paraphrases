@@ -1,0 +1,1000 @@
+theorem u_math_921 : ∫ x, -1 / (3 * sin (x / 3) ^ 6) = cos (x / 3) / (5 * sin (x / 3) ^ 5) - 4 / 15 * (-cos (x / 3) / sin (x / 3) ^ 3 - 2 / tan (x / 3)) + C := by sorry
+theorem omni_theorem_3452 : sqrt 2011 < 2011 ∧ 2011 < 2011^2 := by sorry
+theorem olymid_ref_base_9298 (a b c : ℝ) (h : 0 < a ∧ 0 < b ∧ 0 < c) (α β γ : ℝ) (h₀ : α ∈ Set.Ioo 0 π) (h₁ : β ∈ Set.Ioo 0 π) (h₂ : γ ∈ Set.Ioo 0 π) (h₃ : α + β > γ) (h₄ : β + γ > α) (h₅ : γ + α > β) (h₆ : a + b = tan (γ / 2) * (a * tan α + b * tan β)) : (a = b ∨ b = c ∨ a = c) := by sorry
+theorem olymid_ref_base_5273 {p q : ℝ} (hp : p ∈ Set.Icc 0 1) (hq : q ≤ p) (hprob : 1 / 6 = 1 - p - q) (hflip : p ^ 2 + q ^ 2 = 1 / 2) : p = 2 / 3 := by sorry
+theorem olymid_ref_base_7449 {α : Type*} [DecidableEq α] (A : Finset α) (c : Fin 2 → Set α) (hc : c 0 ∪ c 1 = A) (hci : c 0 ∩ c 1 = ∅) : ∀ x ∈ A, ∃! i : Fin 2, x ∈ c i := by sorry
+theorem olymid_ref_base_6369 : IsGreatest {x | ∃ p : ℝ[X], p.degree = 2 ∧ (p.eval 1 = 20 ∧ p.eval (-1) = 22 ∧ p.eval (p.eval 0) = 400 ∧ x = p.eval 10)} 2486 := by sorry
+theorem olymid_ref_base_8008 (n : ℕ) (x y : ℝ) (hxpos : 0 < x) (hypos : 0 < y) (hsum : x ^ n + y ^ n = 1) : (∑ k in Finset.Icc 1 n, (1 + x ^ (2 * k)) / (1 + x ^ (4 * k))) * (∑ k in Finset.Icc 1 n, (1 + y ^ (2 * k)) / (1 + y ^ (4 * k))) < 1 / ((1 - x) * (1 - y)) := by sorry
+theorem algebra_386736 (A B C D : ℂ) : (∃ r : ℝ, (A - C) * (B - D) / ((A - D) * (B - C)) = r) ↔ ∃ O : ℂ, dist A O = dist B O ∧ dist A O = dist C O ∧ dist A O = dist D O := by sorry
+theorem algebra_520985 {z1 z2 : ℂ} (h1 : 2 * z1 ^ 2 + z2 ^ 2 = 2 * z1 * z2) (h2 : ∃ r : ℝ, z1 + z2 = r * I) : ∃ r : ℝ, 3 * z1 - 2 * z2 = r := by sorry
+theorem algebra_539177 {n : ℕ} (hn : 0 < n) (a : Fin n → ℝ) (ha : ∀ i, 0 < a i) (m : ℝ) (hm : 0 < m) (h : ∑ i, 1 / (1 + a i ^ m) = 1) : (∏ i, a i) ≥ (n - 1) ^ ((n : ℝ) / m) := by sorry
+theorem aime_all_2004_II_8 : {d : ℕ | d ∣ 2004 ^ 2004 ∧ {x | x ∣ d}.ncard = 2004}.ncard = 54 := by sorry
+theorem theorem_proving_zh_blue_1201 {n : ℕ} (hn : 0 < n) (a : ℕ → ℝ) (ha : ∀ i ∈ Icc 1 n, 0 < a i) : ∑ i ∈ Icc 1 n, (i / (∑ j ∈ Icc 1 i, a j)) < 2 * ∑ i ∈ Icc 1 n, (1 / a i) := by sorry
+theorem u_math_973 (x : ℝ) : (4 : ℝ)^(x + 1) - 32 = 0 ↔ x = 3 / 2 := by sorry
+theorem olymid_ref_base_10519 (a : ℕ → ℝ) (ha1 : a 1 = 56) (ha : ∀ n, a (n + 1) = a n - 1 / a n) : ∃ n, 0 < n ∧ n < 2002 ∧ a n < 0 := by sorry
+theorem inequalities_91029 (n : ℕ) (hn : 2 ≤ n) (x : Fin n → ℝ) (hx : ∀ i, 0 < x i) (a : ℝ) (ha : 0 < a) (hxs : ∑ i, x i = a) (m : ℕ) (hm : 0 < m) : ∑ i, (x i)^m / (a - x i) ≥ a^(m - 1) / ((n - 1) * n^(m - 2)) := by sorry
+theorem olymid_ref_base_11421 (a b c : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (h : a^2 + b^2 + c^2 + a * b * c = 4) : 0 ≤ a * b + b * c + c * a - a * b * c ∧ a * b + b * c + c * a - a * b * c ≤ 2 := by sorry
+theorem quantitative_reasoning_zh_blue_663 {f : ℝ → ℝ} (hf : f = λ x => (x - x^3)/(1 + 2*x^2 + x^4)) : IsGreatest (range f) (1/4) ∧ IsLeast (range f) (-1/4) := by sorry
+theorem theorem_proving_zh_blue_1527 {q : ℝ} (hq : (1 + sqrt 5) / 2 < q ∧ q < 2) (p : ℕ → ℝ) (hp : ∀ n, p n = ∑ i ∈ Finset.range (Nat.digits 2 n).length, (Nat.digits 2 n)[i]! * q ^ i) : ∀ N, ∃ k > N, ¬∃ l, 0 < l ∧ p (2 * k) < p l ∧ p l < p (2 * k + 1) := by sorry
+theorem theorem_proving_zh_blue_729 (n : ℕ) (hn : 0 < n) (x : Fin n → ℝ) (a : ℝ) (h : a = ∑ i : Fin n, x i / n) : ∑ k : Fin n, (x k - a) ^ 2 ≤ ((1 : ℝ)/2) * (∑ k : Fin n, |x k - a|) ^ 2 := by sorry
+theorem olymid_ref_base_9469 (x : ℕ → ℝ) (hx0 : x 0 = 5) (hxn : ∀ n, x (n + 1) = x n + 1 / x n) : 45 < x 1000 ∧ x 1000 < 45.1 := by sorry
+theorem algebra_35768 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : ((2 * a + b + c) ^ 2 / (2 * a ^ 2 + (b + c) ^ 2) + (2 * b + a + c) ^ 2 / (2 * b ^ 2 + (c + a) ^ 2) + (2 * c + a + b) ^ 2 / (2 * c ^ 2 + (a + b) ^ 2)) ≤ 8 := by sorry
+theorem algebra_456645 (n : ℕ) (h₀ : n > 0) : ¬ ∃ m, m^2 = n * (n + 1) * (n + 2) * (n + 3) := by sorry
+theorem olymid_ref_base_933 {p q : ℕ} (hp : Odd p) (hq : Odd q) (h : p = q + 2) (h1 : Nat.Prime p) (h2 : Nat.Prime q) : ∃ a b c, a * b * c = p + q ∧ a > 1 ∧ b > 1 ∧ c > 1 := by sorry
+theorem hardmath_1036 (I : ℝ → ℝ) (hI : I = λ x => ∫ t in (-0.8)..(-0.0), (-0.7 * t) * exp (-x * (-1.5 * t^5 + 0.2 * t^3 + 2.4 * sin t - 1.9 * arctan t))) : Tendsto (λ x => I x / (0.25 * sqrt π * sqrt (1 / x) * exp (0.26 * x))) atTop (𝓝 1) := by sorry
+theorem omni_theorem_3369 : ({n : ℕ | n ∈ Icc 1 100 ∧ ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ n = Nat.gcd (a^2) (b^3)}.ncard = 13) := by sorry
+theorem aime_all_2022_II_10 : (∑ i ∈ Icc 3 40, Nat.choose (Nat.choose i 2) 2) % 1000 = 4 := by sorry
+theorem omni_theorem_1732 (a b c : ℤ) (h₀ : (a + b) / 2 + c = 42) (h₁ : (a + c) / 2 + b = 13) (h₂ : (b + c) / 2 + a = 37) : a = -20 ∧ b = 28 ∧ c = 38 := by sorry
+theorem theorem_proving_zh_blue_1134 (S : Set (EuclideanSpace ℝ (Fin 3))) : S.ncard^2 ≤ (S.image (λ p => (p 1, p 2))).ncard * (S.image (λ p => (p 0, p 2))).ncard * (S.image (λ p => (p 0, p 1))).ncard := by sorry
+theorem omni_theorem_1054 : {f : ({1, 2, 3, 4, 5} : Set ℕ) → ({1, 2, 3, 4, 5} : Set ℕ) | ∀ x, f (f x) = f x}.ncard = 196 := by sorry
+theorem olymid_ref_base_312 {m n : ℕ} (hm : 2 ≤ m) (hn : 1 ≤ n) : ∃ P : Polynomial ℤ, P.natDegree = n ∧ ∀ k ∈ Finset.range (n + 1), ∃ j : ℕ, m ^ j = P.eval (k : ℤ) := by sorry
+theorem olymid_ref_base_5274 : IsLeast {n : ℕ | 0 < n ∧ ∏ i in Finset.Icc 1 (n - 1), i ! > (n !) ^ 2} 8 := by sorry
+theorem aime_all_2015_I_1 {A B : ℤ} (hA : A = ∑ i ∈ range 19, ((2 * i + 1) * (2 * i + 2)) + 39) (hB : B = 1 + ∑ i ∈ range 19, ((2 * i + 2) * (2 * i + 3))) : |(A - B)| = 722 := by sorry
+theorem omni_theorem_1802 (f : ℕ → ℕ → ℕ) (h₀ : ∀ x, f 0 x = x) (h₁ : ∀ x, f x 0 = x) (h₂ : ∀ x y, x ≥ y → f x y = f (x - y) y + 1) (h₃ : ∀ x y, y ≥ x → f x y = f x (y - x) + 1) : IsGreatest {z | ∃ x y, z = f x y ∧ x ≤ 100 ∧ y ≤ 100} 101 := by sorry
+theorem olymid_ref_base_10149 {n : ℕ} (hn : 0 < n) (p : Fin n → ℕ) (hp : ∀ i j, p i = p j → i = j) (hp1 : ∀ i, Nat.Prime (p i)) (hp2 : ∀ i, p i > 3) : (2 ^ (∏ i, p i) + 1).divisors.card ≥ 4 ^ n := by sorry
+theorem algebra_453819 (n : ℕ) (f : ℕ → ℝ) (g : ℝ → ℝ) (h₀ : ∀ θ, g θ = ∑ i ∈ Finset.Icc 1 n, f i * Real.cos (i * θ)) (h₁ : ∀ θ, g θ ≥ -1) : ∑ i ∈ Finset.Icc 1 n, f i ≤ n := by sorry
+theorem u_math_701 (f : ℂ → ℂ) (hf : f = fun x => 2 * x ^ 3 - 2 * x ^ 2 + 5 * x - 5) : f 1 = 0 ∧ f (Complex.I * Real.sqrt (5 / 2)) = 0 ∧ f (-Complex.I * Real.sqrt (5 / 2)) = 0 := by sorry
+theorem olymid_ref_base_2044 (n : ℕ) (hn : 2 ≤ n) (x : Fin n → ℝ) (hsum : ∑ i : Fin n, x i = 0) (hsumsq : ∑ i : Fin n, (x i)^2 = 1) : ∃ i : Fin n, x i ≥ 1 / sqrt (n * (n - 1)) := by sorry
+theorem olymid_ref_base_3256 (n : ℕ) (hn : n > 0) : (∑ k in Finset.Icc 1 n, Nat.totient k) = (3 * n^2 + 5) / 8 ↔ n = 1 ∨ n = 3 ∨ n = 5 := by sorry
+theorem olymid_ref_base_4684 : ∑' k : ℕ, ⌊(1 + sqrt (2000000 / 4 ^ k)) / 2⌋ = 1414 := by sorry
+theorem u_math_758 : (3 + I) ^ 2 / (1 + 2 * I) ^ 2 = -2 * I := by sorry
+theorem olymid_ref_base_9200 (a : ℕ → ℕ) (apos : ∀ i, 0 < a i) (ha : StrictMono a) (hsum : ∀ k, a (k + 1) ∣ 2 * (∑ i in Finset.Icc 1 k, a i)) (hprime : ∀ n, ∃ p > n, p.Prime ∧ ∃ k, p ∣ a k) : ∀ n, 0 < n → ∃ k, n ∣ a k := by sorry
+theorem olymid_ref_base_4457 : Set.ncard {t : (Fin 3 → ℤ) | (∀ i, 1 ≤ t i ∧ t i ≤ 100) ∧ t 0 ^ 2 * t 1 + t 1 ^ 2 * t 2 + t 2 ^ 2 * t 0 = t 0 * t 1 ^ 2 + t 1 * t 2 ^ 2 + t 2 * t 0 ^ 2} = 29800 := by sorry
+theorem olymid_ref_base_2022 {n d : ℕ} (hn : 2 ≤ n) (hd1 : d = n.properDivisors.max) (hd2 : d > 1) : ¬∃ k, (n + d) = 2 ^ k := by sorry
+theorem omni_theorem_1859 (x y z : ℝ) (h₀ : x + 2 * y - 3 * z = 7) (h₁ : 2 * x - y + 2 * z = 6) : 8 * x + y = 32 := by sorry
+theorem olymid_ref_base_9887 {n : ℕ} (hn : n > 1) (f : Polynomial ℤ) (hf : f = X ^ n + 5 * X ^ (n - 1) + 3) : ¬ ∃ g h : Polynomial ℤ, (g.degree ≥ 1 ∧ h.degree ≥ 1) ∧ f = g * h := by sorry
+theorem algebra_68679 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 1 / a + 1 / b + 1 / c ≤ (a ^ 8 + b ^ 8 + c ^ 8) / (a ^ 3 * b ^ 3 * c ^ 3) := by sorry
+theorem u_math_846 (x : ℝ) : sin x ^ 10 + cos x ^ 10 = 29 / 16 * cos (2 * x) ^ 4 ↔ ∃ k : ℤ, x = π / 8 + π * k / 4 := by sorry
+theorem omni_theorem_1711 {x y z : ℝ} (h₀ : x = y + z + 2) (h₁ : y = z + x + 1) (h₂ : z = x + y + 4) : x + y + z = -7 := by sorry
+theorem olymid_ref_base_11056 (a : ℝ) : ∃ f : ℝ → ℝ, (∀ x, f (f x) = f x + x) ∧ (∀ x, f (f x - x) = f x + a * x) ↔ a = (Real.sqrt 5 + 1) / 2 ∨ a = (Real.sqrt 5 - 1) / 2 := by sorry
+theorem algebra_56080 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : Real.sqrt (a * b * c) * (Real.sqrt a + Real.sqrt b + Real.sqrt c) + (a + b + c)^2 ≥ 4 * Real.sqrt (3 * a * b * c * (a + b + c)) := by sorry
+theorem aime_all_1985_1 (x : ℕ → ℝ) (hx1 : x 1 = 97) (hxn : ∀ n > 1, x n = n / x (n - 1)) : ∏ i ∈ Finset.Icc 1 8, x i = 384 := by sorry
+theorem olymid_ref_base_5144 {x : ℝ} (hx : x * ⌊x * ⌊x * ⌊x * ⌊x⌋⌋⌋⌋ = 122) : x = 122 / 41 := by sorry
+theorem u_math_23 (E : Set (EuclideanSpace ℝ (Fin 3))) (hE : E = {p : EuclideanSpace ℝ (Fin 3) | p 0 ∈ Set.Icc 0 1 ∧ p 1 ∈ Set.Icc 0 (p 0) ∧ p 2 ∈ Set.Icc 0 (5 - p 0 - p 1)}) : ∫ p in E, (p 0 + 2 * p 1 * p 2) = 439 / 120 := by sorry
+theorem olymid_ref_base_8902 (n k : ℕ) (a : Fin n → ℝ) (hpos : 0 < n ∧ 0 < k) (hbound : ∀ i : Fin n, a i ∈ Set.Icc 1 (2 ^ k)) : ∑ i : Fin n, a i / sqrt (∑ j : Finset.univ.filter (· ≤ i), (a j) ^ 2) ≤ 4 * sqrt (k * n) := by sorry
+theorem olymid_ref_base_2661 (a : ℕ → ℕ) (apos : ∀ n, a n > 0) (hinc : ∀ n, a n < a (n + 1)) (hconst : ∃ n, a n ≠ a 0) (hdiv : ∀ n, a n ∣ n ^ 2) : (∃ n1, ∀ n, n ≥ n1 → a n = n) ∨ (∃ n2, ∀ n, n ≥ n2 → a n = n ^ 2) := by sorry
+theorem olymid_ref_base_2813 : IsLeast {x | ∃ A B : Finset ℕ, A ∪ B = Icc 1 8 ∧ A ∩ B = ∅ ∧ x = ∏ i ∈ A, i + ∏ i ∈ B, i} 402 ∧ IsGreatest {x | ∃ A B : Finset ℕ, A ∪ B = Icc 1 8 ∧ A ∩ B = ∅ ∧ x = ∏ i ∈ A, i + ∏ i ∈ B, i} 40321 := by sorry
+theorem omni_theorem_958 (x : ℝ) : (x^2 + 3 * x + 2) * (x^2 - 7 * x + 12) * (x^2 - 2 * x - 1) + 24 = 0 ↔ x = 0 ∨ x = 2 ∨ x = 1 + Real.sqrt 6 ∨ x = 1 - Real.sqrt 6 ∨ x = 1 + 2 * Real.sqrt 2 ∨ x = 1 - 2 * Real.sqrt 2 := by sorry
+theorem omni_theorem_2880 (x y z : ℝ) (hx : x = 3) (hy : y = 2 * x) (hz : z = 3 * y) : (x + y + z) / 3 = 9 := by sorry
+theorem other_3085 (n : ℕ) (hn : n > 0) : Nat.gcd (Nat.factorial n + 1) (Nat.factorial (n + 1) + 1) = 1 := by sorry
+theorem olymid_ref_base_8004 (n : ℕ) (hn : n > 0) : ∃ m, n ∣ (2^m + m) := by sorry
+theorem omni_theorem_3653 {f : ℝ → ℝ} (h : ∀ x y, f (f x + y) + x * f y = f (x * y + y) + f x) : ∀ x, f x = x ∨ f x = 0 := by sorry
+theorem omni_theorem_4276 {x y : ℕ} (hx : x.Prime) (hy : y.Prime) : x ^ y - y ^ x = x * y ^ 2 - 19 ↔ (x = 2 ∧ y = 3) ∨ (x = 2 ∧ y = 7) := by sorry
+theorem aime_all_2009_I_6 : Set.ncard {N : ℕ | N < 1000 ∧ ∃ x : ℝ, x ^ ⌊x⌋ = N} = 412 := by sorry
+theorem theorem_proving_zh_blue_1860 (A B C D E F G : EuclideanSpace ℝ (Fin 2)) (p1 p2 p3 lambda1 lambda2 lambda3 : ℝ) (h₀ : p1 = dist A D / dist D G) (h₁ : p2 = dist C D / dist D F) (h₂ : p3 = dist E D / dist D B) (h₃ : lambda3 = dist A B / dist B C) (h₄ : lambda2 = dist C G / dist G E) (h₅ : lambda1 = dist E F / dist F A) : lambda1 = (p1 * p2 - 1) / (1 + p1) ∧ lambda1 = (1 + p1) / (p1 * p3 - 1) ∧ lambda1 = (1 + p2) / (1 + p3) ∧ lambda2 = (p2 * p3 - 1) / (1 + p2) ∧ lambda2 = (1 + p2) / (p2 * p1 - 1) ∧ lambda2 = (1 + p3) / (1 + p1) ∧ lambda3 = (p3 * p1 - 1) / (1 + p3) ∧ lambda3 = (1 + p3) / (p3 * p2 - 1) ∧ lambda3 = (1 + p1) / (1 + p2) := by sorry
+theorem algebra_53947 {m n : ℕ} (hm : 0 < m) (hn : 0 < n) : Nat.gcd (Nat.fib m) (Nat.fib n) = Nat.fib (Nat.gcd m n) := by sorry
+theorem olymid_ref_base_1675 (n : ℕ) (hn : 0 < n) (x : ℝ) (hx : 1 ≤ x) (h : ∀ i ∈ Finset.Icc (n + 1) (4 * n), ∃ m : ℕ, 0 < m ∧ m^2 = ⌊x^i⌋) : ∃ m : ℕ, 0 < m ∧ m^2 = ⌊x⌋ := by sorry
+theorem omni_theorem_811 : (MeasureTheory.volume {p : EuclideanSpace ℝ (Fin 3) | sqrt (p 0 ^ 2 + p 1 ^ 2) + abs (p 2) ≤ 1}).toReal = 2 * π / 3 := by sorry
+theorem olymid_ref_base_3462 : IsGreatest {x | x^2 ∣ 24 * 35 * 46 * 57} 12 := by sorry
+theorem aime_all_1990_15 (a b x y : ℝ) (h1 : a * x + b * y = 3) (h2 : a * x^2 + b * y^2 = 7) (h3 : a * x^3 + b * y^3 = 16) (h4 : a * x^4 + b * y^4 = 42) : a * x^5 + b * y^5 = 20 := by sorry
+theorem olymid_ref_base_5939 {f : ℝ → ℝ} (hf : ∀ x, f x = x ^ 3 - 3 * x) : (Nat.divisors ⌊f^[8] (5 / 2)⌋₊).card = 6562 := by sorry
+theorem aime_all_2007_I_14 (a : ℕ → ℝ) (h₀ : a 0 = 3 ∧ a 1 = 3) (h₁ : ∀ n, a (n + 1) * a (n - 1) = (a n)^2 + 2007) : ⌊(a 2006^2 + a 2007^2) / (a 2006 * a 2007)⌋ = 224 := by sorry
+theorem olymid_ref_base_5698 {C : ℕ → ℕ} (hC : ∀ k, C k = Nat.choose (2 * k) k / (k + 1)) (p : ℕ) (hp : Odd p ∧ Nat.Prime p) : {x | ∃ n ∈ Icc 1 (p - 1), x = ∑ k ∈ Icc 1 (p - 1), C k * n ^ k ∧ p ∣ x}.ncard = (p - 1) / 2 := by sorry
+theorem omni_theorem_3961 {a b c : ℝ} (h₀ : a^2 + b = c^2) (h₁ : b^2 + c = a^2) (h₂ : c^2 + a = b^2) : a * b * c = 0 := by sorry
+theorem olymid_ref_base_7405 (A B C D Q R S T U V : EuclideanSpace ℝ (Fin 2)) (h₀ : Q = midpoint ℝ A B) (h₁ : R = midpoint ℝ A C) (h₂ : S = midpoint ℝ A D) (h₃ : T = midpoint ℝ B C) (h₄ : U = midpoint ℝ B D) (h₅ : V = midpoint ℝ C D) (h₆ : dist Q R = 2001) (h₇ : dist S U = 2002) (h₈ : dist T V = 2003) : dist (midpoint ℝ Q U) (midpoint ℝ R V) = 2001 := by sorry
+theorem omni_theorem_3824 {n : ℕ} (A : Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ) (a d : ℝ) (hA : ∀ i j, A i j = a + |(i : ℤ) - j| * d) : A.det = (-1)^n * 2^(n - 1) * d^n * (2 * a + n * d) := by sorry
+theorem olymid_ref_base_2239 {a b : ℝ} (ha : a + ⌊a⌋ = b + ⌊b⌋) : a = b := by sorry
+theorem olymid_ref_base_10851 (x y z : ℕ) (h : 0 < y ∧ 0 < z ∧ 0 < x) (h1 : (1 + x / (y + z : ℚ)) ^ 2 + (1 + y / (z + x : ℚ)) ^ 2 + (1 + z / (x + y : ℚ)) ^ 2 = 27 / 4) : x = y ∧ y = z := by sorry
+theorem algebra_55094 (a b c d : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (hd : 0 ≤ d) (h : a + b + c + d = 4) : b * c * d + c * d * a + d * a * b + a * b * c - a * b * c * d ≤ (a * b + a * c + a * d + b * c + b * d + c * d) / 2 := by sorry
+theorem olymid_ref_base_2009 (c : ℤ) (hc : 0 ≤ c) (a : ℕ → ℤ) (ha : ∀ n, 0 < a n) (h : ∀ n, a n = {i | 0 < i ∧ a i ≤ a (n + 1) + c}.ncard) : ∀ n, a n = n + c + 1 := by sorry
+theorem u_math_1092 (x : ℝ) : ∫ x, (2 * x + sqrt (2 * x - 3)) / (3 * (2 * x - 3) ^ ((1 : ℝ) / 4) + (2 * x - 3) ^ ((3 : ℝ) / 4)) = 2 * (9 * (2 * x - 3) ^ ((1 : ℝ) / 4) + (1 / 5) * (2 * x - 3) ^ ((5 : ℝ) / 4) - (2 / 3) * (2 * x - 3) ^ ((3 : ℝ) / 4) - (27 / sqrt 3) * arctan (1 / sqrt 3 * (2 * x - 3) ^ ((1 : ℝ) / 4))) := by sorry
+theorem olymid_ref_base_10658 (a b : ℕ) (_ : 2 < a) (hb : 2 < b) : ∃ k > 0, ∃ n : ℕ → ℕ, (∀ i ∈ Icc 1 (k - 1), 0 < n i ∧ (n i + n (i + 1)) ∣ n i * n (i + 1)) ∧ n 1 = a ∧ n k = b := by sorry
+theorem olymid_ref_base_10044 (A B C D E : EuclideanSpace ℝ (Fin 2)) (h₀ : ¬Collinear ℝ {A, B, C}) (h₁ : ∠ A C B = 2 * ∠ A B C) (h₂ : D ∈ segment ℝ B C ∧ dist C D = 2 * dist B D) (h₃ : E ∈ line[ℝ, A, D] ∧ dist A D = dist D E) : ∠ E C B + 180 = 2 * ∠ E B C := by sorry
+theorem aime_all_1991_5 : Set.ncard { (x : ℚ ) | 0 < x ∧ x < 1 ∧ x.num * x.den = (20 : ℕ)! } = 128 := by sorry
+theorem aime_all_1996_10 (x : ℤ) : IsLeast {x | 0 < x ∧ tan (19 * x * π / 180) = (cos (96 * π / 180) + sin (96 * π / 180)) / (cos (96 * π / 180) - sin (96 * π / 180))} 159 := by sorry
+theorem algebra_432962 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hxyz : x * y * z = 1) : (x + y - 1)^2 / z + (y + z - 1)^2 / x + (z + x - 1)^2 / y ≥ 4 * (x + y + z) - 12 + 9 / (x + y + z) := by sorry
+theorem omni_theorem_369 (n : ℕ) : ∑ i ∈ Finset.Icc 1 (n - 1), i * (i + 1) = (n - 1) * n * (n + 1) / 3 := by sorry
+theorem algebra_453818 (a b c A B C k : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hA : 0 < A) (hB : 0 < B) (hC : 0 < C) (h1 : a + A = k) (h2 : b + B = k) (h3 : c + C = k) : a * B + b * C + c * A < k ^ 2 := by sorry
+theorem olymid_ref_base_2356 : ¬∃ x y : ℤ, 0 < x ∧ 0 < y ∧ x * (x + 2) = y * (y + 1) := by sorry
+theorem olymid_ref_base_3298 : Tendsto (λ n => ∑ k in range (n + 1), (Nat.choose n k : ℝ)⁻¹) atTop (𝓝 2) := by sorry
+theorem u_math_224 (x y : ℝ) : x * (x - 2) + y * (y + 4) + 5 = 0 ↔ (x = 1 ∧ y = -2) := by sorry
+theorem omni_theorem_4152 (k : ℕ) : (∀ b r w : Fin 2009 → ℝ, (∀ i j, i < j → b i ≤ b j ∧ r i ≤ r j ∧ w i ≤ w j) → ∃ s : Finset (Fin 2009), s.card = k ∧ ∀ j ∈ s, b j + r j > w j ∧ r j + w j > b j ∧ w j + b j > r j) ↔ k = 1 := by sorry
+theorem omni_theorem_2727 (barry s1 s2 s3 : ℕ) (h₀ : (s1 + s2 + s3) / 3 = 27) (h₁ : (barry + s1 + s2 + s3) / 4 = 28) : barry = 31 := by sorry
+theorem omni_theorem_1312 : ∑ n in (Finset.Icc 1 10000).filter (fun n => (Nat.digits 10 n).sum = 2), n^2 = 7294927 := by sorry
+theorem algebra_52794 (a : Fin 3 → ℝ) (ha : ∀ i, 0 ≤ a i) : a 0 + a 1 + a 2 + 3 * (a 0 * a 1 * a 2) ^ ((1 : ℝ) / 3) ≥ 2 * (Real.sqrt (a 0 * a 1) + Real.sqrt (a 1 * a 2) + Real.sqrt (a 2 * a 0)) := by sorry
+theorem aime_all_1996_8 : Set.encard {p : ℕ × ℕ | p.1 > 0 ∧ p.2 > 0 ∧ p.1 < p.2 ∧ (2 * p.1 * p.2) / (p.1 + p.2) = 6 ^ 20} = 799 := by sorry
+theorem olymid_ref_base_8903 (n k : ℕ) (a : Fin n → ℝ) (h₀ : 0 < n) (h₁ : 0 < k) (h₂ : ∀ i, a i ∈ Set.Icc 1 (2 ^ k)) : ∑ i, a i / sqrt (∑ j in Finset.univ.filter (· ≤ i), (a j) ^ 2) ≤ 4 * sqrt (k * n) := by sorry
+theorem olymid_ref_base_7578 : {x : ℝ | (2003 : ℝ) ^ x + (2004 : ℝ) ^ x = (2005 : ℝ) ^ x}.ncard = 1 := by sorry
+theorem theorem_proving_zh_blue_859 (a : ℕ → ℕ) (h₀ : ∀ n, a n = {N | (Nat.digits 10 N).sum = n ∧ ∀ d ∈ (Nat.digits 10 N), d = 1 ∨ d = 3 ∨ d = 4}.ncard) : ∀ n, IsSquare (a (2 * n)) := by sorry
+theorem olymid_ref_base_10338 (n M : ℕ) (hn : 0 < n) (hM : 0 < M) (hM1 : M > n ^ (n - 1)) : ∃ p : ℕ → ℕ, (∀ i ∈ Icc 1 n, Nat.Prime (p i)) ∧ (∀ j ∈ Icc 1 n, p j ∣ M + j) ∧ (∀ i ∈ Icc 1 n, ∀ j ∈ Icc 1 n, p i = p j → i = j) := by sorry
+theorem olymid_ref_base_4724 (S : Set ℕ) (hs : S = {n : ℕ | 0 < n ∧ (Nat.totient n) * (Nat.divisors n).card ≥ sqrt ((n ^ 3) / 3)}) : Finite S := by sorry
+theorem olymid_ref_base_2005 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 2 ≤ (a^4 + 1) / (b^3 + b^2 + b) + (b^4 + 1) / (c^3 + c^2 + c) + (c^4 + 1) / (a^3 + a^2 + a) := by sorry
+theorem olymid_ref_base_2513 (t : ℕ) (ht : t ≠ 0) : ∃ n : ℕ, 1 < n ∧ Nat.Coprime n t ∧ ∀ k ≥ 1, ¬∃ m r : ℕ, 1 ≤ m ∧ r ≥ 2 ∧ n ^ k + t = m ^ r := by sorry
+theorem olymid_ref_base_5354 (A B : EuclideanSpace ℝ (Fin 2)) (h₀ : dist A B = 2) : (MeasureTheory.volume {P : EuclideanSpace ℝ (Fin 2) | ∃ X ∈ segment ℝ A B, dist A X = 2 * dist P X}).toReal = Real.sqrt 3 + 2 * Real.pi / 3 := by sorry
+theorem olymid_ref_base_9977 : ∀ a b : ℕ+, ⌊(a ^ 2 / b : ℝ)⌋ + ⌊(b ^ 2 / a : ℝ)⌋ = ⌊((a ^ 2 + b ^ 2) / (a * b : ℝ))⌋ + a * b ↔ ∃ n : ℕ, a = n ∧ b = n ^ 2 + 1 ∨ a = n ^ 2 + 1 ∧ b = n := by sorry
+theorem u_math_448 : Tendsto (λ x => (Real.cos x + 2) / (3 * x ^ 3 * Real.sin x) - 3 / (3 * x ^ 4)) (𝓝[≠] 0) (𝓝 (1 / 180)) := by sorry
+theorem olymid_ref_base_11363 (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : 2*(x+y+z+2*x*y*z)^2 = (2*x*y+2*y*z+2*z*x+1)^2 + 2023 ↔ (x=3 ∧ y=3 ∧ z=2) ∨ (x=3 ∧ y=2 ∧ z=3) ∨ (y=3 ∧ x=2 ∧ z=3) ∨ (y=3 ∧ z=2 ∧ x=3) ∨ (z=3 ∧ x=2 ∧ y=3) ∨ (z=3 ∧ y=2 ∧ x=3):= by sorry
+theorem algebra_429555 (a : ℕ → ℤ) (h₀ : a 1 = 2) (h₁ : ∀ n, a (n + 1) = ⌊(3 * a n / 2 : ℝ)⌋) : {n | Odd (a n)}.Infinite ∧ {n | Even (a n)}.Infinite := by sorry
+theorem omni_theorem_3647 (k : ℕ) : 0 < k ∧ k < 202 ∧ ∃ n : ℕ, 0 < n ∧ ∑ i ∈ Finset.Icc 1 k, ((i * n / 202 : ℝ)) % 1 = k / 2 ↔ k = 1 ∨ k = 100 ∨ k = 101 ∨ k = 201 := by sorry
+theorem omni_theorem_4370 : ∃ s : Finset ℕ, s.card = 100 ∧ (∀ n ∈ s, n > 0) ∧ ∃ m ∈ s, m^3 = ∑ n ∈ s \ {m}, n^3 := by sorry
+theorem aime_all_2022_I_1 (P Q : ℝ[X]) (hP : P.coeff 2 = 2) (hQ : Q.coeff 2 = -2) (hP1 : P.eval 16 = 54) (hP2 : P.eval 20 = 53) (hQ1 : Q.eval 16 = 54) (hQ2 : Q.eval 20 = 53) : P.eval 0 + Q.eval 0 = 116 := by sorry
+theorem omni_theorem_2819 (a b x : ℝ) (h₀ : a * (x + 2) + b * (x + 2) = 60) (h₁ : a + b = 12) : x = 3 := by sorry
+theorem olymid_ref_base_1212 {a b : ℝ} (h : a * b + Real.sqrt (a * b + 1) + Real.sqrt (a^2 + b) * Real.sqrt (b^2 + a) = 0) : a * Real.sqrt (b^2 + a) + b * Real.sqrt (a^2 + b) = 1 := by sorry
+theorem olymid_ref_base_8729 (f : ℕ+ → ℕ+) (h : ∀ m n, f (m + n) ∣ f m + f n) : ∃ c, 1 < c ∧ ∀ n, c ∣ f n := by sorry
+theorem olymid_ref_base_53 : {(a, b) : ℤ × ℤ | 0 < a ∧ 0 < b ∧ ∃ m n : ℤ, (a ^ 2 + b) / (b ^ 2 - a) = m ∧ (b ^ 2 + a) / (a ^ 2 - b) = n} = {(2, 2), (3, 3), (1, 2), (2, 3), (2, 1), (3, 2)} := by sorry
+theorem algebra_58619 {n : ℕ} (hn : 0 < n) (a : Fin n → ℝ) (ha : ∀ i, 0 < a i) (h : ∏ i, a i = 1) : ∑ i, a i ≥ n := by sorry
+theorem olymid_ref_base_2756 (n : ℕ) (hn : 2 ≤ n) (x : ℝ) (hx : -1 ≤ x) (h : ∀ a : Fin n → ℝ, (∀ i, 1 ≤ a i) → ∏ i, ((a i + x) / 2) ≤ (∏ i, a i + x) / 2) : x ∈ Set.Icc (-1) 1 := by sorry
+theorem omni_theorem_1225 (r s : ℤ) (h₀ : 0 < r) (h₁ : 0 < s) (h₂ : r.gcd s = 1) (h₃ : r / s = 2 * (sqrt 2 + sqrt 10) / (5 * sqrt (3 + sqrt 5))) : r = 4 ∧ s = 5 := by sorry
+theorem u_math_459 (x : ℝ) : (cosh x + sinh x = exp x) ∧ (cosh x - sinh x = exp (-x)) := by sorry
+theorem olymid_ref_base_797 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b * c = 1) : 2 < 1 / (a * sqrt (c ^ 2 + 1)) + 1 / (b * sqrt (a ^ 2 + 1)) + 1 / (c * sqrt (b ^ 2 + 1)) := by sorry
+theorem omni_theorem_2152 (a b : ℕ) (_ : 0 < a) (hb : 0 < b) (h1 : 2 * a + 1 ∣ 3 * b - 1) (h2 : 2 * b + 1 ∣ 3 * a - 1) : (a = 2 ∧ b = 2) ∨ (a = 12 ∧ b = 17) ∨ (a = 17 ∧ b = 12) := by sorry
+theorem olymid_ref_base_2672 (a b c t : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (ht : 0 ≤ t) : 3 / (1 + t) ≤ a / (b + t * c) + b / (c + t * a) + c / (a + t * b) := by sorry
+theorem olymid_ref_base_9457 {P : Polynomial ℤ} : ({k : ℤ | (P.eval k)^2 = 1}.ncard - P.natDegree ≤ 2) := by sorry
+theorem olymid_ref_base_8898 (a b c d : ℝ) (h₀ : 0 < d) (h₁ : d ≤ c) (h₂ : c ≤ b) (h₃ : b ≤ a) (h₄ : a + b + c + d = 1) : (a + 2 * b + 3 * c + 4 * d) * a ^ a * b ^ b * c ^ c * d ^ d < 1 := by sorry
+theorem aime_all_2012_I_10 {S T : Set ℕ} (hS : S = {n | ∃ k, n = k^2 ∧ (n % 1000) = 256}) (hT : T = {(n - 256)/1000 | n ∈ S}) : ((Nat.nth T 9) % 1000) = 170 := by sorry
+theorem olymid_ref_base_1243 : (2003^(2002^2001)) % 1000 = 241 := by sorry
+theorem olymid_ref_base_9508 {a b z : ℝ} (n : ℕ) : (z + a) ^ n = z ^ n + a * ∑ k ∈ Finset.Icc 1 n, Nat.choose n k * (a - k * b) ^ (k - 1) * (z + k * b) ^ (n - k) := by sorry
+theorem u_math_295 (t : ℝ) : cos (2 * t) - 5 * sin t - 3 = 0 ↔ ∃ n : ℤ, t = (-1)^(n + 1) * π / 6 + n * π := by sorry
+theorem olymid_ref_base_4180 (A B C D W X Y Z : EuclideanSpace ℝ (Fin 2)) (h₀ : dist A B = 3) (h₁ : dist B C = 7) (h₂ : W ∈ segment ℝ A B) (h₃ : dist A W = 1) (h₄ : X ∈ segment ℝ B C) (h₅ : Y ∈ segment ℝ C D) (h₆ : Z ∈ segment ℝ D A) (h₇ : dist W X = dist Y Z) (h₈ : dist W Y = dist X Z) (h₉ : dist W Z = dist X Y) (h₁₀ : dist B X < dist X C) : dist B X = (7 - sqrt 41) / 2 := by sorry
+theorem olymid_ref_base_10124 {n : ℕ} (hn : n = 4) (a : ℕ → ℤ) (ha : ∀ i ∈ Icc 0 n, a i > 0) (h0 : a 0 = 1) (h : ∑ i ∈ Icc 0 (n - 1), (a i : ℝ) / a (i + 1) = 99 / 100) (h' : ∀ k ∈ Icc 1 (n - 1), (a (k + 1) - 1) * a (k - 1) ≥ a k ^ 2 * (a k - 1)) : a 1 = 2 ∧ a 2 = 5 ∧ a 3 = 56 ∧ a 4 = 78400 := by sorry
+theorem olymid_ref_base_7212 (p q : ℕ) (hp : p.Prime) (hq : q.Prime) (h1 : ∃ m, m^2 = p + q) (h2 : ∃ n, n^2 = p + 7 * q) : p = 2 := by sorry
+theorem omni_theorem_3742 (f : ℕ → ℕ) : (∀ a b, f a + f b ∣ 2 * (a + b - 1)) ↔ ∀ x, f x = 1 ∨ f x = 2 * x - 1 := by sorry
+theorem omni_theorem_836 (x y : ℝ) (hx : 0 < x) (hy : 0 < y) (hxy : x < y) (h1 : Real.sqrt x + Real.sqrt y = 4) (h2 : Real.sqrt (x + 2) + Real.sqrt (y + 2) = 5) : x = 49 / 36 := by sorry
+theorem aime_all_2011_II_15 (P : ℝ → ℝ) (hP : P = fun x => x ^ 2 - 3 * x - 9) (r s t u v : ℕ) (hr : r > 0) (hs : s > 0) (ht : t > 0) (hu : u > 0) (hv : v > 0) (hprob : (∫ x in (5)..15, if ⌊Real.sqrt (P x)⌋ = Real.sqrt (P (⌊x⌋)) then 1 else 0) / 10 = (Real.sqrt r + Real.sqrt s + Real.sqrt t - u) / v) : r + s + t + u + v = 850 := by sorry
+theorem olymid_ref_base_8426 : {f : ℤ → ℤ | ∀ n, n ^ 2 + 4 * f n = f (f n) ^ 2} = {f | ∀ n, f n = n + 1} ∪ {f | ∃ a ≥ 1, ∀ n, f n = if n > -a then n + 1 else (-n + 1)} ∪ {f | ∀ n, f n = if n > 0 then n + 1 else (if n = 0 then 0 else (-n + 1))} := by sorry
+theorem olymid_ref_base_2721 (m n : ℕ) (hm : 1 ≤ m) (hn : 1 ≤ n) : IsSquare ((5^m + 2^(n + 1)) / (5^m - 2^(n + 1))) ↔ m = 1 ∧ n = 1 := by sorry
+theorem olymid_ref_base_8998 (n : ℕ) (hn : 2 ≤ n) (a : Fin n → ℝ) (apos : ∀ i, 0 < a i) (hsum : ∑ i, a i = 1) : ∑ k, a k / (1 - a k) * (∑ i, if i < k then a i else 0) ^ 2 < 1 / 3 := by sorry
+theorem omni_theorem_1142 (x y : Fin 3 → ℝ) (h₀ : ∀ i, x i ^ 3 - 3 * x i * y i ^ 2 = 2005) (h₁ : ∀ i, y i ^ 3 - 3 * x i ^ 2 * y i = 2004) : (1 - x 0 / y 0) * (1 - x 1 / y 1) * (1 - x 2 / y 2) = 1 / 1002 := by sorry
+theorem olymid_ref_base_6967 : (1002003004005006007008009 : ℤ) % 13 = 5 := by sorry
+theorem omni_theorem_603 : Set.ncard {k : ℕ | 1 ≤ k ∧ k ≤ 2013 ∧ k ^ k ≡ 1 [MOD 10]} = 202 := by sorry
+theorem u_math_749 (x : ℝ) : Real.sqrt (3 * x ^ 2 + 5 * x + 8) - Real.sqrt (3 * x ^ 2 + 5 * x + 1) = 1 ↔ x = -8 / 3 ∨ x = 1 := by sorry
+theorem DEMIMathAnalysis_58 : Tendsto (λ x => sqrt (1 - x) * ∑' n : ℕ, x^(n^2)) (𝓝[<] 1) (𝓝 (Real.sqrt Real.pi / 2)) := by sorry
+theorem olymid_ref_base_1571 (A : Set (ℝ → ℝ)) (hA : ∀ f ∈ A, ∀ g ∈ A, ∃ h ∈ A, ∀ x y : ℝ, f (g y - x) + 2 * x = h (x + y)) : ∀ f ∈ A, ∀ x : ℝ, f (x - f x) = 0 := by sorry
+theorem omni_theorem_2040 : IsGreatest {x | ∃ a b : ℕ, a > 0 ∧ b > 0 ∧ a ≤ 100 ∧ b ≤ 100 ∧ a * b = (Nat.lcm a b / Nat.gcd a b) ^ 2 ∧ x = a + b} 78 := by sorry
+theorem u_math_1016 {q : ℝ → ℝ} (hq : q = λ x => if x < 0 then 0 else (if (x ≤ 2) then Real.pi * x else 0)) : ∀ x, q x = ∫ α in (0)..atTop, ((2 * α * sin (2 * α) + cos (2 * α) - 1) * cos (α * x) + (sin (2 * α) - 2 * α * cos (2 * α)) * sin (α * x)) / α ^ 2 := by sorry
+theorem omni_theorem_3881 {S : Set ℤ} (hS : ∀ n > 0, ∀ a : ℕ → ℤ, (∀ i ∈ Finset.range (n+1), a i ∈ S) → ∀ x : ℤ, ∑ i in Finset.range (n+1), (a i) * x ^ i = 0 → x ∈ S) (hS' : ∀ a b : ℕ, 0 < a → 0 < b → (2 ^ a - 2 ^ b) ∈ S) : S = ⊤ := by sorry
+theorem omni_theorem_1463 : {(a, b, c, d) : ℕ × ℕ × ℕ × ℕ | a ∈ Icc 1 9 ∧ b ∈ Icc 1 9 ∧ c ∈ Icc 1 9 ∧ d ∈ Icc 1 9 ∧ a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ b ≠ c ∧ b ≠ d ∧ c ≠ d ∧ b < a ∧ b < c ∧ d < c}.ncard = 630 := by sorry
+theorem olymid_ref_base_4356 (A B C D E : EuclideanSpace ℝ (Fin 2)) (h₀ : dist A D = dist B C) (h₁ : dist A B = 3) (h₂ : dist C D = 8) (h₃ : dist B C = dist E C) (h₄ : Matrix.dotProduct (A - E) (E - C) = 0) : dist A E = 2 * Real.sqrt 6 := by sorry
+theorem olymid_ref_base_3736 {f : ℝ → ℝ} (hf : f = fun x => x / (x + 1)) : f (f (f (f 2009))) = 2009 / 8037 := by sorry
+theorem olymid_ref_base_3155 : ((2^3 - 1) / (2^3 + 1)) * ((3^3 - 1) / (3^3 + 1)) * ((4^3 - 1) / (4^3 + 1)) * ((5^3 - 1) / (5^3 + 1)) * ((6^3 - 1) / (6^3 + 1)) = (43 / 63 : ℝ) := by sorry
+theorem olymid_ref_base_7325 : Set.ncard {n : ℕ | n ∈ Finset.Icc 1000 9999 ∧ Nat.digits 10 n = List.reverse (Nat.digits 10 n) ∧ Nat.digits 10 (2 * n) = List.reverse (Nat.digits 10 (2 * n))} = 20 := by sorry
+theorem omni_theorem_3703 (a : ℝ) : a < 0 ∨ a = 1 ↔ ∃ f : ℝ → ℝ, ∀ x y : ℝ, x + a * f y ≤ y + f (f x) := by sorry
+theorem olymid_ref_base_9197 (a p : ℕ) (_ : 0 < a) [hp : Fact (Nat.Prime p)] : IsSquare (p^a + a^4) ↔ (a = 1 ∧ p = 3) ∨ (a = 2 ∧ p = 3) ∨ (a = 6 ∧ p = 3) ∨ (a = 9 ∧ p = 3) := by sorry
+theorem olymid_ref_base_2045 : {(a, b, c) : ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ 3^a - 5^b = c^2} = {(2, 1, 2)} := by sorry
+theorem omni_theorem_3108 : |(6 : ℤ) - (-5)| = 11 := by sorry
+theorem olymid_ref_base_11104 : ∃ a : ℕ → ℕ, (∀ m n, a m > 0 ∧ a n > 0) ∧ (∀ m n, Nat.Coprime (a m) (a n) ↔ |(m : ℤ) - n| = 1) := by sorry
+theorem theorem_proving_zh_blue_1205 (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : Real.sqrt ((a^2 + b^2 + c^2 + d^2) / 4) ≥ ((a * b * c + b * c * d + c * d * a + d * a * b) / 4) ^ ((1 : ℝ) / 3) := by sorry
+theorem olymid_ref_base_11362 (a b c : ℕ → ℂ) (h : ∀ n, a (n + 1) = a n ^ 2 + 2 * b n * c n ∧ b (n + 1) = b n ^ 2 + 2 * c n * a n ∧ c (n + 1) = c n ^ 2 + 2 * a n * b n) (h' : ∀ n, max (max (‖a n‖) (‖b n‖)) (‖c n‖) ≤ 2022) : ‖a 0‖ ^ 2 + ‖b 0‖ ^ 2 + ‖c 0‖ ^ 2 ≤ 1 := by sorry
+theorem algebra_439537 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b + c = 1) : (a - b * c) / (a + b * c) + (b - c * a) / (b + c * a) + (c - a * b) / (c + a * b) ≤ 3 / 2 := by sorry
+theorem omni_theorem_2490 : (∑ k in Finset.Icc 1 30303, k^k) % 101 = 29 := by sorry
+theorem omni_theorem_3155 {A : ℕ → ℕ} (hA : ∀ n, A n = {S : Finset ℕ | S ⊆ Icc 1 n ∧ ∀ a ∈ S, ∀ b ∈ S, Even (a + b) → (a + b) / 2 ∈ S}.ncard) : {n | 0 < n ∧ A (n + 2) - 2 * A (n + 1) + A n = 1} = {n | ∃ k ≥ 1, n = 2 ^ k - 1} := by sorry
+theorem u_math_595 : tan (arcsin (3 / 5) + arccos (5 / 13)) = -63 / 16 := by sorry
+theorem algebra_539177 (N : ℕ) (a b c : Fin N → ℤ) (h : ∀ i, Odd (a i) ∨ Odd (b i) ∨ Odd (c i)) : ∃ r s t, {i | Odd (r * a i + s * b i + t * c i)}.ncard ≥ (4 * N : ℝ) / 7 := by sorry
+theorem olymid_ref_base_2205 (f : ℝ → ℝ) : (∀ x y, f (f x) + f (f y) = 2 * y + f (x - y)) ↔ ∀ x, f x = x := by sorry
+theorem olymid_ref_base_3544 : ∫ x in (1)..(Real.sqrt 3), x^(2*x^2+1) + log (x^(2*x^(2*x^2+1))) = 13 := by sorry
+theorem omni_theorem_3138 : (MeasureTheory.volume {(a, b) : ℝ × ℝ | 0 ≤ a ∧ a ≤ 1 ∧ 0 ≤ b ∧ b ≤ 1 ∧ ∃ c : ℝ, c = 2 * a + 2 * b ∧ round c = 2 * round a + 2 * round b}).toReal = 7 / 16 := by sorry
+theorem olymid_ref_base_9911 (a : ℕ → ℝ) (h₀ : a 0 = 1994) (h₁ : ∀ n, a (n + 1) = (a n)^2 / (a n + 1)) (n : ℕ) (h₂ : n ≤ 998) : ⌊a n⌋ = 1994 - n := by sorry
+theorem algebra_381171 (x y z : ℝ) : Real.sqrt (x^2 + x * y + y^2) + Real.sqrt (x^2 + x * z + z^2) ≥ Real.sqrt (y^2 + y * z + z^2) := by sorry
+theorem quantitative_reasoning_zh_blue_477 : ∃ D : ℝ → ℝ, (∀ x : ℝ, Irrational x → D x = 0) ∧ (∀ x : ℝ, ¬Irrational x → D x = 1) ∧ (∀ c > 0, Function.Periodic D c) ∧ ¬∃ c > 0, IsLeast {x | 0 < x ∧ Function.Periodic D x} c := by sorry
+theorem omni_theorem_4415 (k : ℕ) (hk : k ∈ Icc 1 1986) : let f (s : Finset ℕ) := (∑ x ∈ s, x) % 3 let P (i : ℕ) := {s : Finset ℕ | s ⊆ Icc 1 1986 ∧ s.card = k ∧ f s = i}.ncard / Nat.choose 1986 k let isFair := P 0 = 1 / 3 ∧ P 1 = 1 / 3 ∧ P 2 = 1 / 3 (isFair ↔ k = 660 ∨ k = 1320) := by sorry
+theorem omni_theorem_3761 {P Q : Polynomial ℝ} {n : ℕ} (hP : P.degree ≤ n) (hQ : Q.degree ≤ n) (h : ∀ x, P.eval x * x^(n + 1) + Q.eval x * (x + 1)^(n + 1) = 1) : Q.eval (-1 / 2) = 2 ^ n := by sorry
+theorem theorem_proving_zh_blue_1367 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b > c) (h' : a + c > b) (h'' : b + c > a) : (c - a) / (b + c - a) + (a - b) / (c + a - b) + (b - c) / (a + b - c) ≤ 0 := by sorry
+theorem omni_theorem_1893 (a b c n : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : (a + b) / a = 3) (h2 : (b + c) / b = 4) (h3 : (c + a) / c = n) : n = 7 / 6 := by sorry
+theorem olymid_ref_base_4168 : {(a, b, c) : ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ a^4 * b^2 * c = 54000}.ncard = 16 := by sorry
+theorem u_math_693 : (64 * X ^ 3 - 125 : Polynomial ℤ) = (4 * X - 5) * (16 * X ^ 2 + 20 * X + 25) := by sorry
+theorem algebra_58649 (f : ℚ → ℤ) : ∃ a b, a ≤ b ∧ f a + f b ≤ 2 * f ((a + b) / 2) := by sorry
+theorem omni_theorem_3758 (f : ℝ → ℝ) : (∀ x, f (x + 1) = f x + 1) ∧ (∀ x, f (x ^ 2) = f x ^ 2) ↔ ∀ x, f x = x := by sorry
+theorem olymid_ref_base_5840 : IsLeast {n : ℤ | ∃ P : ℤ[X], P.eval (-10) = 145 ∧ P.eval 9 = 164 ∧ n = |P.eval 0|} 25 := by sorry
+theorem omni_theorem_21 (x y z w : ℕ) : 2^x * 3^y - 5^z * 7^w = 1 ↔ (x = 1 ∧ y = 1 ∧ z = 1 ∧ w = 0) ∨ (x = 2 ∧ y = 2 ∧ z = 1 ∧ w = 1) ∨ (x = 1 ∧ y = 0 ∧ z = 0 ∧ w = 0) ∨ (x = 3 ∧ y = 0 ∧ z = 0 ∧ w = 1) := by sorry
+theorem algebra_58937 {a m n : ℕ} (ha : a > 1) (hm : m > 0) (hn : n > 0) : Nat.gcd (a ^ m - 1) (a ^ n - 1) = a ^ Nat.gcd m n - 1 := by sorry
+theorem omni_theorem_3004 : (1^3 + 2^3 + 3^3 + 4^3) = 10^2 := by sorry
+theorem aime_all_1989_7 {k : ℤ} (hk : ∃ a d, 36 + k = a^2 ∧ 300 + k = (a + d)^2 ∧ 596 + k = (a + 2 * d)^2) : k = 925 := by sorry
+theorem olymid_ref_base_445 (p q : ℕ) (hp : p.Prime) (hq : q.Prime) (hne : p ≠ q) : ∑ k ∈ Finset.range q, ⌊(k * p / q : ℝ)⌋ = ((p - 1) * (q - 1)) / 2 := by sorry
+theorem theorem_proving_zh_blue_333 : ∃ f : ℕ → Fin 100, (∀ a b c, 0 < a → 0 < b → 0 < c → a + 99 * b = c → f a = f b ∨ f b = f c ∨ f a = f c) ∧ (∀ i, ∃ x, 0 < x ∧ f x = i) := by sorry
+theorem olymid_ref_base_10438 (m n k : ℕ) (hm : 0 < m) (hn : 0 < n) (hk : Odd k) (h : (2 + Real.sqrt 3)^k = 1 + m + n * Real.sqrt 3) : IsSquare m := by sorry
+theorem u_math_419 (t : ℝ) : (3 : ℝ)^(t^2) = 1 / 3^t * 27^(-(1 + t)) ↔ t = -3 ∨ t = -1 := by sorry
+theorem olymid_ref_base_611 (x : Fin 2011 → ℝ) (y : Fin 2011 → ℝ) (h : ∀ i, x i + x ((i + 1) % 2011) = 2 * y i) (h' : ∃ p : Equiv.Perm (Fin 2011), ∀ i, y i = x (p i)) : ∀ i j, x i = x j := by sorry
+theorem olymid_ref_base_10058 (r : ℚ) (hr : r > 0) : ∃ a b c d : ℕ, a > 0 ∧ b > 0 ∧ c > 0 ∧ d > 0 ∧ r = (a^3 + b^3) / (c^3 + d^3) := by sorry
+theorem aime_all_2019_II_3 : {(a, b, c, d, e, f, g) : ℕ × ℕ × ℕ × ℕ × ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ d > 0 ∧ e > 0 ∧ f > 0 ∧ g > 0 ∧ a * b * c = 70 ∧ c * d * e = 71 ∧ e * f * g = 72}.ncard = 96 := by sorry
+theorem omni_theorem_1609 (x y : ℝ) (hx : 0 < x) (hy : 0 < y) (a b : ℝ) (ha : a = 1 + x / y) (hb : b = 1 + y / x) (h : a^2 + b^2 = 15) : a^3 + b^3 = 50 := by sorry
+theorem aime_all_1991_1 (x y : ℤ) (hxpos : 0 < x) (hypos : 0 < y) (h1 : x * y + x + y = 71) (h2 : x ^ 2 * y + x * y ^ 2 = 880) : x ^ 2 + y ^ 2 = 146 := by sorry
+theorem olymid_ref_base_5515 : IsGreatest {n | n ∈ Finset.Icc 1000 9999 ∧ (Nat.digits 10 n).length = 4 ∧ (Nat.digits 10 n).toFinset = {2, 0, 1, 9} ∧ 7 ∣ n} 1092 := by sorry
+theorem algebra_48694 (α : Real) (hα : α ∈ Icc 0 (π / 2)) : 2 ≤ sqrt (5 - 4 * sin α) + sin α ∧ sqrt (5 - 4 * sin α) + sin α ≤ 9 / 4 := by sorry
+theorem algebra_453827 (a b A B : ℝ) (f : ℝ → ℝ) (h₀ : ∀ x, f x = 1 - a * cos x - b * sin x - A * cos (2 * x) - B * sin (2 * x)) (h₁ : ∀ x, f x ≥ 0) : a ^ 2 + b ^ 2 ≤ 2 ∧ A ^ 2 + B ^ 2 ≤ 1 := by sorry
+theorem olymid_ref_base_8617 (a : ℕ → ℤ) (b : ℕ → ℤ) (h₀ : a 0 = 0) (h₁ : a 1 = 1) (h₂ : ∀ n : ℕ, 0 < b n) (h₃ : ∀ n ≥ 1, a (n + 1) = if b (n - 1) = 1 then a n * b n + a (n - 1) else a n * b n - a (n - 1)) : 2017 ≤ a 2017 ∨ 2017 ≤ a 2018 := by sorry
+theorem omni_theorem_1308 : { (a, b, c) : ℕ × ℕ × ℕ | a ≤ b ∧ b ≤ c ∧ Nat.gcd (Nat.gcd a b) c = 1 ∧ a * b * c = 6 ^ 2020 }.ncard ≡ 602 [MOD 1000] := by sorry
+theorem algebra_539174 (a b : ℤ) (f : ℝ → ℝ) (hf : ∀ x, f x = x ^ 2 + a * x + b) (h : ∀ x : ℤ, f x > 0) : ∀ x : ℝ, f x ≥ 0 := by sorry
+theorem omni_theorem_1743 : round (log (Nat.factorial 2014).divisors.card) = 439 := by sorry
+theorem olymid_ref_base_11089 (color : ℕ → Fin 2) (f : ℕ → ℕ) (h₀ : ∀ x y, x ≤ y → f x ≤ f y) (h₁ : ∀ x y z, color x = color y ∧ color y = color z ∧ x + y = z → f x + f y = f z) : ∃ a, ∀ x, 0 < x → f x ≤ a * x := by sorry
+theorem algebra_379384 (a b : ℕ → ℝ) (ha1 : a 1 = 1) (hb1 : b 1 = 2) (han : ∀ n, a (n + 1) = (1 + a n + a n * b n) / b n) (hbn : ∀ n, b (n + 1) = (1 + b n + a n * b n) / a n) : a 2008 < 5 := by sorry
+theorem algebra_58222 (A B C : Real) (hA : A ∈ Ioo 0 π) (hB : B ∈ Ioo 0 π) (hC : C ∈ Ioo 0 π) (hABC : A + B + C = π) : sin (A / 2) * sin (B / 2) * sin (C / 2) ≤ 1 / 8 := by sorry
+theorem algebra_478922 (x y z : ℕ) (hx : x > 1) (hy : y > 1) (hz : z > 1) (h : (x + 1)^y - x^z = 1) : x = 2 ∧ y = 2 ∧ z = 3 := by sorry
+theorem olymid_ref_base_2712 {u : ℕ → ℚ} (hu1 : u 1 = 2) (hun : ∀ n ≥ 2, u n = 4 * Nat.factorization n 3 + 2 - 2 / u (n - 1)) : ∀ q > 0, ∃! n ≥ 1, u n = q := by sorry
+theorem olymid_ref_base_11810 (N : ℕ) : N > 0 ∧ ∃ s : ℕ → ℕ, StrictMono s ∧ (∃ c, Function.Periodic (fun i => (s (i + 1) - s i)) c) ∧ (∀ n, 0 < n → s (s n) - s (s (n - 1)) ≤ N ∧ N < s (1 + s n) - s (s (n - 1))) ↔ ∃ t, t^2 ≤ N ∧ N < t^2 + t := by sorry
+theorem olymid_ref_base_3475 : IsLeast {p : ℕ | ∃ q : ℕ, p > 0 ∧ q > 0 ∧ (2008 / 2009 : ℝ) < (p / q : ℝ) ∧ (p / q : ℝ) < (2009 / 2010 : ℝ)} 4017 := by sorry
+theorem olymid_ref_base_995 {x y : ℕ} (hx : x > 0) (hy : y > 0) (hxy : x = 10 * (y % 10) + (y / 10)) (hdiff : ∃ n, n^2 = x^2 - y^2) : x = 65 ∧ y = 56 := by sorry
+theorem algebra_57941 (k n : ℕ) (hk : 0 < k) (hn : 0 < n) (hkn : 1 ≤ k ∧ k < n) (x : Fin k → ℝ) (hx : ∀ i, 0 < x i) (hxs : ∑ i, x i = ∏ i, x i) : ∑ i, (x i) ^ (n - 1) ≥ k * n := by sorry
+theorem algebra_539174 (a : ℕ → ℕ) (ha : ∀ n, 0 < a n) (hinc : ∀ m n, m < n → a m < a n) (h2 : a 2 = 2) (hmul : ∀ m n, a (m * n) = a m * a n) : ∀ n, a n = n := by sorry
+theorem algebra_561949 (z1 z2 z3 w1 w2 : ℂ) (hz1 : ‖z1‖ ≤ 1) (hz2 : ‖z2‖ ≤ 1) (hz3 : ‖z3‖ ≤ 1) (hroots : ∀ z, (z - z1) * (z - z2) + (z - z2) * (z - z3) + (z - z3) * (z - z1) = 0 → z = w1 ∨ z = w2) : min (‖z1 - w1‖) (‖z1 - w2‖) ≤ 1 ∧ min (‖z2 - w1‖) (‖z2 - w2‖) ≤ 1 ∧ min (‖z3 - w1‖) (‖z3 - w2‖) ≤ 1 := by sorry
+theorem algebra_333359 : Set.Infinite {n : ℕ | 0 < n ∧ n ∣ (2 ^ n + 2)} := by sorry
+theorem olymid_ref_base_3045 {a : ℕ → ℝ} (ha0 : a 0 = -1) (han : ∀ n ≥ 1, ∑ k ∈ range (n + 1), a (n - k) / (k + 1) = 0) : ∀ n ≥ 1, a n > 0 := by sorry
+theorem olymid_ref_base_9345 (x : ℝ) (hxpos : 0 < x) : x ^ x = 1 / sqrt 2 ↔ x = 1 / 2 ∨ x = 1 / 4 := by sorry
+theorem omni_theorem_1603 {x y : ℂ} (h₀ : (x^2 + y^2) / (x + y) = 4) (h₁ : (x^4 + y^4) / (x^3 + y^3) = 2) : (x^6 + y^6) / (x^5 + y^5) = 10 + 2 * Real.sqrt 17 ∨ (x^6 + y^6) / (x^5 + y^5) = 10 - 2 * Real.sqrt 17 := by sorry
+theorem olymid_ref_base_8372 : ∀ f : ℚ → ℤ, (∀ x a b, 0 < b → f ((f x + a)/b) = f ((x + a)/b)) ↔ (∃ c, ∀ x, f x = c) ∨ (∀ x, f x = ⌊x⌋) ∨ (∀ x, f x = ⌈x⌉) := by sorry
+theorem olymid_ref_base_7958 : {(x, y, z) : ℝ × ℝ × ℝ | 0 < x ∧ 0 < y ∧ 0 < z ∧ x + y + z = 27 ∧ x ^ 2 + y ^ 2 + z ^ 2 - x * y - y * z - z * x = 0} = {(9, 9, 9)} := by sorry
+theorem algebra_48694 (a : ℕ → ℝ) (ha : ∀ n, 0 < a n) : ∀ N, ∃ n, n > N ∧ 1 + a n > (2 ^ ((1 : ℝ) / n)) * a (n - 1) := by sorry
+theorem olymid_ref_base_8088 (f : ℝ → ℝ) : ∃ x y, f (x - f y) > y * f x + x := by sorry
+theorem olymid_ref_base_904 {P : ℤ[X]} (r : ℤ) (hr : P.eval r = 0) : ‖r‖ ≤ sSup {‖coeff‖ | coeff ∈ P.coeffs} := by sorry
+theorem u_math_238 {f : ℝ → ℝ} (hf : f = λ x => cos x - x * sin x) : ∀ x, f x = ∑' n : ℕ, ((-1)^n * (2*n + 1) * x^(2*n))/(Nat.factorial (2*n)) := by sorry
+theorem aime_all_2001_II_4 (x₁ x₂ y₁ y₂ : ℝ) (h₁ : x₁ ≠ 0 ∧ y₁ ≠ 0) (h₂ : x₂ ≠ 0 ∧ y₂ ≠ 0) (h₃ : (x₁ + x₂) / 2 = 8 ∧ (y₁ + y₂) / 2 = 6) (h₄ : 8 * y₁ = 15 * x₁) (h₅ : 10 * y₂ = 3 * x₂) (m n : ℕ) (hm : m > 0) (hn : n > 0) (hmn : Nat.Coprime m n) (h_length : Real.sqrt ((x₂ - x₁)^2 + (y₂ - y₁)^2) = m / n) : m + n = 67 := by sorry
+theorem quantitative_reasoning_zh_blue_813 (a b c x y z : ℝ) (h₀ : a^2 + b^2 + c^2 = 25) (h₁ : x^2 + y^2 + z^2 = 36) (h₂ : a * x + b * y + c * z = 30) : (a + b + c) / (x + y + z) = 5 / 6 := by sorry
+theorem omni_theorem_1840 : (Nat.digits 10 (2^41)).length = 13 := by sorry
+theorem algebra_453812 {n : ℕ} (hn : 0 < n) (a : Fin n → ℂ) (h : ∀ I : Finset (Fin n), I ≠ ∅ → ‖∏ j ∈ I, (1 + a j) - 1‖ ≤ 1 / 2) : ∑ j : Fin n, ‖a j‖ ≤ 3 := by sorry
+theorem algebra_578259 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b + c = 3) : 3 / 4 ≥ 1 / (2 + a ^ 2 + b ^ 2) + 1 / (2 + b ^ 2 + c ^ 2) + 1 / (2 + c ^ 2 + a ^ 2) := by sorry
+theorem olymid_ref_base_7217 (x y z w : ℝ) (h₀ : 2 * x + y + z + w = 1) (h₁ : x + 3 * y + z + w = 2) (h₂ : x + y + 4 * z + w = 3) (h₃ : x + y + z + 5 * w = 25) : w = 11 / 2 := by sorry
+theorem algebra_58273 {n : ℕ} (hn : 0 < n) (x : Fin n → ℝ) (hx : ∀ i, 0 < x i) (hxp : ∏ i, x i = 1) : ∑ i, (1 / (x i * (1 + x i))) ≥ n / 2 := by sorry
+theorem olymid_ref_base_3984 (F : ℝ → ℝ) (a : ℕ → ℝ) (hf : F = λ x => 1 / (2 - x - x^5)^2011) (hf' : ∀ x, F x = ∑' n : ℕ, a n * x^n) (hc : ∃ c d : ℝ, c > 0 ∧ d > 0 ∧ Tendsto (λ n => a n / n^d) atTop (𝓝 c)) : (c, d) = (1 / (6^2011 * Nat.factorial 2010), 2010) := by sorry
+theorem olymid_ref_base_10608 (a b c : ℝ) (h₀ : 0 < a) (h₁ : 0 < b) (h₂ : 0 < c) (h₃ : a * b + b * c + c * a = 3) : a + b + c ≥ a * b * c + 2 := by sorry
+theorem olymid_ref_base_4365 (k : ℝ) (hk : k > 0) (h : ∃ m n, m > 0 ∧ n > 0 ∧ m ≠ n ∧ |(m : ℝ) - n| = 4 ∧ Real.sqrt ((m - n)^2 + (m * k - n * k)^2) = 31) : Real.sqrt ((7 - 19)^2 + (7 * k - 19 * k)^2) = 93 := by sorry
+theorem olymid_ref_base_10822 : {(x, y, z) : ℕ × ℕ × ℕ | 0 < x ∧ 0 < y ∧ 0 < z ∧ 45^x - 6^y = 2019^z} = {(2, 1, 1)} := by sorry
+theorem olymid_ref_base_3904 {P : Polynomial ℤ} (hP : ∀ n ∈ Finset.range 7, P.coeff n = 1 ∨ P.coeff n = -1) (hP2 : P.eval 2 = 27) : P.eval 3 = 439 := by sorry
+theorem omni_theorem_1348 {P : Polynomial ℝ} (hP1 : P.eval 1 = 1) (hP2 : ∀ x, P.eval (2 * x) / P.eval (x + 1) = 8 - 56 / (x + 7)) : P.eval (-1) = -5 / 21 := by sorry
+theorem olymid_ref_base_10865 : {(x, y, z, t) : ℕ × ℕ × ℕ × ℕ | 0 < x ∧ 0 < y ∧ 0 < z ∧ 0 < t ∧ (2^x * 3^y + 5^z = 7^t)}.ncard = 0 := by sorry
+theorem u_math_664 (h : ℝ → ℝ) (v0 : ℝ) (t : ℝ) (h_def : h = fun t => -16 * t ^ 2 + v0 * t + 196) (v0_val : v0 = 0) (ht : h t = 0) : t = 7 / 2 := by sorry
+theorem algebra_585850 (x y z t : ℝ) : (|x| > |y - z + t| ∧ |y| > |x - z + t| ∧ |z| > |x - y + t| ∧ |t| > |x - y + z|) ↔ False := by sorry
+theorem aime_all_2023_I_4 (s : Set ℕ) (hs : s = { m > 0 | IsSquare (Nat.factorial 13 / m) }) (a b c d e f : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (he : 0 < e) (hf : 0 < f) (h : ∑ᶠ m ∈ s, m = 2 ^ a * 3 ^ b * 5 ^ c * 7 ^ d * 11 ^ e * 13 ^ f) : a + b + c + d + e + f = 12 := by sorry
+theorem olymid_ref_base_543 (p n : ℕ) (hp : p.Prime) (hn : 0 < n) (q : ℕ) (hq : q ∣ (n + 1)^p - n^p) : p ∣ q - 1 := by sorry
+theorem hardmath_91 (I : ℝ → ℝ) (hI : I = λ x => ∫ t in (-0.4)..0.2, (1.5*t^3 - 1.0*t + 0.4)*exp (x * (-0.4*t^3 - 2.7*arctan t + 1.6))) : Tendsto (λ x => I x / (0.28 * exp (2.65 * x) / x)) atTop (𝓝 1) := by sorry
+theorem omni_theorem_515 {x y : ℝ} (h₀ : 56 * x + 33 * y = -y / (x ^ 2 + y ^ 2)) (h₁ : 33 * x - 56 * y = x / (x ^ 2 + y ^ 2)) : abs x + abs y = 11 / 65 := by sorry
+theorem olymid_ref_base_3654 : ∑ k in Finset.Icc (1 : ℤ) 2009, k * (Int.floor ((2009 : ℝ) / k) - Int.floor ((2008 : ℝ) / k)) = 2394 := by sorry
+theorem omni_theorem_3700 (f : ℝ → ℤ) (h : ∀ x y : ℝ, (f (f y - x))^2 + f x^2 + f y^2 = f y * (1 + 2 * f (f y))) : ∀ x : ℝ, f x = 1 := by sorry
+theorem olymid_ref_base_1118 : IsLeast {n : ℤ | ∃ a b c d : ℤ, 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d ∧ n = ⌊(a + b + c) / d⌋ + ⌊(b + c + d) / a⌋ + ⌊(c + d + a) / b⌋ + ⌊(d + a + b) / c⌋} 9 := by sorry
+theorem algebra_383756 {w : ℕ → ℕ} (hw : ∀ n, w n = (Nat.primeFactors n).card) : ∀ N, ∃ n, n > N ∧ w n < w (n + 1) ∧ w (n + 1) < w (n + 2) := by sorry
+theorem omni_theorem_2102 : Set.ncard {a : ℕ | a > 0 ∧ ∃ n : ℤ, (n^2 - a * n + a) = 0} = 1 := by sorry
+theorem omni_theorem_1418 : {x : ℝ | 0 < x ∧ (3 * 2 ^ ⌊logb 2 x⌋ - x) ^ 16 = 2022 * x ^ 13}.ncard = 9 := by sorry
+theorem olymid_ref_base_11823 (n m : ℕ) (hnm : n ≥ m ∧ m ≥ 1) : ∑ k in Finset.Icc m n, (1/k^2 + 1/k^3 : ℝ) ≥ m * (∑ k in Finset.Icc m n, 1/k^2 : ℝ)^2 := by sorry
+theorem omni_theorem_4070 : ∑' n : ℕ, log (1 + 1 / (n : ℝ)) * log (1 + 1 / (2 * n : ℝ)) * log (1 + 1 / ((2 * n + 1): ℝ)) = (log 2)^3/3 := by sorry
+theorem quantitative_reasoning_zh_blue_773 (x : ℝ) (hx : x ∈ Ioo 0 (2 * π)) : (cos (2 * x) + cos x - 1) / cos (2 * x) > 2 ↔ x ∈ Ioo (π / 4) (π / 3) ∪ Ioo (π / 2) (3 * π / 4) ∪ Ioo (5 * π / 4) (3 * π / 2) ∪ Ioo (5 * π / 3) (7 * π / 4) := by sorry
+theorem omni_theorem_1865 : ∑ᶠ n ∈ {n : ℕ | 0 < n ∧ ∃ k : ℤ, 9 * sqrt n + 4 * sqrt (n + 2) - 3 * sqrt (n + 16) = k}, n = 18 := by sorry
+theorem olymid_ref_base_8446 {p x y : ℕ} [inst : Fact (Nat.Prime p)] (hxpos : 0 < x) (hypos : 0 < y) (h1 : ∃ k : ℕ, x^(p - 1) + y = p^k) (h2 : ∃ m : ℕ, x + y^(p - 1) = p^m) : (p, x, y) ∈ ({(3, 2, 5), (3, 5, 2)} : Set <| ℕ × ℕ × ℕ) ∪ {(2, n, 2^k - n) | (n : ℕ) (k : ℕ) (h : 0 < n) (h' : n < 2^k)} := by sorry
+theorem olymid_ref_base_8413 (n : ℕ) (hn : 1 < n) : ∀ N, ∃ k ≥ N, Odd ⌊(n ^ k / k : ℝ)⌋ := by sorry
+theorem olymid_ref_base_6674 (s : Set ℝ) (hs : s = {t : ℝ | ∃ x y : ℝ, t = x ^ 2 + y ^ 2 ∧ x ^ 3 = 3 * x + y ∧ y ^ 3 = 3 * y + x}) : ∑ᶠ x ∈ s, x = 15 := by sorry
+theorem omni_theorem_3932 (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h1 : x ^ 2 = 2 * (y + z)) (h2 : x ^ 6 = y ^ 6 + z ^ 6 + 31 * (y ^ 2 + z ^ 2)) : (x, y, z) = (2, 1, 1) := by sorry
+theorem algebra_568831 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c ≤ 1) : a / c + b / a + c / b ≥ |(a - 1) * (b - 1) * (c - 1)| + a + b + c := by sorry
+theorem olymid_ref_base_1996 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : a^2 < 16 * b * c) (h2 : b^2 < 16 * a * c) (h3 : c^2 < 16 * a * b) : a^2 + b^2 + c^2 < 2 * (a * b + b * c + a * c) := by sorry
+theorem olymid_ref_base_4631 : IsLeast {y : ℝ | ∃ x, (y + x) = (y - x)^2 + 3 * (y - x) + 3} (-1 / 2) := by sorry
+theorem olymid_ref_base_9606 : IsLeast {x | ∃ a b c d e f g : ℝ, a ≥ 0 ∧ b ≥ 0 ∧ c ≥ 0 ∧ d ≥ 0 ∧ e ≥ 0 ∧ f ≥ 0 ∧ g ≥ 0 ∧ a + b + c + d + e + f + g = 1 ∧ x = max (a + b + c) (max (b + c + d) (max (c + d + e) (max (d + e + f) (e + f + g))))} (1 / 3) := by sorry
+theorem olymid_ref_base_3295 (y : ℝ) (hy : 1 < y) : ∫ x in (1)..y, x * log x = (1 : ℝ) / 4 ↔ y = sqrt (exp 1) := by sorry
+theorem olymid_ref_base_8618 (f : ℝ → ℝ) (h : ∀ x y : ℝ, (f x + y) * (f y + x) > 0 → f x + y = f y + x) : ∀ x y : ℝ, x > y → f x + y ≤ f y + x := by sorry
+theorem u_math_597 (f : ℝ → ℝ) (h₀ : ∀ x, f x = (2 * x - 3) ^ ((1 : ℝ) / 3) + (3 * x + 2) ^ ((1 : ℝ) / 3) - 3) : f 2 = 0 ∧ (∀ x, f x = 0 → x = 2) := by sorry
+theorem omni_theorem_4023 (x y z : ℝ) (h₀ : x + y + z = 3) (h₁ : x^3 + y^3 + z^3 = 15) (h₂ : x^4 + y^4 + z^4 = 35) (h₃ : x^2 + y^2 + z^2 < 10) : x^5 + y^5 + z^5 = 83 := by sorry
+theorem omni_theorem_111 : Set.ncard {n : ℕ | 0 < n ∧ ∀ k ∈ Finset.Icc 1 9, (n / 10 ^ k : ℝ) % 1 > n / 10 ^ 10} = 999989991 := by sorry
+theorem olymid_ref_base_1606 (n : ℕ) (hn : n > 0) : ¬∃ a b, a * b = n ^ 2 + n + 1 ∧ a > 0 ∧ b > 0 ∧ |(a : ℝ) - b| < 2 * sqrt n := by sorry
+theorem u_math_1080 : ∫ x in (0)..π, sin x ^ 4 = 3 * π / 8 := by sorry
+theorem olymid_ref_base_7472 : (MeasureTheory.volume {p : ℝ × ℝ | p.1 ^ 6 - p.1 ^ 2 + p.2 ^ 2 ≤ 0}).toReal = Real.pi / 2 := by sorry
+theorem omni_theorem_2076 : {S : Finset ℕ | S ⊆ Icc 1 10 ∧ S.card = 4 ∧ ∃ a b c d : ℕ, a ∈ S ∧ b ∈ S ∧ c ∈ S ∧ d ∈ S ∧ a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ b ≠ c ∧ b ≠ d ∧ c ≠ d ∧ |(a : ℤ) - b| ≥ 4 ∧ |(b : ℤ) - c| ≥ 4 ∧ |(c : ℤ) - d| ≥ 4 ∧ |(d : ℤ) - a| ≥ 4}.ncard = 36 := by sorry
+theorem theorem_proving_zh_blue_2001 {a b c a' b' c' : ℝ} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hA : A ∈ Set.Ioo 0 π) (hB : B ∈ Set.Ioo 0 π) (hC : C ∈ Set.Ioo 0 π) (hABC : A + B + C = π) (s : ℝ) (hs : s = a + b + c) (ha' : 0 < a') (hb' : 0 < b') (hc' : 0 < c') (hA' : A' ∈ Set.Ioo 0 π) (hB' : B' ∈ Set.Ioo 0 π) (hC' : C' ∈ Set.Ioo 0 π) (hA'B'C' : A' + B' + C' = π) (s' : ℝ) (hs' : s' = a' + b' + c') : a / a' * tan (A / 2) + b / b' * tan (B / 2) + c / c' * tan (C / 2) ≥ sqrt 3 * s / (2 * s') ∧ (a / a' * tan (A / 2) + b / b' * tan (B / 2) + c / c' * tan (C / 2) = sqrt 3 * s / (2 * s') ↔ (A = B ∧ B = C) ∧ (A' = B' ∧ B' = C')) := by sorry
+theorem omni_theorem_1185 : {(a, b, c) : ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ a < 10 ∧ b < 10 ∧ c < 10 ∧ 20 ∣ a * b * c}.ncard = 102 := by sorry
+theorem olymid_ref_base_9414 (a : Fin 4 → ℝ) (apos : ∀ i, 0 < a i) : 4 ≤ (∑ i, (a i + a ((i + 2) % 4)) / (a i + a ((i + 1) % 4))) := by sorry
+theorem olymid_ref_base_1436 (a b c d : ℝ) (h₀ : 0 < a) (h₁ : 0 < b) (h₂ : 0 < c) (h₃ : 0 < d) : (a - b) / (b + c) + (b - c) / (c + d) + (c - d) / (d + a) + (d - a) / (a + b) ≥ 0 := by sorry
+theorem olymid_ref_base_9897 {n : ℕ} (hn : 2 ≤ n) (c : Fin n → ℝ) (hsum : 0 ≤ ∑ i : Fin n, c i ∧ ∑ i : Fin n, c i ≤ n) : ∃ k : Fin n → ℤ, ∑ i : Fin n, k i = 0 ∧ ∀ i : Fin n, 1 - n ≤ c i + n * k i ∧ c i + n * k i ≤ n := by sorry
+theorem omni_theorem_2913 (x y : ℝ) (h₁ : 3 + x = 5) (h₂ : -3 + y = 5) : x + y = 10 := by sorry
+theorem olymid_ref_base_3750 (P : Finset (ℝ × ℝ)) (hP : P.card = 4) (hP1 : ∀ p ∈ P, p.1^2 + p.2^2 = 36) (hP2 : ∀ p ∈ P, p.2 = p.1^2 - 7) : ∑ p ∈ P, p.1^2 = 26 := by sorry
+theorem quantitative_reasoning_zh_blue_613 (f : ℝ → ℝ) (hf : Continuous f) (h : ∀ x y, 2 * f ((x + y) / 2) = f x + f y) : ∃ a b, ∀ x, f x = a * x + b ∧ a = f 1 - f 0 ∧ b = f 0 := by sorry
+theorem u_math_850 {a b c d : ℝ} (g : ℝ → ℝ) (h₀ : ∀ x, g x = (1/3) * (a + b) * x^3 + (1/2) * (a + b + c) * x^2 - (a + b + c + d) * x + a * b * c * d) (h₁ : ∀ x, x^2 + x = a + b) : ∀ x, deriv g x = (a + b)^2 + c * x - (a + b + c + d) := by sorry
+theorem olymid_ref_base_3783 (S : ℕ → ℤ) (a : ℕ → ℤ) (hS0 : S 0 = 0) (hS : ∀ k ≥ 1, S k = ∑ i ∈ Icc 1 k, i * a i) (ha : ∀ i, a i = if S (i - 1) < i then 1 else -1) : IsGreatest {k | k ≤ 2010 ∧ S k = 0} 1092 := by sorry
+theorem algebra_569870 (a : ℕ → ℝ) (ha : ∀ k, 0 < a k) (h : ∃ k, ∀ n, ∑ i in Finset.Icc 1 n, (a i)^2 < k * (a (n + 1))^2) : ∃ c, ∀ n, ∑ i in Finset.Icc 1 n, a i < c * a (n + 1) := by sorry
+theorem olymid_ref_base_10001 : {(x, y) : ℕ × ℕ | 1 ≤ x ∧ 1 ≤ y ∧ x ^ (y ^ 2) = y ^ x} = {(1, 1), (27, 3), (16, 2)} := by sorry
+theorem olymid_ref_base_7744 : ∫ x in (0)..(π/3), x * tan x ^ 2 = -π^2/18 + π*sqrt 3/3 - log 2 := by sorry
+theorem omni_theorem_3620 (f : ℝ → ℝ) : (∀ x y, f x + f (y * f x + f y) = f (x + 2 * f y) + x * y) ↔ ∀ x, f x = x + 1 := by sorry
+theorem omni_theorem_287 {n : ℕ} (hn : 3 ≤ n) : {f : Fin n → Fin n → Bool | (∀ p : Equiv.Perm (Fin n), ∃ q : Equiv.Perm (Fin n), ∀ i j, f (p i) (q j) = f i j) ∧ (∀ q : Equiv.Perm (Fin n), ∃ p : Equiv.Perm (Fin n), ∀ i j, f (p i) (q j) = f i j)}.ncard = 2 * Nat.factorial n + 2 := by sorry
+theorem olymid_ref_base_8263 (n : ℕ) (a : ℕ → ℝ) (n_ge_3 : n ≥ 3) (apos : ∀ i ∈ Finset.Icc 2 n, 0 < a i) (aprod : ∏ i ∈ Finset.Icc 2 n, a i = 1) : ∏ i ∈ Finset.Icc 2 n, (1 + a i) ^ i > n ^ n := by sorry
+theorem olymid_ref_base_10663 (A B C M : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (hanglesABC : ∠ B A C = 70 * π / 180 ∧ ∠ A B C = 80 * π / 180) (hM : M ∈ interior (convexHull ℝ {A, B, C})) (hM1 : ∠ A C M = 10 * π / 180) (hM2 : ∠ C B M = 20 * π / 180) : dist A B = dist M C := by sorry
+theorem olymid_ref_base_974 : IsGreatest {t : ℝ | ∃ x y, t = x * y + x * √(1 - y^2) + y * √(1 - x^2) - √((1 - x^2) * (1 - y^2))} (√2) := by sorry
+theorem olymid_ref_base_2581 {n : ℕ} (hn : 2 ≤ n) (X : Type*) [Fintype X] [Nonempty X] (hX : Fintype.card X = n) : {f : X → X | ∃ c, ∀ x, f (f x) = c}.ncard = n * ∑ i ∈ Icc 1 (n - 1), Nat.choose (n - 1) i * i ^ (n - i - 1) := by sorry
+theorem olymid_ref_base_5339 (a : ℕ → ℤ) (h₀ : a 0 = 3) (h₁ : a 1 = 4) (h₂ : ∀ n, a (n + 2) = a (n + 1) * a n + ⌈Real.sqrt (a (n + 1)^2 - 1) * Real.sqrt (a n^2 - 1)⌉₊) : (∑' n, ((a (n + 3)) / (a (n + 2)) - (a (n + 2)) / (a n) + (a (n + 1)) / (a (n + 3)) - (a n) / (a (n + 1)))) = 14 / 69 := by sorry
+theorem olymid_ref_base_2366 (x y z : ℝ) (hxpos : 0 < x) (hypos : 0 < y) (hzpos : 0 < z) (hxyz : x * y * z = 8) : (x - 2) / (x + 1) + (y - 2) / (y + 1) + (z - 2) / (z + 1) ≤ 0 := by sorry
+theorem olymid_ref_base_6077 : {S : Finset ℕ | S ⊆ Icc 1 48 ∧ (∀ k ∈ Icc 1 24, Xor' (2 * k - 1 ∈ S) (2 * k ∈ S)) ∧ {m | m ∈ Icc 1 47 ∧ m ∈ S ∧ (m + 1) ∈ S}.encard = 9}.ncard = 177100 := by sorry
+theorem aime_all_2006_II_3 : IsGreatest {k | 3 ^ k ∣ (∏ i ∈ Finset.range 100, (2 * i + 1))} 49 := by sorry
+theorem olymid_ref_base_6691 : IsLeast {n | 63 ∣ n ∧ Odd (Nat.digits 2 n).sum} 4221 := by sorry
+theorem aime_all_2007_I_3 (b : ℝ) (hb : 0 < b) (z : ℂ) (hz : z = 9 + b * .I) (h : (z ^ 2).im = (z ^ 3).im) : b = 15 := by sorry
+theorem omni_theorem_1345 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : a^2 + a * b + b^2 = 9) (h2 : b^2 + b * c + c^2 = 52) (h3 : c^2 + c * a + a^2 = 49) : (49 * b^2 - 33 * b * c + 9 * c^2) / a^2 = 52 := by sorry
+theorem aime_all_2013_II_11 (A : Finset ℕ) (hA : A = {1, 2, 3, 4, 5, 6, 7}) : ((Finset.univ : Finset (A → A)).filter (fun f => ∃ c, ∀ x, f (f x) = c)).card % 1000 = 399 := by sorry
+theorem olymid_ref_base_10929 {n : ℕ} (hn : n > 0) (h : n / 1000 = (n : ℝ) ^ (1 / 3 : ℝ)) : n = 32768 := by sorry
+theorem omni_theorem_152 : ∃ x : Fin 1985 → ℤ, ∃ y z : ℕ, (y > 0) ∧ (z > 0) ∧ (∑ i : Fin 1985, (x i)^2 = y^3) ∧ (∑ i : Fin 1985, (x i)^3 = z^2) ∧ (∀ i j : Fin 1985, i ≠ j → x i ≠ x j) := by sorry
+theorem theorem_proving_zh_blue_1237 (n : ℕ) (hn : 0 < n) : (∑ i in Finset.Icc 1 n, (1 / (2 * i - 1))) / (n + 1) ≥ (∑ i in Finset.Icc 1 n, (1 / (2 * i))) / n := by sorry
+theorem aime_all_2013_II_13 (A B C D E : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (hAC : dist A C = dist B C) (hD : D ∈ segment ℝ B C ∧ dist C D = 3 * dist B D) (hE : E = midpoint ℝ A D) (hCE : dist C E = sqrt 7) (hBE : dist B E = 3) (m n : ℕ) (hn : Squarefree n) (harea : (MeasureTheory.volume (convexHull ℝ {A, B, C})).toReal = m * sqrt n) : m + n = 10 := by sorry
+theorem algebra_559763 (a : ℕ → ℝ) (ha : ∀ n, 0 < a n) : ∀ N, ∃ n, n > N ∧ 1 + a n > (2 ^ ((1 : ℝ) / n)) * a (n - 1) := by sorry
+theorem algebra_419632 (x y : ℝ) (hy : 0 ≤ y) (h : y * (y + 1) ≤ (x + 1) ^ 2) : y * (y - 1) ≤ x ^ 2 := by sorry
+theorem olymid_ref_base_11133 : ∃ P Q : Polynomial ℝ, P.degree > 0 ∧ Q.degree > 0 ∧ ∀ x : ℝ, (P.eval x) ^ 10 + (P.eval x) ^ 9 = (Q.eval x) ^ 21 + (Q.eval x) ^ 20 := by sorry
+theorem olymid_ref_base_10938 (m n p : ℕ) (hm : Odd m) (hn : Odd n) (hp : Odd p) (hpos : m > 0 ∧ n > 0 ∧ p > 0) : n ∣ ∑ k in Finset.Icc 1 ((n - 1)^p), k^m := by sorry
+theorem olymid_ref_base_4582 (x y z : ℝ) (h₀ : x = y + z + 2) (h₁ : y = z + x + 1) (h₂ : z = x + y + 4) : x + y + z = -7 := by sorry
+theorem olymid_ref_base_2838 (n : ℕ) (hn : n = 2021) : 35 ∣ 3^(2*n + 1) + 2^(n + 2) := by sorry
+theorem olymid_ref_base_5842 {P : MvPolynomial (Fin 3) ℝ} (hP : ∀ k a b c : ℝ, MvPolynomial.eval ![k*a, k*b, k*c] P = k^4 * MvPolynomial.eval ![a, b, c] P) (hP1 : ∀ a b c : ℝ, MvPolynomial.eval ![a, b, c] P = MvPolynomial.eval ![b, c, a] P) (hP2 : ∀ a b : ℝ, MvPolynomial.eval ![a, a, b] P = 0) (hP3 : MvPolynomial.eval ![1, 2, 3] P = 1) : MvPolynomial.eval ![2, 4, 8] P = 56 := by sorry
+theorem olymid_ref_base_10927 (f : ℕ → ℕ) (a : ℕ) (h1 : 2 < a) (h2 : f 2 = a) (h3 : ∀ m n, f (m * n) = f m * f n) (h4 : StrictMono f) : IsLeast {x | 2 < x ∧ ∃ f : ℕ → ℕ, f 2 = x ∧ (∀ m n, f (m * n) = f m * f n) ∧ StrictMono f} 4 := by sorry
+theorem olymid_ref_base_9310 (r1 r2 : ℝ) (hr : Irrational (r1 / r2)) (x : ℝ) (p : ℝ) (hp : p > 0) : ∃ k1 k2 : ℤ, |x - (k1 * r1 + k2 * r2)| < p := by sorry
+theorem olymid_ref_base_5838 : {(a, b) : ℕ × ℕ | 2 ≤ a ∧ a ≤ 2021 ∧ 2 ≤ b ∧ b ≤ 2021 ∧ (a : ℝ) ^ logb b (a ^ (-4 : ℤ)) = (b : ℝ) ^ logb a (b * a ^ (-3 : ℤ))}.ncard = 43 := by sorry
+theorem olymid_ref_base_3760 : {z : ℂ | (X ^ 4 + C 2 * X ^ 3 + C 2 * X ^ 2 + C 2 * X + C 1 : ℂ[X]).eval z = 0} = {-1, Complex.I, -Complex.I} := by sorry
+theorem olymid_ref_base_1580 (f : ℝ → ℝ) : (∀ x y, f (x ^ 2) - f (y ^ 2) ≤ (f x + y) * (x - f y)) ↔ (∀ x, f x = x) ∨ (∀ x, f x = -x) := by sorry
+theorem omni_theorem_4197 (f : ℕ → ℕ) (h : ∀ n, f (f n) < f (n + 1)) : ∀ n, f n = n := by sorry
+theorem omni_theorem_1424 : (8 * 9 ! / (2 * 2) + 4 * 7 ! / 2 + 4 * 6 ! + 4 * 4 ! + 3 ! + 2 ! + 2 ! = 738826) := by sorry
+theorem olymid_ref_base_4798 : (∑ i ∈ range 2016, ⌊(2 ^ i : ℝ) / 25⌋) % 100 = 14 := by sorry
+theorem aime_all_2001_II_3 (x : ℕ → ℤ) (hx1 : x 1 = 211) (hx2 : x 2 = 375) (hx3 : x 3 = 420) (hx4 : x 4 = 523) (hxn : ∀ n ≥ 5, x n = x (n - 1) - x (n - 2) + x (n - 3) - x (n - 4)) : x 531 + x 753 + x 975 = 898 := by sorry
+theorem olymid_ref_base_490 {n : ℕ} (hn : 2 ≤ n) {d : ℕ} (hd : 1 ≤ d) (hdiv : d ∣ n) (x : Fin n → ℝ) (hsum : ∑ i : Fin n, x i = 0) : {s : Finset (Fin n) | s.card = d ∧ ∑ i ∈ s, x i ≥ 0}.ncard ≥ Nat.choose (n - 1) (d - 1) := by sorry
+theorem aime_all_2009_I_2 (z : ℂ) (hz : z.im = 164) (n : ℕ) (hn : 0 < n) (h : z / (z + n) = 4 * .I) : n = 697 := by sorry
+theorem u_math_864 : {x : ℝ | -5 * x ^ 2 + 10 * x + 15 ≤ 0} = {x | x ≤ -1 ∨ x ≥ 3} := by sorry
+theorem omni_theorem_3126 {a b : ℝ} (h : ∀ x, (x + a) * (x + 8) = x ^ 2 + b * x + 24) : a + b = 14 := by sorry
+theorem olymid_ref_base_11452 : IsLeast {N : ℤ | ∃ s : Finset ℕ, s.card = 2 * k + 1 ∧ ∑ i ∈ s, i > N ∧ (∀ t ⊆ s, t.card = k → ∑ i ∈ t, i ≤ N / 2)} (k * (2 * k^2 + 3 * k + 3)) := by sorry
+theorem aime_all_2018_I_5 : ∏ᶠ k ∈ {k : ℝ | ∃ x y, logb 2 (2 * x + y) = logb 4 (x ^ 2 + x * y + 7 * y ^ 2) ∧ logb 3 (3 * x + y) = logb 9 (3 * x ^ 2 + 4 * x * y + k * y ^ 2)}, k = 189 := by sorry
+theorem omni_theorem_3674 {a b : ℕ} (ha : 0 < a) (hb : 0 < b) (hab1 : a + b + Nat.gcd a b ^ 2 = Nat.lcm a b) (hab2 : Nat.lcm a b = 2 * Nat.lcm (a - 1) b) : (a, b) = (2, 3) ∨ (a, b) = (6, 15) := by sorry
+theorem algebra_496953 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : ((2 * a + b + c)^2 / (2 * a^2 + (b + c)^2) + (a + 2 * b + c)^2 / (2 * b^2 + (a + c)^2) + (a + b + 2 * c)^2 / (2 * c^2 + (b + a)^2)) ≤ 8 := by sorry
+theorem olymid_ref_base_1985 (a b c : ℝ) (h₀ : 0 ≤ a ∧ a ≤ 2) (h₁ : 0 ≤ b ∧ b ≤ 2) (h₂ : 0 ≤ c ∧ c ≤ 2) : (a - b) * (b - c) * (a - c) ≤ 2 := by sorry
+theorem olymid_ref_base_958 {f g : ℝ → ℝ} (hf : ∀ x, 2 < x ∧ x < 4 → 2 < f x ∧ f x < 4) (hg : ∀ x, 2 < x ∧ x < 4 → 2 < g x ∧ g x < 4) (hfg : ∀ x, 2 < x ∧ x < 4 → f (g x) = x ∧ g (f x) = x) (hfg' : ∀ x, 2 < x ∧ x < 4 → f x * g x = x ^ 2) : f 3 = g 3 ∧ f 3 = 3 := by sorry
+theorem olymid_ref_base_7618 (a b c : ℝ) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (hord : a < b ∧ b < c) (hsum : a + b + c = 21 / 4) (hrec : 1 / a + 1 / b + 1 / c = 21 / 4) (hprod : a * b * c = 1) : (a = 1 / 4 ∧ b = 1 ∧ c = 4) := by sorry
+theorem olymid_ref_base_10610 : ∃ A B : Finset ℕ, A.card = 3 ∧ B.card = 3 ∧ (∀ x ∈ A, x > 2003) ∧ (∀ m ∈ B, m > 2003) ∧ A ∩ B = ∅ ∧ ∑ x ∈ A, x = ∑ m ∈ B, m ∧ ∑ x ∈ A, x ^ 2 = ∑ m ∈ B, m ^ 2 := by sorry
+theorem olymid_ref_base_10081 : ∃ n : ℕ, n > 0 ∧ (n.primeFactors.card = 2000) ∧ n ∣ (2^n + 1) := by sorry
+theorem u_math_1077 : ∫ x, x * arctan (2 * x) ^ 2 = (2 * arctan (2 * x) ^ 2 + 2 * log (4 * x ^ 2 + 1) + 8 * x ^ 2 * arctan (2 * x) ^ 2 - 8 * x * arctan (2 * x)) / 16 + C := by sorry
+theorem algebra_413975 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hxyz : x * y * z ≥ 1) : (x ^ 5 - x ^ 2) / (x ^ 5 + y ^ 2 + z ^ 2) + (y ^ 5 - y ^ 2) / (y ^ 5 + z ^ 2 + x ^ 2) + (z ^ 5 - z ^ 2) / (z ^ 5 + x ^ 2 + y ^ 2) ≥ 0 := by sorry
+theorem aime_all_2014_I_3 : Set.ncard {r : ℚ | 0 < r ∧ r < 1 ∧ r.num + r.den = 1000} = 200 := by sorry
+theorem olymid_ref_base_6468 (z w : ℂ) (hz : z = exp (2 * π * I / 99)) (hw : w = exp (2 * π * I / 101)) (P : Polynomial ℂ) (hP : P.degree = 9999) (hroots : ∀ m ∈ Ico 0 99, ∀ n ∈ Ico 0 101, P.eval (z ^ m + w ^ n) = 0) : ∑ i ∈ Icc 9799 9998, P.coeff i = 14849 - (9999 / 200) * Nat.choose 200 99 := by sorry
+theorem olymid_ref_base_8422 (z : ℕ → ℤ) (h₀ : ∀ n, 0 < z n) (h₁ : ∀ n, z n < z (n + 1)) : ∃! n, 1 ≤ n ∧ z n < (∑ i in Finset.range (n + 1), z i) / (n : ℝ) ∧ (∑ i in Finset.range (n + 1), z i) / (n : ℝ) ≤ z (n + 1) := by sorry
+theorem olymid_ref_base_7351 : Tendsto (λ n => ∑ i : Fin n, (1 / sqrt (n^2 - i^2))) atTop (𝓝 (Real.pi / 2)) := by sorry
+theorem algebra_465638 {f : ℝ → ℝ} (h : ∀ x y, f (x + y) ≤ y * f x + f (f x)) : ∀ x ≤ 0, f x = 0 := by sorry
+theorem omni_theorem_803 {x y : ℝ} (hx : -1 < x) (hy : x < y) (hxy : y < 1) (G G' : ℝ) (hG : G = ∑' n : ℕ, x * y ^ n) (hG' : G' = ∑' n : ℕ, y * x ^ n) (hGG' : G = G') : x + y = 1 := by sorry
+theorem algebra_63987 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (a^5 - a^2 + 3) * (b^5 - b^2 + 3) * (c^5 - c^2 + 3) ≥ (a + b + c)^3 := by sorry
+theorem olymid_ref_base_4882 (a : ℕ → ℝ) (h₀ : a 0 = 1 / 2) (h₁ : ∀ n, a (n + 1) = 1 + (a n - 1) ^ 2) : ∏' i, a i = 2 / 3 := by sorry
+theorem olymid_ref_base_705 {n : ℕ} (hn : n > 1) : {P : Polynomial ℝ | ∃ m : ℕ, P = X ^ m ∧ ∀ x : ℝ, ∏ i ∈ Icc 1 n, P.eval (x ^ i) = P.eval (x ^ ((n * (n + 1)) / 2))} = if Even n then {P | ∃ m : ℕ, P = X ^ m} else {P | ∃ m : ℕ, P = X ^ m ∨ P = -X ^ m} := by sorry
+theorem algebra_360357 {a b c : ℝ} : ((2 * a - b - c) + (b - c) * Real.sqrt 3 * Complex.I)^3 = ((2 * b - c - a) + (c - a) * Real.sqrt 3 * Complex.I)^3 := by sorry
+theorem omni_theorem_2948 (x : ℝ) (h : 2 * x + 6 = 16) : x + 4 = 9 := by sorry
+theorem olymid_ref_base_961 (x y z t : ℝ) (h1 : x ^ 5 = y + y ^ 5) (h2 : y ^ 5 = z + z ^ 5) (h3 : z ^ 5 = t + t ^ 5) (h4 : t ^ 5 = x + x ^ 5) : x = 0 ∧ y = 0 ∧ z = 0 ∧ t = 0 := by sorry
+theorem omni_theorem_3968 (x p : ℕ) (hx : x > 0) (hp : Nat.Prime p) (hxp : x ≤ 2 * p) (hdiv : x ^ (p - 1) ∣ (p - 1) ^ x + 1) : (x, p) = (2, 2) ∨ (x, p) = (3, 3) ∨ (x, p) = (1, p) := by sorry
+theorem u_math_737 : ∫ x, -sin (2 * x) ^ 4 / cos (2 * x) = (C + (1 / 3) * sin (2 * x) ^ 3 + sin (2 * x) - (1 / 2) * log ((abs (1 + sin (2 * x))) / (abs (sin (2 * x) - 1)))) / 2 := by sorry
+theorem omni_theorem_2344 : (MeasureTheory.volume {v : EuclideanSpace ℝ (Fin 3) | v 0 ≥ 0 ∧ v 1 ≥ 0 ∧ v 2 ≥ 0 ∧ v 0 + v 1 ≤ 1 ∧ v 1 + v 2 ≤ 1 ∧ v 2 + v 0 ≤ 1}).toReal = 1 / 4 := by sorry
+theorem olymid_ref_base_937 {a b c d : ℝ} (h : a^2 + b^2 + (a + b)^2 = c^2 + d^2 + (c + d)^2) : a^4 + b^4 + (a + b)^4 = c^4 + d^4 + (c + d)^4 := by sorry
+theorem olymid_ref_base_3717 : IsLeast {x : ℝ | ∃ a b c : ℝ, x = 1 / (a + b) + 1 / (b + c) ∧ a + b + c = 5 ∧ 1 ≤ a ∧ a ≤ 2 ∧ 1 ≤ b ∧ b ≤ 2 ∧ 1 ≤ c ∧ c ≤ 2} (4 / 7) := by sorry
+theorem aime_all_1998_5 (A : ℕ → ℝ) (hA : ∀ k, A k = k * (k - 1) / 2 * Real.cos ((k * (k - 1)) * Real.pi / 2)) : |∑ i in Finset.Icc 19 98, A i| = 40 := by sorry
+theorem algebra_565286 (α : ℝ) (n : ℕ) : ∑ k in Finset.range (n + 1), (1 / 3)^k * sin (3^k * α)^3 = 3 / 4 * sin α - 1 / (4 * 3^n) * sin (3^(n + 1) * α) := by sorry
+theorem aime_all_2019_II_6 (x b : ℝ) (hx : x > 1) (hb : 2 ≤ b) (h1 : 3 * logb b (sqrt x * log x) = 56) (h2 : logb (log x) x = 54) : b = 216 := by sorry
+theorem olymid_ref_base_8200 (a b c : ℝ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c) (h₁ : min (min (a + b) (b + c)) (c + a) > sqrt 2) (h₂ : a^2 + b^2 + c^2 = 3) : 3 / (a * b * c)^2 ≤ a / (b + c - a)^2 + b / (c + a - b)^2 + c / (a + b - c)^2 := by sorry
+theorem omni_theorem_3179 : {k : ℕ | Odd k ∧ k ∈ Icc 0 100 ∧ {(m, n) : ℕ × ℕ | m > 0 ∧ n > 0 ∧ 2^(4*m^2) + 2^(m^2 - n^2 + 4) = 2^(k + 4) + 2^(3*m^2 + n^2 + k)}.encard = 2}.ncard = 18 := by sorry
+theorem algebra_57863 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) (n : ℕ) (hn : 0 < n) : 1 ≤ 1 / (1 + 2 * a) + 1 / (1 + 2 * b) + 1 / (1 + 2 * c) ∧ 3 / 2 ≤ c ^ n / (a + b) + b ^ n / (c + a) + a ^ n / (b + c) := by sorry
+theorem aime_all_2002_I_4 (a : ℕ → ℝ) (ha : ∀ k, a k = 1 / ((k : ℝ) ^ 2 + k)) (m n : ℕ) (hmpos : 0 < m) (hnpos : 0 < n) (hmn : m < n) (hsum : ∑ i ∈ Icc m (n - 1), a i = 1 / 29) : m + n = 840 := by sorry
+theorem aime_all_2005_I_10 (A B C : ℝ × ℝ) (h₀ : A = (p, q)) (h₁ : B = (12, 19)) (h₂ : C = (23, 20)) (h₃ : (MeasureTheory.volume (convexHull ℝ {A, B, C})).toReal = 70) (h₄ : deriv (λ x => -5 * x + (p + q)) (midpoint ℝ B C).1 = -5) : p + q ≤ 47 := by sorry
+theorem algebra_384188 {m n : ℕ} (hmn : m ≥ n ∧ n ≥ 1) : ∃ k, (m.gcd n) * choose m n = k * m := by sorry
+theorem olymid_ref_base_11031 (f : ℝ → ℝ) : (∀ x y, f (f x + y) = f (x ^ 2 - y) + 4 * y * f x) ↔ ∀ x, f x = 0 ∨ f x = x ^ 2 := by sorry
+theorem olymid_ref_base_2408 (a : ℝ) (ha : 0 ≤ a) : a^3 + 2 ≥ a^2 + 2 * sqrt a := by sorry
+theorem olymid_ref_base_10221 (a b c : ℝ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c) (h₁ : a * b * c = 1) : a^(b + c) * b^(c + a) * c^(a + b) ≤ 1 := by sorry
+theorem olymid_ref_base_4433 (a b c : ℝ) (h₀ : a > 0) (h₁ : b > 0) (h₂ : c > 0) (h₃ : a^2 + b^2 = c^2) (h₄ : (1/2) * a * b = 5) (h₅ : c = 5) : a + b + c = 5 + 3 * Real.sqrt 5 := by sorry
+theorem aime_all_1997_9 (a : ℝ) (ha : 0 < a) (h1 : Int.fract (a⁻¹) = Int.fract (a^2)) (h2 : 2 < a^2 ∧ a^2 < 3) : a^12 - 144 * a⁻¹ = 233 := by sorry
+theorem olymid_ref_base_836 (S : Finset (EuclideanSpace ℝ (Fin 2))) (hcard : S.card = 2021) (hnocol : ∀ x ∈ S, ∀ y ∈ S, ∀ z ∈ S, x ≠ y ∧ y ≠ z ∧ z ≠ x → ¬Collinear ℝ {x, y, z}) (hcirc : ∀ T ⊆ S, T.card = 5 → ∃ C : EuclideanSpace ℝ (Fin 2), ∃ r : ℝ, {x | x ∈ T ∧ dist x C = r}.ncard ≥ 4) : ∃ C : EuclideanSpace ℝ (Fin 2), ∃ r : ℝ, {x | x ∈ S ∧ dist x C = r}.ncard ≥ 2020 := by sorry
+theorem inequalities_zh_blue_1262 (n : ℕ) (hn : 0 < n) : (2 * n + 1) / 3 * sqrt n ≤ ∑ i ∈ Finset.Icc 1 n, sqrt i ∧ ∑ i ∈ Finset.Icc 1 n, sqrt i ≤ (4 * n + 3) / 6 * sqrt n - 1 / 6 ∧ ((2 * n + 1) / 3 * sqrt n = ∑ i ∈ Finset.Icc 1 n, sqrt i ↔ n = 1) ∧ (∑ i ∈ Finset.Icc 1 n, sqrt i = (4 * n + 3) / 6 * sqrt n - 1 / 6 ↔ n = 1) := by sorry
+theorem olymid_ref_base_9957 (a b c x y z : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h1 : x + y + z = a + b + c) (h2 : 4 * x * y * z - (a ^ 2 * x + b ^ 2 * y + c ^ 2 * z) = a * b * c) : (x, y, z) = ((b + c) / 2, (c + a) / 2, (a + b) / 2) := by sorry
+theorem omni_theorem_624 (A : Fin 2015 → ℂ) (hA : ∀ i j, A i = A j → i = j) (hA1 : ∀ i, abs (A i) = 1) : IsLeast {∑ i, ∑ j, if i < j then (abs (midpoint ℝ (A i) (A j)))^2 else 0 | (A : Fin 2015 → ℂ) (hA : ∀ i j, A i = A j → i = j) (hA1 : ∀ i, abs (A i) = 1)} (2015 * 2013 / 4) ∨ IsLeast {∑ i, ∑ j, if i < j then (abs (midpoint ℝ (A i) (A j)))^2 else 0 | (A : Fin 2015 → ℂ) (hA : ∀ i j, A i = A j → i = j) (hA1 : ∀ i, abs (A i) = 1)} (4056195 / 4) := by sorry
+theorem algebra_529259 {n : ℕ} (a : Fin n → ℕ) (ha : a.Injective) (ha' : ∀ i, a i ∈ Finset.Icc 1 n) (f g : Fin n → ℕ) (hf : ∀ k, f k = {i | a i < a k ∧ i > k}.ncard) (hg : ∀ k, g k = {i | a i > a k ∧ i < k}.ncard) : ∑ k, g k = ∑ k, f k := by sorry
+theorem olymid_ref_base_9851 {n : ℕ} (hn : 2 ≤ n) (x : ℕ → ℝ) (hx : ∀ i ∈ Icc 1 n, 0 ≤ x i ∧ x i ≤ 1) : ∃ i ∈ Icc 1 (n - 1), x i * (1 - x (i + 1)) ≥ 1 / 4 * x 1 * (1 - x n) := by sorry
+theorem olymid_ref_base_5871 : (∑ f : (Fin 2021 → Fin 2021), (Set.range (fun x => f^[2021] x)).ncard) % 2017 = 255 := by sorry
+theorem aime_all_1987_14 : (10^4 + 324) * (22^4 + 324) * (34^4 + 324) * (46^4 + 324) * (58^4 + 324) / ((4^4 + 324) * (16^4 + 324) * (28^4 + 324) * (40^4 + 324) * (52^4 + 324)) = 373 := by sorry
+theorem omni_theorem_4049 : ∃ f : ℕ → ℕ, (∀ x, ∃ y, f y = x) ∧ (∀ x > 0, {y | f y = x}.Infinite) ∧ (∀ n ≥ 2, f (f (n ^ 163)) = f (f n) + f (f 361)) := by sorry
+theorem aime_all_2007_II_12 (a : ℕ → ℝ) (h0 : a 0 > 0) (hr : ∃ r, ∀ n, a n = a 0 * r ^ n) (ha : ∀ n, ∃ m : ℕ, a n = 3 ^ m) (hs : ∑ n in Finset.range 8, logb 3 (a n) = 308) (hs' : 56 ≤ logb 3 (∑ n in Finset.range 8, a n) ∧ logb 3 (∑ n in Finset.range 8, a n) ≤ 57) : logb 3 (a 14) = 91 := by sorry
+theorem olymid_ref_base_3255 {n : ℕ} : ∑ d ∈ n.divisors, Nat.totient d * (n / d).divisors.card = n.divisors.sum id := by sorry
+theorem olymid_ref_base_11283 : ∃ a b : ℤ, (∃ x : ℤ, a^5 * b + 3 = x^3) ∧ (∃ y : ℤ, a * b^5 + 3 = y^3) := by sorry
+theorem theorem_proving_zh_blue_1987 (A B C P : EuclideanSpace ℝ (Fin 2)) (a b c : ℝ) (ha : a = dist B C) (hb : b = dist A C) (hc : c = dist A B) : a * dist P B * dist P C + b * dist P C * dist P A + c * dist P A * dist P B ≥ a * b * c := by sorry
+theorem olymid_ref_base_2717 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b + c = 1) : 69 / 4 ≤ (7 + 2 * b) / (1 + a) + (7 + 2 * c) / (1 + b) + (7 + 2 * a) / (1 + c) := by sorry
+theorem olymid_ref_base_453 (n : ℕ) (a : Fin n → ℝ) (h₀ : ∀ i, 0 < a i) (h₁ : ∑ i, (a i)^3 = 3) (h₂ : ∑ i, (a i)^5 = 5) : ∑ i, a i > 3 / 2 := by sorry
+theorem olymid_ref_base_4580 : IsLeast {n : ℝ | ∃ k : ℕ, n = 7.49 * k ∧ 550 ≤ 12 * k} 344.54 := by sorry
+theorem olymid_ref_base_11406 (A B C D : EuclideanSpace ℝ (Fin 2)) (hCyclic : ∃ O, dist A O = dist B O ∧ dist A O = dist C O ∧ dist A O = dist D O) (hConvex : Convex ℝ {A, B, C, D}) : abs (dist A B - dist C D) + abs (dist A D - dist B C) ≥ 2 * abs (dist A C - dist B D) := by sorry
+theorem omni_theorem_3577 (x y z t : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (ht : 0 < t) (h : 12^x + 13^y - 14^z = 2013^t) : (x, y, z, t) = (1, 3, 2, 1) := by sorry
+theorem olymid_ref_base_5253 : Set.ncard {n : ℕ | n ∈ Finset.Icc 10000000 99999999 ∧ 9 ∣ n ∧ (Nat.digits 10 n).length = 8 ∧ (Nat.digits 10 n).toFinset.card = 8} = 181440 := by sorry
+theorem omni_theorem_1178 (k : ℝ) : (∃! r : ℝ, r^4 + k * r^3 + r^2 + 4 * k * r + 16 = 0) ↔ k = 9 / 4 ∨ k = -9 / 4 := by sorry
+theorem theorem_proving_zh_blue_594 {n : ℕ} (hn : n > 4) (x : ℕ → ℝ) (hx : ∀ i ∈ range n, x i ∈ Set.Icc 0 1) : 2 * ∑ i ∈ range n, (x i)^3 - ∑ i ∈ range n, (x i)^2 * x ((i + 1) % n) ≤ n := by sorry
+theorem omni_theorem_1894 (f : ℝ → ℝ) (h : ∀ x y, f (x^2 + f y) = f (f x) + f (y^2) + 2 * f (x * y)) : (∀ x, f x = 0) ∨ (∀ x, f x = x^2) := by sorry
+theorem olymid_ref_base_9441 (n : ℕ) : (2 ^ n * ∏ k ∈ Finset.Icc 1 n, sin (k * π / (2 * n + 1))) = sqrt (2 * n + 1) := by sorry
+theorem olymid_ref_base_1382 (f : ℝ → ℝ) (h : ∀ x y, f x * f y = f (x + y) + x * y) : (∀ t, f t = -t + 1) ∨ (∀ t, f t = t + 1) := by sorry
+theorem omni_theorem_1848 : ∑' s : {x : ℕ | x > 0 ∧ ∀ p ∈ Nat.primeFactors x, p = 2 ∨ p = 2017}, (1 : ℝ)/s = 2017/1008 := by sorry
+theorem olymid_ref_base_568 (p : Polynomial ℝ) (hp0 : p.eval 0 = 0) : ∀ x : ℝ, p.eval ((x + 1)^3) = (p.eval x + 1)^3 ↔ p = X := by sorry
+theorem olymid_ref_base_2162 (a b n : ℕ) (ha : 0 < a) (hb : 0 < b) (hn : 0 < n) (h : a ! + b ! = 2 ^ n) : (a, b, n) = (1, 1, 1) ∨ (a, b, n) = (2, 2, 2) ∨ (a, b, n) = (2, 3, 3) ∨ (a, b, n) = (3, 2, 3) := by sorry
+theorem u_math_215 : IsGreatest {δ : ℝ | ∀ x : ℝ, abs (x - 1) < δ → x ∈ Ioo (-3) 7} 4 := by sorry
+theorem u_math_672 {f : ℝ → ℝ} (hf : f = λ α => log (sqrt ((3 - sin α) / (4 + 2 * sin α)))) : deriv f (π / 4) = -0.2848 := by sorry
+theorem omni_theorem_29 : {(m, n) : ℕ × ℕ | m > 0 ∧ n > 0 ∧ (m * n - 1) ∣ (m ^ 2 + n ^ 2)} = {(2, 1), (3, 1), (1, 2), (1, 3)} := by sorry
+theorem aime_all_2014_II_4 (a b c : ℕ) (ha : a < 10) (hb : b < 10) (hc : c < 10) (h : ((a * 10 + b) / 99 + (a * 100 + b * 10 + c) / 999) = 33 / 37) : (100 * a + 10 * b + c) = 447 := by sorry
+theorem olymid_ref_base_9885 : ∃ A : Set (EuclideanSpace ℝ (Fin 2)), Finite A ∧ ∀ X ∈ A, ∃ Y : Fin 1993 → EuclideanSpace ℝ (Fin 2), (∀ i : Fin 1993, Y i ∈ A) ∧ (∀ i : Fin 1993, dist X (Y i) = 1) := by sorry
+theorem algebra_528788 (a b c : ℝ) (ha : |a| < 1) (hb : |b| < 1) (hc : |c| < 1) : a * b + b * c + c * a + 1 > 0 := by sorry
+theorem olymid_ref_base_4193 (x : ℝ) : x^9 + (9/8)*x^6 + (27/64)*x^3 - x + 219/512 = 0 ↔ x = 1/2 ∨ x = (-1 + Real.sqrt 13)/4 ∨ x = (-1 - Real.sqrt 13)/4 := by sorry
+theorem olymid_ref_base_11355 (m : ℕ) (hm : 0 < m) : (∃ a d r : ℤ, ∀ n : ℕ, a + d * n ≡ r ^ n [ZMOD m] ∧ ¬(d = 0 ∧ r = 1)) ↔ ¬Squarefree m := by sorry
+theorem algebra_486948 (a b c : ℝ) (h₀ : a + b + c = 3) : 1 / (5 * a ^ 2 - 4 * a + 11) + 1 / (5 * b ^ 2 - 4 * b + 11) + 1 / (5 * c ^ 2 - 4 * c + 11) ≤ 1 / 4 := by sorry
+theorem olymid_ref_base_5686 (p : ℕ) (hp : Nat.Prime p) (h : 5 < p) : ∃ q n, Nat.Prime q ∧ q < p ∧ p ∣ (n ^ 2 - q) := by sorry
+theorem algebra_47683 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : 1 ≤ (1 + x * y + x * z) / (1 + y + z) ^ 2 + (1 + y * z + y * x) / (1 + z + x) ^ 2 + (1 + z * x + z * y) / (1 + x + y) ^ 2 := by sorry
+theorem olymid_ref_base_10793 (t x y z : ℕ) : 5^t + 3^x * 4^y = z^2 ↔ (t, x, y, z) = (1, 0, 1, 3) ∨ (t, x, y, z) = (0, 1, 0, 2) ∨ (t, x, y, z) = (2, 2, 2, 13) ∨ (t, x, y, z) = (0, 1, 2, 7) := by sorry
+theorem aime_all_2000_I_5 (B1 B2 W1 W2 : ℕ) (h1 : B1 + W1 + B2 + W2 = 25) (h2 : (B1 * B2 : ℚ) / ((B1 + W1) * (B2 + W2)) = 27 / 50) (m n : ℕ) (hmpos : 0 < m) (hnpos : 0 < n) (h_wprob : (W1 * W2 : ℚ) / ((B1 + W1) * (B2 + W2)) = m / n) (h_mncoprime : Nat.Coprime m n) : m + n = 26 := by sorry
+theorem olymid_ref_base_2200 (x y z : ℕ) : 2^x + 3^y = z^2 ↔ (x = 0 ∧ y = 1 ∧ z = 2) ∨ (x = 3 ∧ y = 0 ∧ z = 3) ∨ (x = 4 ∧ y = 2 ∧ z = 5) := by sorry
+theorem olymid_ref_base_10232 (p q n : ℕ) (hp : p.Prime) (hq : q.Prime) (hn : Even n ∧ n > 2) : ∑ i ∈ Finset.range (n + 1), p ^ i = q ^ 2 + q + 1 ↔ (p = 2 ∧ q = 5 ∧ n = 4) := by sorry
+theorem olymid_ref_base_2564 (a b : ℕ → ℕ) (apos : ∀ n, 0 < a n) (bpos : ∀ n, 0 < b n) (han : ∀ n, a (n + 1) = a n + ⌊Real.sqrt (b n)⌋) (hbn : ∀ n, b (n + 1) = b n + ⌊Real.sqrt (a n)⌋) : ∃ n, a n = b n := by sorry
+theorem algebra_615289 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (b^3 / (a^2 + 8 * b * c) + c^3 / (b^2 + 8 * c * a) + a^3 / (c^2 + 8 * a * b)) ≥ (a + b + c) / 9 := by sorry
+theorem algebra_539239 (a b c : ℝ) (ha : |a| < 1) (hb : |b| < 1) (hc : |c| < 1) : a * b + b * c + c * a + 1 > 0 := by sorry
+theorem algebra_553296 (f g : ℕ+ → ℕ+) (hf : Function.Surjective f) (hg : Function.Injective g) (hfg : ∀ n, f n ≥ g n) : ∀ n, f n = g n := by sorry
+theorem u_math_269 : {x : ℝ | -4 < 3 * x + 2 ∧ 3 * x + 2 ≤ 18} = {x | -2 < x ∧ x ≤ 16 / 3} := by sorry
+theorem omni_theorem_3861 (f : ℕ+ → ℕ+) (h : ∀ a b, a + b > 2019 → a + f b ∣ a ^ 2 + b * f a) : ∃ k, ∀ a, f a = k * a := by sorry
+theorem inequalities_8712 (x y z : ℝ) (hx : 0 ≤ x) (hy : 0 ≤ y) (hz : 0 ≤ z) : 3 * x * y * z ≤ x * (y + z - x) ^ 2 + y * (z + x - y) ^ 2 + z * (x + y - z) ^ 2 ∧ (3 * x * y * z = x * (y + z - x) ^ 2 + y * (z + x - y) ^ 2 + z * (x + y - z) ^ 2 ↔ (x = y ∧ y = z)) := by sorry
+theorem olymid_ref_base_10870 (x y z : ℝ) (hxpos : 0 < x) (hypos : 0 < y) (hzpos : 0 < z) (h : x^2 + y^2 + z^2 = 3) : (x^2 + y * z) / (x^2 + y * z + 1) + (y^2 + z * x) / (y^2 + z * x + 1) + (z^2 + x * y) / (z^2 + x * y + 1) ≤ 2 := by sorry
+theorem olymid_ref_base_2532 (A : Finset ℕ) (hA : A.card = 13) (hA' : ∀ a ∈ A, a ∈ Icc 1 37) : ∃ a ∈ A, ∃ b ∈ A, ∃ c ∈ A, ∃ d ∈ A, a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ b ≠ c ∧ b ≠ d ∧ c ≠ d ∧ a + b = c + d := by sorry
+theorem omni_theorem_3856 {k : ℕ} (hk : 2 ≤ k) : (∀ m n : ℕ, 0 < m → 0 < n → m ≠ n → m ≤ k → n ≤ k → ¬(k ∣ n^(n - 1) - m^(m - 1))) ↔ k = 2 ∨ k = 3 := by sorry
+theorem algebra_58195 {n : ℕ} (hn : n ≥ 2) (a : Fin n → ℝ) (ha : ∀ i, 0 < a i) (hsum : ∑ i, a i < 1) : (∏ i, a i * (1 - ∑ j, a j)) / ((∑ j, a j) * ∏ i, (1 - a i)) ≤ 1 / (n ^ (n + 1)) := by sorry
+theorem algebra_53917 {n : ℕ} (hn : 0 < n) (p : ℝ) (hp : 1 / 2 ≤ p ∧ p ≤ 1) (a b : Fin n → ℝ) (ha : ∀ i, 0 ≤ a i) (hb : ∀ i, 0 ≤ b i ∧ b i ≤ p) (hsum : ∑ i, a i = 1 ∧ ∑ i, b i = 1) : ∑ i, b i * (∏ j ∈ Finset.univ \ {i}, a j) ≤ p / (n - 1) ^ (n - 1) := by sorry
+theorem olymid_ref_base_7099 : (17^103 + 5) % 10 = 8 := by sorry
+theorem olymid_ref_base_10603 (a b c : ℝ) (p q : ℝ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c) (h₁ : a + b > c) (h₂ : a + c > b) (h₃ : b + c > a) (h₄ : p = a/b + b/c + c/a) (h₅ : q = a/c + c/b + b/a) : |p - q| < 1 := by sorry
+theorem hardmath_234 (I : ℝ → ℝ) (hI : I = λ x => ∫ t in (0.7)..0.8, (3.5 * t^5 + 1.9 * t^2) * exp (-x * (-0.1 * t^4 - 0.4 * t^3 + 1.6 * t^2 + 2.6 * arctan t))) : Tendsto (λ x => I x / (0.47 * exp (-2.21 * x) / x)) atTop (𝓝 1) := by sorry
+theorem omni_theorem_1792 (ζ : ℂ) (hζ : ζ = exp (I * 2 * π / 13)) (a b c d : ℕ) (ha : 0 < d) (hd : d < c) (hc : c < b) (hb : b < a) (h : abs (ζ ^ a + ζ ^ b + ζ ^ c + ζ ^ d) = sqrt 3) : 1000 * a + 100 * b + 10 * c + d = 7521 := by sorry
+theorem u_math_881 : ∫ x in (-π/3)..(π/3), sqrt ((1 / cos x)^2 - 1) = 0 := by sorry
+theorem algebra_578457 (a : ℕ+ → ℝ) (h : ∀ i j, a (i + j) ≤ a i + a j) : ∀ n, ∑ i in Finset.Icc 1 n, (a i)/i ≥ a n := by sorry
+theorem omni_theorem_2221 : Tendsto (λ n => (∑ k in Icc 1 n, (-1 : ℝ)^k * Nat.choose n k * Real.log k) / Real.log (Real.log n)) atTop (𝓝 1) := by sorry
+theorem omni_theorem_3869 (f : ℕ+ → ℕ+) (h : ∀ m n, m ^ 2 + f n ∣ m * f (m) + n) : ∀ n, f n = n := by sorry
+theorem omni_theorem_1329 {P : Polynomial ℂ} (hP : P.degree = 5) (hP' : ∀ z, z^5 + 2004 * z = 1 → P.eval (z^2) = 0) : P.eval 1 / P.eval (-1) = -2010012 / 2010013 := by sorry
+theorem quantitative_reasoning_zh_blue_806 : IsGreatest {l : ℝ | 0 < l ∧ ∀ x y z : ℝ, x^2 + y^2 + z^2 = 1 → |l * x * y + y * z| ≤ sqrt 5 / 2} 2 := by sorry
+theorem DEMIMathAnalysis_42 (f g : ℝ → ℝ) (hf : MonotoneOn f (Set.Icc 0 1)) (hg : MonotoneOn g (Set.Icc 0 1)) (hf' : ContinuousOn f (Set.Icc 0 1)) (hg' : ContinuousOn g (Set.Icc 0 1)) : (∫ x in (0)..1, f x) * (∫ x in (0)..1, g x) ≤ ∫ x in (0)..1, f x * g x := by sorry
+theorem olymid_ref_base_10056 (A B C : Set ℕ) (h₀ : A ∪ B ∪ C = ℕ) (h₁ : A ∩ B = ∅) (h₂ : A ∩ C = ∅) (h₃ : B ∩ C = ∅) (h₄ : A ≠ ∅) (h₅ : B ≠ ∅) (h₆ : C ≠ ∅) (h₇ : ∀ x ∈ A, ∀ y ∈ B, x ^ 2 - x * y + y ^ 2 ∈ C) (h₈ : ∀ x ∈ A, ∀ y ∈ C, x ^ 2 - x * y + y ^ 2 ∈ B) (h₉ : ∀ x ∈ B, ∀ y ∈ C, x ^ 2 - x * y + y ^ 2 ∈ A) : False := by sorry
+theorem olymid_ref_base_6687 : IsLeast {k : ℕ | 0 < k ∧ 49 ∣ (2 * k).choose k} 25 := by sorry
+theorem omni_theorem_2198 : (∀ (a b c : ℝ), (0 < a ∧ 0 < b ∧ 0 < c) → (a ≤ b ∧ b ≤ c ∧ c ≤ 2 * a) → (b / a + c / b + a / c ≤ 7 / 2)) ∧ ∃ (a b c : ℝ), (0 < a ∧ 0 < b ∧ 0 < c) ∧ (a ≤ b ∧ b ≤ c ∧ c ≤ 2 * a) ∧ (b / a + c / b + a / c = 7 / 2) := by sorry
+theorem olymid_ref_base_758 (f : ℝ → ℝ) (h : ∀ x y, f (x ^ 2 * y) = f (x * y) + y * f (f x + y)) : ∀ y, f y = 0 := by sorry
+theorem olymid_ref_base_2302 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h1 : x + y / z = 2) (h2 : y + z / x = 2) (h3 : z + x / y = 2) : x + y + z = 3 := by sorry
+theorem aime_all_2006_II_2 : Set.ncard {n : ℕ | ∃ x y z, n > 0 ∧ x > 0 ∧ y > 0 ∧ z > 0 ∧ x = logb 10 12 ∧ y = logb 10 75 ∧ z = logb 10 n ∧ x + y > z ∧ y + z > x ∧ z + x > y ∧ 0 < (1/2) * x * y * sin (arccos ((x^2 + y^2 - z^2)/(2*x*y)))} = 893 := by sorry
+theorem olymid_ref_base_1987 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (a / (9 * b * c + 1) + b / (9 * c * a + 1) + c / (9 * a * b + 1)) ≥ (a + b + c) / (1 + (a + b + c) ^ 2) := by sorry
+theorem algebra_53917 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a^(2*a) * b^(2*b) * c^(2*c) ≥ a^(b + c) * b^(c + a) * c^(a + b) := by sorry
+theorem omni_theorem_3862 {a : ℕ → ℝ} (h : ∀ m n, m ≥ n → a (m + n) + a (m - n) - m + n - 1 = (a (2 * m) + a (2 * n)) / 2) (ha : a 1 = 3) : a 2004 = 4018021 := by sorry
+theorem olymid_ref_base_5669 (n : ℕ) (a : ℕ → ℕ) (hn : n > 0) (ha0 : a 0 = 1) (hinc : ∀ i : ℕ, a (2 * i + 1) = a i ∧ a (2 * i + 2) = a i + a (i + 1)) : ∑ i ∈ range (2 ^ n), a i = (3 ^ n + 1) / 2 := by sorry
+theorem aime_all_2023_II_4 (S : Set ℝ) (hs : S = {x | ∃ y z, x * y + 4 * z = 60 ∧ y * z + 4 * x = 60 ∧ z * x + 4 * y = 60}) : ∑ᶠ x ∈ S, x^2 = 273 := by sorry
+theorem olymid_ref_base_9433 (m n : ℕ) : m ! * n ! * (m + n)! ∣ (2 * m)! * (2 * n)! := by sorry
+theorem algebra_476039 {n : ℕ} (hn : 0 < n) (a b : Fin n → ℝ) (ha : ∀ i, 0 < a i) (hb : ∀ i, 0 < b i) (h : ∑ i, a i = ∑ i, b i) : ∑ i, (a i)^2 / (a i + b i) ≥ (∑ i, a i) / 2 := by sorry
+theorem olymid_ref_base_10277 (a b c : ℝ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c) (h₁ : a^3 + b^3 = c^3) : a^2 + b^2 - c^2 > 6 * (c - a) * (c - b) := by sorry
+theorem olymid_ref_base_8826 (a b : ℤ) (ha : 0 < a) (hb : 0 < b) : ¬ ∃ x, x^2 = a^2 + Int.ceil ((4 * a^2 : ℝ) / b) := by sorry
+theorem DEMIMathAnalysis_80 {f : ℝ → ℝ} (hf : ConvexOn ℝ I f) (hf' : ContinuousOn f I) (n : ℕ) (hn : 0 < n) (x : Fin n → ℝ) (hx : ∀ i, x i ∈ I) (l : Fin n → ℝ) (hl : ∀ i, 0 < l i) : f (∑ i, l i * x i / ∑ i, l i) ≤ ∑ i, l i * f (x i) / ∑ i, l i := by sorry
+theorem olymid_ref_base_550 {P : ℝ[X]} : ∃ m > 0, ∃ Q : Fin m → ℝ[X], P = ∑ i : Fin m, (Q i) ^ 3 := by sorry
+theorem olymid_ref_base_4439 : {(n,m) : ℕ × ℕ | n > 0 ∧ m > 0 ∧ n^2 + m^2 = 9364} = {(30, 92), (92, 30)} := by sorry
+theorem u_math_220 : ∫ x in (1)..exp 1, ∫ y in (1)..exp 1, (x * log y / sqrt y + y * log x / sqrt x) = 2 * sqrt (exp 1) + 4 * exp 2 - 4 - 2 * exp 2 * sqrt (exp 1) := by sorry
+theorem aime_all_2007_II_2 : {(a, b, c) : ℕ × ℕ × ℕ | 0 < a ∧ 0 < b ∧ 0 < c ∧ a ∣ b ∧ a ∣ c ∧ a + b + c = 100}.ncard = 200 := by sorry
+theorem omni_theorem_1626 {a b : ℕ} (ha : 0 < a) (hb : 0 < b) (h : ∑ i ∈ range a, ∑ j ∈ range b, (i * b + j + 1) - ∑ i ∈ range a, ∑ j ∈ range b, (i + 1) * (j + 1) = 1200) : a + b = 21 := by sorry
+theorem omni_theorem_182 {p q r : ℕ} (hpqr : p.Prime ∧ q.Prime ∧ r.Prime) (hqr : p ∣ q ^ r + 1) (hpr : q ∣ r ^ p + 1) (hrp : r ∣ p ^ q + 1) : (p = 2 ∧ q = 3 ∧ r = 5) ∨ (p = 2 ∧ q = 5 ∧ r = 3) ∨ (p = 3 ∧ q = 2 ∧ r = 5) ∨ (p = 3 ∧ q = 5 ∧ r = 2) ∨ (p = 5 ∧ q = 2 ∧ r = 3) ∨ (p = 5 ∧ q = 3 ∧ r = 2) := by sorry
+theorem algebra_539177 (α : ℝ) : 1 ≤ sqrt (abs (sin α)) + sqrt (abs (cos α)) ∧ sqrt (abs (sin α)) + sqrt (abs (cos α)) ≤ 2 ^ ((3 : ℝ) / 4) := by sorry
+theorem olymid_ref_base_2545 {n : ℕ} (hn : 5 ≤ n) (a : ℕ → ℕ) (ha : ∀ i ∈ Icc 1 n, ∃! j, a j = i) : {x | ∃ k, x = (∑ i ∈ Icc 1 k, a i) % n}.ncard ≥ ⌊Real.sqrt n⌋₊ + 1 := by sorry
+theorem olymid_ref_base_6081 : {a : ℕ → ℤ | (∀ i ∈ Icc 1 2047, a i = 0 ∨ ∃ k, a i = 2 ^ k) ∧ (∀ i ∈ Icc 1 1023, a i = a (2 * i) + a (2 * i + 1)) ∧ a 1 = 1024}.ncard % 100 = 15 := by sorry
+theorem olymid_ref_base_1273 (a : Fin m → Fin n → ℝ) (ha : ∀ i j, a i j ≥ 0) (hpos : ∀ i, ∃ j, a i j > 0) (hpos' : ∀ j, ∃ i, a i j > 0) (hsum : ∀ i j, a i j > 0 → ∑ k : Fin m, a k j = ∑ l : Fin n, a i l) : m = n := by sorry
+theorem omni_theorem_2669 (x : ℤ) (hx : x = 2018) : x^2 + 2 * x - x * (x + 1) = 2018 := by sorry
+theorem theorem_proving_zh_blue_817 (n : ℕ) (hn : n > 0) (h : ∃ k, ∑ d in n.divisors, d = 2 ^ k) : ∃ m, n.divisors.card = 2 ^ m := by sorry
+theorem algebra_58519 : ∃ a : ℕ → ℕ, StrictMono a ∧ ∀ A, {p | p.Prime ∧ ∃ n, p = a n + A}.Finite := by sorry
+theorem aime_all_2023_II_8 (ω : ℂ) (hω : ω = exp (I * 2 * π / 7)) : ∏ k ∈ range 7, (ω ^ (3 * k) + ω ^ k + 1) = 24 := by sorry
+theorem theorem_proving_zh_blue_608 (p q : ℕ) (_ : 0 < p) (hq : 0 < q) (hrel : Nat.Coprime p q) : ∑ i ∈ Finset.range q, ⌊(i * p / q : ℝ)⌋ = ((p - 1) * (q - 1)) / 2 := by sorry
+theorem olymid_ref_base_4164 (x : ℝ) (hx : (2 : ℝ)^x = 3) : (4 : ℝ)^(3 * x + 2) = 11664 := by sorry
+theorem olymid_ref_base_8491 {a b : ℕ} (_ : 0 < a) (hb : 0 < b) (h : (a ! * b !) % (a ! + b !) = 0) : 3 * a ≥ 2 * b + 2 := by sorry
+theorem olymid_ref_base_11534 : IsLeast {x : ℝ | ∃ a b c d : ℝ, a ≥ 0 ∧ b ≥ 0 ∧ c ≥ 0 ∧ d ≥ 0 ∧ a + b + c + d = 4 ∧ x = a / (b ^ 3 + 4) + b / (c ^ 3 + 4) + c / (d ^ 3 + 4) + d / (a ^ 3 + 4)} (2 / 3) := by sorry
+theorem olymid_ref_base_3476 : (17^17) % 100 = 77 := by sorry
+theorem algebra_68709 (a : ℕ → ℕ) (h₀ : ∀ i j, i ≤ 2004 → j ≤ 2004 → i + j ≤ 2004 → a i + a j ≤ a (i + j) ∧ a (i + j) ≤ a i + a j + 1) : ∃ x : ℝ, ∀ n, 1 ≤ n → n ≤ 2004 → a n = ⌊n * x⌋ := by sorry
+theorem theorem_proving_zh_blue_601 {f : ℕ → ℕ} (hf : ∀ m, f m = (Nat.factorization (m !) 2)) : ∀ n, ∃ m > n, m - f m = 1000 := by sorry
+theorem omni_theorem_4404 : ∃ a : ℕ → ℕ, (∀ k ∈ Finset.Icc 2 100, Nat.lcm (a (k - 1)) (a k) > Nat.lcm (a k) (a (k + 1))) ∧ StrictMonoOn a (Finset.Icc 1 100) := by sorry
+theorem olymid_ref_base_907 : ∃ s : Finset ℕ, s.card = 1990 ∧ (∀ x ∈ s, ∀ y ∈ s, x ≠ y → Nat.Coprime x y) ∧ (∀ t ⊆ s, t.card ≥ 2 → ¬Prime (∑ x ∈ t, x)) := by sorry
+theorem aime_all_2019_I_8 (x : ℝ) (h : sin x ^ 10 + cos x ^ 10 = 11 / 36) (y : ℚ) (hy : sin x ^ 12 + cos x ^ 12 = y) : y.num + y.den = 67 := by sorry
+theorem omni_theorem_116 (A B C : MvPolynomial (Fin 2) ℝ) (hA : A.totalDegree = 2) (hB : B.totalDegree = 3) (hC : C.totalDegree = 4) (R : MvPolynomial (Fin 2) ℝ) (hR : ∀ x y : ℝ, (eval (fun n => if n = 0 then x else y) B) ^ 2 - 4 * (eval (fun n => if n = 0 then x else y) A) * (eval (fun n => if n = 0 then x else y) C) = -(eval (fun n => if n = 0 then x else y) R) ^ 2) (hA' : ∀ x y z : ℝ, (eval (fun n => if n = 0 then x else y) A) * z ^ 2 + (eval (fun n => if n = 0 then x else y) B) * z + (eval (fun n => if n = 0 then x else y) C) ≥ 0) : ∃ F G : MvPolynomial (Fin 3) ℝ, ∀ x y z : ℝ, (eval (fun n => if n = 0 then x else if n = 1 then y else z) F) ^ 2 + (eval (fun n => if n = 0 then x else if n = 1 then y else z) G) ^ 2 = (eval (fun n => if n = 0 then x else if n = 1 then y else z) A) * z ^ 2 + (eval (fun n => if n = 0 then x else if n = 1 then y else z) B) * z + (eval (fun n => if n = 0 then x else if n = 1 then y else z) C) := by sorry
+theorem olymid_ref_base_7100 {x y : ℝ} (h₀ : x^2 - y^2 = 10) (h₁ : x - y = 2) : x + y = 5 := by sorry
+theorem algebra_486930 (θ : Real) (n : ℕ) (hθ : θ ∈ Ioo 0 (π/2)) (hn : 1 < n) : ((1 / sin θ ^ n - 1) * (1 / cos θ ^ n - 1)) ≥ 2 ^ n - 2 ^ ((n : ℝ)/2 + 1) + 1 := by sorry
+theorem olymid_ref_base_1552 (f : ℝ → ℝ) (h : ∀ x y, (y + 1) * f x + f (x * f y + f (x + y)) = y) : ∀ x, f x = -x := by sorry
+theorem olymid_ref_base_8425 {P : Polynomial ℝ} (hP : ∀ x y, |y^2 - P.eval x| ≤ 2 * |x| ↔ |x^2 - P.eval y| ≤ 2 * |y|) : P.eval 0 < 0 ∨ P.eval 0 = 1 := by sorry
+theorem omni_theorem_3764 (f : ℝ → ℝ) : (∀ x y, f (x * y + f (x ^ 2)) = x * f (x + y)) ↔ ∀ x, f x = 0 ∨ f x = x := by sorry
+theorem olymid_ref_base_2107 : ∃ n : ℕ, {p | p.Prime ∧ p ∈ Finset.Icc n (n + 999)}.encard = 5 := by sorry
+theorem u_math_116 : ∑' n : ℕ, 7 / (2 * n * 3 ^ n) = -7 * log (2 / 3) / 2 := by sorry
+theorem omni_theorem_2412 : ∑ᶠ a ∈ {a : ℤ | 1 ≤ a ∧ a ≤ 26 ∧ ∃ b c, a + 23 * b + 15 * c - 2 ≡ 0 [ZMOD 26] ∧ 2 * a + 5 * b + 14 * c - 8 ≡ 0 [ZMOD 26]}, a = 31 := by sorry
+theorem olymid_ref_base_1390 (n : ℕ) (hn : 2 ≤ n) (p : ℕ) (hp : Nat.Prime p) (hnp : n ∣ p - 1) (hpn : p ∣ n ^ 3 - 1) : IsSquare (4 * p - 3) := by sorry
+theorem algebra_564389 (n : ℕ) (hn : 0 < n) (x : Fin n → ℝ) (hx : ∀ i, |x i| ≤ 2) (h : ∑ i, (x i)^3 = 0) : ∑ i, x i ≤ (2 / 3) * n := by sorry
+theorem u_math_755 : ∫ x, -3 / (exp (4 * x) + sqrt (1 + exp (8 * x))) = C - 1 / 4 * (3 / (exp (4 * x) + sqrt (1 + exp (8 * x))) + 3 * log ((exp (4 * x) + sqrt (1 + exp (8 * x)) - 1) / (1 + exp (4 * x) + sqrt (1 + exp (8 * x))))):= by sorry
+theorem omni_theorem_2943 {n : ℕ} (hn : n = 7) (C : ℝ) (hC : C = 26) (a b : ℝ) (ha : a = 3.71) (hb : b = 3.72) (x : ℕ) (hx : x ≤ n) (h : a * (n - x) + b * x = C) : x = 3 := by sorry
+theorem quantitative_reasoning_zh_blue_728 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : 2 * log (a ^ 2 + b ^ 2 - c ^ 2) = log 2 + 2 * log a + 2 * log b) (h1 : (a ^ 2 + b ^ 2 - c ^ 2) ^ 2 = 2 * a ^ 2 * b ^ 2) : arccos ((a ^ 2 + b ^ 2 - c ^ 2) / (2 * a * b)) = π / 4 := by sorry
+theorem olymid_ref_base_5002 : IsLeast {z : ℕ | ∃ x y : ℤ, x ≥ 1 ∧ y ≥ 1 ∧ x^2 - 29 * y^2 = 1 ∧ z = x + y} 11621 := by sorry
+theorem inequalities_91029 (A : Fin 3 → EuclideanSpace ℝ (Fin 2)) (P : EuclideanSpace ℝ (Fin 2)) (hABC : ¬Collinear ℝ {A 0, A 1, A 2}) (a : Fin 3 → ℝ) (ha : ∀ i, a i = dist (A i) (A ((i + 1) % 3))) (Δ : ℝ) (hΔ : Δ = (MeasureTheory.volume (convexHull ℝ {A 0, A 1, A 2})).toReal) (R : Fin 3 → ℝ) (hR : ∀ i, R i = dist P (A i)) : (a 1 ^ 2 + a 2 ^ 2 - a 0 ^ 2) * R 0 ^ 2 + (a 2 ^ 2 + a 0 ^ 2 - a 1 ^ 2) * R 1 ^ 2 + (a 0 ^ 2 + a 1 ^ 2 - a 2 ^ 2) * R 2 ^ 2 ≥ 16 / 3 * Δ ^ 2 := by sorry
+theorem u_math_277 {E : Set (EuclideanSpace ℝ (Fin 3))} (hE : E = {p : EuclideanSpace ℝ (Fin 3) | 0 ≤ p 0 ∧ p 0 ≤ sqrt (1 - (p 1)^2) ∧ 0 ≤ p 1 ∧ p 1 ≤ 1 ∧ 0 ≤ p 2 ∧ p 2 ≤ 1 - p 0}) : ∫ p in E, (p 0 + p 1) = (26 - 3 * π) / 48 := by sorry
+theorem omni_theorem_3118 : (2 / 100 : ℝ) * 1 = 2 / 100 := by sorry
+theorem omni_theorem_1354 {a b : ℕ → ℝ} (ha0 : a 0 = -2) (hb0 : b 0 = 1) (han : ∀ n, a (n + 1) = a n + b n + sqrt (a n ^ 2 + b n ^ 2)) (hbn : ∀ n, b (n + 1) = a n + b n - sqrt (a n ^ 2 + b n ^ 2)) : a 2012 = 2 ^ 1006 * sqrt (2 ^ 2010 + 2) - 2 ^ 2011 := by sorry
+theorem olymid_ref_base_10023 : IsLeast {x : ℕ | ∃ f : ℕ+ → ℕ+, (∀ m n, f (n ^ 2 * f m) = m * (f n) ^ 2) ∧ f 1998 = x} 120 := by sorry
+theorem omni_theorem_1437 {a b c : ℂ} (h₀ : a^2 + a * b + b^2 = 1 + Complex.I) (h₁ : b^2 + b * c + c^2 = -2) (h₂ : c^2 + c * a + a^2 = 1) : (a * b + b * c + c * a)^2 = (-11 - 4 * Complex.I) / 3 := by sorry
+theorem aime_all_1996_2 : Set.ncard {n : ℕ | n < 1000 ∧ ∃ k : ℤ, 0 < k ∧ Even k ∧ k = ⌊logb 2 n⌋} = 340 := by sorry
+theorem olymid_ref_base_203 (c : ℕ) (hc : c > 0) (a : ℕ → ℕ) (ha1 : a 1 = c) (han : ∀ n > 0, a (n + 1) = a n ^ 2 + a n + c ^ 3) : (∃ k ≥ 1, ∃ m ≥ 2, ∃ d : ℕ, 0 < d ∧ d ^ m = a k ^ 2 + c ^ 3) ↔ ∃ s : ℕ, 2 ≤ s ∧ c = s ^ 2 - 1 := by sorry
+theorem olymid_ref_base_6844 : {(a, b, c, d) : ℕ × ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ d > 0 ∧ 12 * a + 21 * b + 28 * c + 84 * d = 2024}.ncard = 2024 := by sorry
+theorem olymid_ref_base_460 : IsLeast {n | 0 < n ∧ Odd n ∧ (Nat.divisors n).card = (Nat.divisors 360).card} 31185 := by sorry
+theorem olymid_ref_base_5525 {a b : ℕ} (ha : 0 < a) (hb : 0 < b) (h : a < b) (h' : (2020 - a) * (2020 - b) = 2 * a * b) : a = 505 ∧ b = 1212 := by sorry
+theorem omni_theorem_2954 {x y : ℤ} (hx : x > 0) (hy : y > 0) (hxy : x * y = 24 ∧ x + y = 11) : max x y - min x y = 5 := by sorry
+theorem aime_all_2009_I_7 (a : ℕ → ℝ) (h₀ : a 1 = 1) (h₁ : ∀ n ≥ 1, (5 : ℝ) ^ (a (n + 1) - a n) - 1 = 1 / (n + 2 / 3)) : IsLeast {k | 1 < k ∧ ∃ m : ℤ, a k = m} 41 := by sorry
+theorem olymid_ref_base_8815 (C : ℕ) (hC : C > 0) (f : ℕ → ℕ) : (∀ a b : ℕ, 0 < a → 0 < b → a + b > C → a + f b ∣ a ^ 2 + b * f a) ↔ ∃ k : ℕ, ∀ a : ℕ, 0 < a → f a = k * a := by sorry
+theorem olymid_ref_base_10889 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b + b * c + c * a = 3) : a / sqrt (a ^ 3 + 5) + b / sqrt (b ^ 3 + 5) + c / sqrt (c ^ 3 + 5) ≤ sqrt 6 / 2 := by sorry
+theorem olymid_ref_base_2124 (x : ℝ) (hx : 0 ≤ x) : 1 + x^2 + x^6 + x^8 ≥ 4 * x^4 ∧ (1 + x^2 + x^6 + x^8 = 4 * x^4 ↔ x = 1 ∨ x = 0) := by sorry
+theorem omni_theorem_3812 (f : ℝ → ℝ) (h : ∀ x y, f (x ^ 2 + f y) = y + (f x) ^ 2) : ∀ x, f x = x := by sorry
+theorem olymid_ref_base_7271 : {x : ℝ | abs (abs (abs (abs x - 2) - 2) - 2) = abs (abs (abs (abs x - 3) - 3) - 3)}.ncard = 6 := by sorry
+theorem omni_theorem_2229 {P : Polynomial ℤ} (hP : ∀ n, P.coeff n ≥ 0 ∧ P.coeff n < 100) (hP1 : P.eval 10 = 331633) (hP2 : P.eval (-10) = 273373) : P.eval 1 = 100 := by sorry
+theorem omni_theorem_1458 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : ⌊a⌋ * b * c = 3) (h2 : a * ⌊b⌋ * c = 4) (h3 : a * b * ⌊c⌋ = 5) : (a = Real.sqrt 30 / 3 ∧ b = Real.sqrt 30 / 4 ∧ c = 2 * Real.sqrt 30 / 5) ∨ (a = Real.sqrt 30 / 3 ∧ b = Real.sqrt 30 / 2 ∧ c = Real.sqrt 30 / 5) := by sorry
+theorem olymid_ref_base_2732 (f : ℝ → ℝ) : (∀ a b, f (a ^ 2) - f (b ^ 2) ≤ (f a + b) * (a - f b)) ↔ ∀ x, f x = x ∨ f x = -x := by sorry
+theorem olymid_ref_base_7315 {a : ℕ → ℕ} (ha1 : a 1 = 1) (han : ∀ n > 1, a n = Nat.gcd (a (n - 1)) n + 1) : a 2002 = 3 := by sorry
+theorem omni_theorem_3967 {n : ℕ} (hn : 1 < n) (x : ℕ → ℤ) (hx : StrictMonoOn x (Icc 1 (n - 1))) (hxi : ∀ i ∈ Icc 1 (n - 1), x i > 0) (hxn : ∀ i ∈ Icc 1 (n - 1), x i + x (n - i) = 2 * n) (hc : ∀ i j : ℕ, i ∈ Icc 1 (n - 1) → j ∈ Icc 1 (n - 1) → x i + x j < 2 * n → ∃ k : ℕ, k ∈ Icc 1 (n - 1) ∧ x i + x j = x k) : ∀ i ∈ Icc 1 (n - 1), x i = 2 * i := by sorry
+theorem olymid_ref_base_3120 : ∃ M : Set ℕ, (∀ m ∈ M, 0 < m) ∧ (∀ r : ℚ, 0 < r → r < 1 → ∃! S : Finset ℕ, (∀ s ∈ S, s ∈ M) ∧ (∑ s ∈ S, (1 : ℚ) / s = r)) := by sorry
+theorem olymid_ref_base_8340 : {f : ℕ → ℕ | ∀ m n, 0 < m → 0 < n → (m^2 + f n) ∣ (m * f m + n)} = {f | ∀ m, f m = m} := by sorry
+theorem olymid_ref_base_487 (a b c : ℝ) (h₀ : 0 < a) (h₁ : 0 < b) (h₂ : 0 < c) : 2 * a / (a ^ 2 + b * c) + 2 * b / (b ^ 2 + c * a) + 2 * c / (c ^ 2 + a * b) ≤ a / (b * c) + b / (c * a) + c / (a * b) := by sorry
+theorem omni_theorem_3641 (f : ℕ → ℕ) : (∀ m n, (n + f m) ∣ (f n + n * f m)) ↔ ∀ n, f n = 1 ∨ f n = n ^ 2 := by sorry
+theorem olymid_ref_base_2948 {a b c d : ℝ} (h : a = b * c + c * d ∧ b = c * d + d * a ∧ c = d * a + a * b ∧ d = a * b + b * c) : (a, b, c, d) = (0, 0, 0, 0) ∨ (a, b, c, d) = (1 / 2, 1 / 2, 1 / 2, 1 / 2) := by sorry
+theorem olymid_ref_base_2303 : {(x, y) : ℕ × ℕ | x > 0 ∧ y > 0 ∧ x * y ∣ x ^ 2 + 2 * y - 1} = {(1, y) | y > 0} ∪ {(3, 8)} ∪ {(5, 8)} ∪ {(2 * y - 1, y) | y > 0} := by sorry
+theorem olymid_ref_base_5376 : {(x, y, z) : ℝ × ℝ × ℝ | x = 2018 - 2019 * sign (y + z) ∧ y = 2018 - 2019 * sign (z + x) ∧ z = 2018 - 2019 * sign (x + y)}.ncard = 3 := by sorry
+theorem u_math_374 {f : ℝ → ℝ} (hf : f = λ x => (3 / sin x - 4 * sin x) / (8 * (cos x)^5) - 76/5 * cot (3*x)) : deriv f = λ x => 228/(5*(sin (3*x))^2) + ((16 * (cos x)^6 - 5 * (cos x)^4 - 3 * (cos x)^6 * (1/sin x)^2)/ (8 * (cos x)^10)) := by sorry
+theorem omni_theorem_2409 : {n | n ≤ 2012 ∧ 7 ∣ (3^(n + 1) - 1)/2}.encard = 335 := by sorry
+theorem olymid_ref_base_9224 : IsGreatest {L | ∃ a : ℕ → ℤ, (∀ i ∈ Icc 1 L, 0 < a i) ∧ (∀ i ∈ Icc 1 L, a i ≤ 2 ^ 2023) ∧ ¬∃ i j : ℕ, i ≤ j ∧ j ≤ L ∧ ∃ s : ℕ → ℤ, (∀ k ∈ Icc i j, s k = 1 ∨ s k = -1) ∧ (∑ k ∈ Icc i j, s k * a k) = 0} (2 ^ 2024 - 1) := by sorry
+theorem omni_theorem_1564 : {G : SimpleGraph (Fin 10) | G.edgeSet.ncard = 23 ∧ ¬∃ a b c, a ≠ b ∧ a ≠ c ∧ b ≠ c ∧ G.Adj a b ∧ G.Adj a c ∧ G.Adj b c}.ncard = 42840 := by sorry
+theorem omni_theorem_3146 (x : ℝ) : (x + 1)^2 - x^2 = 2 * x + 1 := by sorry
+theorem olymid_ref_base_10562 {a b c : ℝ} (ha : a ≠ b) (hc : 0 < c) (h1 : a^4 - 2019 * a = c) (h2 : b^4 - 2019 * b = c) : -Real.sqrt c < a * b ∧ a * b < 0 := by sorry
+theorem olymid_ref_base_8601 {τ τ1 : ℕ → ℕ} (hτ : ∀ n, τ n = (Nat.divisors n).card) (hτ1 : ∀ n, τ1 n = {x | x ∣ n ∧ x % 3 = 1}.ncard) : {k | ∃ n, k = τ (10 * n) / τ1 (10 * n)} = {2} ∪ {k | ¬Nat.Prime k} := by sorry
+theorem algebra_509424 : ∃ θ : ℝ, θ ∈ Ioo (-π/2) (π/2) ∧ ∀ z : ℂ, z^2 + 8*z + 9 = (z - tan θ)*(z - tan (3*θ)) := by sorry
+theorem olymid_ref_base_2984 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hxyz : x * y + y * z + z * x = 3) : 27 * ((Real.sqrt x + Real.sqrt y + Real.sqrt z)^2 / (x + y + z)^3) ≤ (x + 3) / (y + z) + (y + 3) / (z + x) + (z + 3) / (x + y) + 3 := by sorry
+theorem olymid_ref_base_9523 (s : Finset (EuclideanSpace ℝ (Fin 3))) (h₀ : s.card = 37) (h₁ : ∀ p ∈ s, ∀ i : Fin 3, ∃ m : ℤ, p i = m) : ∃ p ∈ s, ∃ q ∈ s, ∃ r ∈ s, p ≠ q ∧ q ≠ r ∧ p ≠ r ∧ (∀ i : Fin 3, ∃ m : ℤ, (p i + q i + r i) / 3 = m) := by sorry
+theorem u_math_191 {f : ℝ → ℝ} (hf : f = fun x => (x + 11)^5 * (3 * x - 7)^4 * (x - 12) * (x + 4)) : deriv f = fun x => ((5 / (x + 11) + 12 / (3 * x - 7) + 1 / (x - 12) + 1 / (x + 4)) * (x + 11)^5 * (3 * x - 7)^4 * (x - 12) * (x + 4)) := by sorry
+theorem olymid_ref_base_10011 (n : ℕ) (hn : 2 ≤ n) : IsLeast {∑ i ∈ Finset.range (n + 1), a i | (a : ℕ → ℝ) (ha : ∀ i ∈ Finset.range (n + 1), 0 ≤ a i) (h0 : a 0 = 1) (hinc : ∀ i ∈ Finset.range (n - 1), a i ≤ a (i + 1) + a (i + 2))} ((Nat.fib (n + 2) - 1) / Nat.fib n) := by sorry
+theorem olymid_ref_base_2525 (f : ℝ → ℝ) : (∀ x y, f (f x + 3 * y) = 12 * x + f (f y - x)) ↔ ∃ a, ∀ x, f x = a + 3 * x := by sorry
+theorem omni_theorem_2696 : (2 * (1 / 3 : ℝ)) * (3 * (1 / 2 : ℝ)) = 1 := by sorry
+theorem olymid_ref_base_10669 (n : ℕ) (hn : 1 < n) (p : ℕ) (hp : Nat.Prime p) (h1 : n ∣ (p - 1)) (h2 : p ∣ (n ^ 6 - 1)) : IsSquare (p - n) ∨ IsSquare (p + n) := by sorry
+theorem algebra_56689 (α β : ℝ) (h₀ : α ∈ Ioo 0 (π/2)) (h₁ : β ∈ Ioo 0 α) : sin α - sin β < α - β ∧ α - β < tan α - tan β := by sorry
+theorem olymid_ref_base_551 : IsGreatest {x | ∃ a b c d e f : ℝ, a ≥ 0 ∧ b ≥ 0 ∧ c ≥ 0 ∧ d ≥ 0 ∧ e ≥ 0 ∧ f ≥ 0 ∧ a + b + c + d + e + f = 6 ∧ x = a * b * c + b * c * d + c * d * e + d * e * f + e * f * a + f * a * b} 8 := by sorry
+theorem algebra_56539 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : (x + y + z) / 3 * (x * y * z) ^ ((1 : ℝ) / 3) ≤ ((x + y) / 2 * (y + z) / 2 * (z + x) / 2) ^ ((2 : ℝ) / 3) := by sorry
+theorem olymid_ref_base_2079 (n : ℕ) (hn : 3 ≤ n) : ∃ (x y : ℤ), 7 * x^2 + y^2 = 2^n := by sorry
+theorem algebra_48694 (a b c : ℝ) (ha : a > 2000) : Set.ncard {x : ℤ | |a * x ^ 2 + b * x + c| ≤ 1000} ≤ 2 := by sorry
+theorem omni_theorem_3940 (x y : ℕ) (hx : 0 < x) (hy : 0 < y) (h : x ^ 3 + y ^ 3 = x ^ 2 + 42 * x * y + y ^ 2) : (x = 7 ∧ y = 1) ∨ (x = 1 ∧ y = 7) ∨ (x = 22 ∧ y = 22) := by sorry
+theorem olymid_ref_base_1459 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : a + b + c ≥ Real.sqrt ((a + 2) * (b + 2) * (c + 2) / 3) := by sorry
+theorem omni_theorem_2568 : ∃ M : Set ℕ, Infinite M ∧ (∀ m ∈ M, 0 < m) ∧ (∀ a ∈ M, ∀ b ∈ M, a < b → ¬ ∃ n, IsSquare n ∧ n > 1 ∧ n ∣ a + b) := by sorry
+theorem quantitative_reasoning_zh_blue_804 (k : ℕ) (hk : 0 < k) : IsLeast {t | ∃ x y z : ℝ, x^k + y^k + z^k = 1 ∧ t = x^(k+1) + y^(k+1) + z^(k+1)} (3^(-1/k : ℝ)) := by sorry
+theorem olymid_ref_base_921 {a : ℝ} : {x : ℝ | a * exp x = x ^ 3}.ncard = if a ≤ 0 then 1 else if a = 27 / exp 3 then 1 else if 0 < a ∧ a < 27 / exp 3 then 2 else 0 := by sorry
+theorem omni_theorem_3427 (a b c d e : ℤ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (he : 0 < e) (h1 : b + d > a + d) (h2 : c + e > b + e) (h3 : b + d = c) (h4 : a + c = b + e) : max (max (max (max a b) c) d) e = c := by sorry
+theorem omni_theorem_3731 (s : Set ℝ) (hs : s = {x : ℝ | ∀ n : ℤ, ∃ m : ℤ, x ^ n + x ^ (-n) = m}) : s = {x : ℝ | ∃ y : ℤ, x = (y + Real.sqrt (y ^ 2 - 4)) / 2 ∧ |y| ≥ 2} ∪ {x : ℝ | ∃ y : ℤ, x = (y - Real.sqrt (y ^ 2 - 4)) / 2 ∧ |y| ≥ 2} := by sorry
+theorem olymid_ref_base_824 (A B : Finset ℕ) (hA : A.card ≥ 2) (hB : B.card ≥ 2) (S : Finset ℕ) (hS : S.card = A.card + B.card - 1) (hS1 : ∀ s ∈ S, ∃ a ∈ A, ∃ b ∈ B, s = a * b) : ∃ x ∈ S, ∃ y ∈ S, ∃ z ∈ S, x ≠ y ∧ y ≠ z ∧ z ≠ x ∧ x ∣ y * z := by sorry
+theorem omni_theorem_1103 : ∑ σ : Equiv.Perm (Fin 2013), (Nat.card {i | σ i = i})^4 = 15 * Nat.factorial 2013 := by sorry
+theorem u_math_196 : ∫ x, Real.cos (x / 2) ^ 4 = Real.sin (x / 2) * Real.cos (x / 2) ^ 3 / 2 + 3 / 4 * (Real.sin (x / 2) * Real.cos (x / 2) + x / 2) + C := by sorry
+theorem olymid_ref_base_3545 : ∫ x in (1)..(Real.sqrt 3), x^(2*x^2+1) + log (x^(2*(x^(2*x^2+1)))) = ((Real.sqrt 3)^(2*(Real.sqrt 3)^2) - 1^(2*1^2))/2 := by sorry
+theorem olymid_ref_base_3641 : {n : ℕ | ∃ k, n = k^2 ∧ n ∣ 2^3 * 3^5 * 5^7 * 7^9}.encard = 2 * 3 * 4 * 5 := by sorry
+theorem omni_theorem_3821 (f : ℝ → ℝ) (h : ∀ x y, f x * f y - f (x - 1) - f (y + 1) = f (x * y) + 2 * x - 2 * y - 4) (hf : f = fun x => x ^ 2 + 1) : True := by sorry
+theorem olymid_ref_base_3296 (a b : ℝ) : Tendsto (λ x => (Real.log (2 - x))^2 / (x^2 + a * x + b)) (𝓝[≠] 1) (𝓝 1) ↔ (a, b) = (-2, 1) := by sorry
+theorem omni_theorem_2460 (x y z : ℝ) (h₀ : x * y = 6) (h₁ : x - z = 2) (h₂ : x + y + z = 9) : x / y - z / x - z ^ 2 / (x * y) = 2 := by sorry
+theorem omni_theorem_298 {x y : ℕ} (hx : x > 0) (hy : y > 0) : x ^ y = y ^ (x - y) ↔ (x = 9 ∧ y = 3) ∨ (x = 8 ∧ y = 2) := by sorry
+theorem olymid_ref_base_10319 (a b : ℤ) : (∀ x : ℝ, x^3 + a * x + b = 0 → ∃ n : ℤ, x = n) ∧ (∀ x : ℝ, x^3 + b * x + a = 0 → ∃ n : ℤ, x = n) ↔ (a, b) = (0, 0) := by sorry
+theorem olymid_ref_base_3018 {n : ℕ} (x y : Fin n → ℝ) (A B : Matrix (Fin n) (Fin n) ℝ) (hA : ∀ i j, A i j = if x i + y j ≥ 0 then 1 else 0) (hB : ∀ i j, B i j = 0 ∨ B i j = 1) (hB1 : ∀ i, ∑ j : Fin n, B i j = ∑ j : Fin n, A i j) (hB2 : ∀ j, ∑ i : Fin n, B i j = ∑ i : Fin n, A i j) : A = B := by sorry
+theorem olymid_ref_base_4441 : {(x, y, z) : ℤ × ℤ × ℤ | x > 0 ∧ y > 0 ∧ z > 0 ∧ x^2 + y - z = 100 ∧ x + y^2 - z = 124} = {(12, 13, 57)} := by sorry
+theorem aime_all_2014_I_6 (h j k : ℤ) (f g : ℤ → ℤ) (hf : f = fun x ↦ 3 * (x - h) ^ 2 + j) (hg : g = fun x ↦ 2 * (x - h) ^ 2 + k) (y_intercept_f : f 0 = 2013) (y_intercept_g : g 0 = 2014) (x_intercept_f : ∃ m n, 0 < m ∧ 0 < n ∧ f m = 0 ∧ f n = 0) (x_intercept_g : ∃ p q, 0 < p ∧ 0 < q ∧ g p = 0 ∧ g q = 0) : h = 36 := by sorry
+theorem olymid_ref_base_9946 (a b : ℕ) (c : ℤ) (hc : c^2 ≤ a * b) : ∃ n : ℕ, ∃ x y : Fin n → ℤ, (∑ i : Fin n, (x i)^2 = a) ∧ (∑ i : Fin n, (y i)^2 = b) ∧ (∑ i : Fin n, x i * y i = c) := by sorry
+theorem omni_theorem_1411 : IsGreatest {n | ((n !) !)! ∣ (2004 !) !} 6 := by sorry
+theorem omni_theorem_3870 (S : Finset ℕ) (hS : S = Finset.Icc 1 2004) (n : ℕ) : (n = 1003 ↔ ∀ A ⊆ S, A.card = n → ∃ a ∈ A, ∃ b ∈ A, a ≠ b ∧ 2004 ∣ a^2 - b^2) ∧ (∀ n : ℕ, n < 1003 → ∃ A ⊆ S, A.card = n ∧ ∀ a ∈ A, ∀ b ∈ A, a ≠ b → ¬(2004 ∣ a^2 - b^2)) := by sorry
+theorem omni_theorem_1675 : IsLeast {n : ℕ | 0 < n ∧ ¬∃ a b, a + b = n ∧ Nat.digits 10 a = List.reverse (Nat.digits 10 a) ∧ Nat.digits 10 b = List.reverse (Nat.digits 10 b)} 21 := by sorry
+theorem omni_theorem_514 (x y : ℝ) : (x + y) ^ 2 = (x + 1) * (y - 1) ↔ (x, y) = (-1, 1) := by sorry
+theorem olymid_ref_base_3466 : 2009^2 - 2008^2 = 4017 := by sorry
+theorem olymid_ref_base_420 (a b c : ℕ) (_ : 0 < a) (h₁ : 0 < b) (h₂ : 0 < c) (h₃ : Nat.gcd a b + Nat.lcm a b = 2021^c) (h₄ : Prime (|(a : ℤ) - b|)) : ¬Prime ((a + b)^2 + 4) := by sorry
+theorem algebra_558763 {m n : ℕ} (hm : 0 < m) (hn : 0 < n) (x y : Fin n → ℝ) (hx : ∀ i, 0 < x i) (hy : ∀ i, 0 < y i) (hxy : ∀ i, x i + y i = 1) : (1 - ∏ i, x i) ^ m + ∏ i, (1 - (y i) ^ m) ≥ 1 := by sorry
+theorem DEMIMathAnalysis_39 : ∃ (f : ℕ → ℝ → ℝ), (∀ n, Continuous (f n)) ∧ (∀ n, ∀ x ∈ Set.Icc 0 1, 0 ≤ f n x ∧ f n x ≤ 1) ∧ Tendsto (λ n => ∫ x in (0)..1, f n x) atTop (𝓝 0) ∧ (∀ x ∈ Set.Icc 0 1, ¬ ∃ l, Tendsto (λ n => f n x) atTop (𝓝 l)) := by sorry
+theorem aime_all_1986_5 : IsGreatest {n : ℤ | 0 < n ∧ (n + 10) ∣ (n ^ 3 + 100)} 890 := by sorry
+theorem olymid_ref_base_2769 (n m : ℕ) (a : Fin n → Fin m → ℝ) (h : ∀ r, ∃ m' : ℤ, ∑ c : Fin m, a r c = m') (h' : ∀ c, ∃ m' : ℤ, ∑ r : Fin n, a r c = m') : ∃ b : Fin n → Fin m → ℤ, (∀ r c, b r c = ⌊a r c⌋ ∨ b r c = ⌈a r c⌉) ∧ (∀ r, ∃ m' : ℤ, ∑ c : Fin m, b r c = ∑ c : Fin m, a r c) ∧ (∀ c, ∃ m' : ℤ, ∑ r : Fin n, b r c = ∑ r : Fin n, a r c) := by sorry
+theorem omni_theorem_902 (x y : ℝ) (hx : 0 < x) (hy : 0 < y) (h : x + y^2 = x * y) : IsLeast {z | ∃ x y : ℝ, 0 < x ∧ 0 < y ∧ x + y^2 = x * y ∧ z = x} 4 := by sorry
+theorem omni_theorem_2898 : max (max (max (max (4 ^ 2 : ℝ) (4 * 2)) (4 - 2)) (4 / 2)) (4 + 2) = 16 := by sorry
+theorem olymid_ref_base_10020 (n : ℕ) (hn : 0 < n) (r : Fin n → ℝ) (hr : ∀ i, 1 ≤ r i) : ∑ i, (1 / (r i + 1)) ≥ n / ((∏ i, r i) ^ (1 / n : ℝ) + 1) := by sorry
+theorem aime_all_1993_4 : {(a, b, c, d) : ℕ × ℕ × ℕ × ℕ | 0 < a ∧ a < b ∧ b < c ∧ c < d ∧ d < 500 ∧ a + d = b + c ∧ b * c - a * d = 93}.ncard = 870 := by sorry
+theorem olymid_ref_base_3411 : sin ((1998 * π / 180) + (237 * π / 180)) * sin ((1998 * π / 180) - (1653 * π / 180)) = -1 / 4 := by sorry
+theorem omni_theorem_1756 (A B C D E : EuclideanSpace ℝ (Fin 2)) (h₀ : dist A B + dist B C + dist C D + dist D E + dist E A = 64) (h₁ : dist A C + dist C E + dist E B + dist B D + dist D A = 72) : dist (midpoint ℝ A B) (midpoint ℝ B C) + dist (midpoint ℝ B C) (midpoint ℝ C D) + dist (midpoint ℝ C D) (midpoint ℝ D E) + dist (midpoint ℝ D E) (midpoint ℝ E A) + dist (midpoint ℝ E A) (midpoint ℝ A B) = 36 := by sorry
+theorem olymid_ref_base_7965 (a : ℕ → ℝ) (ha : ∀ i, a (i + 1) = ⌊a i⌋ * (a i - ⌊a i⌋)) : ∃ N, ∀ i, N ≤ i → a i = a (i + 2) := by sorry
+theorem olymid_ref_base_5202 {f : ℝ → ℝ} (hf : Differentiable ℝ f) (hfn : Differentiable ℝ (deriv f)) (hfn' : ∀ x, iteratedDeriv 2 f x = 0) (h0 : f 0 = 19) (h1 : f 1 = 99) : f = λ x => 80 * x + 19 := by sorry
+theorem aime_all_2007_I_2 (a b c t : ℝ) (ha : 0 ≤ t) (hb : 0 ≤ t - 2) (hc : 0 ≤ t - 4) (hwalk : 6 * t = a) (hbob : 6 * (t - 2) + 4 * (t - 2) = b) (hcourier : 8 * (t - 4) = c) (hmidway : a = (b + c) / 2 ∨ b = (a + c) / 2 ∨ c = (a + b) / 2) : a = 52 := by sorry
+theorem omni_theorem_1541 : IsGreatest {y | ∃ x > 0, y = sin (arctan (x/9) - arctan (x/16))} (7/25) := by sorry
+theorem quantitative_reasoning_zh_blue_223 {a : ℕ → ℝ} (ha1 : a 1 = 1 / 2) (han : ∀ n ≥ 1, ∑ i ∈ Icc 1 n, a i = n ^ 2 * a n) : ∀ n ≥ 1, a n = 1 / (n * (n + 1)) := by sorry
+theorem olymid_ref_base_3092 (f : ℕ+ → ℕ+) (h : ∀ m n, m^2 + f n ∣ m * f m + n) : ∀ n, f n = n := by sorry
+theorem quantitative_reasoning_zh_blue_600 (f g : ℝ → ℝ) (hfg : ∀ x y : ℝ, f x + f y + g x - g y = sin x + cos y) : (∃ c : ℝ, ∀ x : ℝ, f x = (sin x + cos x) / 2 ∧ g x = (sin x - cos x) / 2 + c) := by sorry
+theorem u_math_435 (E : Set (EuclideanSpace ℝ (Fin 3))) (hE : E = {p : EuclideanSpace ℝ (Fin 3) | (p 0 ∈ Icc 1 (exp 1)) ∧ (p 1 ∈ Icc 0 (log (p 0))) ∧ (p 2 ∈ Icc 0 1)}) : (∫ p in E, p 1 * log (p 0) + p 2) = 7 / 2 - exp 1 := by sorry
+theorem algebra_415670 (n : ℕ) (hn : n ≥ 2) (x y : Fin n → ℝ) (h : ∑ i : Fin n, (x i)^2 ≤ 1) : (∑ i : Fin n, x i * y i - 1)^2 ≥ (∑ i : Fin n, (x i)^2 - 1) * (∑ i : Fin n, (y i)^2 - 1) := by sorry
+theorem omni_theorem_2243 (a b : ℝ) (ha : 0 < a) (hb : 0 < b) (h : a > b) (A B C D : ℝ × ℝ) (hA : A = (a, a^2)) (hB : B = (b, b^2)) (hC : C = (-b, b^2)) (hD : D = (-a, a^2)) (h1 : dist A D + dist B C = dist A B + dist C D) (h2 : dist A B = 3 / 4) : a = 27 / 40 := by sorry
+theorem olymid_ref_base_5288 (a b : ℕ → ℝ) (r_a r_b : ℝ) (h₀ : ∀ n, a n = a 0 * r_a ^ n) (h₁ : ∀ n, b n = b 0 * r_b ^ n) (h₂ : ∑' i, a i = 1) (h₃ : ∑' i, b i = 1) (h₄ : (∑' i, (a i) ^ 2) * (∑' i, (b i) ^ 2) = ∑' i, a i * b i) : IsLeast {c | ∀ n, a n < c} (4 / 3) := by sorry
+theorem olymid_ref_base_3254 (n : ℕ) (hn : 0 < n) : ∑ d in (n.divisors : Set ℕ), ArithmeticFunction.moebius d / (d : ℚ) = (n.totient : ℚ) / n := by sorry
+theorem olymid_ref_base_10006 {n : ℕ} {x : Fin n → ℝ} (hsum : |∑ i : Fin n, x i| = 1) (hxi : ∀ i : Fin n, |x i| ≤ (n + 1) / 2) : ∃ p : Equiv.Perm (Fin n), |∑ i : Fin n, (i + 1) * x (p i)| ≤ (n + 1) / 2 := by sorry
+theorem algebra_372358 (a : Fin 100 → ℝ) (ha : ∑ i, a i = 1) (ha' : ∀ i, 0 ≤ a i) : ∃ p : Equiv.Perm (Fin 100), ∑ i, a (p i) * a (p ((i + 1) % 100)) ≤ 0.01 := by sorry
+theorem olymid_ref_base_239 (x y : ℤ) (hx : x > 0) (hy : y > 0) (h : x^3 + y^3 = x^2 + 42 * x * y + y^2) : (x = 22 ∧ y = 22) ∨ (x = 1 ∧ y = 7) ∨ (x = 7 ∧ y = 1) := by sorry
+theorem u_math_839 (E : Set (EuclideanSpace ℝ (Fin 3))) (hE : E = {p : EuclideanSpace ℝ (Fin 3) | -p 1 ≤ p 0 ∧ p 0 ≤ p 1 ∧ 0 ≤ p 1 ∧ p 1 ≤ 1 ∧ 0 ≤ p 2 ∧ p 2 ≤ 1 - p 0 ^ 4 - p 1 ^ 4}) : ∫ p in E, p 2 = 113 / 450 := by sorry
+theorem olymid_ref_base_5536 : ∑ᶠ n ∈ {n : ℕ | 0 < n ∧ (15 * (n !) ^ 2 + 1) % (2 * n - 3) = 0}, n = 90 := by sorry
+theorem omni_theorem_2915 (s : ℝ) (h₀ : s > 0) (h₁ : 4 * s = 28) : s = 7 := by sorry
+theorem omni_theorem_1851 : ∑ᶠ n ∈ {n : ℕ | n ≤ 2015 ∧ ∃ x y : ℕ, x > 0 ∧ y > 0 ∧ n = ⌈(x / 2 : ℝ)⌉₊ + y + x * y}, n = 2029906 := by sorry
+theorem olymid_ref_base_9731 (α β γ : ℝ) (h₀ : α > 0) (h₁ : β > 0) (h₂ : γ > 0) (h₃ : α + β + γ < π) (h₄ : α + β > γ) (h₅ : β + γ > α) (h₆ : γ + α > β) : ∃ x y z, x = sin α ∧ y = sin β ∧ z = sin γ ∧ x + y > z ∧ y + z > x ∧ z + x > y ∧ (1/2) * x * y * sin (arccos ((x^2 + y^2 - z^2)/(2*x*y))) ≤ (1/8) * (sin (2*α) + sin (2*β) + sin (2*γ)) := by sorry
+theorem algebra_43999 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (α β γ : ℝ) (h₁ : α ∈ Set.Ico 0 Real.pi) (h₂ : β ∈ Set.Ico 0 Real.pi) (h₃ : γ ∈ Set.Ico 0 Real.pi) (h₄ : α + β > γ) (h₅ : α + γ > β) (h₆ : β + γ > α) : sqrt (x^2 + y^2 - 2 * x * y * cos α) + sqrt (y^2 + z^2 - 2 * y * z * cos β) ≥ sqrt (z^2 + x^2 - 2 * z * x * cos γ) := by sorry
+theorem omni_theorem_3896 {n : ℕ} (hn : n ≥ 2) : (∀ a b, Nat.Coprime a n → Nat.Coprime b n → a ≡ b [MOD n] ↔ a * b ≡ 1 [MOD n]) ↔ n = 2 ∨ n = 3 ∨ n = 4 ∨ n = 6 ∨ n = 8 ∨ n = 12 ∨ n = 24 := by sorry
+theorem inequalities_91529 (n : ℕ) (hn : 0 < n) : n * ((n + 1) ^ ((1 : ℝ) / n) - 1) ≤ ∑ i ∈ Finset.Icc 1 n, (1 : ℝ) / i ∧ ∑ i ∈ Finset.Icc 1 n, (1 : ℝ) / i ≤ n - (n - 1) * (1 / n) ^ ((1 : ℝ) / (n - 1)) := by sorry
+theorem omni_theorem_2708 (n : ℤ) (h : n + (n + 1) + (n + 2) + (n + 3) + (n + 4) = 45) : n = 7 := by sorry
+theorem omni_theorem_511 : ∃ α : ℝ, Irrational α ∧ α > 1 ∧ ∀ n : ℕ, n ≥ 1 → (Nat.floor (α ^ n)) % 2017 = 0 := by sorry
+theorem omni_theorem_4165 : {(x, y, z) : ℕ × ℕ × ℕ | x > 0 ∧ y > 0 ∧ z > 0 ∧ z + y^2 + x^3 = x * y * z ∧ x = Nat.gcd y z} = {(1, 2, 5), (1, 3, 5), (2, 2, 4), (2, 6, 4)} := by sorry
+theorem aime_all_2017_I_9 (a : ℕ → ℕ) (ha0 : a 10 = 10) (han : ∀ n, 10 < n → a n = 100 * a (n - 1) + n) : IsLeast {n | 10 < n ∧ 99 ∣ a n} 45 := by sorry
+theorem olymid_ref_base_5616 : {(x, y) : ℕ × ℕ | x > 0 ∧ y > 0 ∧ x ≤ 2020 ∧ y ≤ 2020 ∧ ∃ p k, Nat.Prime p ∧ (3 * x ^ 2 + 10 * x * y + 3 * y ^ 2) = p ^ k}.ncard = 29 := by sorry
+theorem omni_theorem_448 (A B C : EuclideanSpace ℝ (Fin 2)) (h₀ : dist A B = 13) (h₁ : dist B C = 14) (h₂ : dist A C = 15) : Tendsto (λ n => sInf {((dist A P)^n + (dist B P)^n + (dist C P)^n) ^ ((1 : ℝ)/n) | P : EuclideanSpace ℝ (Fin 2)}) atTop (𝓝 (65/8)) := by sorry
+theorem u_math_1085 {f : ℝ → ℝ} (hf : f = λ x => log ((x + 7) / (x - 7))) : iteratedDeriv 3 f = λ x => -(84 * x ^ 2 + 1372) / (x ^ 2 - 49) ^ 3 := by sorry
+theorem olymid_ref_base_1430 (x y : ℤ) (hx : x > 0) (hy : y > 0) (h : x^3 + y^3 = 4 * (x^2 * y + x * y^2 - 5)) : (x, y) = (1, 3) ∨ (x, y) = (3, 1) := by sorry
+theorem olymid_ref_base_4637 : Set.ncard {a : Fin 200 → ℕ | StrictMono a ∧ ∀ i, a i ≤ 202 ∧ ∃ N > 0, ∀ i, ∃ j, 203 ∣ a i + a j - N} = 20503 := by sorry
+theorem quantitative_reasoning_zh_blue_648 {α : ℝ} (hα : α ∈ Ioo 0 Real.pi) {x₁ x₂ : ℝ} (hx₁ : x₁^2 - x₁ * sin α + cos α = 0) (hx₂ : x₂^2 - x₂ * sin α + cos α = 0) : arctan x₁ + arctan x₂ = π / 2 - α / 2 ∨ arctan x₁ + arctan x₂ = -π / 2 - α / 2 := by sorry
+theorem olymid_ref_base_3113 {n : ℕ} (hn : 0 < n) (a : ℕ → ℤ) (ha : ∀ i ∈ Icc 1 n, 0 < a i) (k M : ℤ) (hk : 0 < k) (hM : 0 < M) (hsum : ∑ i ∈ Icc 1 n, (1 : ℝ)/(a i) = k) (hprod : ∏ i ∈ Icc 1 n, (a i) = M) : M > 1 → ¬∃ x : ℝ, 0 < x ∧ M * (x + 1)^k - ∏ i ∈ Icc 1 n, (x + a i) = 0 := by sorry
+theorem omni_theorem_3958 {a b c d : ℝ} (h1 : (a + b) * (a ^ 2 + b ^ 2) = (c + d) * (c ^ 2 + d ^ 2)) (h2 : (a + c) * (a ^ 2 + c ^ 2) = (b + d) * (b ^ 2 + d ^ 2)) (h3 : (a + d) * (a ^ 2 + d ^ 2) = (b + c) * (b ^ 2 + c ^ 2)) : a = b ∧ b = c ∧ c = d := by sorry
+theorem olymid_ref_base_3860 : (MeasureTheory.volume {(x, y, z) : ℝ × ℝ × ℝ | x ≥ 0 ∧ y ≥ 0 ∧ z ≥ 0 ∧ x + y ≤ 1 ∧ y + z ≤ 1 ∧ z + x ≤ 1}).toReal = 1 / 4 := by sorry
+theorem omni_theorem_3006 (n : ℕ) (h : 4^n = 64^2) : n = 6 := by sorry
+theorem olymid_ref_base_8831 (u : Fin 2019 → ℝ) (h₀ : ∑ i : Fin 2019, u i = 0) (h₁ : ∑ i : Fin 2019, (u i)^2 = 1) (a b : ℝ) (ha : ∃ i : Fin 2019, u i = a ∧ (∀ i : Fin 2019, u i ≥ a)) (hb : ∃ i : Fin 2019, u i = b ∧ (∀ i : Fin 2019, u i ≤ b)) : a * b ≤ -1 / 2019 := by sorry
+theorem omni_theorem_417 {x y : ℝ} (h₀ : x * y = 5) (h₁ : x ^ 2 + y ^ 2 = 21) : x ^ 4 + y ^ 4 = 391 := by sorry
+theorem olymid_ref_base_8158 (a b c d e f S T : ℝ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d ∧ 0 < e ∧ 0 < f) (h₁ : a < b ∧ b < c ∧ c < d ∧ d < e ∧ e < f) (h₂ : a + c + e = S) (h₃ : b + d + f = T) : 2 * S * T > sqrt ((3 * (S + T)) * (S * (b * d + b * f + d * f) + T * (a * c + a * e + c * e))) := by sorry
+theorem olymid_ref_base_9847 {f : Polynomial ℤ} (hf : f.Monic) (hf1 : f.degree = 1991) (g : Polynomial ℤ) (hg : g = f ^ 2 - 9) : {x : ℤ | g.eval x = 0}.ncard ≤ 1995 := by sorry
+theorem olymid_ref_base_10352 (a b c x y z : ℝ) (h₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < x ∧ 0 < y ∧ 0 < z) (h₁ : a + b + c = x + y + z) (h₂ : a * b * c = x * y * z) (h₃ : a ≤ x ∧ x < y ∧ y < z ∧ z ≤ c) (h₄ : a < b ∧ b < c) : a = x ∧ b = y ∧ c = z := by sorry
+theorem aime_all_2005_II_1 (n : ℕ) (hn : n ≥ 6) (h : {s : Finset (Fin n) | s.card = 6}.ncard = 6 * {s : Finset (Fin n) | s.card = 3}.ncard) : n = 13 := by sorry
+theorem olymid_ref_base_10765 (n : ℕ) (hn : 0 < n) (x y : Fin n → ℝ) (hx : ∀ i, 0 < x i) (hy : ∀ i, 0 < y i) (hxs : ∑ i, x i = 1) (hys : ∑ i, y i = 1) : ∑ i, |x i - y i| ≤ 2 - sInf {x i / y i | i} - sInf {y i / x i | i} := by sorry
+theorem olymid_ref_base_10879 : {(a, b, c, k) : ℕ × ℕ × ℕ × ℤ | a.Prime ∧ b.Prime ∧ c.Prime ∧ a^2 + b^2 + 16 * c^2 = 9 * k^2 + 1} = {(37, 3, 3, 13), (17, 3, 3, 7), (37, 3, 3, -13), (17, 3, 3, -7), (3, 37, 3, 13), (3, 17, 3, 7), (3, 37, 3, -13), (3, 17, 3, -7), (3, 3, 2, 3), (3, 3, 2, -3)} := by sorry
+theorem olymid_ref_base_3081 (f g : ℝ → ℝ) : (∀ x y : ℝ, g (f (x + y)) = f x + (2 * x + y) * g y) ↔ (f = 0 ∧ g = 0) ∨ ∃ a : ℝ, ∀ x : ℝ, f x = x ^ 2 + a ∧ g x = x := by sorry
+theorem algebra_539181 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hsum : a + b + c = 1) (x : Fin 5 → ℝ) (hx : ∀ i, 0 < x i) (hxprod : ∏ i, x i = 1) : ∏ i, (a * (x i)^2 + b * x i + c) ≥ 1 := by sorry
+theorem olymid_ref_base_4634 {n : ℕ} {a : ℕ → ℤ} {Q : ℤ → ℤ} (hQ : ∀ x : ℤ, Q x = ∑ i in Finset.range (n + 1), a i * x ^ i) (ha : ∀ i ∈ Finset.range (n + 1), a i ≥ 0) (hQ1 : Q 1 = 4) (hQ2 : Q 5 = 152) : Q 6 = 254 := by sorry
+theorem algebra_409983 {a : ℕ → ℝ} (ha : ∀ n, a n = ∑ i in Finset.Icc 1 n, (1 : ℝ)/i) : ∀ n ≥ 2, (a n)^2 > 2 * ∑ i in Finset.Icc 2 n, a i / i := by sorry
+theorem u_math_267 {f : ℝ → ℝ} (hf : f = λ x => 1/15 * (cos x)^3 * ((cos x)^2 - 5)) : deriv f = λ x => -1/15 * (cos x)^2 * (3 * sin x * ((cos x)^2 - 5) + cos x * sin (2 * x)) := by sorry
+theorem olymid_ref_base_10251 (n : ℕ) (hn : n > 0) : ∃! ab : ℕ × ℕ, let (a, b) := ab a > 0 ∧ b > 0 ∧ n = ((a + b - 1) * (a + b - 2)) / 2 + a := by sorry
+theorem u_math_2 : ∫ x in (0)..1, ∫ y in (1)..2, (y / (x + y ^ 2)) = log (25 * sqrt 5 / 32) := by sorry
+theorem aime_all_2000_II_4 : IsLeast {n | 0 < n ∧ (n.divisors.filter Odd).card = 6 ∧ (n.divisors.filter Even).card = 12} 180 := by sorry
+theorem omni_theorem_2736 (n : ℕ) (h₀ : n > 0) (h₁ : 5 * n + 10 * n + 20 * n = 700) : n = 20 := by sorry
+theorem aime_all_2000_I_10 (x : ℕ → ℝ) (hx : ∀ k ∈ Finset.Icc 1 100, x k = (∑ i ∈ Finset.Icc 1 100, x i - x k) - k) (hxp : ∃ m n : ℕ, m > 0 ∧ n > 0 ∧ Nat.Coprime m n ∧ x 50 = (m / n : ℝ)) : m + n = 173 := by sorry
+theorem olymid_ref_base_4690 : IsLeast {N | 1 < N ∧ ∃ a : ℤ, 0 < a ∧ N = a * (2 * a - 1) ∧ ∀ k ∈ Finset.Icc 1 10, (∑ i in Finset.Icc 1 (N - 1), i) % k = 0} 2016 := by sorry
+theorem algebra_501291 (x y z : ℝ) (hx : 1 ≤ x) (hy : 1 ≤ y) (hz : 1 ≤ z) : (x^2 - 2 * x + 2) * (y^2 - 2 * y + 2) * (z^2 - 2 * z + 2) ≤ (x * y * z)^2 - 2 * x * y * z + 2 := by sorry
+theorem omni_theorem_113 : ¬∃ s : Finset ℕ, s.card = 2002 ∧ ∀ n ≥ 2001, ∃ m ∈ s, Prime (m * 2 ^ n + 1) := by sorry
+theorem algebra_582360 (a b c x y z : ℝ) (h₁ : Real.cos (x + y + z) = a * Real.cos x + b * Real.cos y + c * Real.cos z) (h₂ : Real.sin (x + y + z) = a * Real.sin x + b * Real.sin y + c * Real.sin z) : a * Real.cos (y + z) + b * Real.cos (z + x) + c * Real.cos (x + y) = 1 ∧ a * Real.sin (y + z) + b * Real.sin (z + x) + c * Real.sin (x + y) = 0 := by sorry
+theorem olymid_ref_base_2170 (a b n : ℕ) (h : 0 < a ∧ 0 < b ∧ 0 < n) : a ! + b ! = 2 ^ n ↔ (a = 1 ∧ b = 1 ∧ n = 1) ∨ (a = 2 ∧ b = 2 ∧ n = 2) ∨ (a = 2 ∧ b = 3 ∧ n = 3) ∨ (a = 3 ∧ b = 2 ∧ n = 3) := by sorry
+theorem aime_all_2004_I_12 {S : Set (ℝ × ℝ)} (hs : S = {(x, y) | 0 < x ∧ x ≤ 1 ∧ 0 < y ∧ y ≤ 1 ∧ Even ⌊logb 2 (1 / x)⌋ ∧ Even ⌊logb 5 (1 / y)⌋}) (m n : ℕ) (area_eq : (MeasureTheory.volume S).toReal = m / n) (mpos : 0 < m) (npos : 0 < n) (mncop : Nat.Coprime m n) : m + n = 14 := by sorry
+theorem olymid_ref_base_10634 (a b c d e : ℝ) (h₀ : a + b + c + d + e = 0) (A B : ℝ) (h₁ : A = a * b + b * c + c * d + d * e + e * a) (h₂ : B = a * c + c * e + e * b + b * d + d * a) : 2005 * A + B ≤ 0 ∨ A + 2005 * B ≤ 0 := by sorry
+theorem olymid_ref_base_7222 (x : ℝ) : Tendsto (λ h => (x^2 - (x + h)^2)/h) (𝓝[≠] 0) (𝓝 (-2 * x)) := by sorry
+theorem algebra_56868 {n : ℕ} (hn : 2 ≤ n) (x : ℕ → ℝ) (hx : ∀ i ∈ Icc 1 n, x i ∈ Set.Icc 0 1) : ∃ i ∈ Icc 1 (n - 1), x i * (1 - x (i + 1)) ≥ (1 / 4) * x 1 * (1 - x n) := by sorry
+theorem u_math_828 (E : Set (EuclideanSpace ℝ (Fin 3))) (hE : E = {p : EuclideanSpace ℝ (Fin 3) | 0 ≤ p 0 ∧ p 0 ≤ 2 ∧ 0 ≤ p 1 ∧ p 1 ≤ 2 * p 0 ∧ 0 ≤ p 2 ∧ p 2 ≤ 4 - p 0 - p 1}) : ∫ p in E, (p 0 ^ 3 + p 1 ^ 3 + p 2 ^ 3) = 112 / 5 := by sorry
+theorem olymid_ref_base_7881 : IsGreatest {k | 2^k ∣ {s : Finset ℕ | s ⊆ Icc 1 100 ∧ {p | p.Prime ∧ p ∈ s}.ncard > {x | 4 ∣ x ∧ x ∈ s}.ncard}.ncard} 52 := by sorry
+theorem olymid_ref_base_4442 (x : ℝ) : 0 ≤ x ∧ x ≤ 360 ∧ √3 * cos (10 * π / 180) = cos (40 * π / 180) + sin (x * π / 180) ↔ x = 70 ∨ x = 110 := by sorry
+theorem olymid_ref_base_8958 {f : ℝ → ℝ} (hf : ∀ x > 0, f x > 0) (h : ∀ x y, 0 < x → 0 < y → f (x + f (x * y)) + y = f x * f y + 1) : ∀ x, 0 < x → f x = x + 1 := by sorry
+theorem omni_theorem_1789 : (1032^1032) % 100 = 76 := by sorry
+theorem omni_theorem_102 : IsLeast {a : ℝ | ∀ a' : Fin 4 → ℝ, ∃ k : Fin 4 → ℤ, (∑ i : Fin 4, (∑ j : Fin 4, if i < j then ((a' i - k i) - (a' j - k j))^2 else 0)) ≤ a} 1.25 := by sorry
+theorem algebra_561766 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 1 ≤ a / Real.sqrt (a ^ 2 + 8 * b * c) + b / Real.sqrt (b ^ 2 + 8 * a * c) + c / Real.sqrt (c ^ 2 + 8 * a * b) := by sorry
+theorem algebra_563964 (n : ℕ) (hn : n > 0) : ∑ k in Finset.Icc 0 n, 2 ^ k * Nat.choose n k * Nat.choose (n - k) ⌊(n - k) / 2⌋₊ = Nat.choose (2 * n + 1) n := by sorry
+theorem omni_theorem_3950 (n : ℕ) (hn : 2 ≤ n) : IsGreatest {N | ∃ k, ∀ i ∈ Finset.range N, ¬∃ d, d > 1 ∧ d ∣ (k + i) ∧ ∃ m, m ^ n = d} (2 ^ n - 1) := by sorry
+theorem u_math_536 : (3 - I) ^ 2 / (3 + I) ^ 2 = 7 / 25 - 24 / 25 * I := by sorry
+theorem olymid_ref_base_10900 (x y : ℤ) : x^5 - y^5 = 16 * x * y ↔ (x = 0 ∧ y = 0) ∨ (x = -2 ∧ y = 2) := by sorry
+theorem olymid_ref_base_8344 : ∀ N : ℕ, ∃ n : ℕ, n > N ∧ (Nat.primeFactors (n^4 + n^2 + 1)).max = (Nat.primeFactors ((n + 1)^4 + (n + 1)^2 + 1)).max := by sorry
+theorem olymid_ref_base_1421 (f : ℝ → ℝ) : (∀ x y, x * f (x + x * y) = x * f x + f (x ^ 2) * f y) ↔ (∀ x, f x = 0) ∨ (∀ x, f x = x) := by sorry
+theorem olymid_ref_base_10609 (x y z : ℝ) (hx : -1 < x) (hy : -1 < y) (hz : -1 < z) : 2 ≤ (1 + x^2) / (1 + y + z^2) + (1 + y^2) / (1 + z + x^2) + (1 + z^2) / (1 + x + y^2) := by sorry
+theorem algebra_68307 (a : ℕ → ℝ) (ha : ∀ n, 0 < a n) (h : ∀ i j, a (i + j) ≤ a i + a j) (n : ℕ) (hn : 0 < n) : ∑ i in Finset.Icc 1 n, (a i)/i ≥ a n := by sorry
+theorem olymid_ref_base_7488 (f : ℝ → ℝ) (h : ∀ x y z w v : ℝ, f (x + y + z + w + v) = f x + f y + f z + f w + f v - 8) : f 0 = 2 := by sorry
+theorem olymid_ref_base_2552 (m n : ℕ) (h₀ : 0 < m) (h₁ : 0 < n) (h₂ : Nat.gcd m n = 1) : (2^m - 2^n).gcd (2^(m^2 + m * n + n^2) - 1) = 1 ∨ (2^m - 2^n).gcd (2^(m^2 + m * n + n^2) - 1) = 7 := by sorry
+theorem olymid_ref_base_7970 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b > c) (h' : a + c > b) (h'' : b + c > a) : 3 ≥ √(b + c - a) / (√b + √c - √a) + √(c + a - b) / (√c + √a - √b) + √(a + b - c) / (√a + √b - √c) := by sorry
+theorem algebra_53917 (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : ((a * b * c + b * c * d + c * d * a + a * d * b) / 4) ^ ((1 : ℝ) / 3) ≤ Real.sqrt (((a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2) / 4)) := by sorry
+theorem omni_theorem_67 : Irrational (∑ n : ℕ in Finset.Icc 1001 2000, sqrt (n ^ 2 + 1)) := by sorry
+theorem olymid_ref_base_1633 (f : ℤ → ℤ) : (∀ x y, f (-f x - f y) = 1 - x - y) ↔ ∀ x, f x = x - 1 := by sorry
+theorem quantitative_reasoning_zh_blue_114 (n : ℕ) (npos : 5 ≤ n) : {m | (Nat.digits 10 m).length = n ∧ (∀ d ∈ (Nat.digits 10 m), d ∈ Finset.Icc 1 8) ∧ 1 ∈ (Nat.digits 10 m) ∧ 2 ∈ (Nat.digits 10 m) ∧ 3 ∈ (Nat.digits 10 m) ∧ 4 ∈ (Nat.digits 10 m) ∧ 5 ∈ (Nat.digits 10 m)}.ncard = 8^n - 5 * 7^n + 10 * 6^n - 10 * 5^n + 5 * 4^n - 3^n := by sorry
+theorem omni_theorem_845 (A B C D : ℝ × ℝ) (hA : A.1^2 + A.2^2 = 73 ∧ A.1 * A.2 = 24) (hB : B.1^2 + B.2^2 = 73 ∧ B.1 * B.2 = 24) (hC : C.1^2 + C.2^2 = 73 ∧ C.1 * C.2 = 24) (hD : D.1^2 + D.2^2 = 73 ∧ D.1 * D.2 = 24) (hABCD : ¬Collinear ℝ {A, B, C} ∧ ¬Collinear ℝ {A, B, D} ∧ ¬Collinear ℝ {A, C, D} ∧ ¬Collinear ℝ {B, C, D}) : let s := (MeasureTheory.volume (convexHull ℝ {A, B, C, D})).toReal; s = 110 := by sorry
+theorem olymid_ref_base_7801 : IsLeast {n | 0 < n ∧ (7 ∈ Nat.digits 10 (n ^ 2)) ∧ (7 ∈ Nat.digits 10 ((n + 1) ^ 2)) ∧ ¬(7 ∈ Nat.digits 10 ((n + 2) ^ 2))} 27 := by sorry
+theorem omni_theorem_3261 {n : ℕ} (hn : 0 < n) (s : ℕ → ℕ → ℕ) (h : ∀ i ∈ Icc 1 n, ∀ j ∈ Icc 1 n, s i j = {p : ℕ × ℕ | p.1 * i + p.2 * j = n}.ncard) (S : Matrix (Fin n) (Fin n) ℤ) (hS : ∀ i j, S i j = s (i.1 + 1) (j.1 + 1)) : S.det = (-1) ^ (Nat.ceil (n / 2 : ℝ) - 1) * 2 * Nat.ceil (n / 2 : ℝ) := by sorry
+theorem omni_theorem_4390 {x y z : ℤ} (h₀ : x ^ 2 - y ^ 2 = z) (h₁ : 3 * x * y + (x - y) * z = z ^ 2) : (x = 2 ∧ y = 1 ∧ z = 3) ∨ (x = 1 ∧ y = 2 ∧ z = -3) ∨ (x = 1 ∧ y = 0 ∧ z = 1) ∨ (x = 0 ∧ y = 1 ∧ z = -1) ∨ (x = 0 ∧ y = 0 ∧ z = 0) := by sorry
+theorem u_math_174 : ∫ x, 1 / sin (8 * x) ^ 5 = C + (1 / 128) * (2 * (tan (4 * x)) ^ 2 + 6 * log (abs (tan (4 * x))) + (1 / 4) * (tan (4 * x)) ^ 4 - (2 / (tan (4 * x)) ^ 2) - (1 / (4 * (tan (4 * x)) ^ 4))) := by sorry
+theorem aime_all_2009_I_11 : Set.encard {t : (ℕ × ℕ) × (ℕ × ℕ) | let (p, q) := t; p ≠ q ∧ p.1 * 41 + p.2 = 2009 ∧ q.1 * 41 + q.2 = 2009 ∧ ∃ k : ℤ, 0 < k ∧ k = (p.1 * q.2 - p.2 * q.1) / 2} = 600 := by sorry
+theorem theorem_proving_zh_blue_1617 {A B C : EuclideanSpace ℝ (Fin 2)} (a b c m_a m_b m_c : ℝ) (ha : a = dist B C) (hb : b = dist A C) (hc : c = dist A B) (hm_a : m_a = dist (midpoint ℝ B C) A) (hm_b : m_b = dist (midpoint ℝ A C) B) (hm_c : m_c = dist (midpoint ℝ A B) C) : m_a * (b * c - a ^ 2) + m_b * (c * a - b ^ 2) + m_c * (a * b - c ^ 2) ≥ 0 := by sorry
+theorem quantitative_reasoning_zh_blue_585 : IsLeast {x | ∃ s t : ℝ, x = (s + 5 - 3 * abs (cos t))^2 + (s - 2 * abs (sin t))^2} 2 := by sorry
+theorem omni_theorem_3441 : (10^3 < 2014 ∧ 2014 < 10^4) := by sorry
+theorem olymid_ref_base_575 : {(m, n) : ℕ × ℕ | m > 0 ∧ n > 0 ∧ m < n ∧ (3 / 2008 : ℚ) = (1 / m : ℚ) + (1 / n : ℚ)}.ncard = 5 := by sorry
+theorem olymid_ref_base_514 {f : Polynomial ℤ} (hf : f.degree > 0) : ∃ n : ℤ, (Nat.primeFactors (f.eval n).natAbs).card ≥ 2004 := by sorry
+theorem olymid_ref_base_2494 {p q : ℕ} (hp : p.Prime) (hq : q.Prime) (h : p ≥ 7) (h' : q ≥ 7) : ((p^2012 + q^2016)/120 - ⌊((p^2012 + q^2016)/120 : ℝ)⌋ = 1/60) := by sorry
+theorem omni_theorem_315 {S T U : ℕ → ℝ} (hS : ∀ n, S n = ∑ i ∈ Icc 1 n, (1 / i)) (hT : ∀ n, T n = ∑ i ∈ Icc 1 n, S i) (hU : ∀ n, U n = ∑ i ∈ Icc 1 n, (T i / (i + 1))) : ∃ a b c d : ℤ, 0 < a ∧ a < 1000000 ∧ 0 < b ∧ b < 1000000 ∧ 0 < c ∧ c < 1000000 ∧ 0 < d ∧ d < 1000000 ∧ T 1988 = a * S 1989 - b ∧ U 1988 = c * S 1989 - d := by sorry
+theorem aime_all_1996_5 (a b c r s t : ℂ) (ha : a^3 + 3 * a^2 + 4 * a - 11 = 0) (hb : b^3 + 3 * b^2 + 4 * b - 11 = 0) (hc : c^3 + 3 * c^2 + 4 * c - 11 = 0) (hroots : (a + b)^3 + r * (a + b)^2 + s * (a + b) + t = 0 ∧ (b + c)^3 + r * (b + c)^2 + s * (b + c) + t = 0 ∧ (c + a)^3 + r * (c + a)^2 + s * (c + a) + t = 0) : t = 23 := by sorry
+theorem olymid_ref_base_2526 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : sqrt (a / (b + c)) + sqrt (b / (c + a)) + sqrt (c / (a + b)) > 2 := by sorry
+theorem olymid_ref_base_2387 (A B C D E F M N : EuclideanSpace ℝ (Fin 2)) (h₀ : dist A B = dist B C) (h₁ : dist B C = dist C D) (h₂ : dist C D = dist D E) (h₃ : dist D E = dist E F) (h₄ : dist E F = dist F A) (h₅ : M ∈ segment ℝ A C) (h₆ : N ∈ segment ℝ C E) (h₇ : r > 0) (h₈ : dist A M / dist A C = r) (h₉ : dist C N / dist C E = r) (h₁₀ : Collinear ℝ {B, M, N}) : r = 1 / sqrt 3 := by sorry
+theorem olymid_ref_base_9760 (a : ℕ → ℝ) (h₀ : ∀ k, 0 ≤ a k) (h₁ : ∀ k, a k - 2 * a (k + 1) + a (k + 2) ≥ 0) (h₂ : ∀ k, ∑ j in Finset.Icc 1 k, a j ≤ 1) : ∀ k, 0 ≤ a k - a (k + 1) ∧ a k - a (k + 1) < 2 / k ^ 2 := by sorry
+theorem olymid_ref_base_9222 {N : ℕ} (_hpos : N > 0) : ∃ a b c : Fin N → ℕ, (∀ i j, a i = a j → i = j) ∧ (∀ i j, b i = b j → i = j) ∧ (∀ i j, c i = c j → i = j) ∧ (∀ i, a i ∈ Icc 1 N) ∧ (∀ i, b i ∈ Icc 1 N) ∧ (∀ i, c i ∈ Icc 1 N) ∧ (∀ k, |Real.sqrt (a k) + Real.sqrt (b k) + Real.sqrt (c k) - 2 * Real.sqrt N| < 2023) := by sorry
+theorem olymid_ref_base_1463 (a : ℕ → ℤ) (h : ∀ p k, Nat.Prime p → 0 < k → a (p * k + 1) = p * a k - 3 * a p + 13) : a 2013 = 2016 := by sorry
+theorem olymid_ref_base_2361 (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : 5 ≤ p) : {d | 0 < d ∧ d ∣ 2^p + 3^p ∧ d ≤ p} = {1, 5} := by sorry
+theorem olymid_ref_base_7086 : Nat.card {n : ℕ | n ∈ Finset.Icc 1 2000 ∧ Nat.Coprime n 2001} = 1232 := by sorry
+theorem olymid_ref_base_3014 {f : ℝ → ℝ} (hf : ∀ x, x ≠ 0 ∧ x ≠ 1 → f x + f (1 - 1 / x) = 1 + x) : ∀ x, x ≠ 0 ∧ x ≠ 1 → f x = (-x^3 + x^2 + 1) / (2 * x * (1 - x)) := by sorry
+theorem olymid_ref_base_2559 (a : ℕ → ℕ) (apos : ∀ n, a n > 0) (ha : ∀ n, a n < a (n + 1)) : ∃! n, 1 ≤ n ∧ a n < (∑ i in Finset.Icc 0 n, a i) / (n : ℝ) ∧ (∑ i in Finset.Icc 0 n, a i) / (n : ℝ) ≤ a (n + 1) := by sorry
+theorem omni_theorem_3411 (min max : ℤ) (h₀ : min = -11) (h₁ : max = 14) : max - min = 25 := by sorry
+theorem olymid_ref_base_2261 (x n : ℕ) (hx : 1 ≤ x) (hn : 1 ≤ n) (h : 3 * 2 ^ x + 4 = n ^ 2) : (x = 2 ∧ n = 4) ∨ (x = 5 ∧ n = 10) ∨ (x = 6 ∧ n = 14) := by sorry
+theorem omni_theorem_2712 (x y : ℕ) (hx : 0 < x) (hy : 0 < y) (h : 3^x * 5^y = 225) : x + y = 4 := by sorry
+theorem omni_theorem_2986 : {x : ℤ | sqrt 15 < x ∧ x < sqrt 50}.encard = 4 := by sorry
+theorem aime_all_2015_II_4 (l₁ l₂ h : ℝ) (hl₁ : l₁ = log 3) (hl₂ : l₂ = log 192) (hh : h = log 16) (p q : ℕ) (hp : p > 0) (hq : q > 0) (hperim : l₁ + l₂ + 2 * sqrt ((l₂ - l₁)^2 / 4 + h^2) = log (2 ^ p * 3 ^ q)) : p + q = 18 := by sorry
+theorem olymid_ref_base_9314 {n : ℕ} (hn : n > 0) : (1 / 3 : ℝ) * n^2 + (1 / 2 : ℝ) * n + (1 / 6 : ℝ) ≥ (n ! : ℝ)^(2 / n) ∧ ((1 / 3 : ℝ) * n^2 + (1 / 2 : ℝ) * n + (1 / 6 : ℝ) = (n ! : ℝ)^(2 / n) ↔ n = 1) := by sorry
+theorem aime_all_2002_I_3 : {(d, n) : ℕ × ℕ | d > 25 ∧ n > 0 ∧ ∃ x y, d + n = 10 * x + y ∧ 25 + n = 10 * y + x}.ncard = 25 := by sorry
+theorem olymid_ref_base_8497 : {(a, b, c) : ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ ∃ m n p : ℕ, a * b - c = 2 ^ m ∧ b * c - a = 2 ^ n ∧ c * a - b = 2 ^ p} = {(2, 2, 2), (2, 2, 3), (2, 6, 11)} := by sorry
+theorem omni_theorem_4079 : {(x, y, z) : ℕ × ℕ × ℕ | x ≥ 0 ∧ y ≥ 0 ∧ z ≥ 0 ∧ 2^x + 9 * 7^y = z^3} = {(0, 1, 4)} := by sorry
+theorem olymid_ref_base_3897 : {R : Set (ℤ × ℤ) | R ⊆ {(x, y) | 1 ≤ x ∧ x ≤ 5 ∧ 1 ≤ y ∧ y ≤ 3} ∧ ∃ a b c d : ℝ, ∀ x y : ℤ, (x, y) ∈ R → y = a * x ^ 3 + b * x ^ 2 + c * x + d}.ncard = 796 := by sorry
+theorem omni_theorem_3801 {f : ℝ → ℝ} : (∀ x y, f (x * f x + f y) = f x ^ 2 + y) ↔ ∀ x, f x = x ∨ f x = -x := by sorry
+theorem algebra_560833 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : 3 / 2 ≤ 1 / (a^3 * (b + c)) + 1 / (b^3 * (a + c)) + 1 / (c^3 * (a + b)) := by sorry
+theorem omni_theorem_2710 {x y : ℝ} (h1 : (x - y) / (x + y) = 9) (h2 : x * y / (x + y) = -60) : (x + y) + (x - y) + x * y = -150 := by sorry
+theorem olymid_ref_base_11683 (f : ℕ → ℕ) (h1 : ∀ m n, Nat.Coprime m n → Nat.Coprime (f m) (f n)) (h2 : ∀ n, n ≤ f n ∧ f n ≤ n + 2012) : ∀ n p, Nat.Prime p → p ∣ f n → p ∣ n := by sorry
+theorem aime_all_1989_8 (x : Fin 7 → ℝ) (h₁ : x 0 + 4 * x 1 + 9 * x 2 + 16 * x 3 + 25 * x 4 + 36 * x 5 + 49 * x 6 = 1) (h₂ : 4 * x 0 + 9 * x 1 + 16 * x 2 + 25 * x 3 + 36 * x 4 + 49 * x 5 + 64 * x 6 = 12) (h₃ : 9 * x 0 + 16 * x 1 + 25 * x 2 + 36 * x 3 + 49 * x 4 + 64 * x 5 + 81 * x 6 = 123) : 16 * x 0 + 25 * x 1 + 36 * x 2 + 49 * x 3 + 64 * x 4 + 81 * x 5 + 100 * x 6 = 334 := by sorry
+theorem olymid_ref_base_9217 (a : Fin 2023 → ℤ) (h₁ : ∀ i, a i > 0) (h₂ : ∃ p : Equiv.Perm (Fin 2023), ∀ i, a i = p i + 1) (h₃ : ∃ p : Equiv.Perm (Fin 2022), ∀ i, |a i - a (i + 1)| = p i + 1) : max (a 0) (a 2022) ≥ 507 := by sorry
+theorem olymid_ref_base_11479 (s t : ℕ → ℚ) (h₀ : ¬∃ c, ∀ n, s n = c) (h₁ : ¬∃ c, ∀ n, t n = c) (h₂ : ∀ i j, ∃ k : ℤ, (s i - s j) * (t i - t j) = k) : ∃ r : ℚ, ∀ i j, ∃ m n : ℤ, (s i - s j) * r = m ∧ (t i - t j) / r = n := by sorry
+theorem olymid_ref_base_4102 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h₁ : x^2 + y^2 + x * y = 1) (h₂ : y^2 + z^2 + y * z = 4) (h₃ : z^2 + x^2 + z * x = 5) : x + y + z = sqrt (5 + 2 * sqrt 3) := by sorry
+theorem omni_theorem_3874 (a b : ℤ) : (b^2 + 7 * (a - b))^2 = a^3 * b ↔ (a = b ∨ a = 0 ∧ b = 7 ∨ a = 12 ∧ b = 3 ∨ a = -18 ∧ b = -2) := by sorry
+theorem olymid_ref_base_2003 (x y z : ℝ) : (x^2 - y^2) / (2 * x^2 + 1) + (y^2 - z^2) / (2 * y^2 + 1) + (z^2 - x^2) / (2 * z^2 + 1) ≤ 0 := by sorry
+theorem olymid_ref_base_9864 (m : ℤ) (mpos : m > 0) : ∀ n : ℕ, ∃ x y : ℤ, x > n ∧ y > n ∧ IsCoprime x y ∧ y ∣ x^2 + m ∧ x ∣ y^2 + m := by sorry
+theorem omni_theorem_965 : ∫ a in (0)..1, ∫ b in (0)..1, ∫ c in (0)..1, min (min a b) c / (1 * 1 * 1) = 1 / 4 := by sorry
+theorem olymid_ref_base_10580 : IsGreatest {z : ℝ | ∃ x y : ℝ, x > 0 ∧ y > 0 ∧ x^3 + y^3 ≤ x^2 + y^2 ∧ z = x * y} 1 := by sorry
+theorem u_math_82 (f : ℝ → ℝ) (hf : Differentiable ℝ f) (h : ∀ x, deriv f x = (4 + f x) / x) (h3 : f 3 = -3) : ∀ x, f x = abs x / 3 - 4 := by sorry
+theorem olymid_ref_base_572 {P : Polynomial ℤ} (hP : ∃ x1 x2 x3 x4 x5 : ℤ, x1 ≠ x2 ∧ x1 ≠ x3 ∧ x1 ≠ x4 ∧ x1 ≠ x5 ∧ x2 ≠ x3 ∧ x2 ≠ x4 ∧ x2 ≠ x5 ∧ x3 ≠ x4 ∧ x3 ≠ x5 ∧ x4 ≠ x5 ∧ P.eval x1 = 5 ∧ P.eval x2 = 5 ∧ P.eval x3 = 5 ∧ P.eval x4 = 5 ∧ P.eval x5 = 5) : ¬∃ x : ℤ, -6 ≤ P.eval x ∧ P.eval x ≤ 4 ∨ 6 ≤ P.eval x ∧ P.eval x ≤ 16 := by sorry
+theorem algebra_453815 (a : ℕ → ℝ) (ha : ∀ n, 0 < a n) (h : ∀ n, a (n + 1) ≤ a n - (a n)^2) : ∀ n ≥ 2, a n ≤ 1 / (n + 2) := by sorry
+theorem omni_theorem_3451 (Mthis Mlast Sthis Slast : ℝ) (hMthis : Mthis = 100) (hMlast : Mlast = Mthis / (1 + 0.25)) (hSthis : Sthis = 100) (hSlast : Slast = Sthis / (1 - 0.20)) : Mlast + Slast = 205 := by sorry
+theorem omni_theorem_3028 : Set.ncard {n : ℕ | 0 < n ∧ 7 ∣ n ∧ 17 < Real.sqrt n ∧ Real.sqrt n < 18} = 5 := by sorry
+theorem theorem_proving_zh_blue_460 {n : ℕ} (hn : 0 < n) (k : ℕ) (hk : 0 < k) (A : Finset (Finset (Fin n))) (hA : ∀ s ∈ A, s.card = k) : A.card > ((k - 1) * (n - k) + k) / (k ^ 2) * Nat.choose n (k - 1) → ∃ t : Finset (Fin n), t.card = k + 1 ∧ ∀ s ⊆ t, s.card = k → s ∈ A := by sorry
+theorem theorem_proving_zh_blue_257 (f : Fin 100 → ℝ) (h : ∀ i j, f i = f j → i = j) : ∃ i, f i + f ((i + 3) % 100) > f ((i + 1) % 100) + f ((i + 2) % 100) := by sorry
+theorem DEMIMathAnalysis_36 {f : ℝ → ℝ} (hf : ContDiffOn ℝ 1 f (Set.Ioi 0)) (hpos : ∀ x ∈ Set.Ioi 0, f x > 0) (a : ℝ) (ha : a > 1) : liminf (λ x => (deriv f x) / (f x)^a) ≤ 0 := by sorry
+theorem algebra_45389 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b > c) (h' : b + c > a) (h'' : c + a > b) : a^2 * b * (a - b) + b^2 * c * (b - c) + c^2 * a * (c - a) ≥ 0 := by sorry
+theorem algebra_51840 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (1 + a / b) * (1 + b / c) * (1 + c / a) ≥ 2 * (1 + (a + b + c) / (a * b * c) ^ ((1 : ℝ) / 3)) := by sorry
+theorem olymid_ref_base_10244 : IsLeast {β : ℤ | ∃ α : ℤ, 0 < α ∧ α < β ∧ (43 / 197 : ℝ) < (α / β : ℝ) ∧ (α / β : ℝ) < (17 / 77 : ℝ)} 32 := by sorry
+theorem omni_theorem_533 : {(a, b, c) : ℕ × ℕ × ℕ | 2^a + 2^b = c !}.ncard = 5 := by sorry
+theorem algebra_585369 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b + c = 1) : 1 / (1 - a) + 1 / (1 - b) + 1 / (1 - c) ≥ 2 / (1 + a) + 2 / (1 + b) + 2 / (1 + c) := by sorry
+theorem olymid_ref_base_3635 : ∑ i ∈ Finset.range 2010, (Complex.I : ℂ) ^ i = 1 + Complex.I := by sorry
+theorem olymid_ref_base_4586 (f : ℕ → ℝ) (h₀ : ∀ x y, f (x + y) = f x * f y) (h₁ : f 19 = 524288 * k) : f 4 = 16 * k ^ ((4 : ℝ) / 19) := by sorry
+theorem omni_theorem_4109 {f : ℝ → ℝ} (hf : ∀ x y, 0 < x → 0 < y → f (x * f y) = y * f x) (hf' : Tendsto f atTop (𝓝 0)) : ∀ x, 0 < x → f x = 1 / x := by sorry
+theorem aime_all_2003_II_9 (P Q : ℂ[X]) (hP : P = X^6 - X^5 - X^3 - X^2 - X) (hQ : Q = X^4 - X^3 - X^2 - 1) (z : Fin 4 → ℂ) (hz : ∀ n, Q.eval (z n) = 0) : P.eval (z 0) + P.eval (z 1) + P.eval (z 2) + P.eval (z 3) = 6 := by sorry
+theorem olymid_ref_base_2879 : IsGreatest {t : ℝ | ∃ x y z : ℝ, 0 ≤ x ∧ x ≤ y ∧ y ≤ z ∧ x + y + z = 1 ∧ t = (x - y * z) ^ 2 + (y - z * x) ^ 2 + (z - x * y) ^ 2} 1 := by sorry
+theorem olymid_ref_base_5733 (x y z : ℝ) (hxy : x * y = 6) (hxz : x - z = 2) (hsum : x + y + z = 9) : x / y - z / x - z ^ 2 / (x * y) = 2 := by sorry
+theorem omni_theorem_385 : {x : ℝ | x^3 - x^2 - x + 2 = 0}.encard = 1 := by sorry
+theorem olymid_ref_base_9665 {a b c d : ℕ} (ha : Odd a) (hb : Odd b) (hc : Odd c) (hd : Odd d) (hord : a < b ∧ b < c ∧ c < d) (hmul : a * d = b * c) (hk : ∃ k, a + d = 2 ^ k) (hm : ∃ m, b + c = 2 ^ m) : a = 1 := by sorry
+theorem algebra_486945 (f g : ℝ → ℝ) : ∃ x y : ℝ, x ∈ Set.Icc 0 1 ∧ y ∈ Set.Icc 0 1 ∧ |x * y - f x - g y| ≥ 1 / 4 := by sorry
+theorem olymid_ref_base_6639 (c b : ℝ) (hc : c = b + 10) : (1.8 * c + 32) - (1.8 * b + 32) = 18 := by sorry
+theorem olymid_ref_base_2419 {n : ℕ} (hn : n ≥ 1) (hnpow : ∃ k : ℕ, ∑ d in n.divisors, d = 2^k) : ∃ m : ℕ, n.divisors.card = 2^m := by sorry
+theorem u_math_659 : ∫ x, 6 / (cos (-4 * x) ^ 7 * sin (4 * x)) = C + 3 / 2 * (3 / (2 * (cot (4 * x)) ^ 2) + 3 / (4 * (cot (4 * x)) ^ 4) + 1 / (6 * (cot (4 * x)) ^ 6) - log (abs (cot (4 * x)))) := by sorry
+theorem quantitative_reasoning_zh_blue_524 (f : ℝ → ℝ) : (∀ x y, (x - y) * f (x + y) - (x + y) * f (x - y) = 4 * x * y * (x ^ 2 - y ^ 2)) ↔ ∃ c, ∀ x, f x = x ^ 3 + c * x := by sorry
+theorem algebra_453884 {a b c d : ℤ} (h : a * d - b * c > 1) : ¬(a * d - b * c ∣ a ∧ a * d - b * c ∣ b ∧ a * d - b * c ∣ c ∧ a * d - b * c ∣ d) := by sorry
+theorem olymid_ref_base_6524 : IsLeast {k | ∃(a b c : ℕ), 0 < a ∧ 0 < b ∧ 0 < c ∧ a ≠ b ∧ a ≠ c ∧ b ≠ c ∧ k = a + b + c ∧ (∃ m : ℤ, Real.sqrt (a * Real.sqrt (b * Real.sqrt c)) = m)} 7 := by sorry
+theorem omni_theorem_3704 : ¬∃ (A : Matrix (Fin 3) (Fin 3) ℝ), (trace A = 0) ∧ (A ^ 2 + Aᵀ = 1) := by sorry
+theorem omni_theorem_3072 (x y : ℤ) (hx : x = 3) (hy : y = 4) : x * y - x = 9 := by sorry
+theorem u_math_962 (f : ℝ → ℝ) (hf : f = fun x => 1 / x) (b : ℝ) (h : (f b - f 2) / (b - 2) = -1 / 10) : b = 5 := by sorry
+theorem aime_all_2019_II_8 (a b c : ℝ) (_ : |a| ≤ 2019) (hb : |b| ≤ 2019) (hc : |c| ≤ 2019) (h : ((1 + Real.sqrt 3 * Complex.I)/2)^2018*a + ((1 + Real.sqrt 3 * Complex.I)/2)^2017*b + ((1 + Real.sqrt 3 * Complex.I)/2)^2016*c = 2015 + 2019*Real.sqrt 3 *Complex.I) : (a*1^2018 + b*1^2017 + c*1^2016) % 1000 = 53 := by sorry
+theorem omni_theorem_3569 (f : ℝ → ℝ) : (f 0 + 1 = f 1 ∧ ∀ x y, f (x * y - x) + f (x + f y) = y * f x + 3) ↔ ∀ x, f x = x + 1 := by sorry
+theorem algebra_48694 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a + b + c - 3 * (a * b * c) ^ ((1 : ℝ) / 3) ≥ a + b - 2 * Real.sqrt (a * b) := by sorry
+theorem omni_theorem_2678 : (5^35 - 6^21) % 10 = 9 := by sorry
+theorem olymid_ref_base_8322 (r : ℕ) (hr : 0 < r) (a : ℕ → ℝ) (h : ∀ m s, ∃ n : ℕ, 0 < n ∧ n ∈ Finset.Icc (m + 1) (m + r) ∧ (∑ i in Finset.range (s + 1), a (m + i)) = (∑ i in Finset.range (s + 1), a (n + i))) : ∃ p : ℕ, 1 ≤ p ∧ ∀ n, a (n + p) = a n := by sorry
+theorem olymid_ref_base_3467 : (Set.ncard {p : Fin 2 → ℕ | p 0 ∈ Finset.Icc 2 9 ∧ p 1 ∈ Finset.Icc 2 9 ∧ p 0 + p 1 = 11}) / 64 = 1 / 8 := by sorry
+theorem olymid_ref_base_1023 (x : Fin 1996 → ℝ) (h : ∀ W : Polynomial ℝ, W.degree ≥ 2 → ∃ i j k, i ≠ j ∧ i ≠ k ∧ j ≠ k ∧ W.eval (x i) = W.eval (x j) ∧ W.eval (x j) = W.eval (x k)) : ∃ i j k, i ≠ j ∧ i ≠ k ∧ j ≠ k ∧ x i = x j ∧ x j = x k := by sorry
+theorem theorem_proving_zh_blue_63 {x : ℝ} (hx : 1 ≤ x) (x0 : ℝ) (h : x ^ x = x0) (k : ℕ) (hk : 0 < k) (h1 : k ^ k < x0) (h2 : x0 < (k + 1) ^ (k + 1)) (h3 : ∃ q : ℚ, x0 = q) : Irrational x := by sorry
+theorem u_math_661 {f : ℝ → ℝ} (hf : ∀ x y, f (y / x) = sqrt (x ^ 2 + y ^ 2) / x) (hx : 0 < x) : f x = sqrt (1 + x ^ 2) := by sorry
+theorem olymid_ref_base_11518 (a b c d e : ℕ) (h₀ : 0 < a) (h₁ : 0 < b) (h₂ : 0 < c) (h₃ : 0 < d) (h₄ : 0 < e) (h₅ : a ≠ b) (h₆ : a ≠ c) (h₇ : a ≠ d) (h₈ : a ≠ e) (h₉ : b ≠ c) (h₁₀ : b ≠ d) (h₁₁ : b ≠ e) (h₁₂ : c ≠ d) (h₁₃ : c ≠ e) (h₁₄ : d ≠ e) (h₁₅ : a^4 + b^4 = e^5) (h₁₆ : c^4 + d^4 = e^5) : ¬Prime (a * c + b * d) := by sorry
+theorem olymid_ref_base_11713 {P : Set ℕ} (hP : P = {x | Nat.Prime x}) (M : Set ℕ) (hM : M ⊆ P) (hM' : ∀ k > 0, ∀ p : Fin k → ℕ, (∀ i, p i ∈ M) → (∀ x, Nat.Prime x → x ∣ ∏ i, p i + 1 → x ∈ M)) (hM'' : M.Nonempty) : M = P := by sorry
+theorem olymid_ref_base_8075 {n : ℕ} {p : ℕ} (hn : n > 0) (hp : Nat.Prime p) {a b c : ℤ} (h : a^n + p * b = b^n + p * c) (h' : b^n + p * c = c^n + p * a) : a = b ∧ b = c := by sorry
+theorem inequalities_6843 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b > c) (h' : a + c > b) (h'' : b + c > a) (δ : ℝ) (hδ : δ = (1/2) * a * b * sin (arccos ((a^2 + b^2 - c^2)/(2*a*b)))) : δ ≤ (Real.sqrt 3 / 4) * ((a + b + c)/3)^2 ∧ (δ = (Real.sqrt 3 / 4) * ((a + b + c)/3)^2 ↔ a = b ∧ b = c) := by sorry
+theorem u_math_229 : IsGreatest {t : ℝ | ∃ x y z, t = x^2 + y^2 + z^2 ∧ x^4 + y^4 + z^4 = 1} (Real.sqrt 3) ∧ IsLeast {t : ℝ | ∃ x y z, t = x^2 + y^2 + z^2 ∧ x^4 + y^4 + z^4 = 1} 1 := by sorry
+theorem olymid_ref_base_7031 : ∑ n in (Finset.Icc 9 999).filter (fun x => 9 ∣ x), (Nat.digits 10 n).sum = 1512 := by sorry
+theorem olymid_ref_base_9323 {u : ℝ} : (∃ c, ∀ x, (tan (x - u) + tan x + tan (x + u)) / (tan (x - u) * tan x * tan (x + u)) = c) ↔ ∃ k, u = π / 3 + k * π ∨ u = -π / 3 + k * π := by sorry
+theorem olymid_ref_base_7535 : IsGreatest {z : ℚ | ∃ x y : ℚ, x > 0 ∧ y > 0 ∧ z = x + y ∧ x.num + y.num = 9 ∧ x.den + y.den = 10} (73 / 9) := by sorry
+theorem algebra_48694 {f : Polynomial ℂ} (n : ℕ) (hn : n > 0) (h : (X - 1) ∣ f.comp (X ^ n)) : (X ^ n - 1) ∣ f.comp (X ^ n) := by sorry
+theorem u_math_438 {f : ℝ → ℝ} (hf : f = λ x => x * cos x) (a : ℝ) (ha : a = π/2) : f a + deriv f a * (X - a) + (deriv (deriv f) a)/2 * (X - a)^2 = 0 - π/2 * (X - π/2) - (X - π/2)^2 := by sorry
+theorem olymid_ref_base_1449 (x n p : ℕ) (hx : 0 < x) (hn : 0 < n) (hp : Nat.Prime p) (h : x^3 + 3 * x + 14 = 2 * p^n) : (x = 1 ∧ n = 2 ∧ p = 3) ∨ (x = 3 ∧ n = 2 ∧ p = 5) := by sorry
+theorem u_math_10 : Tendsto (λ x => (x - x * Real.cos x) / (x - Real.sin x)) (𝓝[≠] 0) (𝓝 3) := by sorry
+theorem theorem_proving_zh_blue_238 (n : ℕ) (hn : n > 0) : ∃ a b, a > 0 ∧ b > 0 ∧ a - b = n ∧ (Nat.primeFactors a).card = (Nat.primeFactors b).card := by sorry
+theorem olymid_ref_base_680 (N : ℕ) (a : ℕ → ℝ) (h₀ : a 0 = 0) (h₁ : a N = 0) (h₂ : ∀ i ∈ Finset.Icc 1 (N - 1), a (i + 1) - 2 * a i + a (i - 1) = a i ^ 2) : ∀ i ∈ Finset.Icc 1 (N - 1), a i ≤ 0 := by sorry
+theorem omni_theorem_2468 {a b : ℕ} (ha : 0 < a) (hb : 0 < b) (hrel : Nat.Coprime a b) (hprob : (MeasureTheory.volume {(x, y) : ℝ × ℝ | 0 ≤ x ∧ x ≤ 1 ∧ 0 ≤ y ∧ y ≤ 1 ∧ 0 ≤ 3 * x + 2 * y ∧ 3 * x + 2 * y ≤ 1 ∧ 0 ≤ x + 4 * y ∧ x + 4 * y ≤ 1}).toReal = a / b) : 100 * a + b = 820 := by sorry
+theorem omni_theorem_2519 (a b c d : ℤ) (ha : 0 ≤ a ∧ a ≤ 9) (hb : 0 ≤ b ∧ b ≤ 9) (hc : 0 ≤ c ∧ c ≤ 9) (hd : 0 ≤ d ∧ d ≤ 9) (h1 : 6 * a + 9 * b + 3 * c + d = 88) (h2 : a - b + c - d = -6) (h3 : a - 9 * b + 3 * c - d = -46) : 1000 * a + 100 * b + 10 * c + d = 6507 := by sorry
+theorem olymid_ref_base_1786 (t : ℝ) : (∀ a b c : ℝ, a > 0 → b > 0 → c > 0 → a + b > c → b + c > a → c + a > b → ∃ x y z : ℝ, x > 0 ∧ y > 0 ∧ z > 0 ∧ x + y > z ∧ y + z > x ∧ z + x > y ∧ x = a^2 + b * c * t ∧ y = b^2 + c * a * t ∧ z = c^2 + a * b * t) ↔ 2 / 3 ≤ t ∧ t ≤ 2 := by sorry
+theorem olymid_ref_base_4087 : IsGreatest {t : ℝ | ∃ x y, t = (sin x) * (cos y) + (sin y) * (cos x) ∧ (sin x) * (cos y) - (sin y) * (cos x) = 1} 1 := by sorry
+theorem algebra_583779 (α β : ℝ) (h₀ : α ∈ Ioo 0 (π/2)) (h₁ : β ∈ Ioo 0 (π/2)) (h₂ : α < β) : cot β / cot α < cos β / cos α ∧ cos β / cos α < β / α := by sorry
+theorem olymid_ref_base_10846 (n : ℕ) : (∃ x y : ℕ, x > 0 ∧ y > 0 ∧ y^2 + x * y + 3 * x = n * (x^2 + x * y + 3 * y)) ↔ n = 1 ∨ n = 3 ∨ n = 4 ∨ n = 9 := by sorry
+theorem olymid_ref_base_10154 (A B C F D E : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (hF : F ∈ interior (convexHull ℝ {A, B, C})) (hangles : ∠ A F B = ∠ B F C ∧ ∠ B F C = ∠ C F A) (hD : D ∈ segment ℝ A C ∧ D ∈ segment ℝ B F) (hE : E ∈ segment ℝ A B ∧ E ∈ segment ℝ C F) : dist A B + dist A C ≥ 4 * dist D E := by sorry
+theorem theorem_proving_zh_blue_697 (n : ℕ) (hn : 0 < n) (a b c d e f : Finset ℕ) (ha : a ⊆ Finset.Icc 1 n) (hb : b ⊆ Finset.Icc 1 n) (hc : c ⊆ Finset.Icc 1 n) (hd : d ⊆ Finset.Icc 1 n) (he : e ⊆ Finset.Icc 1 n) (hf : f ⊆ Finset.Icc 1 n) (h1 : a.card ≥ n / 4) (h2 : b.card ≥ n / 4) (h3 : c.card ≥ n / 4) (h4 : d.card ≥ n / 4) (h5 : e.card ≥ n / 4) (h6 : f.card ≥ n / 4) : (a ∩ b).card ≥ n / 30 ∨ (a ∩ c).card ≥ n / 30 ∨ (a ∩ d).card ≥ n / 30 ∨ (a ∩ e).card ≥ n / 30 ∨ (a ∩ f).card ≥ n / 30 ∨ (b ∩ c).card ≥ n / 30 ∨ (b ∩ d).card ≥ n / 30 ∨ (b ∩ e).card ≥ n / 30 ∨ (b ∩ f).card ≥ n / 30 ∨ (c ∩ d).card ≥ n / 30 ∨ (c ∩ e).card ≥ n / 30 ∨ (c ∩ f).card ≥ n / 30 ∨ (d ∩ e).card ≥ n / 30 ∨ (d ∩ f).card ≥ n / 30 ∨ (e ∩ f).card ≥ n / 30 := by sorry
+theorem omni_theorem_4405 : ¬∃ m n : ℤ, (5 * m ^ 2 - 6 * m * n + 7 * n ^ 2) = 1985 := by sorry
+theorem olymid_ref_base_7469 {f : ℝ → ℝ} (hf : f = fun x => cos (cos (cos (cos (cos (cos (cos (cos x)))))))) (a : ℝ) (ha : a = cos a) : deriv f a = a^8 - 4 * a^6 + 6 * a^4 - 4 * a^2 + 1 := by sorry
+theorem algebra_27294 (a b c : ℝ) (ha : a + b + c > 0) (hb : a * b + b * c + c * a > 0) (hc : a * b * c > 0) : a > 0 ∧ b > 0 ∧ c > 0 := by sorry
+theorem olymid_ref_base_10678 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : (a * b + b * c + 1 / (c * a)) * (b * c + c * a + 1 / (a * b)) * (c * a + a * b + 1 / (b * c)) ≥ (1 + 2 * a) * (1 + 2 * b) * (1 + 2 * c) := by sorry
+theorem omni_theorem_3158 (x y z : ℤ) (hx : x = 11) (hy : y = 8) (h : 2 * x + 3 * z = 5 * y) : z = 6 := by sorry
+theorem olymid_ref_base_1111 (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (h1 : a * b * c * d = 1) (h2 : a ^ 2012 + 2012 * b = 2012 * c + d ^ 2012) (h3 : 2012 * a + b ^ 2012 = c ^ 2012 + 2012 * d) : ∃ t, 0 < t ∧ a = t ∧ b = 1 / t ∧ c = 1 / t ∧ d = t := by sorry
+theorem olymid_ref_base_1037 (x : ℕ → ℤ) (hx1 : x 1 = 1) (hxn : ∀ n ≥ 1, x (n + 1) = x n + ⌊(x n / n : ℝ)⌋ + 2) : x 1997 = 23913 := by sorry
+theorem olymid_ref_base_4764 (f : ℝ → ℝ) (h₀ : ∀ x y, 0 < x → 0 < y → f (x * y) = f x + f y + 1) (h₁ : ContinuousOn f (Set.Ioi 0)) (h₂ : f 2 = 0) : f 2015 = Real.logb 2 2015 - 1 := by sorry
+theorem DEMIMathAnalysis_26 : ¬ ∃ (f g h : ℝ → ℝ), Continuous f ∧ Continuous g ∧ Continuous h ∧ ∀ x y : ℝ, h (f x + g y) = x * y := by sorry
+theorem algebra_453825 (a b : ℝ) (ha : 0 < a) (hb : a < b) : (log b - log a) / (b - a) < 1 / sqrt (a * b) := by sorry
+theorem omni_theorem_2755 (r w : ℕ) (h₀ : r = 8) (h₁ : w > 0) (h₂ : (w + r) * (5 / 6 : ℚ) = w) : w = 40 := by sorry
+theorem olymid_ref_base_1234 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a^3 / (b * c) + b^3 / (c * a) + c^3 / (a * b) ≥ a + b + c ∧ (a^3 / (b * c) + b^3 / (c * a) + c^3 / (a * b) = a + b + c ↔ a = b ∧ b = c) := by sorry
+theorem olymid_ref_base_11771 : {(a, b) : ℕ × ℕ | a > 0 ∧ b > 0 ∧ a ∣ b ^ 4 + 1 ∧ b ∣ a ^ 4 + 1 ∧ ⌊Real.sqrt a⌋ = ⌊Real.sqrt b⌋} = {(1, 1), (1, 2)} := by sorry
+theorem aime_all_2018_I_2 (n a b c : ℕ) (h_a : 0 < a) (n_14 : Nat.digits 14 n = [c, b, a]) (n_15 : Nat.digits 15 n = [b, c, a]) (n_6 : Nat.digits 6 n = [c, a, c, a]): n = 925 := by sorry
+theorem quantitative_reasoning_zh_blue_750 : {x : ℝ | sin x = cos (2 * π / 5)} = {x | ∃ k : ℤ, x = k * π + (-1) ^ k * π / 10} := by sorry
+theorem olymid_ref_base_10207 {P : ℝ[X]} (hP : ∀ a b c, a * b + b * c + c * a = 0 → P.eval (a - b) + P.eval (b - c) + P.eval (c - a) = 2 * P.eval (a + b + c)) : (∃ a2 a4 : ℝ, P = C a2 * X ^ 2 + C a4 * X ^ 4) := by sorry
+theorem algebra_539179 (a b c : ℚ) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (h : ∃ x y z : ℚ, (x ≠ 0 ∨ y ≠ 0 ∨ z ≠ 0) ∧ a * x ^ 2 + b * y ^ 2 + c * z ^ 2 = 0) : ∀ N > 0, ∃ x y z : ℚ, a * x ^ 2 + b * y ^ 2 + c * z ^ 2 = 1 ∧ x ^ 2 + y ^ 2 + z ^ 2 > N := by sorry
+theorem omni_theorem_4012 (f : ℝ → ℝ) : (∀ x y, f x * f y = x * f (f (y - x)) + x * f (2 * x) + f (x ^ 2)) ↔ (∀ x, f x = 0) ∨ (∀ x, f x = 3 * x) := by sorry
+theorem olymid_ref_base_2558 (m n : ℕ) (hm : 0 < m) (hn : 0 < n) : (m + n)! / (m + n)^(m + n) < (m)! / (m)^m * (n)! / (n)^n := by sorry
+theorem olymid_ref_base_9996 {p d : ℕ} {f : Polynomial ℤ} (hp : Nat.Prime p) (hf0 : f.eval 0 = 0) (hf1 : f.eval 1 = 1) (hpn : ∀ n > 0, f.eval n % p = 0 ∨ f.eval n % p = 1) (hd : d = f.natDegree) : d ≥ p - 1 := by sorry
+theorem u_math_502 (a : ℝ) (ha : 0 < a) : ∫ φ in (0)..π, ∫ ρ in (0)..(a * sin (2 * φ)), ρ ^ 2 = 8 / 9 * a ^ 3 := by sorry
+theorem omni_theorem_3157 (V : ℝ) (hV : V = 50) (v : ℝ) (hv : v = 2.5) : ⌊(V / v)⌋ = 20 := by sorry
+theorem olymid_ref_base_6336 : IsGreatest {z : ℝ | ∃ x y : ℝ, x > 0 ∧ y > 0 ∧ z = x * y ∧ x + 1 / y = 3 ∧ y + 2 / x = 3} (3 + Real.sqrt 7) := by sorry
+theorem olymid_ref_base_10242 : Odd {(a,b,c,d,e) : ℕ × ℕ × ℕ × ℕ × ℕ | a > 0 ∧ b > 0 ∧ c > 0 ∧ d > 0 ∧ e > 0 ∧ a * b * c * d * e = 5 * (b * c * d * e + a * c * d * e + a * b * d * e + a * b * c * e + a * b * c * d)}.ncard := by sorry
+theorem quantitative_reasoning_zh_blue_189 : Nat.choose 5 1 * Nat.choose 4 3 + Nat.choose 5 2 * Nat.choose 4 2 + Nat.choose 5 3 * Nat.choose 4 1 = 120 := by sorry
+theorem olymid_ref_base_11578 (f : ℝ → ℝ) : (∀ x y, 0 < x → 0 < y → f (x * y + f x) = x * f y + 2) ↔ ∀ x, 0 < x → f x = x + 1 := by sorry
+theorem omni_theorem_1559 (a b c : ℤ) (h₀ : a + b * c = 2017) (h₁ : b + c * a = 8) : c = -6 ∨ c = 0 ∨ c = 2 ∨ c = 8 := by sorry
+theorem olymid_ref_base_8494 (a b : ℕ → ℕ) (h₀ : ∀ n, 0 < a n ∧ 0 < b n) (h₁ : a 0 ≥ 2 ∧ b 0 ≥ 2) (h₂ : ∀ n, a (n + 1) = Nat.gcd (a n) (b n) + 1) (h₃ : ∀ n, b (n + 1) = Nat.lcm (a n) (b n) - 1) : ∃ N t, N ≥ 0 ∧ t > 0 ∧ ∀ n, N ≤ n → a (n + t) = a n := by sorry
+theorem olymid_ref_base_10067 : ∃ (a b : ℕ → ℕ), StrictMono a ∧ StrictMono b ∧ ∀ n, a n * (a n + 1) ∣ b n ^ 2 + 1 := by sorry
+theorem olymid_ref_base_10781 (a b c d : ℝ) (h₀ : 0 ≤ a) (h₁ : a ≤ b) (h₂ : b ≤ c) (h₃ : c ≤ d) : a * b^3 + b * c^3 + c * d^3 + d * a^3 ≥ a^2 * b^2 + b^2 * c^2 + c^2 * d^2 + d^2 * a^2 := by sorry
+theorem algebra_519135 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) (k : ℕ) (hk : 2 ≤ k) : 3 / 2 ≤ a ^ k / (a + b) + b ^ k / (b + c) + c ^ k / (c + a) := by sorry
+theorem olymid_ref_base_2002 : ¬∃ (x y z : ℝ), 0 < x ∧ 0 < y ∧ 0 < z ∧ (2 * x^2 + y * z) * (2 * y^2 + x * z) * (2 * z^2 + x * y) = 26 * x^2 * y^2 * z^2 := by sorry
+theorem algebra_58094 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : 1 / (1 + a + b) + 1 / (1 + b + c) + 1 / (1 + c + a) ≤ 1 / (2 + a) + 1 / (2 + b) + 1 / (2 + c) := by sorry
+theorem olymid_ref_base_648 {n m k : ℕ} (hn : 0 < n) (hm : 0 < m) (hk : 0 < k) (h : (n - 1) * n * (n + 1) = m ^ k) : k = 1 := by sorry
+theorem olymid_ref_base_5102 : IsLeast {x | ∃ α β γ : ℝ, x = cos α ∧ cos β + cos γ = 1 - x ∧ sin α + sin β + sin γ = 1} ((-1 - sqrt 7) / 4) := by sorry
+theorem omni_theorem_2830 : (∑ᶠ x ∈ {x | ∃ a b c p q : ℕ, a > 0 ∧ p.Prime ∧ q.Prime ∧ p < q ∧ x = a * (p * q) ^ 2 + b * (p * q) + c ∧ a * p ^ 2 + b * p + c = 17 ∧ a * q ^ 2 + b * q + c = 17 ∧ a * (p + q) ^ 2 + b * (p + q) + c = 47}, x) % 100 = 71 := by sorry
+theorem algebra_453819 {a : ℕ → ℕ} (ha : ∀ n, a n = {N | 0 < N ∧ (Nat.digits 10 N).sum = n ∧ ∀ d ∈ (Nat.digits 10 N), d = 1 ∨ d = 3 ∨ d = 4}.ncard) : ∀ n, IsSquare (a (2 * n)) := by sorry
+theorem omni_theorem_919 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : logb a b + logb b c + logb c a = 0) : (logb a b)^3 + (logb b c)^3 + (logb c a)^3 = 3 := by sorry
+theorem omni_theorem_1984 {n : ℕ} (hn : n = 1536) : (∀ d, d ∣ n → (Nat.digits 2 d).sum ≤ 2) ∧ (∀ m, m < 2012 → (∀ d, d ∣ m → (Nat.digits 2 d).sum ≤ 2) → m ≤ n) := by sorry
+theorem omni_theorem_4163 : ∃ f : ℕ → ℕ, StrictMono f ∧ f 1 = 2 ∧ ∀ n, f (f n) = f n + n := by sorry
+theorem olymid_ref_base_2244 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (b * c / (a^2 + 2 * b * c) + c * a / (b^2 + 2 * c * a) + a * b / (c^2 + 2 * a * b)) ≤ 1 ∧ 1 ≤ (a^2 / (a^2 + 2 * b * c) + b^2 / (b^2 + 2 * c * a) + c^2 / (c^2 + 2 * a * b)) := by sorry
+theorem algebra_354875 (S : Finset ℕ) (hS : S = Finset.Icc 1 100) (D : Finset ℕ) (hD : D ⊆ S) (hD1 : D.card = 75) : ∃ x ∈ D, ∃ y ∈ D, ∃ z ∈ D, ∃ w ∈ D, x ≠ y ∧ x ≠ z ∧ x ≠ w ∧ y ≠ z ∧ y ≠ w ∧ z ≠ w ∧ Nat.Coprime x y ∧ Nat.Coprime x z ∧ Nat.Coprime x w ∧ Nat.Coprime y z ∧ Nat.Coprime y w ∧ Nat.Coprime z w := by sorry
+theorem omni_theorem_4312 (x y : ℤ) : x ^ 3 - y ^ 3 = 2 * x * y + 8 ↔ (x = 2 ∧ y = 0) ∨ (x = 0 ∧ y = -2) := by sorry
+theorem olymid_ref_base_4448 (r : ℝ) (hr : r > 0) (A B C D O : Set (ℝ × ℝ)) (hA : A = {(x, y) | x^2 + (y - r)^2 < r^2}) (hB : B = {(x, y) | (x - r)^2 + y^2 < r^2}) (hC : C = {(x, y) | x^2 + (y + r)^2 < r^2}) (hD : D = {(x, y) | (x + r)^2 + y^2 < r^2}) (hO : O = {(x, y) | x^2 + y^2 < (2 * r)^2}) : (MeasureTheory.volume (A ∪ B ∪ C ∪ D)).toReal - (MeasureTheory.volume (O \ (A ∪ B ∪ C ∪ D))).toReal = 8 * r^2 := by sorry
+theorem u_math_450 (z : ℝ) : 3 + 2 * z - 5 * z^2 = -5 * (z - 1 / 5)^2 + 16 / 5 := by sorry
+theorem omni_theorem_3307 : {p : Equiv.Perm (Fin 7) | ¬∃ i j k, i < j ∧ j < k ∧ p i > p j ∧ p j > p k}.ncard = 429 := by sorry
+theorem algebra_58418 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b + b * c + c * a = 1 / 3) : 1 / (a + b + c) ≤ a / (a ^ 2 - b * c + 1) + b / (b ^ 2 - c * a + 1) + c / (c ^ 2 - a * b + 1) := by sorry
+theorem olymid_ref_base_247 {p q : ℕ} (hp : p.Prime) (hq : q.Prime) : 3 * p ^ (q - 1) + 1 ∣ 11 ^ p + 17 ^ p ↔ (p, q) = (3, 3) := by sorry
+theorem omni_theorem_1327 (a : ℕ → ℝ) (ha : ∀ k ∈ Finset.Icc 1 100, 0 < a k) (h : ∀ k ∈ Finset.Icc 2 100, a k = (k * a (k - 1)) / (a (k - 1) - (k - 1))) (h' : a 20 = a 23) : a 100 = 215 := by sorry
+theorem DEMIMathAnalysis_55 : 7 / 12 - (EulerGamma : ℝ) = ∫ x in Set.Ioi 0, (x % 1)^2 * (1 - (x % 1))^2 / (1 + x)^5 := by sorry
+theorem olymid_ref_base_700 (p n : ℕ) [inst : Fact (Nat.Prime p)] (hn : 0 < n) : {(a1, a2, a3, a4) : ℕ × ℕ × ℕ × ℕ | a1 ∈ Icc 0 (p ^ n - 1) ∧ a2 ∈ Icc 0 (p ^ n - 1) ∧ a3 ∈ Icc 0 (p ^ n - 1) ∧ a4 ∈ Icc 0 (p ^ n - 1) ∧ p ^ n ∣ a1 * a2 + a3 * a4 + 1}.ncard = p ^ (3 * n) - p ^ (3 * n - 2) := by sorry
+theorem omni_theorem_1388 {a b c x y z : ℂ} (h₀ : a = (b + c) / (x - 2)) (h₁ : b = (c + a) / (y - 2)) (h₂ : c = (a + b) / (z - 2)) (h₃ : x * y + y * z + z * x = 67) (h₄ : x + y + z = 2010) : x * y * z = -5892 := by sorry
+theorem olymid_ref_base_9868 (p q r : ℤ) (h₀ : 1 < p) (h₁ : p < q) (h₂ : q < r) (h₃ : (p - 1) * (q - 1) * (r - 1) ∣ (p * q * r - 1)) : (p, q, r) = (2, 4, 8) ∨ (p, q, r) = (3, 5, 15) := by sorry
+theorem olymid_ref_base_2676 : {(x, y, z) : ℤ × ℤ × ℤ | x ^ 2 + y ^ 2 + z ^ 2 = 16 * (x + y + z)} = {(x, y, z) : ℤ × ℤ × ℤ | x ∈ ({0, 16} : Set ℤ) ∧ y ∈ ({0, 16} : Set ℤ) ∧ z ∈ ({0, 16} : Set ℤ)} := by sorry
+theorem algebra_567886 {n : ℕ} (hn : 0 < n) (a A : ℕ → ℝ) (ha : ∀ k ∈ Finset.Icc 1 n, 0 ≤ a k) (hA : ∀ k ∈ Finset.Icc 1 n, A k = (∑ i in Finset.Icc 1 k, a i) / k) : ∑ k in Finset.Icc 1 n, (A k)^2 ≤ 4 * ∑ k in Finset.Icc 1 n, (a k)^2 := by sorry
+theorem aime_all_1997_8 : {A : Matrix (Fin 4) (Fin 4) ℤ | (∀ i j, A i j = 1 ∨ A i j = -1) ∧ (∀ i, (∑ j : Fin 4, A i j = 0)) ∧ (∀ j, (∑ i : Fin 4, A i j = 0))}.ncard = 90 := by sorry
+theorem olymid_ref_base_3273 (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h1 : x^2 + 2 * (y - 1) * (z - 1) = 85) (h2 : y^2 + 2 * (z - 1) * (x - 1) = 84) (h3 : z^2 + 2 * (x - 1) * (y - 1) = 89) : x + y + z = 18 := by sorry
+theorem olymid_ref_base_3300 : exp (∫ x in (0)..log 2, (2 * exp (3 * x) + exp (2 * x) - 1) / (exp (3 * x) + exp (2 * x) - exp x + 1)) = 11 / 4 := by sorry
+theorem u_math_35 (x : ℝ) : sin (arctan x) = x / sqrt (1 + x ^ 2) := by sorry
+theorem olymid_ref_base_5068 : IsLeast {x : ℤ | ∃ P : Polynomial ℤ, x = |P.eval 20 + P.eval 70| ∧ P.eval 0 + P.eval 90 = 2018} 782 := by sorry
+theorem omni_theorem_2360 {a : ℕ → ℕ} (ha : ∀ n, a n = {s : List Char | s.length = n ∧ ¬∃ i, s[i]! = 'A' ∧ s[i + 1]! = 'U' ∧ s[i + 2]! = 'G'}.ncard) (h : ∃! x : ℝ, ∃! y : ℝ, ∃! z : ℝ, ∀ n ≥ 100, a n = x * a (n - 1) + y * a (n - 2) + z * a (n - 3)) : (x, y, z) = (4, 0, -1) := by sorry
+theorem aime_all_2007_II_4 (a b m : ℝ) (ha : 0 < a) (hb : 0 < b) (h1 : 100 * a = 300 ∧ 100 * b = 200) (h2 : 60 * 2 * a = 240 ∧ 60 * 2 * b = 300) (h3 : 50 * 3 * a = 150 ∧ 50 * 3 * b = m) : m = 450 := by sorry
+theorem olymid_ref_base_3792 (f : ℝ → ℝ) (h₀ : f 0 = 1) (h₁ : deriv f 0 = 2) (h₂ : ∀ t, iteratedDeriv 2 f t = 4 * deriv f t - 3 * f t + 1) : iteratedDeriv 4 f 0 = 54 := by sorry
+theorem olymid_ref_base_3534 : exp (∫ x in (3 / 4)..(4 / 3), (2 * x ^ 2 + x + 1) / (x ^ 3 + x ^ 2 + x + 1)) = 16 / 9 := by sorry
+theorem u_math_396 {f : ℝ → ℝ} (hf : f = λ x => 2 * x ^ 2 * sin x) : iteratedDeriv 25 f = λ x => (2 * x ^ 2 - 1200) * cos x + 100 * x * sin x := by sorry
+theorem olymid_ref_base_4912 : (Finset.sum (Nat.divisors 2016) fun d => (d ^ 2 / (d ^ 2 + 2016 : ℚ))) / (Nat.divisors 2016).card = 1 / 2 := by sorry
+theorem olymid_ref_base_1092 (m : ℕ) (hm : m > 0) (hmp : m ≡ 2 [MOD 4]) : Set.ncard {x : ℕ × ℕ | x.1 * x.2 = m ∧ x.1 > 0 ∧ x.2 > 0 ∧ 0 < x.1 - x.2 ∧ x.1 - x.2 < sqrt (5 + 4 * sqrt (4 * m + 1))} ≤ 1 := by sorry
+theorem omni_theorem_4126 {a b : ℕ} (ha : 0 < a) (hb : 0 < b): ∃ k : ℕ, 0 < k ∧ a ^ 2 / (2 * a * b ^ 2 - b ^ 3 + 1) = k ↔ (∃ l : ℕ, 0 < l ∧ a = 2 * l ∧ b = 1) ∨ (∃ l : ℕ, 0 < l ∧ a = l ∧ b = 2 * l) ∨ (∃ l : ℕ, 0 < l ∧ a = 8 * l ^ 4 - l ∧ b = 2 * l):= by sorry
+theorem algebra_48694 (a b c : ℝ) (ha : a ∈ Ioo 0 (π/2)) (hb : b ∈ Ioo 0 (π/2)) (hc : c ∈ Ioo 0 (π/2)) : sin a * sin (a - b) * sin (a - c)/sin (b + c) + sin b * sin (b - c) * sin (b - a)/sin (c + a) + sin c * sin (c - a) * sin (c - b)/sin (a + b) ≥ 0 := by sorry
+theorem aime_all_2011_II_14 : {p : Equiv.Perm (Fin 30) | ∀ m ∈ ({2, 3, 5} : Finset ℕ), ∀ n : Fin 30, n + m < 30 → m ∣ (p (n + m) - p n)}.ncard % 1000 = 440 := by sorry
+theorem olymid_ref_base_9415 {m : ℕ} (hm : 1 ≤ m) : ∃ S : Set (EuclideanSpace ℝ (Fin 2)), S.Finite ∧ ∀ A ∈ S, {B | B ∈ S ∧ dist A B = 1}.encard = m := by sorry
+theorem olymid_ref_base_9471 {n : ℕ} (hn : 0 < n) (x y z : Fin n → ℝ) (hx : ∀ i j, i < j → x i ≥ x j) (hy : ∀ i j, i < j → y i ≥ y j) (hz : ∃ p : Equiv.Perm (Fin n), ∀ i, z i = y (p i)) : ∑ i, (x i - y i) ^ 2 ≤ ∑ i, (x i - z i) ^ 2 := by sorry
+theorem omni_theorem_2719 : ({(x, y) : ℕ × ℕ | x ∈ Icc 1 6 ∧ y ∈ Icc 1 6 ∧ x * y = 12}).ncard / (6 * 6) = 4 / 36 := by sorry
+theorem olymid_ref_base_10046 {n : ℕ} (hn : 0 < n) (a : Fin n → ℝ) (apos : ∀ i, 0 < a i) (sum : ∑ i, a i < 1) : (∏ i, a i * (1 - ∑ j, a j)) / ((∑ j, a j) * ∏ i, (1 - a i)) ≤ 1 / (n ^ (n + 1)) := by sorry
+theorem omni_theorem_4257 {x y z : ℤ} (h1 : x^3 + y^3 + z^3 = 8) (h2 : x + y + z = 8) : (x, y, z) = (15, 9, -16) ∨ (x, y, z) = (15, -16, 9) ∨ (x, y, z) = (9, 15, -16) ∨ (x, y, z) = (9, -16, 15) ∨ (x, y, z) = (-16, 15, 9) ∨ (x, y, z) = (-16, 9, 15) := by sorry
+theorem omni_theorem_41 (k : ℕ) (α β : ℝ) (hk : 0 < k) (hα : 0 < α) (hβ : 0 < β) : ∃ n : ℕ, 1 < n ∧ ((Nat.primeFactors (n + k)).card / (Nat.primeFactors n).card > α) ∧ ((∑ i ∈ Nat.primeFactors (n + k), (Nat.factorization (n + k) i)) / (∑ i ∈ Nat.primeFactors n, (Nat.factorization n i))) < β := by sorry
+theorem olymid_ref_base_957 (n : ℕ) (h : Odd n ∧ n > 0) : 2^9 ∣ n^12 - n^8 - n^4 + 1 := by sorry
+theorem olymid_ref_base_5098 (x : ℝ) (hx : x > 0) (h : x ^ (2 * x ^ 6) = 3) : x = 3 ^ ((1 : ℝ) / 6) := by sorry
+theorem omni_theorem_2844 (b g : ℕ → ℕ) (hb0 : b 0 = 1) (hg0 : g 0 = 1) (hbn : ∀ n ≥ 1, b n = b (n - 1) + 2 * g (n - 1)) (hgn : ∀ n ≥ 1, g n = g (n - 1) + g (n - 1)) : (b 7 + g 7 = 383) := by sorry
+theorem u_math_344 (x : ℝ) : x ^ 2 + (2 / 5) * x - (1 / 5) = (x + (1 / 5)) ^ 2 - (6 / 25) := by sorry
+theorem u_math_111 (x : ℝ) : abs (-6 * x - 6) ≤ 1 ↔ x ∈ Set.Icc (-7 / 6) (-5 / 6) := by sorry
+theorem omni_theorem_3078 (x y z : ℤ) (hx : x = 2) (hy : y = x ^ 2 - 5) (hz : z = y ^ 2 - 5) : z = -4 := by sorry
+theorem u_math_925 : (MeasureTheory.volume {p : ℝ × ℝ | p.1 ^ 2 + p.2 ^ 2 ≤ 4 ∧ p.1 ^ 2 + p.2 ^ 2 ≥ 1 ∧ p.2 ≥ p.1 ∧ p.2 ≤ sqrt 3 * p.1}).toReal = Real.pi / 8 := by sorry
+theorem u_math_476 {E : Set (EuclideanSpace ℝ (Fin 3))} (hE : E = {p : EuclideanSpace ℝ (Fin 3) | 0 ≤ p 0 ∧ p 0 ≤ sqrt (p 1) ∧ 0 ≤ p 1 ∧ p 1 ≤ 2 ∧ 0 ≤ p 2 ∧ p 2 ≤ 1 - p 0 ^ 2 - p 1 ^ 2}) : ∫ p in E, (p 0 * p 2 + 1) = 73 / 30 - 52 * sqrt 2 / 35 := by sorry
+theorem omni_theorem_4132 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1 / 8) : 15 / 16 ≤ a ^ 2 + b ^ 2 + c ^ 2 + a ^ 2 * b ^ 2 + b ^ 2 * c ^ 2 + c ^ 2 * a ^ 2 ∧ (15 / 16 = a ^ 2 + b ^ 2 + c ^ 2 + a ^ 2 * b ^ 2 + b ^ 2 * c ^ 2 + c ^ 2 * a ^ 2 ↔ (a = 1 / 2 ∧ b = 1 / 2 ∧ c = 1 / 2)) := by sorry
+theorem olymid_ref_base_9747 (A B C K L M N R F : EuclideanSpace ℝ (Fin 2)) (h₀ : ¬Collinear ℝ {A, B, C}) (h₁ : K ∈ segment ℝ B C) (h₂ : L ∈ segment ℝ A C) (h₃ : M ∈ segment ℝ A B) (h₄ : N ∈ segment ℝ L M) (h₅ : R ∈ segment ℝ M K) (h₆ : F ∈ segment ℝ K L) (h₇ : E₁ = (MeasureTheory.volume (convexHull ℝ {A, M, R})).toReal) (h₈ : E₂ = (MeasureTheory.volume (convexHull ℝ {C, K, R})).toReal) (h₉ : E₃ = (MeasureTheory.volume (convexHull ℝ {B, K, F})).toReal) (h₁₀ : E₄ = (MeasureTheory.volume (convexHull ℝ {A, L, F})).toReal) (h₁₁ : E₅ = (MeasureTheory.volume (convexHull ℝ {B, N, M})).toReal) (h₁₂ : E₆ = (MeasureTheory.volume (convexHull ℝ {C, L, N})).toReal) (h₁₃ : E = (MeasureTheory.volume (convexHull ℝ {A, B, C})).toReal) : E ≥ 8 * (E₁ * E₂ * E₃ * E₄ * E₅ * E₆) ^ ((1 : ℝ) / 6) := by sorry
+theorem olymid_ref_base_4703 (p : ℂ[X]) (hp : p = C 4 * X ^ 10 + C (-7) * X ^ 9 + C 5 * X ^ 8 + C (-8) * X ^ 7 + C 12 * X ^ 6 + C (-12) * X ^ 5 + C 12 * X ^ 4 + C (-8) * X ^ 3 + C 5 * X ^ 2 + C (-7) * X + C 4) : ∑ x in p.roots.toFinset, x ^ 2 = -7 / 16 := by sorry
+theorem omni_theorem_2697 {l w : ℝ} (hl : l = 3 / 5) (hw : l * w = 1 / 3) : w = 5 / 9 := by sorry
+theorem olymid_ref_base_8994 (n : ℕ) (x : Fin n → ℝ) : ∑ i, ∑ j, sqrt (abs (x i - x j)) ≤ ∑ i, ∑ j, sqrt (abs (x i + x j)) := by sorry
+theorem algebra_539178 : Set.Infinite {(x, y, z) : ℕ × ℕ × ℕ | x > 0 ∧ y > 0 ∧ z > 0 ∧ x^2 + y^2 = z^6} := by sorry
+theorem olymid_ref_base_2259 (n : ℤ) : 6 ∣ n^3 - 7 * n := by sorry
+theorem olymid_ref_base_11003 (a b c : ℝ) (h₀ : 0 < a) (h₁ : 0 < b) (h₂ : 0 < c) : 2 * a^2 / (b + c) + 2 * b^2 / (c + a) + 2 * c^2 / (a + b) ≥ a + b + c := by sorry
+theorem u_math_209 (f : ℝ → ℝ → ℝ) (hf : f = λ x y => arctan (x * y)) : (∫ x in (0)..1, ∫ y in (0)..1, f x y) / (1 * 1) = (Real.pi - Real.log 4) / 4 - (Real.pi ^ 2) / 48 := by sorry
+theorem theorem_proving_zh_blue_1004 {A B C : Real} (hA : A ∈ Ioo 0 (π / 2)) (hB : B ∈ Ioo 0 (π / 2)) (hC : C ∈ Ioo 0 (π / 2)) (hABC : A + B + C = π) : cos (B - C) * cos (C - A) * cos (A - B) ≥ 8 * cos A * cos B * cos C := by sorry
+theorem olymid_ref_base_3224 : IsGreatest {n | 0 < n ∧ (2^n : ℤ) ∣ 7^2048 - 1} 14 := by sorry
+theorem olymid_ref_base_10777 : ¬∃ (a b : ℤ), Prime (16 * a - 9 * b) ∧ ∃ m, m^2 = a * b ∧ ∃ n, n^2 = a + b := by sorry
+theorem quantitative_reasoning_zh_blue_40 {a : ℝ} (A B : Set ℝ) (hA : A = {x | x^2 - 4 * x + 3 < 0}) (hB : B = {x | 2^(1 - x) + a ≤ 0 ∧ x^2 - 2 * (a + 7) * x + 5 ≤ 0}) (hAB : A ⊆ B) : -4 ≤ a ∧ a ≤ -1 := by sorry
+theorem algebra_539234 {f : ℤ → ℕ} (hf : ∀ m n, 0 < f m ∧ 0 < f n) (h : ∀ m n, f (m - n) ∣ f m - f n) : ∀ m n, f m ≤ f n → f m ∣ f n := by sorry
+theorem algebra_378796 {n : ℕ} (hn : 0 < n) (a b : Fin n → ℝ) : (∑ i, a i ^ 2) * (∑ i, b i ^ 2) ≥ (∑ i, a i * b i) ^ 2 := by sorry
+theorem algebra_429856 (a b c d : ℤ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (hd : 0 ≤ d) (h : (a + b) ^ 2 + 3 * a + 2 * b = (c + d) ^ 2 + 3 * c + 2 * d) : a = c ∧ b = d := by sorry
+theorem olymid_ref_base_8096 (n : ℕ) (hn : 0 < n) (ε : ℕ → ℕ) (a b : ℕ → ℤ) (h₁ : a 0 = 1) (h₂ : b 0 = 1) (h₃ : a 1 = 7) (h₄ : b 1 = 7) (h₅ : ∀ i ∈ Icc 1 (n - 1), a (i + 1) = if ε i = 0 then 2 * a (i - 1) + 3 * a i else 3 * a (i - 1) + a i) (h₆ : ∀ i ∈ Icc 1 (n - 1), b (i + 1) = if ε (n - i) = 0 then 2 * b (i - 1) + 3 * b i else 3 * b (i - 1) + b i) : a n = b n := by sorry
+theorem u_math_350 (x : ℝ) : (12 - 5 * (x + 3)) = (2 * x - 5) ↔ x = 2 / 7 := by sorry
+theorem olymid_ref_base_2227 (A B C L M N : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (hL : L = midpoint ℝ B C) (hM : M = midpoint ℝ C A) (hN : N = midpoint ℝ A B) (hangle : ∠ A N C = ∠ A L B) : ∠ C A L = ∠ A B M := by sorry
+theorem olymid_ref_base_2018 (f : ℝ → ℝ) : (∀ x y : ℝ, f (x^2 + x * y + f (y^2)) = x * f y + f (x^2) + y^2) ↔ ∀ x : ℝ, f x = x ∨ f x = -x := by sorry
+theorem omni_theorem_3493 (x : ℝ) (hx : x < -2) : min (min (min (min x (x + 2)) (1 / 2 * x)) (x - 2)) (2 * x) = 2 * x := by sorry
+theorem olymid_ref_base_9428 (n : ℕ) (hn : 0 < n) (x : Fin n → ℝ) (hsum : ∑ i : Fin n, x i = 0) (m M : ℝ) (hm : ∃ i : Fin n, x i = m) (hM : ∃ i : Fin n, x i = M) (hle : ∀ i : Fin n, x i ≤ M) (hge : ∀ i : Fin n, x i ≥ m) : ∑ i : Fin n, (x i)^2 ≤ -n * m * M := by sorry
+theorem omni_theorem_3094 (x : ℝ) (h : 3 * x + 4 = x + 2) : x = -1 := by sorry
+theorem olymid_ref_base_9275 (x : ℝ) : (cos x)^2 + (cos (2 * x))^2 + (cos (3 * x))^2 = 1 ↔ ∃ m : ℤ, x = π / 2 + m * π ∨ x = π / 4 + m * π / 2 ∨ x = π / 6 + m * π / 3 := by sorry
+theorem olymid_ref_base_4955 : Set.ncard {f : ℕ → Fin 17 | ∀ x : ℕ, f (x + 17) = f x ∧ ∀ x ≥ 1, f (x ^ 2) ≡ f x ^ 2 + 15 [MOD 17]} = 12066 := by sorry
+theorem omni_theorem_3897 : (Nat.digits 10 ((Nat.digits 10 (4444^4444)).sum)).sum = 7 := by sorry
+theorem olymid_ref_base_4839 : tan (π/7) * tan (2*π/7) * tan (3*π/7) = sqrt 7 := by sorry
+theorem algebra_555768 (a b : ℝ) (ha : 0 < a) (hb : 0 < b) : Real.sqrt a + 1 > Real.sqrt b ↔ ∀ x > 1, a * x + x / (x - 1) > b := by sorry
+theorem omni_theorem_3865 {m : ℤ} (hm : m ≠ 0) (P : ℝ → ℝ) : (∀ x, (x^3 - m * x^2 + 1) * P (x + 1) + (x^3 + m * x^2 + 1) * P (x - 1) = 2 * (x^3 - m * x + 1) * P x) ↔ ∃ c, P = fun x => c * x := by sorry
+theorem omni_theorem_3568 (f : ℝ → ℝ) : (∀ x y, f (x * (x + f y)) = (x + y) * f x) ↔ ∀ x, f x = 0 ∨ f x = x := by sorry
+theorem omni_theorem_3763 (f : ℝ → ℝ) (hf : ∀ x y : ℝ, (f x + y) * (f y + x) = f (x ^ 2) + f (y ^ 2) + 2 * f (x * y)) : ∀ x : ℝ, f x = x := by sorry
+theorem omni_theorem_276 : ∃ X : Set ℤ, ∀ n : ℤ, ∃! a ∈ X, ∃! b ∈ X, a + 2 * b = n := by sorry
+theorem olymid_ref_base_8451 {f : ℤ → ℤ} (h : ∀ x y, f (x - f y) = f (f x) - f y - 1) : ∀ x, f x = x + 1 := by sorry
+theorem u_math_244 (x : ℝ) : tan x + tan (π / 4 + x) = -2 ↔ ∃ n : ℤ, x = -π / 3 + π * n ∨ x = π / 3 + n * π := by sorry
+theorem olymid_ref_base_5230 (θ : ℝ) (hcos : cos θ = 1 / 5) : ∑' n : ℕ, cos (n * θ) / 2 ^ n = 6 / 7 := by sorry
+theorem omni_theorem_108 : IsLeast {p : ℕ | p.Prime ∧ ¬∃ a b : ℕ, p = |(3 ^ a : ℤ) - 2 ^ b|} 41 := by sorry
+theorem aime_all_2000_I_7 (x y z : ℚ) (hxpos : 0 < x) (hypos : 0 < y) (hzpos : 0 < z) (hxyz : x * y * z = 1) (hsumx : x + 1 / z = 5) (hsumy : y + 1 / x = 29) : (z + 1 / y).num + (z + 1 / y).den = 5 := by sorry
+theorem omni_theorem_654 {f : ℝ → ℝ} (hf1 : Set.Finite {x | f x = 0}) (hf2 : ∀ x y, f (x ^ 4 + y) = x ^ 3 * f x + f (f y)) : ∀ x, f x = x := by sorry
+theorem olymid_ref_base_890 (a : ℕ → ℕ) (ha : ∀ n, 2 ≤ a n) (h : ∀ n, a (n + 2) ∣ a (n + 1) + a n) : ∃ p, Nat.Prime p ∧ {n | p ∣ a n}.Infinite := by sorry
+theorem omni_theorem_3854 : ∃ n : ℕ, 0 < n ∧ (n.primeFactors.card = 2000) ∧ n ∣ (2 ^ n + 1) := by sorry
+theorem omni_theorem_3965 (c : ℝ) (hc : 0 < c) : (∃ f : ℤ × ℤ → ℕ, (∀ x y : ℤ, f (x, y) > 0) ∧ Set.Finite {i | ∃ x y : ℤ, f (x, y) = i} ∧ ∀ i ∈ Set.range f, ∀ x1 x2 y1 y2 : ℤ, (f (x1, y1) = i ∧ f (x2, y2) = i) → c ^ i ≤ Real.sqrt ((x2 - x1)^2 + (y2 - y1)^2)) ↔ c < Real.sqrt 2 := by sorry
+theorem olymid_ref_base_4854 : {(k, m, n) : ℕ × ℕ × ℕ | k ≤ 100 ∧ m ≤ 100 ∧ n ≤ 100 ∧ 2^m * n - 2^n * m = 2^k}.ncard = 22 := by sorry
+theorem algebra_385939 : ¬∃ (x y z : ℤ), x > 0 ∧ y > 0 ∧ z > 0 ∧ x^3 + 2 * y^3 = 4 * z^3 := by sorry
+theorem olymid_ref_base_7475 {P : ℝ → ℝ} (hP : ∀ x, P x = x^3 - 3/2 * x^2 + x + 1/4) (hP1 : ∀ x, P^[1] x = P x) (hP2 : ∀ n ≥ 1, ∀ x, P^[n + 1] x = P^[n] (P x)) : ∫ x in (0)..1, P^[2004] x = 1/2 := by sorry
+theorem olymid_ref_base_3677 (x : ℕ → ℝ) (h0 : x 0 = 2009) (hn : ∀ n ≥ 1, x n = -2009 / (n : ℝ) * ∑ k ∈ Icc 0 (n - 1), x k) : ∑ n ∈ Icc 0 2009, 2 ^ n * x n = 2009 := by sorry
+theorem olymid_ref_base_6079 (x y z : ℝ) (h₀ : 2 * x + y + 4 * x * y + 6 * x * z = -6) (h₁ : y + 2 * z + 2 * x * y + 6 * y * z = 4) (h₂ : x - z + 2 * x * z - 4 * y * z = -3) : x ^ 2 + y ^ 2 + z ^ 2 = 29 := by sorry
+theorem algebra_58960 (a : ℕ → ℝ) (h : ∀ i j, a (i + j) ≤ a i + a j) (n : ℕ) (hn : 0 < n) : ∑ i in Finset.Icc 1 n, (a i)/i ≥ a n := by sorry
+theorem omni_theorem_3223 (t : ℕ → ℤ) (ht : ∀ n, t n = round (sqrt n)) : ∑ i ∈ Finset.Icc 1 2010, (1 / t i : ℝ) = 88 + 2 / 3 := by sorry
+theorem olymid_ref_base_3364 (θ : ℕ → ℕ) (hθ : ∀ n, θ n = {x | 0 ≤ x ∧ x < 2010 ∧ 2010 ∣ x^2 - n}.ncard) : (∑ n ∈ Icc 0 2009, n * θ n) % 2010 = 335 := by sorry
+theorem olymid_ref_base_10930 (a b c : ℝ) (h₀ : a ≠ 0 ∧ b ≠ 0 ∧ c ≠ 0) (h₁ : a ≥ b ∧ b ≥ c) : (a^3 - c^3)/3 ≥ a * b * c * ((a - b)/c + (b - c)/a) ∧ ((a^3 - c^3)/3 = a * b * c * ((a - b)/c + (b - c)/a) ↔ a = b ∧ b = c) := by sorry
+theorem theorem_proving_zh_blue_599 (n : ℕ) (hn : n > 0) (h : ∃ k, k^2 = 2 * n + 1) : ∃ m, m^2 + (m + 1)^2 = n + 1 := by sorry
+theorem omni_theorem_2847 {A B C D : ℝ} (hA : A < B) (hB : B < C) (hC : C < D) (hAB : (B - A) / (C - A) = 1 / 5) (hBC : (C - B) / (D - C) = 2 / 1) : (B - A) / (D - C) = 1 / 2 := by sorry
+theorem olymid_ref_base_1061 {P : Polynomial ℝ} (hP : P.degree = 6) (a b : ℝ) (ha : 0 < a) (hb : a < b) (hP1 : P.eval a = P.eval (-a)) (hP2 : P.eval b = P.eval (-b)) (hP3 : P.derivative.eval 0 = 0) : ∀ x, P.eval x = P.eval (-x) := by sorry
+theorem u_math_513 {P : ℝ → ℝ} (hP : P = fun t => 53000 + 2100 * t) : P (-530 / 21) = 0 ∧ P 0 = 53000 := by sorry
+theorem u_math_902 : ∫ x, Real.sin (5 * x) ^ 6 * Real.cos (5 * x) ^ 2 = (1 / 32) * x - (1 / 32) * (1 / 20) * Real.sin (20 * x) - (1 / 8) * (1 / 10) * (1 / 3) * Real.sin (10 * x) ^ 3 + (1 / 128) * x - (1 / 128) * (1 / 40) * Real.sin (40 * x) + C := by sorry
+theorem omni_theorem_191 {u v : ℝ} (hu : ∑ i ∈ Finset.range 8, u^(i+1) + 10 * u^9 = 8) (hv : ∑ i ∈ Finset.range 10, v^(i+1) + 10 * v^11 = 8) : v > u := by sorry
+theorem algebra_369542 {s : ℕ} (hs : 0 < s) (n : Fin s → ℕ) (hn : ∀ i j, n i = n j → i = j) (hn1 : ∀ i, 0 < n i) : ∑ i, (2 : ℝ) ^ ((n i) / 2) < (1 + sqrt 2) * sqrt (∑ i, 2 ^ (n i)) := by sorry
+theorem omni_theorem_446 : IsLeast {n | 0 < n ∧ 100 ∣ ∑ i ∈ Icc 1 n, i^2} 24 := by sorry
+theorem u_math_446 (m : ℝ) : ¬∃ x : ℝ, m * x + 4 ≤ 2 * x + 5 * (x - 1) ↔ m = 7 := by sorry
+theorem olymid_ref_base_2006 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 2 ≤ (a^4 + 1)/(b^3 + b^2 + b) + (b^4 + 1)/(c^3 + c^2 + c) + (c^4 + 1)/(a^3 + a^2 + a) := by sorry
+theorem aime_all_2001_II_14 (n : ℕ) (θ : ℕ → ℝ) (hθ : ∀ k ∈ Icc 1 (2 * n), θ k ∈ Set.Ico 0 360) (h : ∀ k ∈ Icc 1 (2 * n), (exp (I * θ k)) ^ 28 - (exp (I * θ k)) ^ 8 - 1 = 0) (hrange : ∀ k ∈ Icc 1 (2 * n), ∀ l ∈ Icc 1 (2 * n), (k < l ∧ l ∈ Icc 1 (2 * n)) → θ k < θ l) : ∑ k ∈ (Ico 2 (2 * n + 1)).filter Even, θ k = 840 := by sorry
+theorem olymid_ref_base_10760 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b * c = 1) : 3 * (a + b + c + 1) ≤ (a + 1 / b) ^ 2 + (b + 1 / c) ^ 2 + (c + 1 / a) ^ 2 ∧ (3 * (a + b + c + 1) = (a + 1 / b) ^ 2 + (b + 1 / c) ^ 2 + (c + 1 / a) ^ 2 ↔ a = b ∧ b = c) := by sorry
+theorem olymid_ref_base_4152 (x y : ℝ) (h₀ : x^2 * y = 3) (h₁ : x + x * y = 4) : (x = 1 ∧ y = 3) ∨ (x = 3 ∧ y = 1 / 3) := by sorry
+theorem olymid_ref_base_9844 {a : ℚ} (ha : 0 < a ∧ a < 1) (h : Real.cos (3 * Real.pi * a) + 2 * Real.cos (2 * Real.pi * a) = 0) : a = 2 / 3 := by sorry
+theorem olymid_ref_base_7163 : IsGreatest {n | ∀ m ≥ 5, n ∣ m^5 - 5 * m^3 + 4 * m} 120 := by sorry
+theorem omni_theorem_2759 : Set.ncard {x : ℕ | x ∣ 128 ∧ ∃ n, x = n^2 ∧ n > 1} = 3 := by sorry
+theorem omni_theorem_4110 (f : ℝ → ℝ) : (∀ x y, f (⌊x⌋ * y) = f x * ⌊f y⌋) ↔ (∀ x, f x = 0) ∨ ∃ c, 1 ≤ c ∧ c < 2 ∧ ∀ x, f x = c := by sorry
+theorem algebra_539189 {a : ℕ → ℤ} (ha0 : a 0 = 0) (han : ∀ n ≥ 2, a n + a (n - 2) ≥ 2 * a (n - 1)) : ∀ n > 0, ∀ k ∈ Finset.Icc 0 n, n * a k ≤ k * a n := by sorry
+theorem algebra_529699 (a : ℕ → ℝ) (h₀ : a 1 = 1) (h₁ : a 2 = 2) (h₂ : ∀ n ≥ 2, a (n + 1) = (a n * a (n - 1) + 1) / a (n - 1)) : ∀ n ≥ 3, a n > sqrt (2 * n) := by sorry
+theorem olymid_ref_base_2160 (n p : ℕ) (hn : n > 0) (hp : Nat.Prime p) (hnp : ∃ k, n + p = n ^ k) : (n, p) = (2, 2) := by sorry
+theorem omni_theorem_710 (x : ℝ) (hx : x = (5508^3 + 5625^3 + 5742^3) ^ ((1 : ℝ) / 4)) (hxi : ∃ n : ℤ, x = n) : x = 855 := by sorry
+theorem olymid_ref_base_6629 : {(x, y, z) : ℝ × ℝ × ℝ | x * y + z = 40 ∧ x * z + y = 51 ∧ x + y + z = 19} = {(12, 3, 4), (6, 5.4, 7.6)} := by sorry
+theorem omni_theorem_405 {x y : ℝ} (hx : x = 2001^1002 - 2001^(-1002 : ℤ)) (hy : y = 2001^1002 + 2001^(-1002 : ℤ)) : x^2 - y^2 = -4 := by sorry
+theorem quantitative_reasoning_zh_blue_788 {x y z : ℝ} (h : (1 + x^2) * (1 + y^2) * (1 + z^2) = 4 * x * y * (1 - z^2)) : (x = 1 ∧ y = 1 ∧ z = 0) ∨ (x = -1 ∧ y = -1 ∧ z = 0) := by sorry
+theorem olymid_ref_base_4700 : ∑ a ∈ Icc 0 80, ∑ b ∈ Icc 0 80, (if a < b then 0 else (Nat.choose a b) % 3) / (81 * 81) = 1816 / 6561 := by sorry
+theorem aime_all_2021_II_7 (a b c d : ℝ) (h₀ : a + b = -3) (h₁ : a * b + b * c + c * a = -4) (h₂ : a * b * c + b * c * d + c * d * a + d * a * b = 14) (h₃ : a * b * c * d = 30) (m n : ℕ) (hm : m > 0) (hn : n > 0) (hmn : Nat.Coprime m n) (h : a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = m / n) : m + n = 145 := by sorry
+theorem algebra_48694 (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (h : a * b * c * d = 1) : 25 / 4 ≤ 1 / a + 1 / b + 1 / c + 1 / d + 9 / (a + b + c + d) := by sorry
+theorem omni_theorem_953 : ∑ n in Finset.Icc 2 17, (n^2 + n + 1) / (n^4 + 2 * n^3 - n^2 - 2 * n) = 592 / 969 := by sorry
+theorem olymid_ref_base_9842 : ∀ (x y z : ℕ), 0 < x ∧ 0 < y ∧ 0 < z ∧ 3^x + 4^y = 5^z ↔ x = 2 ∧ y = 2 ∧ z = 2 := by sorry
+theorem omni_theorem_3500 (x : ℕ) (h : x + 12 = 8 * (x - 2)) : x = 4 := by sorry
+theorem omni_theorem_3405 (x : ℤ) (h : Even (3 * x + 1)) : Odd (7 * x + 4) := by sorry
+theorem aime_all_2004_II_10 (S : Finset ℕ) (hS : S = {n : ℕ | n ∈ Finset.Icc 1 (2^40) ∧ (Nat.digits 2 n).sum = 2}) (p q : ℕ) (hp : p > 0) (hq : q > 0) (hrelprime : Nat.Coprime p q) (hprob : (p : ℚ) / q = (S.filter (fun n => 9 ∣ n)).card / S.card) : p + q = 913 := by sorry
+theorem olymid_ref_base_7616 : IsLeast {x : ℕ | 1 < x ∧ (x^2) % 1000 = x % 1000} 376 := by sorry
+theorem proving_zh_blue_1541 (a : ℕ → ℕ) (h₀ : a 0 = 1) (h₁ : ∀ n, a n = a (n + 1) + a ⌊(n / 3 : ℝ)⌋₊) : ∀ p, (Nat.Prime p ∧ p ≤ 13) → {n | p ∣ a n}.Infinite := by sorry
+theorem olymid_ref_base_4765 : IsLeast {x | ∃ P : ℝ × ℝ, x = dist P (3, 4) + dist P (9, -40) + dist P (-5, -12) + dist P (-7, 24)} (16 * sqrt 17 + 8 * sqrt 5) := by sorry
+theorem olymid_ref_base_8577 {a : ℕ} (_ : 0 < a) (ha : ¬ ∃ m, m^2 = a) : {k : ℕ | 0 < k ∧ ∃ x y : ℤ, x > sqrt a ∧ k = (x^2 - a)/(x^2 - y^2)} = {k : ℕ | 0 < k ∧ ∃ x y : ℤ, 0 ≤ x ∧ x < sqrt a ∧ k = (x^2 - a)/(x^2 - y^2)} := by sorry
+theorem olymid_ref_base_241 {f : ℕ → ℕ} (hf : ∀ n m, n + f m ∣ f n + n * f m) : (∀ n, f n = n ^ 2) ∨ (∀ n, f n = 1) := by sorry
+theorem omni_theorem_1729 {a : ℕ → ℝ} (ha0 : a 0 = sqrt 2) (ha1 : a 1 = 2) (han : ∀ n ≥ 1, a (n + 1) = a n * (a (n - 1))^2) : IsLeast {p | 0 < p ∧ Function.Periodic (fun n => a n % 2014) p} 12 := by sorry
+theorem olymid_ref_base_2770 (x y : ℤ) (h₀ : ∃ m, m^2 = 5 * x + 6 * y) (h₁ : ∃ n, n^2 = 6 * x + 5 * y) : 11 ∣ x ∧ 11 ∣ y := by sorry
+theorem binomial_inversion {a b : ℕ → ℝ} (n : ℕ) : a n = ∑ k ∈ range (n + 1), Nat.choose n k * b k ↔ b n = ∑ k ∈ range (n + 1), (-1) ^ (n - k) * Nat.choose n k * a k := by sorry
+theorem olymid_ref_base_5975 (a b : ℕ) (_ : 0 < a) (h₁ : 0 < b) (h₂ : a > b) (h₃ : ∃ x : ℤ, Real.sqrt (Real.sqrt a + Real.sqrt b) + Real.sqrt (Real.sqrt a - Real.sqrt b) = x) : ∃ y : ℤ, Real.sqrt a = y := by sorry
+theorem aime_all_2024_II_3 : {(r1, r2) : (Fin 3 → ℕ) × (Fin 3 → ℕ) | (∀ i, r1 i < 10 ∧ r2 i < 10) ∧ Nat.ofDigits 10 [r1 0, r1 1, r1 2] + Nat.ofDigits 10 [r2 0, r2 1, r2 2] = 999 ∧ Nat.ofDigits 10 [r1 0, r2 0] + Nat.ofDigits 10 [r1 1, r2 1] + Nat.ofDigits 10 [r1 2, r2 2] = 99}.ncard = 45 := by sorry
+theorem olymid_ref_base_3688 : Set.ncard {p : ℤ × ℤ | p.1^2 + p.2^2 ≤ 2009^2} = 12679605 := by sorry
+theorem algebra_68653 : ¬ ∃ x y : ℤ, x^3 + y^4 = 7 := by sorry
+theorem omni_theorem_1287 : {color : Fin 6 → Fin 6 → Bool | (∀ r, {c | color r c}.encard = 2) ∧ (∀ c, {r | color r c}.encard = 2)}.ncard = 67950 := by sorry
+theorem theorem_proving_zh_blue_1408 {n : ℕ} (hn : 0 < n) (a b : ℕ → ℝ) (ha : ∀ i ∈ Icc 1 n, 0 < a i) (hb : ∀ k ∈ Icc 1 n, k * b k = ∑ i ∈ Icc 1 k, a i) (C D : ℝ) (hC : C = ∑ i ∈ Icc 1 n, (a i - b i)^2) (hD : D = ∑ i ∈ Icc 1 n, (a i - b n)^2) : C ≤ D ∧ D ≤ 2 * C := by sorry
+theorem algebra_335084 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a + b + c = 3) : a ^ 4 / (b ^ 2 + c) + b ^ 4 / (c ^ 2 + a) + c ^ 4 / (a ^ 2 + b) ≥ 3 / 2 := by sorry
+theorem olymid_ref_base_3126 (m n : ℕ) (hmpos : 0 < m) (hnpos : 0 < n) : ¬ ∃ k : ℕ, m^2 + ⌈(4 * m^2 / n : ℝ)⌉ = k^2 := by sorry
+theorem olymid_ref_base_2614 (f : ℝ → ℝ) : (∀ x y, f (x * f y) + x = f x * f (y + 1)) ↔ ∀ x, f x = x ∨ f x = -x := by sorry
+theorem omni_theorem_3908 (m : ℝ) : (∀ x y z u : ℤ, x > 0 → y > 0 → z > 0 → u > 0 → x ≥ y → x + y = z + u → 2 * x * y = z * u → m ≤ x / y) ↔ m ≤ 3 + 2 * sqrt 2 := by sorry
+theorem olymid_ref_base_483 (p q : ℝ) (x : ℝ) (hx : x^3 + p * x + q = 0) : 4 * q * x ≤ p^2 := by sorry
+theorem aime_all_2013_I_11 : ∑ p in (Nat.primeFactors (sInf {N : ℕ | 16 ∣ N ∧ 15 ∣ N ∧ 14 ∣ N ∧ (∃ x y z : ℕ, 0 < x ∧ x < y ∧ y < z ∧ z < 14 ∧ N % x = 3 ∧ N % y = 3 ∧ N % z = 3)})), p = 148 := by sorry
+theorem olymid_ref_base_292 : IsLeast {x | ∃ a b c d : ℝ, x = a * b * c * d ∧ a + b + c + d = 2 ∧ a * b + b * c + c * d + d * a + a * c + b * d = 0} (-1) ∧ IsGreatest {x | ∃ a b c d : ℝ, x = a * b * c * d ∧ a + b + c + d = 2 ∧ a * b + b * c + c * d + d * a + a * c + b * d = 0} (1 / 4) := by sorry
+theorem olymid_ref_base (n : ℤ) (hn : n > 0) : ∃ a b : ℤ, a > 0 ∧ b > 0 ∧ n ∣ 4 * a^2 + 9 * b^2 - 1 := by sorry
+theorem inequalities_91029 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 1 / (a^3 + b^3 + a * b * c) + 1 / (b^3 + c^3 + a * b * c) + 1 / (c^3 + a^3 + a * b * c) ≤ 1 / (a * b * c) := by sorry
+theorem olymid_ref_base_10075 (F : ℕ → ℕ) (hF : ∀ n, F (4 * n) = F (2 * n) + F n) (hF' : ∀ n, F (4 * n + 2) = F (4 * n) + 1) (hF'' : ∀ n, F (2 * n + 1) = F (2 * n) + 1) (m : ℕ) (hm : 0 < m) : {n | 0 ≤ n ∧ n < 2 ^ m ∧ F (4 * n) = F (3 * n)}.ncard = F (2 ^ (m + 1)) := by sorry
+theorem omni_theorem_3741 {n : ℕ} (hn : n > 0) : (∀ a : Fin n → ℝ, (∀ i, 0 < a i) → (∑ i, (a i)^2) * (∑ i, a i) - ∑ i, (a i)^3 ≥ 6 * ∏ i, a i) ↔ n = 3 := by sorry
+theorem omni_theorem_3644 (k : ℕ) (hk : 0 < k) : {(a, b, c) : ℕ × ℕ × ℕ | 0 < a ∧ 0 < b ∧ 0 < c ∧ a + b + c = 3 * k + 1 ∧ a * b + b * c + c * a = 3 * k ^ 2 + 2 * k} = {(k + 1, k, k), (k, k, k + 1), (k, k + 1, k)} := by sorry
+theorem omni_theorem_1347 : ∑ i ∈ range 14, (2 * i + 3) / ((i + 1)^2 * (i + 2)^2) = 224 / 225 := by sorry
+theorem algebra_6094 (p : ℕ) (hp : Odd p ∧ Nat.Prime p) (n : ℕ) (hn : n = (2^(2*p) - 1)/3) : 2^(n - 1) ≡ 1 [MOD n] := by sorry
+theorem olymid_ref_base_7722 (f : ℂ → ℂ) (hf : ∀ x, f x = x ^ 4 - 6 * x ^ 3 + 26 * x ^ 2 - 46 * x + 65) (a b : Fin 4 → ℤ) (hroots : ∀ k, f (a k + I * b k) = 0) : ∑ i, |b i| = 10 := by sorry
+theorem quantitative_reasoning_zh_blue_947 (z1 z2 : ℂ) (h₁ : ‖z1‖ = 2) (h₂ : ‖z2‖ = 9) (h₃ : ‖5 * z1 - z2‖ = 9) : ‖5 * z1 + z2‖ = sqrt 281 := by sorry
+theorem olymid_ref_base_310 (f : ℕ → ℕ) : (∀ m n, n + f m ∣ f n + n * f m) ↔ ∀ n, f n = n ^ 2 ∨ f n = 1 := by sorry
+theorem algebra_539205 (m n : ℕ) (_ : 0 < m) (hn : 0 < n) (hm : Odd m) : Nat.gcd (2^m - 1) (2^n + 1) = 1 := by sorry
+theorem quantitative_reasoning_zh_blue_729 (A B C : Real) (hA : A ∈ Ioo 0 π) (hB : B ∈ Ioo 0 π) (hC : C ∈ Ioo 0 π) (hABC : A + B + C = π) (a b : ℝ) (ha : a = 4) (hb : b = 6) (hS : (1/2) * a * b * sin C = 6 * sqrt 2) : C = π / 4 ∨ C = 3 * π / 4 := by sorry
+theorem aime_all_2000_I_8 (h : 12 > 0) (r : ℝ) (hr : r = 5) (d : ℝ) (hd : d = 9) (m n p : ℕ) (hm : m > 0) (hn : n > 0) (hp : p > 0) (hmp : ¬∃ k, Nat.Prime k ∧ k^3 ∣ p) (hvol : (1 / 3) * π * r^2 * d = (1 / 3) * π * (m - n * (p ^ ((1 : ℝ) / 3)))^2 * (12 - (m - n * (p ^ ((1 : ℝ) / 3))))) : m + n + p = 52 := by sorry
+theorem olymid_ref_base_11032 {n : ℕ} (hn : 2 ≤ n) : ∑' a : ℕ, ∑' b : ℕ, (if (a < b ∧ b ≤ n ∧ Nat.Coprime a b ∧ a + b > n) then (1 / ((a * b) : ℚ)) else 0) = 1 / 2 := by sorry
+theorem omni_theorem_1366 {x : ℝ} (hx : x > 0) (h : cos (arctan x) = x) : x^2 = (-1 + sqrt 5) / 2 := by sorry
+theorem olymid_ref_base_2169 : {(z, r) : ℤ × ℚ | 2^z + 2 = r^2} = {(-2, -3 / 2), (-2, 3 / 2), (1, -2), (1, 2)} := by sorry
+theorem omni_theorem_2672 (p q : ℝ) (h₀ : q = (2 / 5) * p) (h₁ : p * q = 90) : p = 15 := by sorry
+theorem u_math_1055 (y : ℝ → ℝ) (hy : ∃ y0 k, ∀ t, y t = y0 * Real.exp (k * t)) (h4 : y 4 = 100) (h8 : y 8 = 10) : y 12 = 1 := by sorry
+theorem olymid_ref_base_2260 (a b c : ℕ) (h₀ : 1 ≤ a) (h₁ : 1 ≤ b) (h₂ : 1 ≤ c) (h₃ : a ^ b ∣ b ^ c) (h₄ : a ^ c ∣ c ^ b) : a ^ 2 ∣ b * c := by sorry
+theorem aime_all_1986_8 : round (∑ d ∈ (1000000 : ℕ).properDivisors, logb 10 d) = 141 := by sorry
+theorem olymid_ref_base_10627 (x y : ℝ) : (x + y) / (x ^ 2 - x * y + y ^ 2) ≤ 2 * √2 / √(x ^ 2 + y ^ 2) := by sorry
+theorem omni_theorem_3136 : Set.ncard {p : ℕ | 0 < p ∧ -1 < sqrt p - sqrt 100 ∧ sqrt p - sqrt 100 < 1} = 39 := by sorry
+theorem olymid_ref_base_1485 (f : ℕ → ℝ) (h : ∀ n > 1, ∃ p : ℕ, Nat.Prime p ∧ p ∣ n ∧ f n = f (n / p) - f p) (h' : f (2^2014) + f (3^2015) + f (5^2016) = 2013) : f (2014^2) + f (2015^3) + f (2016^5) = 49 / 3 := by sorry
+theorem omni_theorem_1218 : ∑ k ∈ ({1, 2, 3, 4} : Set ℕ), Nat.choose 10 k * Nat.choose (10 - k) (5 - k) = 7560 := by sorry
+theorem u_math_533 : ∫ x, (x + 2) / sqrt (6 + 10 * x + 25 * x ^ 2) = (1 / 25) * sqrt (6 + 10 * x + 25 * x ^ 2) + (9 / 25) * log (1 + 5 * x + sqrt (1 + (5 * x + 1) ^ 2)) + C := by sorry
+theorem u_math_915 {f : ℝ → ℝ} (hf : f = λ x => 2 * x ^ 2 * sin x) : iteratedDeriv 27 f = λ x => 1404 * cos x - 2 * x ^ 2 * cos x - 108 * x * sin x := by sorry
+theorem u_math_558 (x : ℝ) : x ^ 2 - 2 * abs x - 3 = 0 ↔ x = -3 ∨ x = 3 := by sorry
+theorem olymid_ref_base_1064 (α β γ δ : ℝ) (h₀ : α ∈ Set.Ioo 0 (π/2)) (h₁ : β ∈ Set.Ioo α (π/2)) (h₂ : γ ∈ Set.Ioo 0 (π/2)) (h₃ : tan γ = (tan α + tan β)/2) (h₄ : δ ∈ Set.Ioo 0 (π/2)) (h₅ : 1 / cos δ = (1 / cos α + 1 / cos β)/2) : γ < δ := by sorry
+theorem algebra_558230 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c ≤ 1) : 1 / a + 1 / b + 1 / c ≥ 1 + 6 / (a + b + c) := by sorry
+theorem algebra_351786 (A B : ℤ) : ∃ C : ℤ, Disjoint {x^2 + A * x + B | x : ℤ} {2 * x^2 + 2 * x + C | x : ℤ} := by sorry
+theorem algebra_569263 : arctan (1/3) + arctan (1/5) + arctan (1/7) + arctan (1/8) = π/4 := by sorry
+theorem omni_theorem_957 (r b w x : ℕ) (h₀ : r = 2) (h₁ : b = 2) (h₂ : w = 2) (h₃ : x > 0) (h₄ : (r * (r - 1) + b * (b - 1) + w * (w - 1) + x * (x - 1)) / ((r + b + w + x) * (r + b + w + x - 1)) = 1 / 5) : x = 4 := by sorry
+theorem omni_theorem_26 {n : ℕ} (hn : n ≥ 4) (a b : Fin n → ℝ) (ha : ∀ i, 0 ≤ a i) (hb : ∀ i, 0 ≤ b i) (hsum : ∑ i, a i = ∑ i, b i) (hpos : ∑ i, a i > 0) : IsGreatest {x | ∃ a b : Fin n → ℝ, (∀ i, 0 ≤ a i) ∧ (∀ i, 0 ≤ b i) ∧ (∑ i, a i = ∑ i, b i) ∧ (∑ i, a i > 0) ∧ x = (∑ i, a i * (a i + b i)) / (∑ i, b i * (a i + b i))} (n - 1) := by sorry
+theorem hardmath_541 (I : ℝ → ℝ) (hI : I = λ x => ∫ t in (-0.6)..(-0.2), (2.1*t^5 + 1.0*sin t) * exp (x * (-1.1*t^2 + 1.5*cos t))) : Tendsto (λ x => I x / (-0.27 * exp (1.43 * x) / x)) atTop (𝓝 1) := by sorry
+theorem olymid_ref_base_9283 : Real.cos (π / 7) - Real.cos (2 * π / 7) + Real.cos (3 * π / 7) = 1 / 2 := by sorry
+theorem olymid_ref_base_5097 (f : ℝ → ℝ) (hf : f = fun x => abs (x - 20) + abs (x + 18)) (c : ℝ) : (∃! x, f x = x + c) ↔ c = 18 := by sorry
+theorem inequalities_91029 {n : ℕ} (hn : 0 < n) (a : ℕ → ℝ) (ha : ∀ i ∈ Icc 1 n, 0 < a i) (A : ℕ → ℝ) (hA : ∀ k ∈ Icc 1 n, A k = (∑ i ∈ Icc 1 k, a i) / k) : (A n - 1 / A n) ^ 2 ≤ (∑ i ∈ Icc 1 n, (a i - 1 / a i) ^ 2) / n := by sorry
+theorem u_math_612 (x y : ℝ) (hx : x < y) (hy : y < 0) : Real.sqrt ((x - y)^2) + Real.sqrt ((x + y)^2) = -2 * x := by sorry
+theorem olymid_ref_base_7463 {x : ℝ} (hx : x^3 + 4 * x = 8) : x^7 + 64 * x^2 = 128 := by sorry
+theorem omni_theorem_1191 (x y z w : ℝ) (h₀ : 2 * x + y + z + w = 1) (h₁ : x + 3 * y + z + w = 2) (h₂ : x + y + 4 * z + w = 3) (h₃ : x + y + z + 5 * w = 25) : w = 11 / 2 := by sorry
+theorem algebra_486 {n : ℤ} : Int.gcd (12 * n + 5) (9 * n + 4) = 1 := by sorry
+theorem olymid_ref_base_2241 (n : ℕ) (hn : 0 < n) (x : ℝ) (hx : n ≤ x) : x + (n / x : ℝ) ≥ n + 1 ∧ (x + (n / x : ℝ) = n + 1 ↔ x = n) := by sorry
+theorem omni_theorem_3680 (p q r k : ℕ) (hpqr : p.Prime ∧ q.Prime ∧ r.Prime) (h : p * q + q * r + r * p = 12 * k + 1) : (p = 2 ∧ q = 3 ∧ r = 11 ∧ k = 5) ∨ (p = 2 ∧ q = 11 ∧ r = 3 ∧ k = 5) ∨ (p = 3 ∧ q = 11 ∧ r = 2 ∧ k = 5) ∨ (p = 3 ∧ q = 2 ∧ r = 11 ∧ k = 5) ∨ (p = 11 ∧ q = 2 ∧ r = 3 ∧ k = 5) ∨ (p = 11 ∧ q = 3 ∧ r = 2 ∧ k = 5) := by sorry
+theorem aime_all_1983_9 : IsLeast {y : ℝ | ∃ x : ℝ, 0 < x ∧ x < Real.pi ∧ y = (9 * x ^ 2 * (Real.sin x) ^ 2 + 4) / (x * Real.sin x)} 12 := by sorry
+theorem olymid_ref_base_10448 (x y z : ℝ) (hx : x < π/2) (hy : y < π/2) (hz : z < π/2) (hxp : 0 < x) (hyq : 0 < y) (hzr : 0 < z) : π/2 + 2 * sin x * cos y + 2 * sin y * cos z > sin (2*x) + sin (2*y) + sin (2*z) := by sorry
+theorem algebra_56079 (x : Fin 10 → ℝ) (hx : ∀ i, x i ∈ Icc 0 (π/2)) (h : ∑ i, sin (x i)^2 = 1) : 3 * ∑ i, sin (x i) ≤ ∑ i, cos (x i) := by sorry
+theorem u_math_195 : {x : ℝ | -4 * (x - 5) * (x + 4) * (x - 1) ≤ 0} = {x | x ∈ Icc (-4) 1 ∨ x ∈ Ici 5} := by sorry
+theorem algebra_56910 (a b c d : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (hd : 0 ≤ d) (h : a + b + c + d = 1) : b * c * d + c * d * a + d * a * b + a * b * c ≤ 1 / 27 + 176 / 27 * a * b * c * d := by sorry
+theorem olymid_ref_base_7456 : {(a, b) : ℤ × ℤ | a^2 + b^2 < 16 ∧ a^2 + b^2 < 8 * a ∧ a^2 + b^2 < 8 * b}.ncard = 6 := by sorry
+theorem omni_theorem_2364 (θ : ℝ) (P : ℝ → ℝ) (hP : P = λ x => sin θ * x^2 + (cos θ + tan θ) * x + 1) : (∃! x, P x = 0) ↔ sin θ = 0 ∨ sin θ = (Real.sqrt 5 - 1) / 2 := by sorry
+theorem omni_theorem_3744 : {(x, y, z, t) : ℕ × ℕ × ℕ × ℕ | x > 0 ∧ y > 0 ∧ z > 0 ∧ t > 0 ∧ 20^x + 14^(2*y) = (x + 2*y + z)^(z*t)} = {(1, 1, 3, 1)} := by sorry
+theorem olymid_ref_base_1179 (n : ℕ) (a : ℕ → ℝ) : ∃ k ∈ Finset.range (n + 1), ∀ x ∈ Icc 0 1, ∑ i in Finset.range (n + 1), a i * x ^ i ≤ ∑ i in Finset.range (k + 1), a i := by sorry
+theorem aime_all_1983_8 : IsGreatest {p : ℕ | p.Prime ∧ p ∣ choose 200 100 ∧ p < 100} 61 := by sorry
+theorem omni_theorem_2116 : IsLeast {y : ℝ | ∃ x : ℝ, -1 ≤ x ∧ x ≤ 1 ∧ y = sqrt (58 - 42 * x) + sqrt (149 - 140 * sqrt (1 - x ^ 2))} (sqrt 109) := by sorry

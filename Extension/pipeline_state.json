@@ -1,0 +1,21 @@
+{
+  "stages": {
+    "calibrate": {
+      "finished_at": "2026-09-02T06:12:07+00:00",
+      "threshold": 0.85
+    },
+    "dataset": {
+      "finished_at": "2026-09-02T08:09:36+00:00",
+      "target": 1000,
+      "threshold": 0.8
+    },
+    "formalize": {
+      "finished_at": "2026-09-02T09:00:07+00:00",
+      "problems": 1000
+    },
+    "check": {
+      "finished_at": "2026-09-02T10:25:50+00:00",
+      "threshold": 0.8
+    }
+  }
+}

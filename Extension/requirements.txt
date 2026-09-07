@@ -1,0 +1,5 @@
+# Dependencies for the Lean Paraphrases extension pipeline.
+openai>=1.0        # GPT 5.6 Sol -- verification, autoformalization, judging
+anthropic>=0.60    # Claude Opus 5 -- generation, verification, judging
+datasets>=2.19     # loading SphereLab/FormalMATH-All
+tqdm>=4.66         # progress bars (optional; the scripts run without it)

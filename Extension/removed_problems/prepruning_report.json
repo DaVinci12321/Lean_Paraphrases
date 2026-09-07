@@ -1,0 +1,1027 @@
+{
+  "generated_at": "2026-09-03T03:29:34+00:00",
+  "judge_models": [
+    "claude-opus-5",
+    "gpt-5.6-sol"
+  ],
+  "confidence_threshold": 0.8,
+  "decision_rule": "judges must agree; at least one of them must reach the confidence threshold",
+  "problems": 1000,
+  "per_configuration": {
+    "gpt_rigorous": {
+      "counts": {
+        "EQUIVALENT": 950,
+        "NOT_EQUIVALENT": 19,
+        "UNDECIDED": 31,
+        "MISSING": 0
+      },
+      "decided": 969,
+      "equivalence_rate_of_decided": 0.9804,
+      "equivalence_rate_of_all": 0.95,
+      "undecided_indices": [
+        55,
+        64,
+        122,
+        133,
+        137,
+        144,
+        165,
+        178,
+        212,
+        214,
+        230,
+        231,
+        360,
+        387,
+        561,
+        595,
+        663,
+        682,
+        714,
+        730,
+        734,
+        744,
+        747,
+        772,
+        797,
+        798,
+        843,
+        845,
+        945,
+        954,
+        966
+      ],
+      "undecided_detail": [
+        {
+          "index": 55,
+          "reason": "judges disagreed (claude_opus_5=yes 0.83, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 64,
+          "reason": "judges disagreed (claude_opus_5=yes 0.80, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 122,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.70)"
+        },
+        {
+          "index": 133,
+          "reason": "judges disagreed (claude_opus_5=yes 0.60, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 137,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.70)"
+        },
+        {
+          "index": 144,
+          "reason": "judges disagreed (claude_opus_5=yes 0.86, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 165,
+          "reason": "judges disagreed (claude_opus_5=yes 0.75, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 178,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.65)"
+        },
+        {
+          "index": 212,
+          "reason": "judges disagreed (gpt_5_6_sol=yes 0.99, claude_opus_5=no 0.60)"
+        },
+        {
+          "index": 214,
+          "reason": "judges disagreed (claude_opus_5=yes 0.92, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 230,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 231,
+          "reason": "judges disagreed (claude_opus_5=yes 0.80, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 360,
+          "reason": "judges disagreed (gpt_5_6_sol=yes 0.99, claude_opus_5=no 0.87)"
+        },
+        {
+          "index": 387,
+          "reason": "judges disagreed (claude_opus_5=yes 0.80, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 561,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 595,
+          "reason": "judges disagreed (claude_opus_5=yes 0.79, gpt_5_6_sol=no 0.94)"
+        },
+        {
+          "index": 663,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 682,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 714,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 730,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.75)"
+        },
+        {
+          "index": 734,
+          "reason": "judges disagreed (claude_opus_5=yes 0.82, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 744,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.77)"
+        },
+        {
+          "index": 747,
+          "reason": "judges disagreed (claude_opus_5=yes 0.86, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 772,
+          "reason": "judges disagreed (claude_opus_5=yes 0.82, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 797,
+          "reason": "judges disagreed (claude_opus_5=yes 0.78, gpt_5_6_sol=no 0.88)"
+        },
+        {
+          "index": 798,
+          "reason": "judges disagreed (claude_opus_5=yes 0.82, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 843,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 845,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 945,
+          "reason": "judges disagreed (gpt_5_6_sol=yes 0.99, claude_opus_5=no 0.68)"
+        },
+        {
+          "index": 954,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 966,
+          "reason": "judges disagreed (claude_opus_5=yes 0.62, gpt_5_6_sol=no 0.99)"
+        }
+      ]
+    },
+    "gpt_nonrigorous": {
+      "counts": {
+        "EQUIVALENT": 926,
+        "NOT_EQUIVALENT": 33,
+        "UNDECIDED": 41,
+        "MISSING": 0
+      },
+      "decided": 959,
+      "equivalence_rate_of_decided": 0.9656,
+      "equivalence_rate_of_all": 0.926,
+      "undecided_indices": [
+        33,
+        36,
+        55,
+        82,
+        91,
+        122,
+        133,
+        137,
+        214,
+        217,
+        220,
+        231,
+        233,
+        279,
+        312,
+        351,
+        360,
+        390,
+        393,
+        439,
+        544,
+        551,
+        552,
+        581,
+        582,
+        610,
+        630,
+        650,
+        663,
+        665,
+        682,
+        700,
+        729,
+        766,
+        822,
+        836,
+        843,
+        846,
+        939,
+        954,
+        966
+      ],
+      "undecided_detail": [
+        {
+          "index": 33,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 36,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 55,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.82)"
+        },
+        {
+          "index": 82,
+          "reason": "judges disagreed (claude_opus_5=yes 0.72, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 91,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 122,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 133,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 137,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 214,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 217,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 220,
+          "reason": "judges disagreed (claude_opus_5=yes 0.83, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 231,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.82)"
+        },
+        {
+          "index": 233,
+          "reason": "judges disagreed (gpt_5_6_sol=yes 0.99, claude_opus_5=no 0.75)"
+        },
+        {
+          "index": 279,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 312,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.87)"
+        },
+        {
+          "index": 351,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 360,
+          "reason": "judges disagreed (gpt_5_6_sol=yes 0.99, claude_opus_5=no 0.72)"
+        },
+        {
+          "index": 390,
+          "reason": "judges disagreed (claude_opus_5=yes 0.82, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 393,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 439,
+          "reason": "judges disagreed (claude_opus_5=yes 0.73, gpt_5_6_sol=no 0.95)"
+        },
+        {
+          "index": 544,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 551,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.97, claude_opus_5=yes 0.57)"
+        },
+        {
+          "index": 552,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 581,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.85)"
+        },
+        {
+          "index": 582,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 610,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 630,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.75)"
+        },
+        {
+          "index": 650,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 663,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.82)"
+        },
+        {
+          "index": 665,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 682,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.75)"
+        },
+        {
+          "index": 700,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.97, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 729,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.88, claude_opus_5=yes 0.55)"
+        },
+        {
+          "index": 766,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 822,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.94)"
+        },
+        {
+          "index": 836,
+          "reason": "judges disagreed (claude_opus_5=yes 0.88, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 843,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.85)"
+        },
+        {
+          "index": 846,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.75)"
+        },
+        {
+          "index": 939,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 954,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.96, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 966,
+          "reason": "judges disagreed (claude_opus_5=yes 0.70, gpt_5_6_sol=no 0.99)"
+        }
+      ]
+    },
+    "claude_rigorous": {
+      "counts": {
+        "EQUIVALENT": 922,
+        "NOT_EQUIVALENT": 29,
+        "UNDECIDED": 47,
+        "MISSING": 2
+      },
+      "decided": 951,
+      "equivalence_rate_of_decided": 0.9695,
+      "equivalence_rate_of_all": 0.922,
+      "undecided_indices": [
+        3,
+        8,
+        12,
+        15,
+        28,
+        32,
+        33,
+        36,
+        82,
+        112,
+        128,
+        137,
+        144,
+        207,
+        208,
+        217,
+        231,
+        251,
+        317,
+        318,
+        351,
+        375,
+        387,
+        461,
+        509,
+        519,
+        534,
+        551,
+        581,
+        595,
+        620,
+        630,
+        665,
+        667,
+        682,
+        688,
+        714,
+        737,
+        796,
+        797,
+        830,
+        877,
+        947,
+        954,
+        956,
+        967,
+        996
+      ],
+      "undecided_detail": [
+        {
+          "index": 3,
+          "reason": "judges disagreed (claude_opus_5=no 0.72, gpt_5_6_sol=yes 0.91)"
+        },
+        {
+          "index": 8,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.58)"
+        },
+        {
+          "index": 12,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 15,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 28,
+          "reason": "judges disagreed (claude_opus_5=yes 0.93, gpt_5_6_sol=no 1.00)"
+        },
+        {
+          "index": 32,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 33,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 36,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.97, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 82,
+          "reason": "judges disagreed (claude_opus_5=yes 0.83, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 112,
+          "reason": "judges disagreed (claude_opus_5=yes 0.77, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 128,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.90)"
+        },
+        {
+          "index": 137,
+          "reason": "judges disagreed (claude_opus_5=yes 0.78, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 144,
+          "reason": "judges disagreed (claude_opus_5=yes 0.88, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 207,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.74)"
+        },
+        {
+          "index": 208,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 217,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.78)"
+        },
+        {
+          "index": 231,
+          "reason": "judges disagreed (claude_opus_5=yes 0.73, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 251,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.94)"
+        },
+        {
+          "index": 317,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 318,
+          "reason": "judges disagreed (claude_opus_5=yes 0.88, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 351,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.94)"
+        },
+        {
+          "index": 375,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 387,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.70)"
+        },
+        {
+          "index": 461,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 509,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 519,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 534,
+          "reason": "judges disagreed (claude_opus_5=yes 0.93, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 551,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 581,
+          "reason": "judges disagreed (claude_opus_5=yes 0.75, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 595,
+          "reason": "judges disagreed (claude_opus_5=yes 0.70, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 620,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 630,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 665,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 667,
+          "reason": "judges disagreed (claude_opus_5=yes 0.82, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 682,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 688,
+          "reason": "judges disagreed (claude_opus_5=yes 0.78, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 714,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 737,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 796,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 797,
+          "reason": "judges disagreed (claude_opus_5=yes 0.75, gpt_5_6_sol=no 0.93)"
+        },
+        {
+          "index": 830,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 877,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.70)"
+        },
+        {
+          "index": 947,
+          "reason": "judges disagreed (claude_opus_5=yes 0.95, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 954,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 956,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.68)"
+        },
+        {
+          "index": 967,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 996,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.65)"
+        }
+      ]
+    },
+    "claude_nonrigorous": {
+      "counts": {
+        "EQUIVALENT": 911,
+        "NOT_EQUIVALENT": 34,
+        "UNDECIDED": 55,
+        "MISSING": 0
+      },
+      "decided": 945,
+      "equivalence_rate_of_decided": 0.964,
+      "equivalence_rate_of_all": 0.911,
+      "undecided_indices": [
+        3,
+        5,
+        8,
+        14,
+        33,
+        36,
+        55,
+        71,
+        82,
+        91,
+        112,
+        122,
+        128,
+        129,
+        137,
+        155,
+        181,
+        217,
+        226,
+        230,
+        284,
+        317,
+        318,
+        349,
+        375,
+        387,
+        439,
+        481,
+        511,
+        525,
+        551,
+        581,
+        582,
+        620,
+        630,
+        652,
+        665,
+        667,
+        737,
+        747,
+        766,
+        797,
+        811,
+        814,
+        820,
+        830,
+        837,
+        843,
+        847,
+        888,
+        909,
+        931,
+        945,
+        954,
+        967
+      ],
+      "undecided_detail": [
+        {
+          "index": 3,
+          "reason": "judges disagreed (claude_opus_5=no 0.85, gpt_5_6_sol=yes 0.93)"
+        },
+        {
+          "index": 5,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.65)"
+        },
+        {
+          "index": 8,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.75)"
+        },
+        {
+          "index": 14,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 33,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 36,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.78, claude_opus_5=yes 0.55)"
+        },
+        {
+          "index": 55,
+          "reason": "judges disagreed (claude_opus_5=yes 0.75, gpt_5_6_sol=no 0.93)"
+        },
+        {
+          "index": 71,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.97, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 82,
+          "reason": "judges disagreed (claude_opus_5=yes 0.80, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 91,
+          "reason": "judges disagreed (claude_opus_5=yes 0.62, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 112,
+          "reason": "judges disagreed (claude_opus_5=yes 0.68, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 122,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 128,
+          "reason": "judges disagreed (gpt_5_6_sol=no 1.00, claude_opus_5=yes 0.90)"
+        },
+        {
+          "index": 129,
+          "reason": "judges disagreed (gpt_5_6_sol=yes 0.97, claude_opus_5=no 0.62)"
+        },
+        {
+          "index": 137,
+          "reason": "judges disagreed (claude_opus_5=yes 0.72, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 155,
+          "reason": "judges disagreed (claude_opus_5=no 0.62, gpt_5_6_sol=yes 0.99)"
+        },
+        {
+          "index": 181,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.94)"
+        },
+        {
+          "index": 217,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.76)"
+        },
+        {
+          "index": 226,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 230,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 284,
+          "reason": "judges disagreed (claude_opus_5=yes 0.79, gpt_5_6_sol=no 0.93)"
+        },
+        {
+          "index": 317,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 318,
+          "reason": "judges disagreed (claude_opus_5=yes 0.82, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 349,
+          "reason": "judges disagreed (claude_opus_5=yes 0.75, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 375,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.90)"
+        },
+        {
+          "index": 387,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        },
+        {
+          "index": 439,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.85)"
+        },
+        {
+          "index": 481,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 511,
+          "reason": "judges disagreed (claude_opus_5=no 0.82, gpt_5_6_sol=yes 0.93)"
+        },
+        {
+          "index": 525,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 1.00)"
+        },
+        {
+          "index": 551,
+          "reason": "judges disagreed (claude_opus_5=yes 0.60, gpt_5_6_sol=no 0.88)"
+        },
+        {
+          "index": 581,
+          "reason": "judges disagreed (claude_opus_5=yes 0.90, gpt_5_6_sol=no 0.99)"
+        },
+        {
+          "index": 582,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.85)"
+        },
+        {
+          "index": 620,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.85)"
+        },
+        {
+          "index": 630,
+          "reason": "judges disagreed (claude_opus_5=yes 0.83, gpt_5_6_sol=no 1.00)"
+        },
+        {
+          "index": 652,
+          "reason": "judges disagreed (claude_opus_5=yes 0.78, gpt_5_6_sol=no 0.90)"
+        },
+        {
+          "index": 665,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.60)"
+        },
+        {
+          "index": 667,
+          "reason": "judges disagreed (claude_opus_5=yes 0.86, gpt_5_6_sol=no 0.94)"
+        },
+        {
+          "index": 737,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 747,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 766,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 797,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.75)"
+        },
+        {
+          "index": 811,
+          "reason": "judges disagreed (claude_opus_5=yes 0.75, gpt_5_6_sol=no 0.96)"
+        },
+        {
+          "index": 814,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.98)"
+        },
+        {
+          "index": 820,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.80)"
+        },
+        {
+          "index": 830,
+          "reason": "judges disagreed (claude_opus_5=yes 0.87, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 837,
+          "reason": "judges disagreed (claude_opus_5=yes 0.80, gpt_5_6_sol=no 0.86)"
+        },
+        {
+          "index": 843,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.82)"
+        },
+        {
+          "index": 847,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.83)"
+        },
+        {
+          "index": 888,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.50)"
+        },
+        {
+          "index": 909,
+          "reason": "judges disagreed (claude_opus_5=yes 0.85, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 931,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.62)"
+        },
+        {
+          "index": 945,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.98, claude_opus_5=yes 0.90)"
+        },
+        {
+          "index": 954,
+          "reason": "judges disagreed (claude_opus_5=yes 0.77, gpt_5_6_sol=no 0.97)"
+        },
+        {
+          "index": 967,
+          "reason": "judges disagreed (gpt_5_6_sol=no 0.99, claude_opus_5=yes 0.72)"
+        }
+      ]
+    }
+  },
+  "paraphrase_sensitivity": {
+    "gpt": {
+      "comparable_problems": 940,
+      "verdict_flipped_between_paraphrases": 31,
+      "flipped_indices": [
+        71,
+        80,
+        203,
+        345,
+        384,
+        391,
+        403,
+        453,
+        469,
+        508,
+        542,
+        576,
+        628,
+        642,
+        681,
+        685,
+        703,
+        735,
+        737,
+        758,
+        785,
+        788,
+        817,
+        820,
+        884,
+        927,
+        931,
+        940,
+        956,
+        970,
+        998
+      ],
+      "wrong_on_both_paraphrases": 7,
+      "correct_on_both_paraphrases": 902
+    },
+    "claude": {
+      "comparable_problems": 921,
+      "verdict_flipped_between_paraphrases": 26,
+      "flipped_indices": [
+        4,
+        27,
+        72,
+        142,
+        175,
+        279,
+        296,
+        384,
+        390,
+        407,
+        494,
+        523,
+        536,
+        544,
+        576,
+        598,
+        599,
+        627,
+        685,
+        698,
+        772,
+        785,
+        795,
+        821,
+        940,
+        942
+      ],
+      "wrong_on_both_paraphrases": 13,
+      "correct_on_both_paraphrases": 882
+    }
+  },
+  "cross_model": {
+    "rigorous": {
+      "models_agreed": 901,
+      "both_models_wrong": 5
+    },
+    "nonrigorous": {
+      "models_agreed": 883,
+      "both_models_wrong": 10
+    }
+  }
+}

@@ -1,0 +1,52 @@
+Lean Paraphrases -- autoformalization equivalence report
+========================================================================
+generated : 2026-09-03T03:36:44+00:00
+judges    : claude-opus-5, gpt-5.6-sol
+threshold : 0.80 (judges must agree; at least one must clear this confidence)
+problems  : 890
+
+RESULTS BY CONFIGURATION
+------------------------------------------------------------------------
+configuration            equiv  not equiv  undecided  missing   equiv%
+gpt_rigorous               875         15          0        0    98.3%
+gpt_nonrigorous            867         23          0        0    97.4%
+claude_rigorous            871         19          0        0    97.9%
+claude_nonrigorous         865         25          0        0    97.2%
+
+equiv% is equivalent / (equivalent + not equivalent); undecided and
+missing problems are excluded from it.
+
+EFFECT OF PARAPHRASING (same model, same problem, two wordings)
+------------------------------------------------------------------------
+gpt:
+  problems decided for both paraphrases : 890
+  verdict changed with the wording      : 26 (2.9%)
+  wrong on both paraphrases             : 6
+  correct on both paraphrases           : 858
+  problem numbers that flipped          : 67, 177, 303, 338, 343, 354, 403, 418, 456, 485, 515, 562, 575, 609, 612, 628, 656, 676, 701, 704, 728, 785, 826, 837, 861, 888
+
+claude:
+  problems decided for both paraphrases : 890
+  verdict changed with the wording      : 22 (2.5%)
+  wrong on both paraphrases             : 11
+  correct on both paraphrases           : 857
+  problem numbers that flipped          : 3, 21, 59, 121, 151, 257, 338, 358, 442, 468, 479, 515, 534-535, 561, 612, 624, 701, 711, 731, 837, 839
+
+AGREEMENT BETWEEN THE TWO AUTOFORMALIZING MODELS
+------------------------------------------------------------------------
+rigorous       same verdict on 866 problems, both wrong on 5
+nonrigorous    same verdict on 858 problems, both wrong on 8
+
+UNDECIDED PROBLEMS
+------------------------------------------------------------------------
+The two judges disagreed, or agreed but neither reached the
+confidence threshold. These need a human decision.
+
+gpt_rigorous: 0 undecided
+
+gpt_nonrigorous: 0 undecided
+
+claude_rigorous: 0 undecided
+
+claude_nonrigorous: 0 undecided
+

@@ -1,0 +1,890 @@
+theorem integral_neg_third_csc_sixth (C : ℝ) (F : ℝ → ℝ) (hF : ∀ x : ℝ, F x = Real.cos (x / 3) / (5 * (Real.sin (x / 3)) ^ 5) - (4 / 15) * (-(Real.cos (x / 3)) / (Real.sin (x / 3)) ^ 3 - 2 * (Real.cos (x / 3) / Real.sin (x / 3))) + C) : ∀ x : ℝ, Real.sin (x / 3) ≠ 0 → HasDerivAt F (-(1 / 3) * (1 / Real.sin (x / 3)) ^ 6) x := by sorry
+theorem sqrt_2011_lt_2011_lt_sq : Real.sqrt 2011 < (2011 : ℝ) ∧ (2011 : ℝ) < (2011 : ℝ) ^ 2 := by sorry
+theorem biased_coin_heads_prob (p q : ℝ) (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (hqp : q ≤ p) (hsum : p + q + (1/6 : ℝ) = 1) (hsame : p ^ 2 + q ^ 2 + (1/6 : ℝ) ^ 2 = 1/2) : p = 2/3 := by sorry
+theorem greatest_P_ten : IsGreatest {y : ℝ | ∃ P : ℝ → ℝ, ∃ a b c : ℝ, a ≠ 0 ∧ (∀ x : ℝ, P x = a * x ^ 2 + b * x + c) ∧ P 1 = 20 ∧ P (-1) = 22 ∧ P (P 0) = 400 ∧ y = P 10} 2486 := by sorry
+theorem sum_prod_lt_one_div (n : ℕ) (x y : ℝ) (hx : 0 < x) (hy : 0 < y) (h : x ^ n + y ^ n = 1) : (∑ k ∈ Finset.Icc 1 n, (1 + x ^ (2 * k)) / (1 + x ^ (4 * k))) * (∑ k ∈ Finset.Icc 1 n, (1 + y ^ (2 * k)) / (1 + y ^ (4 * k))) < 1 / ((1 - x) * (1 - y)) := by sorry
+theorem three_z_sub_two_w_real (z w : ℂ) (h1 : 2 * z ^ 2 + w ^ 2 = 2 * z * w) (h2 : ∃ t : ℝ, z + w = (t : ℂ) * Complex.I) : ∃ r : ℝ, 3 * z - 2 * w = (r : ℂ) := by sorry
+theorem prod_ge_of_sum_inv_one_add_pow_eq_one (m : ℝ) (hm : 0 < m) (n : ℕ) (hn : 0 < n) (a : Fin n → ℝ) (ha : ∀ i, 0 < a i) (hsum : ∑ i, 1 / (1 + (a i) ^ m) = 1) : ∏ i, a i ≥ ((n : ℝ) - 1) ^ ((n : ℝ) / m) := by sorry
+theorem card_divisors_with_2004_divisors : ((Nat.divisors (2004 ^ 2004)).filter (fun d => (Nat.divisors d).card = 2004)).card = 54 := by sorry
+theorem four_pow_succ_sub_thirtytwo_eq_zero_iff (x : ℝ) : (4 : ℝ) ^ (x + 1) - 32 = 0 ↔ x = 3 / 2 := by sorry
+theorem sum_pairwise_products_sub_product_bounds (a b c : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (h : a ^ 2 + b ^ 2 + c ^ 2 + a * b * c = 4) : 0 ≤ a * b + b * c + c * a - a * b * c ∧ a * b + b * c + c * a - a * b * c ≤ 2 := by sorry
+theorem max_min_of_sub_cube_div_sq (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = (x - x ^ 3) / (1 + x ^ 2) ^ 2) : IsGreatest (Set.range f) (1 / 4) ∧ IsLeast (Set.range f) (-(1 / 4)) := by sorry
+theorem infinitely_many_gaps (q : ℝ) (hq1 : (1 + Real.sqrt 5) / 2 < q) (hq2 : q < 2) (p : ℕ → ℝ) (hp0 : p 0 = 0) (hpe : ∀ n : ℕ, p (2 * n) = q * p n) (hpo : ∀ n : ℕ, p (2 * n + 1) = q * p n + 1) : {k : ℕ | 0 < k ∧ ∀ m : ℕ, 0 < m → ¬ (p (2 * k) < p m ∧ p m < p (2 * k + 1))}.Infinite := by sorry
+theorem sum_sq_deviations_le_half_sq_sum_abs_deviations (n : ℕ) (hn : 0 < n) (x : Fin n → ℝ) (a : ℝ) (ha : a = (∑ i, x i) / n) : ∑ i, (x i - a) ^ 2 ≤ (1 / 2) * (∑ i, |x i - a|) ^ 2 := by sorry
+theorem seq_bound (a : ℕ → ℝ) (h0 : a 0 = 5) (hrec : ∀ n, a (n + 1) = a n + 1 / a n) : 45 < a 1000 ∧ a 1000 < 45.1 := by sorry
+theorem cyclic_sum_le_eight (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (2*a + b + c)^2 / (2*a^2 + (b + c)^2) + (2*b + c + a)^2 / (2*b^2 + (c + a)^2) + (2*c + a + b)^2 / (2*c^2 + (a + b)^2) ≤ 8 := by sorry
+theorem product_four_consecutive_not_square (n : ℕ) (hn : 0 < n) : ¬ ∃ k : ℕ, n * (n + 1) * (n + 2) * (n + 3) = k ^ 2 := by sorry
+theorem sum_of_twin_odd_primes_is_product_of_three (p q : ℕ) (hp : Nat.Prime p) (hq : Nat.Prime q) (hpodd : Odd p) (hqodd : Odd q) (h : p = q + 2) : ∃ a b c : ℕ, 1 < a ∧ 1 < b ∧ 1 < c ∧ p + q = a * b * c := by sorry
+theorem integral_asymptotics (I : ℝ → ℝ) (hI : ∀ x : ℝ, I x = ∫ t in (-0.8 : ℝ)..(0 : ℝ), (-(0.7 * t)) * Real.exp (x * (-(-(1.5 * t ^ 5) + 0.2 * t ^ 3 + 2.4 * Real.sin t - 1.9 * Real.arctan t)))) : Filter.Tendsto (fun x : ℝ => I x / (0.25 * Real.sqrt Real.pi * Real.sqrt (1 / x) * Real.exp (0.26 * x))) Filter.atTop (nhds 1) := by sorry
+theorem cubic_square_count : {n : ℕ | 1 ≤ n ∧ n ≤ 100 ∧ ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ n = Nat.gcd (a ^ 2) (b ^ 3)}.ncard = 13 := by sorry
+theorem sum_choose_choose_mod : (∑ n ∈ Finset.Icc 3 40, Nat.choose (Nat.choose n 2) 2) % 1000 = 4 := by sorry
+theorem three_integers (a b c : ℚ) (h1 : (a + b) / 2 + c = 42) (h2 : (a + c) / 2 + b = 13) (h3 : (b + c) / 2 + a = 37) : a = 28 ∧ b = -20 ∧ c = 38 := by sorry
+theorem idempotent_functions_card : (Finset.univ.filter (fun f : Fin 5 → Fin 5 => ∀ x, f (f x) = f x)).card = 196 := by sorry
+theorem exists_poly_deg_n_values_powers (m n : ℕ) (hm : 2 ≤ m) (hn : 1 ≤ n) : ∃ P : Polynomial ℤ, P.natDegree = n ∧ ∀ k : ℕ, k ≤ n → ∃ e : ℕ, P.eval (k : ℤ) = (m : ℤ) ^ e := by sorry
+theorem smallest_n_factorial_product : IsLeast {n : ℕ | 0 < n ∧ (∏ k ∈ Finset.Ico 1 n, Nat.factorial k) > (Nat.factorial n) ^ 2} 8 := by sorry
+theorem card_divisors_two_pow_prod_add_one_ge (S : Finset ℕ) (hne : S.Nonempty) (hprime : ∀ p ∈ S, Nat.Prime p) (hgt : ∀ p ∈ S, 3 < p) : 4 ^ S.card ≤ ((2 ^ (∏ p ∈ S, p) + 1).divisors).card := by sorry
+theorem sum_coeff_le_card (n : ℕ) (a : ℕ → ℝ) (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = ∑ k ∈ Finset.Icc 1 n, a k * Real.cos (k * x)) (h : ∀ x : ℝ, -1 ≤ f x) : (∑ k ∈ Finset.Icc 1 n, a k) ≤ n := by sorry
+theorem exists_ge_one_div_sqrt_mul_sub_one (n : ℕ) (hn : 2 ≤ n) (x : Fin n → ℝ) (hsum : ∑ i, x i = 0) (hsq : ∑ i, (x i) ^ 2 = 1) : ∃ i, x i ≥ 1 / Real.sqrt ((n : ℝ) * ((n : ℝ) - 1)) := by sorry
+theorem totient_sum_eq (n : ℕ) (hn : 0 < n) : 8 * (∑ k ∈ Finset.Icc 1 n, Nat.totient k) = 3 * n ^ 2 + 5 ↔ n = 1 ∨ n = 3 ∨ n = 5 := by sorry
+theorem sum_floor_eq_1414 : ∑' k : ℕ, ⌊(1 + Real.sqrt (2000000 / 4 ^ k)) / 2⌋ = 1414 := by sorry
+theorem sq_div_sq_eq_neg_two_I : ((3 + Complex.I) ^ 2) / ((1 + 2 * Complex.I) ^ 2) = -2 * Complex.I := by sorry
+theorem every_pos_int_divides_some_term (a : ℕ → ℕ) (hpos : ∀ n, 0 < a n) (hmono : StrictMono a) (hdvd : ∀ n, a n ∣ 2 * (∑ i ∈ Finset.range n, a i)) (hprimes : {p : ℕ | p.Prime ∧ ∃ n, p ∣ a n}.Infinite) : ∀ m : ℕ, 0 < m → ∃ n, m ∣ a n := by sorry
+theorem count_triples : (Finset.filter (fun t : ℤ × ℤ × ℤ => t.1 ^ 2 * t.2.1 + t.2.1 ^ 2 * t.2.2 + t.2.2 ^ 2 * t.1 = t.1 * t.2.1 ^ 2 + t.2.1 * t.2.2 ^ 2 + t.2.2 * t.1 ^ 2) (Finset.Icc (1 : ℤ) 100 ×ˢ Finset.Icc (1 : ℤ) 100 ×ˢ Finset.Icc (1 : ℤ) 100)).card = 29800 := by sorry
+theorem greatest_proper_divisor_sum_not_pow_two (n d : ℕ) (hn : 2 ≤ n) (hd : d ∣ n) (hdn : d ≠ n) (hmax : ∀ e : ℕ, e ∣ n → e ≠ n → e ≤ d) (hd1 : 1 < d) : ¬ ∃ k : ℕ, n + d = 2 ^ k := by sorry
+theorem eight_x_plus_y (x y z : ℝ) (h1 : x + 2 * y - 3 * z = 7) (h2 : 2 * x - y + 2 * z = 6) : 8 * x + y = 32 := by sorry
+theorem irreducible_X_pow_add_five_X_pow_pred_add_three (n : ℕ) (hn : 1 < n) : ¬ ∃ p q : Polynomial ℤ, 1 ≤ p.natDegree ∧ 1 ≤ q.natDegree ∧ (X ^ n + C 5 * X ^ (n - 1) + C 3 : Polynomial ℤ) = p * q := by sorry
+theorem sum_inv_le_sum_eighth_powers_div_cube_prod (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 1 / a + 1 / b + 1 / c ≤ (a ^ 8 + b ^ 8 + c ^ 8) / (a * b * c) ^ 3 := by sorry
+theorem sin_pow_ten_add_cos_pow_ten_eq (x : ℝ) : Real.sin x ^ 10 + Real.cos x ^ 10 = (29 / 16) * Real.cos (2 * x) ^ 4 ↔ ∃ k : ℤ, x = Real.pi / 8 + Real.pi * k / 4 := by sorry
+theorem sum_of_three (a b c : ℝ) (h₁ : a - (b + c) = 2) (h₂ : b - (a + c) = 1) (h₃ : c - (a + b) = 4) : a + b + c = -7 := by sorry
+theorem golden_ratio_functional_equation (a : ℝ) : (∃ f : ℝ → ℝ, (∀ x : ℝ, f (f x) = f x + x) ∧ (∀ x : ℝ, f (f x - x) = f x + a * x)) ↔ a = (1 + Real.sqrt 5) / 2 ∨ a = (1 - Real.sqrt 5) / 2 := by sorry
+theorem sqrt_prod_add_sq_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : Real.sqrt (a * b * c) * (Real.sqrt a + Real.sqrt b + Real.sqrt c) + (a + b + c) ^ 2 ≥ 4 * Real.sqrt (3 * (a * b * c) * (a + b + c)) := by sorry
+theorem product_first_eight (a : ℕ → ℝ) (h1 : a 1 = 97) (hrec : ∀ n : ℕ, 2 ≤ n → a n = (n : ℝ) / a (n - 1)) : ∏ i ∈ Finset.Icc 1 8, a i = 384 := by sorry
+theorem floor_chain_eq (x : ℝ) (h : ((⌊((⌊((⌊(⌊x⌋ : ℝ) * x⌋ : ℤ) : ℝ) * x⌋ : ℤ) : ℝ) * x⌋ : ℤ) : ℝ) * x = 122) : x = 122 / 41 := by sorry
+theorem triple_integral_value : (∫ x in (0:ℝ)..1, ∫ y in (0:ℝ)..x, ∫ z in (0:ℝ)..(5 - x - y), (x + 2 * y * z)) = 439 / 120 := by sorry
+theorem sum_div_sqrt_partial_sq_le (n k : ℕ) (hn : 0 < n) (hk : 0 < k) (a : ℕ → ℝ) (ha : ∀ i ∈ Finset.range n, 1 ≤ a i ∧ a i ≤ 2 ^ k) : ∑ i ∈ Finset.range n, a i / Real.sqrt (∑ j ∈ Finset.range (i + 1), (a j) ^ 2) ≤ 4 * Real.sqrt ((k : ℝ) * (n : ℝ)) := by sorry
+theorem smallest_and_largest_sum_of_products : IsLeast {n : ℕ | ∃ S : Finset ℕ, S ⊆ Finset.Icc 1 8 ∧ n = (∏ i ∈ S, i) + ∏ i ∈ (Finset.Icc 1 8 \ S), i} 402 ∧ IsGreatest {n : ℕ | ∃ S : Finset ℕ, S ⊆ Finset.Icc 1 8 ∧ n = (∏ i ∈ S, i) + ∏ i ∈ (Finset.Icc 1 8 \ S), i} 40321 := by sorry
+theorem product_plus_24_eq_zero (x : ℝ) : ((x + 1) * (x + 2)) * ((x - 3) * (x - 4)) * (x ^ 2 - 2 * x - 1) + 24 = 0 ↔ x = 0 ∨ x = 2 ∨ x = 1 + Real.sqrt 6 ∨ x = 1 - Real.sqrt 6 ∨ x = 1 + 2 * Real.sqrt 2 ∨ x = 1 - 2 * Real.sqrt 2 := by sorry
+theorem mean_of_three (a b c : ℝ) (ha : a = 3) (hb : b = 2 * a) (hc : c = 3 * b) : (a + b + c) / 3 = 9 := by sorry
+theorem factorial_succ_coprime (n : ℕ) (hn : 0 < n) : Nat.gcd (Nat.factorial n + 1) (Nat.factorial (n + 1) + 1) = 1 := by sorry
+theorem exists_pow_two_add_exponent_dvd (n : ℕ) (hn : 0 < n) : ∃ k : ℕ, 0 < k ∧ n ∣ 2 ^ k + k := by sorry
+theorem f_pointwise (f : ℝ → ℝ) (h : ∀ x y : ℝ, f (y + f x) + x * f y = f (y * (x + 1)) + f x) : ∀ x : ℝ, f x = x ∨ f x = 0 := by sorry
+theorem prime_pair_eq (p q : ℕ) (hp : Nat.Prime p) (hq : Nat.Prime q) : ((p : ℤ) ^ q - (q : ℤ) ^ p = (p : ℤ) * (q : ℤ) ^ 2 - 19) ↔ ((p = 2 ∧ q = 3) ∨ (p = 2 ∧ q = 7)) := by sorry
+theorem count_pow_floor_below_thousand : Set.ncard {n : ℕ | 0 < n ∧ n < 1000 ∧ ∃ x : ℝ, x ^ (⌊x⌋ : ℤ) = (n : ℝ)} = 412 := by sorry
+theorem fib_gcd (m n : ℕ) (hm : 0 < m) (hn : 0 < n) : Nat.gcd (Nat.fib m) (Nat.fib n) = Nat.fib (Nat.gcd m n) := by sorry
+theorem floor_isSquare_of_floor_pow_isSquare (n : ℕ) (hn : 0 < n) (x : ℝ) (hx : 1 ≤ x) (h : ∀ k : ℕ, n + 1 ≤ k → k ≤ 4 * n → ∃ m : ℕ, 0 < m ∧ ⌊x ^ k⌋ = (m : ℤ) ^ 2) : ∃ m : ℕ, 0 < m ∧ ⌊x⌋ = (m : ℤ) ^ 2 := by sorry
+theorem volume_cone_region : volume {p : ℝ × ℝ × ℝ | Real.sqrt (p.1 ^ 2 + p.2.1 ^ 2) + |p.2.2| ≤ 1} = ENNReal.ofReal (2 * Real.pi / 3) := by sorry
+theorem greatest_square_divisor : IsGreatest {n : ℕ | n ^ 2 ∣ 24 * 35 * 46 * 57} 12 := by sorry
+theorem ax_by_fifth (a b x y : ℝ) (h1 : a * x + b * y = 3) (h2 : a * x ^ 2 + b * y ^ 2 = 7) (h3 : a * x ^ 3 + b * y ^ 3 = 16) (h4 : a * x ^ 4 + b * y ^ 4 = 42) : a * x ^ 5 + b * y ^ 5 = 20 := by sorry
+theorem floor_iterate_divisors (f : ℝ → ℝ) (hf : ∀ x, f x = x ^ 3 - 3 * x) : (⌊f^[8] (5 / 2)⌋.toNat).divisors.card = 6562 := by sorry
+theorem catalan_sum_divisible_card (p : ℕ) (hp : p.Prime) (hodd : Odd p) (f : ℕ → ℕ) (hf : ∀ a, f a = ∑ k ∈ Finset.Icc 1 (p - 1), a ^ k * catalan k) : ((Finset.Ioo 0 p).filter (fun a => p ∣ f a)).card = (Finset.Ioo 0 p).card / 2 := by sorry
+theorem product_eq_zero (a b c : ℝ) (h1 : a ^ 2 + b = c ^ 2) (h2 : b ^ 2 + c = a ^ 2) (h3 : c ^ 2 + a = b ^ 2) : a * b * c = 0 := by sorry
+theorem midpoint_dist (A B C D Q R S T U V : EuclideanSpace ℝ (Fin 2)) (hQ : Q = midpoint ℝ A B) (hR : R = midpoint ℝ A C) (hS : S = midpoint ℝ A D) (hT : T = midpoint ℝ B C) (hU : U = midpoint ℝ B D) (hV : V = midpoint ℝ C D) (h1 : dist Q R = 2001) (h2 : dist S U = 2002) (h3 : dist T V = 2003) : dist (midpoint ℝ Q U) (midpoint ℝ R V) = 2001 := by sorry
+theorem det_of_abs_diff_matrix (n : ℕ) (a d : ℝ) (M : Matrix (Fin (n + 1)) (Fin (n + 1)) ℝ) (hM : ∀ i j, M i j = a + d * |(i : ℝ) - (j : ℝ)|) : M.det = (-1) ^ n * (2 : ℝ) ^ ((n : ℤ) - 1) * d ^ n * (2 * a + n * d) := by sorry
+theorem add_floor_injective (x y : ℝ) (h : x + ⌊x⌋ = y + ⌊y⌋) : x = y := by sorry
+theorem eq_of_sum_sq_eq (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : (1 + (a : ℝ) / (b + c)) ^ 2 + (1 + (b : ℝ) / (a + c)) ^ 2 + (1 + (c : ℝ) / (a + b)) ^ 2 = 27 / 4) : a = b ∧ b = c := by sorry
+theorem sum_triple_products_sub_prod_le_half_sum_pair_products (a b c d : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (hd : 0 ≤ d) (hsum : a + b + c + d = 4) : a * b * c + a * b * d + a * c * d + b * c * d - a * b * c * d ≤ (1 / 2) * (a * b + a * c + a * d + b * c + b * d + c * d) := by sorry
+theorem seq_eq_index_add_c_add_one (c : ℕ) (a : ℕ → ℕ) (hpos : ∀ n, 0 < a n) (h : ∀ n, a n = {i : ℕ | 1 ≤ i ∧ a i ≤ a (n + 1) + c}.ncard) : ∀ n, a n = n + c + 1 := by sorry
+theorem integral_of_quotient (x : ℝ) (hx : 0 < 2 * x - 3) (F : ℝ → ℝ) (hF : ∀ y : ℝ, F y = 2 * (9 * ((2 * y - 3) ^ ((1 : ℝ) / 4)) + ((2 * y - 3) ^ ((1 : ℝ) / 4)) ^ 5 / 5 - (2 / 3) * ((2 * y - 3) ^ ((1 : ℝ) / 4)) ^ 3 - (27 / Real.sqrt 3) * Real.arctan (((2 * y - 3) ^ ((1 : ℝ) / 4)) / Real.sqrt 3))) : HasDerivAt F ((2 * x + Real.sqrt (2 * x - 3)) / (3 * ((2 * x - 3) ^ ((1 : ℝ) / 4)) + ((2 * x - 3) ^ (3 : ℕ)) ^ ((1 : ℝ) / 4))) x := by sorry
+theorem exists_chain_of_divisibility (a b : ℕ) (ha : 2 < a) (hb : 2 < b) : ∃ l : List ℕ, l.head? = some a ∧ l.getLast? = some b ∧ (∀ x ∈ l, 0 < x) ∧ List.Chain' (fun x y => (x + y) ∣ x * y) l := by sorry
+theorem num_rationals_with_num_times_den_eq_factorial_twenty : Set.ncard {q : ℚ | 0 < q ∧ q < 1 ∧ q.num * (q.den : ℤ) = (Nat.factorial 20 : ℤ)} = 128 := by sorry
+theorem least_n_tan : IsLeast {n : ℕ | 0 < n ∧ Real.tan (19 * n * Real.pi / 180) = (Real.cos (96 * Real.pi / 180) + Real.sin (96 * Real.pi / 180)) / (Real.cos (96 * Real.pi / 180) - Real.sin (96 * Real.pi / 180))} 159 := by sorry
+theorem cyclic_sum_ineq (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hprod : x * y * z = 1) : (x + y - 1) ^ 2 / z + (y + z - 1) ^ 2 / x + (z + x - 1) ^ 2 / y ≥ 4 * (x + y + z) - 12 + 9 / (x + y + z) := by sorry
+theorem sum_k_mul_succ (n : ℕ) : 3 * (∑ k ∈ Finset.range n, k * (k + 1)) = (n - 1) * n * (n + 1) := by sorry
+theorem cyclic_sum_lt_sq (k a A b B c C : ℝ) (ha : 0 < a) (hA : 0 < A) (hb : 0 < b) (hB : 0 < B) (hc : 0 < c) (hC : 0 < C) (h1 : a + A = k) (h2 : b + B = k) (h3 : c + C = k) : a * B + b * C + c * A < k ^ 2 := by sorry
+theorem no_pos_int_times_two_larger_eq_consecutive_product (n m : ℕ) (hn : 0 < n) (hm : 0 < m) : n * (n + 2) ≠ m * (m + 1) := by sorry
+theorem sum_reciprocal_binomial_tendsto_two : Filter.Tendsto (fun n : ℕ => ∑ k ∈ Finset.range (n + 1), (1 : ℝ) / (n.choose k)) Filter.atTop (nhds 2) := by sorry
+theorem point_eq (x y : ℝ) : x * (x - 2) + y * (y + 4) + 5 = 0 ↔ (x, y) = ((1 : ℝ), (-2 : ℝ)) := by sorry
+theorem barry_age (b s₁ s₂ s₃ : ℕ) (h₁ : ((s₁ : ℚ) + s₂ + s₃) / 3 = 27) (h₂ : ((b : ℚ) + s₁ + s₂ + s₃) / 4 = 28) : b = 31 := by sorry
+theorem sum_squares_digitsum_two : ∑ n ∈ (Finset.Icc 1 10000).filter (fun n => ((Nat.digits 10 n).sum = 2)), n ^ 2 = 7294927 := by sorry
+theorem sum_add_three_cbrt_ge_two_cyclic_sqrt (a b c : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) : 2 * (Real.sqrt (a * b) + Real.sqrt (b * c) + Real.sqrt (c * a)) ≤ a + b + c + 3 * (a * b * c) ^ ((1 : ℝ) / 3) := by sorry
+theorem harmonic_mean_pairs_count : {p : ℕ × ℕ | 0 < p.1 ∧ p.1 < p.2 ∧ 2 * (p.1 * p.2) = 6 ^ 20 * (p.1 + p.2)}.ncard = 799 := by sorry
+theorem sum_div_sqrt_partial_sq_le (n k : ℕ) (hn : 0 < n) (hk : 0 < k) (a : Fin n → ℝ) (ha : ∀ i, 1 ≤ a i ∧ a i ≤ 2 ^ k) : ∑ i : Fin n, a i / Real.sqrt (∑ j ∈ Finset.univ.filter (fun j : Fin n => j ≤ i), (a j) ^ 2) ≤ 4 * Real.sqrt ((k : ℝ) * (n : ℝ)) := by sorry
+theorem count_real_exponents : {x : ℝ | (2003 : ℝ) ^ x + (2004 : ℝ) ^ x = (2005 : ℝ) ^ x}.encard = 1 := by sorry
+theorem count_digits_one_three_four_even_is_square (n : ℕ) (hn : Even n) : ∃ k : ℕ, {m : ℕ | (∀ d ∈ Nat.digits 10 m, d = 1 ∨ d = 3 ∨ d = 4) ∧ (Nat.digits 10 m).sum = n}.ncard = k ^ 2 := by sorry
+theorem exists_distinct_prime_divisors (n M : ℕ) (hn : 0 < n) (hM : 0 < M) (h : n ^ (n - 1) < M) : ∃ p : Fin n → ℕ, (∀ i, Nat.Prime (p i)) ∧ (∀ i, p i ∣ (M + (i : ℕ) + 1)) ∧ Function.Injective p := by sorry
+theorem finitely_many_totient_divisors_ge_sqrt : {n : ℕ | 0 < n ∧ ((Nat.totient n : ℝ) * ((n.divisors).card : ℝ)) ≥ Real.sqrt ((n : ℝ) ^ 3 / 3)}.Finite := by sorry
+theorem cyclic_sum_ge_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (1 + a ^ 4) / (b + b ^ 2 + b ^ 3) + (1 + b ^ 4) / (c + c ^ 2 + c ^ 3) + (1 + c ^ 4) / (a + a ^ 2 + a ^ 3) ≥ 2 := by sorry
+theorem exists_coprime_no_perfect_power (n : ℕ) (hn : 0 < n) : ∃ a : ℕ, 1 < a ∧ Nat.Coprime a n ∧ ∀ k : ℕ, 0 < k → ¬ ∃ (m e : ℕ), 0 < m ∧ 2 ≤ e ∧ n + a ^ k = m ^ e := by sorry
+theorem area_of_S (A B : EuclideanSpace ℝ (Fin 2)) (hAB : dist A B = 2) (S : Set (EuclideanSpace ℝ (Fin 2))) (hS : S = {P | ∃ Q ∈ segment ℝ A B, dist Q A = 2 * dist Q P}) : volume S = ENNReal.ofReal (Real.sqrt 3 + 2 * Real.pi / 3) := by sorry
+theorem floor_div_sq_eq_iff (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : a ^ 2 / b + b ^ 2 / a = (a ^ 2 + b ^ 2) / (a * b) + a * b ↔ ∃ n : ℕ, (a = n ∧ b = n ^ 2 + 1) ∨ (a = n ^ 2 + 1 ∧ b = n) := by sorry
+theorem cos_limit : Filter.Tendsto (fun x : ℝ => (2 + Real.cos x) / (3 * x ^ 3 * Real.sin x) - 3 / (3 * x ^ 4)) (nhdsWithin 0 {(0 : ℝ)}ᶜ) (nhds (1 / 180)) := by sorry
+theorem triples_eq (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 2 * (a + b + c + 2 * a * b * c) ^ 2 = (1 + 2 * (a * b + b * c + c * a)) ^ 2 + 2023 ↔ ({a, b, c} : Multiset ℕ) = {2, 3, 3} := by sorry
+theorem infinitely_many_odd_and_even (a : ℕ → ℤ) (h1 : a 1 = 2) (hrec : ∀ n : ℕ, a (n + 1) = ⌊(3 * (a n : ℚ)) / 2⌋) : {n : ℕ | Odd (a n)}.Infinite ∧ {n : ℕ | Even (a n)}.Infinite := by sorry
+theorem fract_sum_eq_half (k : ℕ) (hk : 0 < k) (hk' : k < 202) : (∃ n : ℕ, 0 < n ∧ (∑ i ∈ Finset.Icc 1 k, Int.fract ((i * n : ℚ) / 202)) = (k : ℚ) / 2) ↔ k = 1 ∨ k = 100 ∨ k = 101 ∨ k = 201 := by sorry
+theorem exists_hundred_distinct_pos_ints_cube_sum : ∃ a : Fin 100 → ℕ, Function.Injective a ∧ (∀ i, 0 < a i) ∧ ∃ j : Fin 100, (a j) ^ 3 = ∑ i ∈ Finset.univ.erase j, (a i) ^ 3 := by sorry
+theorem sum_of_constant_terms (b c d e : ℝ) (f g : ℝ → ℝ) (hf : ∀ x, f x = 2 * x ^ 2 + b * x + c) (hg : ∀ x, g x = -2 * x ^ 2 + d * x + e) (hf16 : f 16 = 54) (hg16 : g 16 = 54) (hf20 : f 20 = 53) (hg20 : g 20 = 53) : c + e = 116 := by sorry
+theorem x_eq_three (a b x : ℝ) (h1 : a + b = 12) (h2 : a * (x + 2) + b * (x + 2) = 60) : x = 3 := by sorry
+theorem common_divisor_of_all_values (f : ℕ → ℕ) (hpos : ∀ n, 0 < n → 0 < f n) (hdvd : ∀ m n, 0 < m → 0 < n → f (m + n) ∣ f m + f n) : ∃ d : ℕ, 1 < d ∧ ∀ n, 0 < n → d ∣ f n := by sorry
+theorem pairs_char (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : (((b : ℤ) ^ 2 - a ∣ (a : ℤ) ^ 2 + b) ∧ ((a : ℤ) ^ 2 - b ∣ (b : ℤ) ^ 2 + a)) ↔ (a, b) = (2, 2) ∨ (a, b) = (3, 3) ∨ (a, b) = (1, 2) ∨ (a, b) = (2, 3) ∨ (a, b) = (2, 1) ∨ (a, b) = (3, 2) := by sorry
+theorem sum_ge_card_of_prod_eq_one (n : ℕ) (hn : 0 < n) (a : Fin n → ℝ) (hpos : ∀ i, 0 < a i) (hprod : ∏ i, a i = 1) : (n : ℝ) ≤ ∑ i, a i := by sorry
+theorem avg_prod_iff (n : ℕ) (hn : 2 ≤ n) (x : ℝ) (hx : -1 ≤ x) : (∀ a : Fin n → ℝ, (∀ i, 1 ≤ a i) → (∏ i, (x + a i) / 2) ≤ (x + ∏ i, a i) / 2) ↔ x ≤ 1 := by sorry
+theorem first_eq_four_second_eq_five (a b : ℕ) (ha : 0 < a) (hb : 0 < b) (hcop : Nat.Coprime a b) (h : (a : ℝ) / (b : ℝ) = 2 * (Real.sqrt 2 + Real.sqrt 10) / (5 * Real.sqrt (3 + Real.sqrt 5))) : a = 4 ∧ b = 5 := by sorry
+theorem cosh_add_sinh_eq_exp_and_cosh_sub_sinh_eq_exp_neg (x : ℝ) : Real.cosh x + Real.sinh x = Real.exp x ∧ Real.cosh x - Real.sinh x = Real.exp (-x) := by sorry
+theorem cyclic_sum_gt_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : 1 / (a * Real.sqrt (1 + c ^ 2)) + 1 / (b * Real.sqrt (1 + a ^ 2)) + 1 / (c * Real.sqrt (1 + b ^ 2)) > 2 := by sorry
+theorem divisor_pairs (a b : ℤ) (ha : 0 < a) (hb : 0 < b) : ((2 * a + 1) ∣ (3 * b - 1) ∧ (2 * b + 1) ∣ (3 * a - 1)) ↔ (a = 2 ∧ b = 2) ∨ (a = 12 ∧ b = 17) ∨ (a = 17 ∧ b = 12) := by sorry
+theorem cyclic_sum_ge (a b c t : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (ht : 0 ≤ t) : 3 / (1 + t) ≤ a / (b + t * c) + b / (c + t * a) + c / (a + t * b) := by sorry
+theorem weighted_sum_pow_lt_one (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (hab : b ≤ a) (hbc : c ≤ b) (hcd : d ≤ c) (hsum : a + b + c + d = 1) : (a + 2 * b + 3 * c + 4 * d) * (a ^ a * b ^ b * c ^ c * d ^ d : ℝ) < 1 := by sorry
+theorem tenth_smallest_mod (S : Set ℕ) (hS : S = {m : ℕ | ∃ n : ℕ, n ^ 2 % 1000 = 256 ∧ m = n ^ 2 / 1000}) (f : ℕ → ℕ) (hf : StrictMono f) (hfS : Set.range f = S) : f 9 % 1000 = 170 := by sorry
+theorem last_three_digits : (2003 ^ (2002 ^ 2001)) % 1000 = 241 := by sorry
+theorem sum_pow_abel (a b z : ℝ) (n : ℕ) : (z + a) ^ n = z ^ n + a * ∑ k ∈ Finset.Icc 1 n, (n.choose k : ℝ) * (a - k * b) ^ (k - 1) * (z + k * b) ^ (n - k) := by sorry
+theorem cos_two_t_sub_five_sin_t_sub_three_eq_zero (t : ℝ) : Real.cos (2 * t) - 5 * Real.sin t - 3 = 0 ↔ ∃ n : ℤ, t = (-1 : ℝ) ^ (n + 1) * (Real.pi / 6) + n * Real.pi := by sorry
+theorem prime_sum_squares (p q : ℕ) (hp : p.Prime) (hq : q.Prime) (h1 : ∃ a : ℕ, p + q = a ^ 2) (h2 : ∃ b : ℕ, p + 7 * q = b ^ 2) : p = 2 := by sorry
+theorem sum_dvd_two_mul_pred_iff (f : ℕ → ℕ) : (∀ m n : ℕ, (f m + f n) ∣ 2 * (m + n - 1)) ↔ (∀ n : ℕ, f n = 1 ∨ f n = 2 * n - 1) := by sorry
+theorem find_x (x y : ℝ) (hx : 0 < x) (hy : 0 < y) (hxy : x < y) (h1 : Real.sqrt x + Real.sqrt y = 4) (h2 : Real.sqrt (x + 2) + Real.sqrt (y + 2) = 5) : x = 49 / 36 := by sorry
+theorem find_all_f (f : ℤ → ℤ) : (∀ n : ℤ, n ^ 2 + 4 * f n = (f (f n)) ^ 2) ↔ ((∀ n : ℤ, f n = n + 1) ∨ (∃ a : ℤ, 0 < a ∧ (∀ n : ℤ, -a < n → f n = n + 1) ∧ (∀ n : ℤ, n ≤ -a → f n = 1 - n)) ∨ (f 0 = 0 ∧ (∀ n : ℤ, 0 < n → f n = n + 1) ∧ (∀ n : ℤ, n < 0 → f n = 1 - n))) := by sorry
+theorem quotient_sq_iff (m n : ℕ) (hm : 0 < m) (hn : 0 < n) : ((5 ^ m - 2 ^ (n + 1) : ℤ) ≠ 0 ∧ ∃ k : ℤ, (5 ^ m + 2 ^ (n + 1) : ℤ) = k ^ 2 * (5 ^ m - 2 ^ (n + 1))) ↔ (m = 1 ∧ n = 1) := by sorry
+theorem sum_lt_one_third (n : ℕ) (hn : 2 ≤ n) (x : Fin n → ℝ) (hpos : ∀ i, 0 < x i) (hsum : ∑ i, x i = 1) : ∑ i : Fin n, (x i / (1 - x i)) * (∑ j ∈ Finset.univ.filter (fun j => j < i), x j) ^ 2 < 1 / 3 := by sorry
+theorem number_mod_thirteen (N : ℕ) (hN : N = ∑ i ∈ Finset.range 9, (i + 1) * 1000 ^ (8 - i)) : N % 13 = 5 := by sorry
+theorem count_self_power_ends_in_one : ((Finset.Icc 1 2013).filter (fun n : ℕ => n ^ n % 10 = 1)).card = 202 := by sorry
+theorem sqrt_eq_iff (x q : ℝ) (hq : q = 3 * x ^ 2 + 5 * x) : Real.sqrt (q + 8) = Real.sqrt (q + 1) + 1 ↔ (x = -(8 / 3) ∨ x = 1) := by sorry
+theorem sqrt_one_sub_mul_tsum_pow_sq_tendsto : Filter.Tendsto (fun x : ℝ => Real.sqrt (1 - x) * ∑' n : ℕ, x ^ (n ^ 2)) (nhdsWithin 1 (Set.Iio 1)) (nhds (Real.sqrt Real.pi / 2)) := by sorry
+theorem vanishes_at_shift (F : Set (ℝ → ℝ)) (hF : ∀ f ∈ F, ∀ g ∈ F, ∃ h ∈ F, ∀ x y : ℝ, f (g (y - x)) + 2 * x = h (x + y)) : ∀ f ∈ F, ∀ x : ℝ, f (x - f x) = 0 := by sorry
+theorem max_sum_eq_78 : IsGreatest {s : ℕ | ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ a ≤ 100 ∧ b ≤ 100 ∧ a * b = (Nat.lcm a b / Nat.gcd a b) ^ 2 ∧ s = a + b} 78 := by sorry
+theorem rootiful_eq_univ (S : Set ℤ) (hroot : ∀ n : ℕ, 0 < n → ∀ a : ℕ → ℤ, (∀ i ≤ n, a i ∈ S) → ∀ x : ℤ, (∑ i ∈ Finset.range (n + 1), a i * x ^ i) = 0 → x ∈ S) (hpow : ∀ a b : ℕ, 0 < a → 0 < b → ((2 : ℤ) ^ a - (2 : ℤ) ^ b) ∈ S) : S = Set.univ := by sorry
+theorem count_arrangements : (((Finset.Icc 1 9) ×ˢ (Finset.Icc 1 9) ×ˢ (Finset.Icc 1 9) ×ˢ (Finset.Icc 1 9)).filter (fun p : ℕ × ℕ × ℕ × ℕ => p.1 ≠ p.2.1 ∧ p.1 ≠ p.2.2.1 ∧ p.1 ≠ p.2.2.2 ∧ p.2.1 ≠ p.2.2.1 ∧ p.2.1 ≠ p.2.2.2 ∧ p.2.2.1 ≠ p.2.2.2 ∧ p.2.1 < p.1 ∧ p.2.1 < p.2.2.1 ∧ p.2.2.2 < p.2.2.1)).card = 630 := by sorry
+theorem isosceles_trapezoid_segment_length (h : ℝ) (hh : 0 < h) (A B C D P : ℝ × ℝ) -- the isosceles trapezoid A B C D with AB = 8, CD = 3, legs AD = BC (hA : A = (0, 0)) (hB : B = (8, 0)) (hC : C = (11/2, h)) (hD : D = (5/2, h)) -- P A equals the leg length A D (hPA : (P.1 - A.1)^2 + (P.2 - A.2)^2 = (D.1 - A.1)^2 + (D.2 - A.2)^2) -- P C is perpendicular to P A (hperp : (A.1 - P.1) * (C.1 - P.1) + (A.2 - P.2) * (C.2 - P.2) = 0) : Real.sqrt ((P.1 - C.1)^2 + (P.2 - C.2)^2) = 2 * Real.sqrt 6 := by sorry
+theorem f_four_times (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = x / (1 + x)) : f (f (f (f 2009))) = 2009 / 8037 := by sorry
+theorem prod_cube_frac : ∏ n ∈ Finset.Icc (2 : ℕ) 6, ((n ^ 3 - 1 : ℚ) / (n ^ 3 + 1 : ℚ)) = 43 / 63 := by sorry
+theorem four_digit_palindrome_double_palindrome_count : ((Finset.Icc 1000 9999).filter (fun n => Nat.digits 10 n = (Nat.digits 10 n).reverse ∧ Nat.digits 10 (2 * n) = (Nat.digits 10 (2 * n)).reverse)).card = 20 := by sorry
+theorem putnam_style (a : ℝ) : (∃ f : ℝ → ℝ, ∀ x y : ℝ, x + a * f y ≤ y + f (f x)) ↔ (a < 0 ∨ a = 1) := by sorry
+theorem prime_pow_add_fourth_pow_eq_sq (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p) : (∃ k : ℕ, p ^ n + n ^ 4 = k ^ 2) ↔ (p = 3 ∧ (n = 1 ∨ n = 2 ∨ n = 6 ∨ n = 9)) := by sorry
+theorem three_pow_sub_five_pow_eq_sq (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (3 : ℤ) ^ a - 5 ^ b = (c : ℤ) ^ 2 ↔ (a = 2 ∧ b = 1 ∧ c = 2) := by sorry
+theorem dist_neg_five_six : |(-5 : ℤ) - 6| = 11 := by sorry
+theorem quadratic_mean_ge_cbrt_avg_triple_products (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : ((a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2) / 4) ^ ((1 : ℝ) / 2) ≥ ((a * b * c + a * b * d + a * c * d + b * c * d) / 4) ^ ((1 : ℝ) / 3) := by sorry
+theorem sum_sq_abs_initial_le_one (a b c : ℕ → ℂ) (ha : ∀ n, a (n + 1) = (a n) ^ 2 + 2 * (b n) * (c n)) (hb : ∀ n, b (n + 1) = (b n) ^ 2 + 2 * (c n) * (a n)) (hc : ∀ n, c (n + 1) = (c n) ^ 2 + 2 * (a n) * (b n)) (hbound : ∀ n, Complex.abs (a n) ≤ 2022 ∧ Complex.abs (b n) ≤ 2022 ∧ Complex.abs (c n) ≤ 2022) : Complex.abs (a 0) ^ 2 + Complex.abs (b 0) ^ 2 + Complex.abs (c 0) ^ 2 ≤ 1 := by sorry
+theorem cyclic_sum_le_three_halves (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a + b + c = 1) : (a - b * c) / (a + b * c) + (b - c * a) / (b + c * a) + (c - a * b) / (c + a * b) ≤ 3 / 2 := by sorry
+theorem sum_self_pow_mod : (∑ n ∈ Finset.Icc 1 30303, n ^ n) % 101 = 29 := by sorry
+theorem mediocre_second_difference (A : ℕ → ℕ) (hA : ∀ n : ℕ, A n = (((Finset.Icc 1 n).powerset).filter (fun S => ∀ a ∈ S, ∀ b ∈ S, 2 ∣ (a + b) → (a + b) / 2 ∈ S)).card) (n : ℕ) (hn : 0 < n) : ((A (n + 2) : ℤ) - 2 * (A (n + 1) : ℤ) + (A n : ℤ) = 1) ↔ ∃ k : ℕ, 1 ≤ k ∧ n = 2 ^ k - 1 := by sorry
+theorem tan_arcsin_add_arccos : Real.tan (Real.arcsin (3/5) + Real.arccos (5/13)) = -63/16 := by sorry
+theorem exists_weights_odd_four_sevenths {ι : Type*} (s : Finset ι) (a b c : ι → ℤ) (h : ∀ i ∈ s, ¬ (2 ∣ a i) ∨ ¬ (2 ∣ b i) ∨ ¬ (2 ∣ c i)) : ∃ x y z : ℤ, 4 * s.card ≤ 7 * (s.filter (fun i => ¬ (2 ∣ (x * a i + y * b i + z * c i)))).card := by sorry
+theorem f_eq_id (f : ℝ → ℝ) : (∀ x y : ℝ, f (f x) + f (f y) = 2 * y + f (x - y)) ↔ ∀ x : ℝ, f x = x := by sorry
+theorem integral_special_exponent : ∫ x in (1:ℝ)..Real.sqrt 3, (Real.rpow x (2 * x ^ 2 + 1) + Real.log (Real.rpow x (2 * Real.rpow x (2 * x ^ 2 + 1)))) = 13 := by sorry
+theorem floor_seq (x : ℕ → ℝ) (h0 : x 0 = 1994) (hrec : ∀ n, x (n + 1) = (x n) ^ 2 / (x n + 1)) : ∀ n ≤ 998, ⌊x n⌋ = 1994 - (n : ℤ) := by sorry
+theorem sqrt_sum_sq_add_prod_triangle (f : ℝ → ℝ → ℝ) (hf : ∀ x y : ℝ, f x y = Real.sqrt (x ^ 2 + y ^ 2 + x * y)) (a b c : ℝ) : f b c ≤ f a b + f a c := by sorry
+theorem exists_dirichlet_no_least_period : ∃ f : ℝ → ℝ, (∀ x : ℝ, Irrational x → f x = 0) ∧ (∀ q : ℚ, f (q : ℝ) = 1) ∧ (∀ p : ℚ, 0 < p → ∀ x : ℝ, f (x + (p : ℝ)) = f x) ∧ ¬ ∃ p : ℝ, 0 < p ∧ (∀ x : ℝ, f (x + p) = f x) ∧ ∀ q : ℝ, 0 < q → (∀ x : ℝ, f (x + q) = f x) → p ≤ q := by sorry
+theorem fair_game_iff (k : ℕ) (hk : 1 ≤ k) (hk' : k ≤ 1986) : ((((Finset.Icc 1 1986).powersetCard k).filter (fun A => (∑ i ∈ A, i) % 3 = 0)).card = (((Finset.Icc 1 1986).powersetCard k).filter (fun A => (∑ i ∈ A, i) % 3 = 1)).card ∧ (((Finset.Icc 1 1986).powersetCard k).filter (fun A => (∑ i ∈ A, i) % 3 = 1)).card = (((Finset.Icc 1 1986).powersetCard k).filter (fun A => (∑ i ∈ A, i) % 3 = 2)).card) ↔ (k = 660 ∨ k = 1320) := by sorry
+theorem eval_neg_half_eq_two_pow (n : ℕ) (f g : Polynomial ℝ) (hf : f.natDegree ≤ n) (hg : g.natDegree ≤ n) (h : ∀ x : ℝ, f.eval x * x ^ (n + 1) + g.eval x * (x + 1) ^ (n + 1) = 1) : g.eval (-1 / 2) = 2 ^ n := by sorry
+theorem cyclic_sum_nonpos (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a < b + c) (hbc : b < c + a) (hca : c < a + b) : (c - a) / (b + c - a) + (a - b) / (c + a - b) + (b - c) / (a + b - c) ≤ 0 := by sorry
+theorem n_value (a b c n : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : (a + b) / a = 3) (h2 : (b + c) / b = 4) (h3 : (c + a) / c = n) : n = 7 / 6 := by sorry
+theorem count_triples : {t : ℕ × ℕ × ℕ | 0 < t.1 ∧ 0 < t.2.1 ∧ 0 < t.2.2 ∧ t.1 ^ 4 * t.2.1 ^ 2 * t.2.2 = 54000}.ncard = 16 := by sorry
+theorem factor_64x_cubed_sub_125 (x : Polynomial ℤ) : 64 * x ^ 3 - 125 = (4 * x - 5) * (16 * x ^ 2 + 20 * x + 25) := by sorry
+theorem exists_rat_pair_sum_le_twice_midpoint (f : ℚ → ℤ) : ∃ a b : ℚ, a < b ∧ f a + f b ≤ 2 * f ((a + b) / 2) := by sorry
+theorem f_char (f : ℝ → ℝ) : ((∀ x : ℝ, f (x + 1) = f x + 1) ∧ (∀ x : ℝ, f (x ^ 2) = (f x) ^ 2)) ↔ (∀ x : ℝ, f x = x) := by sorry
+theorem least_abs_constant_term : IsLeast {n : ℕ | ∃ p : Polynomial ℤ, p.eval (-10) = 145 ∧ p.eval 9 = 164 ∧ (p.coeff 0).natAbs = n} 25 := by sorry
+theorem gcd_pow_sub_one (a m n : ℕ) (ha : 1 < a) (hm : 0 < m) (hn : 0 < n) : Nat.gcd (a ^ m - 1) (a ^ n - 1) = a ^ (Nat.gcd m n) - 1 := by sorry
+theorem sum_cubes_first_four : (1:ℕ)^3 + 2^3 + 3^3 + 4^3 = 10^2 := by sorry
+theorem sum_floor_mul_div_eq (p q : ℕ) (hp : p.Prime) (hq : q.Prime) (hpq : p ≠ q) : 2 * (∑ k ∈ Finset.Icc 1 (q - 1), (k * p) / q) = (p - 1) * (q - 1) := by sorry
+theorem exists_100_classes_partition : ∃ f : ℕ → Fin 100, (∀ i : Fin 100, ∃ n : ℕ, 0 < n ∧ f n = i) ∧ (∀ a b c : ℕ, 0 < a → 0 < b → 0 < c → a + 99 * b = c → f a = f b ∨ f b = f c ∨ f a = f c) := by sorry
+theorem sq_of_expansion (n m k : ℕ) (hn : Odd n) (hnpos : 0 < n) (hm : 0 < m) (hk : 0 < k) (h : (2 + Real.sqrt 3) ^ n = 1 + (m : ℝ) + (k : ℝ) * Real.sqrt 3) : ∃ a : ℕ, m = a ^ 2 := by sorry
+theorem three_pow_sq_eq (t : ℝ) : (3:ℝ) ^ (t ^ 2) = (1 / (3:ℝ) ^ t) * (27:ℝ) ^ (-(t + 1)) ↔ t = -3 ∨ t = -1 := by sorry
+theorem averages_rearrangement_implies_all_equal (a : ZMod 2011 → ℝ) (σ : Equiv.Perm (ZMod 2011)) (h : ∀ i : ZMod 2011, (a i + a (i + 1)) / 2 = a (σ i)) : ∀ i j : ZMod 2011, a i = a j := by sorry
+theorem pos_rat_eq_ratio_of_sum_two_cubes (q : ℚ) (hq : 0 < q) : ∃ a b c d : ℕ, 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d ∧ q = ((a ^ 3 + b ^ 3 : ℕ) : ℚ) / ((c ^ 3 + d ^ 3 : ℕ) : ℚ) := by sorry
+theorem count_seven_lists : {t : ℕ × ℕ × ℕ × ℕ × ℕ × ℕ × ℕ | 0 < t.1 ∧ 0 < t.2.1 ∧ 0 < t.2.2.1 ∧ 0 < t.2.2.2.1 ∧ 0 < t.2.2.2.2.1 ∧ 0 < t.2.2.2.2.2.1 ∧ 0 < t.2.2.2.2.2.2 ∧ t.1 * t.2.1 * t.2.2.1 = 70 ∧ t.2.2.1 * t.2.2.2.1 * t.2.2.2.2.1 = 71 ∧ t.2.2.2.2.1 * t.2.2.2.2.2.1 * t.2.2.2.2.2.2 = 72}.ncard = 96 := by sorry
+theorem sum_of_cubes (x y a b : ℝ) (hx : 0 < x) (hy : 0 < y) (ha : a = 1 + x / y) (hb : b = 1 + y / x) (hsq : a ^ 2 + b ^ 2 = 15) : a ^ 3 + b ^ 3 = 50 := by sorry
+theorem sum_of_squares (x y : ℕ) (hx : 0 < x) (hy : 0 < y) (h1 : x * y + (x + y) = 71) (h2 : x * y * (x + y) = 880) : x ^ 2 + y ^ 2 = 146 := by sorry
+theorem largest_perm_div_seven : IsGreatest {n : ℕ | (Nat.digits 10 n).length = 4 ∧ (Multiset.ofList (Nat.digits 10 n) = ({2, 0, 1, 9} : Multiset ℕ)) ∧ 7 ∣ n} 1092 := by sorry
+theorem sqrt_five_sub_four_sin_add_sin_bounds (θ : ℝ) (h₀ : 0 ≤ θ) (h₁ : θ ≤ Real.pi / 2) : 2 ≤ Real.sqrt (5 - 4 * Real.sin θ) + Real.sin θ ∧ Real.sqrt (5 - 4 * Real.sin θ) + Real.sin θ ≤ 9 / 4 := by sorry
+theorem sum_sq_le (a b A B : ℝ) (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = 1 - a * Real.cos x - b * Real.sin x - A * Real.cos (2 * x) - B * Real.sin (2 * x)) (hnonneg : ∀ x : ℝ, 0 ≤ f x) : a ^ 2 + b ^ 2 ≤ 2 ∧ A ^ 2 + B ^ 2 ≤ 1 := by sorry
+theorem a2017_or_a2018_ge_2017 (a : ℕ → ℤ) (b : ℕ → ℤ) (hb : ∀ n, 0 < b n) (ha0 : a 0 = 0) (ha1 : a 1 = 1) (hrec : ∀ n : ℕ, a (n + 2) = a (n + 1) * b (n + 1) + (if b n = 1 then a n else - a n)) : 2017 ≤ a 2017 ∨ 2017 ≤ a 2018 := by sorry
+theorem count_triples_mod_1000 : {t : ℕ × ℕ × ℕ | 0 < t.1 ∧ 0 < t.2.1 ∧ 0 < t.2.2 ∧ t.1 ≤ t.2.1 ∧ t.2.1 ≤ t.2.2 ∧ Nat.gcd (Nat.gcd t.1 t.2.1) t.2.2 = 1 ∧ t.1 * t.2.1 * t.2.2 = 6 ^ 2020}.ncard % 1000 = 602 := by sorry
+theorem monic_quadratic_pos_on_int_nonneg_on_real (b c : ℤ) (h : ∀ n : ℤ, 0 < n ^ 2 + b * n + c) : ∀ x : ℝ, 0 ≤ x ^ 2 + (b : ℝ) * x + (c : ℝ) := by sorry
+theorem log_num_divisors_factorial_2014 : round (Real.log ((Nat.factorial 2014).divisors.card : ℝ)) = (439 : ℤ) := by sorry
+theorem exists_linear_bound (c : ℕ → Bool) (f : ℕ → ℕ) (hmono : Monotone f) (hadd : ∀ x y z : ℕ, x + y = z → c x = c y → c y = c z → f x + f y = f z) : ∃ a : ℕ, ∀ n : ℕ, 0 < n → f n ≤ a * n := by sorry
+theorem a_2008_lt_five (a b : ℕ → ℝ) (ha1 : a 1 = 1) (hb1 : b 1 = 2) (ha : ∀ n ≥ 1, a (n + 1) = (1 + a n + a n * b n) / b n) (hb : ∀ n ≥ 1, b (n + 1) = (1 + b n + a n * b n) / a n) : a 2008 < 5 := by sorry
+theorem sin_half_prod_le_one_eighth (α β γ : ℝ) (hα : 0 < α) (hβ : 0 < β) (hγ : 0 < γ) (hα' : α < Real.pi) (hβ' : β < Real.pi) (hγ' : γ < Real.pi) (hsum : α + β + γ = Real.pi) : Real.sin (α / 2) * Real.sin (β / 2) * Real.sin (γ / 2) ≤ 1 / 8 := by sorry
+theorem catalan_special (x y z : ℕ) (hx : 1 < x) (hy : 1 < y) (hz : 1 < z) (h : (x + 1) ^ y = x ^ z + 1) : x = 2 ∧ y = 2 ∧ z = 3 := by sorry
+theorem every_pos_rat_occurs_exactly_once (a : ℕ → ℚ) (h1 : a 1 = 2) (hrec : ∀ n : ℕ, 2 ≤ n → a n = 4 * (padicValNat 3 n : ℚ) + 2 - 2 / a (n - 1)) : ∀ q : ℚ, 0 < q → ∃! n : ℕ, 1 ≤ n ∧ a n = q := by sorry
+theorem exists_periodic_diff_seq_iff (N : ℕ) (hN : 0 < N) : (∃ a : ℕ → ℕ, StrictMono a ∧ (∃ p : ℕ, ∀ n : ℕ, (a (n + 1 + p) : ℤ) - (a (n + p) : ℤ) = (a (n + 1) : ℤ) - (a n : ℤ)) ∧ (∀ n : ℕ, (a (a (n + 1)) : ℤ) - (a (a n) : ℤ) ≤ (N : ℤ) ∧ (N : ℤ) < (a (a (n + 1) + 1) : ℤ) - (a (a n) : ℤ))) ↔ ∃ k : ℕ, k ^ 2 ≤ N ∧ N < k ^ 2 + k := by sorry
+theorem smallest_numerator : IsLeast {p : ℕ | 0 < p ∧ ∃ q : ℕ, 0 < q ∧ (2008 : ℚ) / 2009 < (p : ℚ) / (q : ℚ) ∧ (p : ℚ) / (q : ℚ) < (2009 : ℚ) / 2010} 4017 := by sorry
+theorem john_and_mary (J M : ℕ) (hJ : 0 < J) (hM : 0 < M) (hrel : J = 10 * (M % 10) + M / 10) (hsq : ∃ k : ℕ, J ^ 2 - M ^ 2 = k ^ 2) : J = 65 ∧ M = 56 := by sorry
+theorem sum_pow_ge_mul (n k : ℕ) (hn : 1 ≤ n) (hnk : n < k) (x : Fin n → ℝ) (hx : ∀ i, 0 < x i) (h : ∑ i, x i = ∏ i, x i) : (n * k : ℝ) ≤ ∑ i, (x i) ^ (k - 1) := by sorry
+theorem infinitely_many_n_dvd_two_pow_add_two : {n : ℕ | 0 < n ∧ (n : ℕ) ∣ 2 ^ n + 2}.Infinite := by sorry
+theorem seq_pos (a : ℕ → ℝ) (h0 : a 0 = -1) (hsum : ∀ n : ℕ, 1 ≤ n → ∑ k ∈ Finset.range (n + 1), a k / (((n - k : ℕ) : ℝ) + 1) = 0) : ∀ n : ℕ, 1 ≤ n → 0 < a n := by sorry
+theorem xx_eq_inv_sqrt_two (x : ℝ) (hx : 0 < x) : x ^ x = 1 / Real.sqrt 2 ↔ x = 1 / 2 ∨ x = 1 / 4 := by sorry
+theorem int_valued_functions_on_rationals (f : ℚ → ℤ) : (∀ (x : ℚ) (a b : ℤ), 0 < b → f ((x + (a : ℚ)) / (b : ℚ)) = f (((f x : ℚ) + (a : ℚ)) / (b : ℚ))) ↔ ((∃ c : ℤ, ∀ x : ℚ, f x = c) ∨ (∀ x : ℚ, f x = ⌊x⌋) ∨ (∀ x : ℚ, f x = ⌈x⌉)) := by sorry
+theorem infinitely_many_indices (x : ℕ → ℝ) (hx : ∀ n, 0 < x n) (N : ℕ) : ∃ n : ℕ, n > N ∧ 1 + x n > x (n - 1) * (2 : ℝ) ^ ((1 : ℝ) / n) := by sorry
+theorem exists_gt (f : ℝ → ℝ) : ∃ x y : ℝ, f (x - f y) > x + y * f x := by sorry
+theorem cos_sub_mul_sin_eq_tsum (x : ℝ) : HasSum (fun n : ℕ => (-1 : ℝ) ^ n * (2 * n + 1) * x ^ (2 * n) / (Nat.factorial (2 * n))) (Real.cos x - x * Real.sin x) := by sorry
+theorem sum_of_num_denom (a b : ℝ) (ha : a ≠ 0) (hb : b ≠ 0) (P Q : ℝ × ℝ) (hP : P = (a, 15 / 8 * a)) (hQ : Q = (b, 3 / 10 * b)) (hmid : ((P.1 + Q.1) / 2, (P.2 + Q.2) / 2) = ((8 : ℝ), (6 : ℝ))) (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (hcop : Nat.Coprime m n) (hlen : Real.sqrt ((P.1 - Q.1) ^ 2 + (P.2 - Q.2) ^ 2) = (m : ℝ) / (n : ℝ)) : m + n = 67 := by sorry
+theorem number_of_digits_two_pow_41 : (Nat.digits 10 (2 ^ 41)).length = 13 := by sorry
+theorem sum_abs_le_three (n : ℕ) (hn : 1 ≤ n) (z : Fin n → ℂ) (h : ∀ S : Finset (Fin n), S.Nonempty → Complex.abs (∏ i ∈ S, (1 + z i) - 1) ≤ 1 / 2) : ∑ i, Complex.abs (z i) ≤ 3 := by sorry
+theorem cyclic_sum_le_three_quarters (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a + b + c = 3) : 1 / (2 + a ^ 2 + b ^ 2) + 1 / (2 + b ^ 2 + c ^ 2) + 1 / (2 + c ^ 2 + a ^ 2) ≤ 3 / 4 := by sorry
+theorem fourth_number (a b c d : ℝ) (h1 : (a + b + c + d) + a = 1) (h2 : (a + b + c + d) + 2 * b = 2) (h3 : (a + b + c + d) + 3 * c = 3) (h4 : (a + b + c + d) + 4 * d = 25) : d = 11 / 2 := by sorry
+theorem sum_inv_mul_one_add_ge_half_length (l : List ℝ) (hne : l ≠ []) (hpos : ∀ x ∈ l, 0 < x) (hprod : l.prod = 1) : ((l.map (fun x => 1 / (x * (1 + x)))).sum : ℝ) ≥ (l.length : ℝ) / 2 := by sorry
+theorem sum_ge_prod_add_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b + b * c + c * a = 3) : a + b + c ≥ a * b * c + 2 := by sorry
+theorem marker_distance (c : ℝ) (hc : 0 < c) (m : ℕ) (hm : 0 < m) (h : Real.sqrt (((m : ℝ) - ((m : ℝ) + 4))^2 + ((m : ℝ) * c - ((m : ℝ) + 4) * c)^2) = 31) : Real.sqrt (((7 : ℝ) - 19)^2 + ((7 : ℝ) * c - 19 * c)^2) = 93 := by sorry
+theorem find_triples (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : (45 : ℤ) ^ x - 6 ^ y = 2019 ^ z ↔ (x, y, z) = (2, 1, 1) := by sorry
+theorem no_solution (a b c d : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : 2 ^ a * 3 ^ b + 5 ^ c ≠ 7 ^ d := by sorry
+theorem no_such_four_reals (a b c d : ℝ) : ¬ (|a| > |b - c + d| ∧ |b| > |a - c + d| ∧ |c| > |a - b + d| ∧ |d| > |a - b + c|) := by sorry
+theorem sum_exponents_eq_twelve (a b c d e f : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (he : 0 < e) (hf : 0 < f) (h : (∑ k ∈ (Nat.factorial 13).divisors.filter (fun k => IsSquare (Nat.factorial 13 / k)), k) = 2 ^ a * 3 ^ b * 5 ^ c * 7 ^ d * 11 ^ e * 13 ^ f) : a + b + c + d + e + f = 12 := by sorry
+theorem divisors_of_succ_pow_sub_pow_congr_one (p n q : ℕ) (hp : p.Prime) (hn : 0 < n) (hq : q ∣ (n + 1) ^ p - n ^ p) : q ≡ 1 [MOD p] := by sorry
+theorem asymptotic_of_integral (I : ℝ → ℝ) (hI : ∀ x : ℝ, I x = ∫ t in (-0.4 : ℝ)..(0.2 : ℝ), (1.5 * t ^ 3 - t + 0.4) * Real.exp (x * (1.6 - 0.4 * t ^ 3 - 2.7 * Real.arctan t))) : Tendsto (fun x : ℝ => I x / (0.28 * Real.exp (2.65 * x) / x)) atTop (𝓝 1) := by sorry
+theorem sum_abs_eq (x y : ℝ) (hne : x ^ 2 + y ^ 2 ≠ 0) (h1 : 56 * x + 33 * y = -y / (x ^ 2 + y ^ 2)) (h2 : 33 * x - 56 * y = x / (x ^ 2 + y ^ 2)) : |x| + |y| = 11 / 65 := by sorry
+theorem sum_floor_diff : ∑ k ∈ Finset.Icc 1 2009, k * (2009 / k - 2008 / k) = 2394 := by sorry
+theorem integer_valued_function_is_one (f : ℝ → ℤ) (h : ∀ x y : ℝ, (f x) ^ 2 + (f y) ^ 2 + (f ((f y : ℝ) - x)) ^ 2 = (f y) * (1 + 2 * f ((f y : ℝ)))) : ∀ x : ℝ, f x = 1 := by sorry
+theorem least_cyclic_floor_sum : IsLeast {n : ℕ | ∃ a b c d : ℕ, 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d ∧ n = (b + c + d) / a + (a + c + d) / b + (a + b + d) / c + (a + b + c) / d} 9 := by sorry
+theorem arbitrarily_large_increasing_omega : ∀ N : ℕ, ∃ n : ℕ, N < n ∧ 0 < n ∧ n.primeFactors.card < (n + 1).primeFactors.card ∧ (n + 1).primeFactors.card < (n + 2).primeFactors.card := by sorry
+theorem count_pos_int_with_integer_root : Set.ncard {n : ℕ | 0 < n ∧ ∃ k : ℤ, k ^ 2 - (n : ℤ) * k + (n : ℤ) = 0} = 1 := by sorry
+theorem count_solutions : {x : ℝ | 0 < x ∧ ∃ p : ℝ, IsGreatest {q : ℝ | (∃ n : ℤ, q = (2 : ℝ) ^ n) ∧ q ≤ x} p ∧ (3 * p - x) ^ 16 = 2022 * x ^ 13}.ncard = 9 := by sorry
+theorem sum_inv_sq_add_inv_cube_ge (m n : ℕ) (hm : 0 < m) (hmn : m ≤ n) : (m : ℝ) * (∑ k ∈ Finset.Icc m n, (1 : ℝ) / (k : ℝ) ^ 2) ^ 2 ≤ ∑ k ∈ Finset.Icc m n, ((1 : ℝ) / (k : ℝ) ^ 2 + (1 : ℝ) / (k : ℝ) ^ 3) := by sorry
+theorem sum_log_product (f : ℕ → ℝ) (hf0 : f 0 = 0) (hf : ∀ n : ℕ, 0 < n → f n = Real.log (1 + 1 / (n : ℝ)) * Real.log (1 + 1 / (2 * (n : ℝ))) * Real.log (1 + 1 / (2 * (n : ℝ) + 1))) : ∑' n : ℕ, f n = (Real.log 2) ^ 3 / 3 := by sorry
+theorem cos_ineq_solution_set (x : ℝ) (hx : x ∈ Ioo (0 : ℝ) (2 * π)) : (Real.cos (2 * x) + Real.cos x - 1) / Real.cos (2 * x) > 2 ↔ x ∈ Ioo (π / 4) (π / 3) ∪ Ioo (π / 2) (3 * π / 4) ∪ Ioo (5 * π / 4) (3 * π / 2) ∪ Ioo (5 * π / 3) (7 * π / 4) := by sorry
+theorem sum_of_special_naturals (S : Finset ℕ) (hS : ∀ n : ℕ, n ∈ S ↔ 0 < n ∧ ∃ k : ℤ, 9 * Real.sqrt (n : ℝ) + 4 * Real.sqrt ((n : ℝ) + 2) - 3 * Real.sqrt ((n : ℝ) + 16) = (k : ℝ)) : ∑ n ∈ S, n = 18 := by sorry
+theorem prime_pow_pairs (p a b : ℕ) (hp : p.Prime) (ha : 0 < a) (hb : 0 < b) : ((∃ m : ℕ, a ^ (p - 1) + b = p ^ m) ∧ (∃ n : ℕ, b ^ (p - 1) + a = p ^ n)) ↔ (p = 3 ∧ a = 2 ∧ b = 5) ∨ (p = 3 ∧ a = 5 ∧ b = 2) ∨ (p = 2 ∧ ∃ k : ℕ, a < 2 ^ k ∧ b = 2 ^ k - a) := by sorry
+theorem exists_large_k_odd_floor (n : ℕ) (hn : 1 < n) (N : ℕ) : ∃ k : ℕ, N ≤ k ∧ 1 ≤ k ∧ Odd (n ^ k / k) := by sorry
+theorem triple_eq (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : (x ^ 2 = 2 * (y + z) ∧ x ^ 6 = y ^ 6 + z ^ 6 + 31 * (y ^ 2 + z ^ 2)) ↔ (x = 2 ∧ y = 1 ∧ z = 1) := by sorry
+theorem cyclic_ratio_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c ≤ 1) : a / b + b / c + c / a ≥ a + b + c + |(a - 1) * (b - 1) * (c - 1)| := by sorry
+theorem sum_sq_lt_two_sum_prod (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : a ^ 2 < 16 * (b * c)) (h2 : b ^ 2 < 16 * (c * a)) (h3 : c ^ 2 < 16 * (a * b)) : a ^ 2 + b ^ 2 + c ^ 2 < 2 * (a * b + b * c + c * a) := by sorry
+theorem min_y_on_parabola : IsLeast {y : ℝ | ∃ x : ℝ, x + y = (y - x) ^ 2 + 3 * (y - x) + 3} (-1 / 2) := by sorry
+theorem min_max_consecutive_triple_sum : IsLeast {m : ℝ | ∃ a : Fin 7 → ℝ, (∀ i, 0 ≤ a i) ∧ (∑ i, a i = 1) ∧ m = max (max (max (max (a 0 + a 1 + a 2) (a 1 + a 2 + a 3)) (a 2 + a 3 + a 4)) (a 3 + a 4 + a 5)) (a 4 + a 5 + a 6)} (1 / 3) := by sorry
+theorem integral_x_log_x_eq_quarter (a : ℝ) (ha : 1 < a) : (∫ x in (1:ℝ)..a, x * Real.log x) = 1/4 ↔ a = Real.sqrt (Real.exp 1) := by sorry
+theorem f_add_le_of_gt (f : ℝ → ℝ) (h : ∀ x y : ℝ, ((0 < f x + y ∧ 0 < f y + x) ∨ (f x + y < 0 ∧ f y + x < 0)) → f x + y = f y + x) : ∀ x y : ℝ, y < x → f x + y ≤ f y + x := by sorry
+theorem cube_root_eq_unique_solution (a b f : ℝ → ℝ) (ha : ∀ x : ℝ, (a x) ^ 3 = 2 * x - 3) (hb : ∀ x : ℝ, (b x) ^ 3 = 3 * x + 2) (hf : ∀ x : ℝ, f x = a x + b x - 3) : ∀ x : ℝ, f x = 0 ↔ x = 2 := by sorry
+theorem sum_fifth_powers (a b c : ℝ) (h1 : a + b + c = 3) (h3 : a ^ 3 + b ^ 3 + c ^ 3 = 15) (h4 : a ^ 4 + b ^ 4 + c ^ 4 = 35) (h2 : a ^ 2 + b ^ 2 + c ^ 2 < 10) : a ^ 5 + b ^ 5 + c ^ 5 = 83 := by sorry
+theorem interesting_numbers_count : {n : ℕ | 0 < n ∧ ∀ k : ℕ, 1 ≤ k → k ≤ 9 → Int.fract ((n : ℝ) / 10 ^ k) > (n : ℝ) / 10 ^ 10}.ncard = 999989991 := by sorry
+theorem no_such_factorization (n : ℕ) (hn : 0 < n) : ∀ a b : ℕ, 0 < a → 0 < b → a * b = n ^ 2 + n + 1 → ¬ (|(a : ℝ) - (b : ℝ)| < 2 * Real.sqrt (n : ℝ)) := by sorry
+theorem integral_sin_pow_four : ∫ x in (0:ℝ)..Real.pi, (Real.sin x) ^ 4 = 3 * Real.pi / 8 := by sorry
+theorem area_of_region : volume {p : ℝ × ℝ | p.2 ^ 2 ≤ p.1 ^ 2 - p.1 ^ 6} = ENNReal.ofReal (π / 2) := by sorry
+theorem square_corner_subsets_count : Set.ncard {S : Finset ℕ | S ⊆ Finset.Icc 1 10 ∧ S.card = 4 ∧ ∃ a b c d : ℕ, S = {a, b, c, d} ∧ 4 ≤ |(a : ℤ) - (b : ℤ)| ∧ 4 ≤ |(b : ℤ) - (c : ℤ)| ∧ 4 ≤ |(c : ℤ) - (d : ℤ)| ∧ 4 ≤ |(d : ℤ) - (a : ℤ)|} = 36 := by sorry
+theorem cyclic_sum_ratio_tan_half_angle_ge (a b c a' b' c' A B C A' B' C' : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (ha' : 0 < a') (hb' : 0 < b') (hc' : 0 < c') (hA : 0 < A) (hB : 0 < B) (hC : 0 < C) (hA' : 0 < A') (hB' : 0 < B') (hC' : 0 < C') (hAπ : A < π) (hBπ : B < π) (hCπ : C < π) (hA'π : A' < π) (hB'π : B' < π) (hC'π : C' < π) (hsum : A + B + C = π) (hsum' : A' + B' + C' = π) : (a / a') * Real.tan (A / 2) + (b / b') * Real.tan (B / 2) + (c / c') * Real.tan (C / 2) ≥ Real.sqrt 3 * (a + b + c) / (2 * (a' + b' + c')) ∧ ((a / a') * Real.tan (A / 2) + (b / b') * Real.tan (B / 2) + (c / c') * Real.tan (C / 2) = Real.sqrt 3 * (a + b + c) / (2 * (a' + b' + c')) ↔ (A = B ∧ B = C ∧ A' = B' ∧ B' = C')) := by sorry
+theorem count_triples_product_div_twenty : (Finset.filter (fun t : ℕ × ℕ × ℕ => 20 ∣ t.1 * t.2.1 * t.2.2) ((Finset.Icc 1 9) ×ˢ (Finset.Icc 1 9) ×ˢ (Finset.Icc 1 9))).card = 102 := by sorry
+theorem sum_of_four_fractions_ge_four (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : (a + c) / (a + b) + (b + d) / (b + c) + (c + a) / (c + d) + (d + b) / (d + a) ≥ 4 := by sorry
+theorem cyclic_sum_nonneg (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : 0 ≤ (a - b) / (b + c) + (b - c) / (c + d) + (c - d) / (d + a) + (d - a) / (a + b) := by sorry
+theorem exists_integer_shifts (n : ℕ) (hn : 2 ≤ n) (a : Fin n → ℝ) (h0 : 0 ≤ ∑ i, a i) (h1 : ∑ i, a i ≤ n) : ∃ k : Fin n → ℤ, (∑ i, k i) = 0 ∧ ∀ i, (1 : ℝ) - n ≤ a i + n * (k i : ℝ) ∧ a i + n * (k i : ℝ) ≤ n := by sorry
+theorem sum_of_two_reals (x y : ℝ) (hx : x + 3 = 5) (hy : y - 3 = 5) : x + y = 10 := by sorry
+theorem sum_sq_x_coords_eq_26 (p₁ p₂ p₃ p₄ : ℝ × ℝ) (hdist : p₁ ≠ p₂ ∧ p₁ ≠ p₃ ∧ p₁ ≠ p₄ ∧ p₂ ≠ p₃ ∧ p₂ ≠ p₄ ∧ p₃ ≠ p₄) (hcirc : ∀ p ∈ [p₁, p₂, p₃, p₄], p.1 ^ 2 + p.2 ^ 2 = 6 ^ 2) (hpar : ∀ p ∈ [p₁, p₂, p₃, p₄], p.2 = p.1 ^ 2 - 7) : p₁.1 ^ 2 + p₂.1 ^ 2 + p₃.1 ^ 2 + p₄.1 ^ 2 = 26 := by sorry
+theorem midpoint_affine (f : ℝ → ℝ) (hcont : Continuous f) (hmid : ∀ x y : ℝ, f ((x + y) / 2) = (f x + f y) / 2) : ∃ a b : ℝ, a = f 1 - f 0 ∧ b = f 0 ∧ ∀ x : ℝ, f x = a * x + b := by sorry
+theorem deriv_g (a b c d : ℝ) (g : ℝ → ℝ) (hg : ∀ x : ℝ, g x = (1/3) * (a + b) * x^3 + (1/2) * (a + b + c) * x^2 - (a + b + c + d) * x + a * b * c * d) (h : ∀ x : ℝ, x + x^2 = a + b) : ∀ x : ℝ, deriv g x = (a + b)^2 + c * x - (a + b + c + d) := by sorry
+theorem greatest_zero_index (a S : ℕ → ℤ) (hS0 : S 0 = 0) (hS : ∀ n : ℕ, 0 < n → S n = ∑ i ∈ Finset.Icc 1 n, (i : ℤ) * a i) (ha0 : a 0 = -1) (ha : ∀ n : ℕ, 0 < n → a n = if S (n - 1) < (n : ℤ) then 1 else -1) : IsGreatest {n : ℕ | n ≤ 2010 ∧ S n = 0} 1092 := by sorry
+theorem exists_linear_const_of_sq_const (a : ℕ → ℝ) (ha : ∀ n, 0 < a n) (c : ℝ) (hc : ∀ n : ℕ, ∑ i ∈ Finset.range n, (a i) ^ 2 < c * (a n) ^ 2) : ∃ C : ℝ, ∀ n : ℕ, ∑ i ∈ Finset.range n, a i < C * a n := by sorry
+theorem pow_sq_eq_pow (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : a ^ (b ^ 2) = b ^ a ↔ (a = 1 ∧ b = 1) ∨ (a = 16 ∧ b = 2) ∨ (a = 27 ∧ b = 3) := by sorry
+theorem integral_x_tan_sq : ∫ x in (0:ℝ)..(Real.pi / 3), x * (Real.tan x) ^ 2 = -(Real.pi ^ 2 / 18) + Real.pi * Real.sqrt 3 / 3 - Real.log 2 := by sorry
+theorem orderly_colorings_count (n : ℕ) (hn : 3 ≤ n) : Nat.card {c : Fin n → Fin n → Bool // (∀ σ : Equiv.Perm (Fin n), ∃ τ : Equiv.Perm (Fin n), ∀ i j, c (σ i) (τ j) = c i j) ∧ (∀ τ : Equiv.Perm (Fin n), ∃ σ : Equiv.Perm (Fin n), ∀ i j, c (σ i) (τ j) = c i j)} = 2 * Nat.factorial n + 2 := by sorry
+theorem prod_one_add_pow_gt (n : ℕ) (hn : 3 ≤ n) (x : ℕ → ℝ) (hpos : ∀ i ∈ Finset.Icc 2 n, 0 < x i) (hprod : ∏ i ∈ Finset.Icc 2 n, x i = 1) : (n : ℝ) ^ n < ∏ i ∈ Finset.Icc 2 n, (1 + x i) ^ i := by sorry
+theorem triangle_AB_eq_MC (A B C M : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (hA : ∠ B A C = 70 * π / 180) (hB : ∠ A B C = 80 * π / 180) (hM : M ∈ interior (convexHull ℝ ({A, B, C} : Set (EuclideanSpace ℝ (Fin 2))))) (h1 : ∠ M C A = 10 * π / 180) (h2 : ∠ M B C = 20 * π / 180) : dist A B = dist M C := by sorry
+theorem greatest_value_sqrt_two : IsGreatest {z : ℝ | ∃ x y : ℝ, z = x * y + x * Real.sqrt (1 - y ^ 2) + y * Real.sqrt (1 - x ^ 2) - Real.sqrt ((1 - x ^ 2) * (1 - y ^ 2))} (Real.sqrt 2) := by sorry
+theorem seq_sum_eq (a : ℕ → ℤ) (h0 : a 0 = 3) (h1 : a 1 = 4) (hrec : ∀ n, a (n + 2) = a n * a (n + 1) + ⌈Real.sqrt ((a n : ℝ) ^ 2 - 1) * Real.sqrt ((a (n + 1) : ℝ) ^ 2 - 1)⌉) : ∑' n : ℕ, ((a (n + 3) : ℝ) / (a (n + 2) : ℝ) - (a (n + 2) : ℝ) / (a n : ℝ) + (a (n + 1) : ℝ) / (a (n + 3) : ℝ) - (a n : ℝ) / (a (n + 1) : ℝ)) = 14 / 69 := by sorry
+theorem cyclic_sum_nonpos (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hprod : x * y * z = 8) : (x - 2) / (x + 1) + (y - 2) / (y + 1) + (z - 2) / (z + 1) ≤ 0 := by sorry
+theorem card_subsets_one_per_pair_nine_consecutive : (((Finset.Icc 1 48).powerset.filter (fun S => (∀ k ∈ Finset.Icc 1 24, (S ∩ ({2 * k - 1, 2 * k} : Finset ℕ)).card = 1) ∧ ((Finset.Icc 1 47).filter (fun i => i ∈ S ∧ i + 1 ∈ S)).card = 9)).card) = 177100 := by sorry
+theorem largest_power_of_three_dividing_product_of_odds (P : ℕ) (hP : P = ∏ i ∈ Finset.range 100, (2 * i + 1)) : IsGreatest {k : ℕ | (3 : ℕ) ^ k ∣ P} 49 := by sorry
+theorem smallest_multiple_of_63_with_odd_binary_ones : IsLeast {n : ℕ | 0 < n ∧ 63 ∣ n ∧ Odd ((Nat.digits 2 n).sum)} 4221 := by sorry
+theorem imaginary_part_eq_fifteen (z : ℂ) (hre : z.re = 9) (him : 0 < z.im) (h : (z ^ 2).im = (z ^ 3).im) : z.im = 15 := by sorry
+theorem quotient_eq_52 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : a ^ 2 + a * b + b ^ 2 = 9) (h2 : b ^ 2 + b * c + c ^ 2 = 52) (h3 : c ^ 2 + c * a + a ^ 2 = 49) : (49 * b ^ 2 - 33 * b * c + 9 * c ^ 2) / a ^ 2 = 52 := by sorry
+theorem card_functions_const_comp_mod_thousand : (Finset.univ.filter (fun f : Fin 7 → Fin 7 => ∃ c : Fin 7, ∀ x : Fin 7, f (f x) = c)).card % 1000 = 399 := by sorry
+theorem cube_root_by_deleting_last_three_digits (n : ℕ) (hn : 0 < n) : (n / 1000) ^ 3 = n ↔ n = 32768 := by sorry
+theorem exists_1985_distinct_ints_sq_cube_cube_sq : ∃ f : Fin 1985 → ℤ, Function.Injective f ∧ (∃ n : ℤ, 0 < n ∧ (∑ i, (f i) ^ 2) = n ^ 3) ∧ (∃ m : ℤ, 0 < m ∧ (∑ i, (f i) ^ 3) = m ^ 2) := by sorry
+theorem sum_odd_recip_div_succ_ge_sum_even_recip_div (n : ℕ) (hn : 0 < n) : (∑ k ∈ Finset.Icc 1 n, (1 : ℝ) / (2 * k - 1)) / (n + 1) ≥ (∑ k ∈ Finset.Icc 1 n, (1 : ℝ) / (2 * k)) / n := by sorry
+theorem triangle_area_sum_eq_ten (A B C D M : EuclideanSpace ℝ (Fin 2)) (hnd : AffineIndependent ℝ ![A, B, C]) (hiso : dist C A = dist C B) (hD : D ∈ segment ℝ C B) (hD3 : dist C D = 3 * dist D B) (hM : M = midpoint ℝ D A) (hCM : dist C M = Real.sqrt 7) (hBM : dist B M = 3) (a b : ℤ) (hb : Squarefree b) (harea : (volume (convexHull ℝ ({A, B, C} : Set (EuclideanSpace ℝ (Fin 2))))).toReal = (a : ℝ) * Real.sqrt (b : ℝ)) : a + b = 10 := by sorry
+theorem infinitely_many_indices (a : ℕ → ℝ) (ha : ∀ n, 0 < a n) : {n : ℕ | 1 + a (n + 1) > a n * (2 : ℝ) ^ ((1 : ℝ) / (n + 1))}.Infinite := by sorry
+theorem y_mul_sub_one_le_sq (x y : ℝ) (hy : 0 ≤ y) (h : y * (y + 1) ≤ (x + 1) ^ 2) : y * (y - 1) ≤ x ^ 2 := by sorry
+theorem exists_nonconstant_polys : ∃ P Q : Polynomial ℝ, 1 ≤ P.natDegree ∧ 1 ≤ Q.natDegree ∧ ∀ x : ℝ, (P.eval x) ^ 10 + (P.eval x) ^ 9 = (Q.eval x) ^ 21 + (Q.eval x) ^ 20 := by sorry
+theorem odd_dvd_sum_pow (m n p : ℕ) (hm0 : 0 < m) (hn0 : 0 < n) (hp0 : 0 < p) (hm : Odd m) (hn : Odd n) (hp : Odd p) : n ∣ ∑ k ∈ Finset.Icc 1 ((n - 1) ^ p), k ^ m := by sorry
+theorem sum_of_three (a b c : ℝ) (h1 : a - (b + c) = 2) (h2 : b - (a + c) = 1) (h3 : c - (a + b) = 4) : a + b + c = -7 := by sorry
+theorem thirty_five_dvd (n : ℕ) (hn : n = 2021) : 35 ∣ 3 ^ (2 * n + 1) + 2 ^ (n + 2) := by sorry
+theorem putnam_poly (P : MvPolynomial (Fin 3) ℝ) (hhom : P.IsHomogeneous 4) (hcyc : ∀ a b c : ℝ, eval ![a, b, c] P = eval ![b, c, a] P) (hvan : ∀ a b : ℝ, eval ![a, a, b] P = 0) (h123 : eval ![1, 2, 3] P = 1) : eval ![2, 4, 8] P = 56 := by sorry
+theorem least_f_two : IsLeast {n : ℕ | ∃ f : ℕ → ℕ, StrictMono f ∧ (∀ a b : ℕ, f (a * b) = f a * f b) ∧ 2 < f 2 ∧ f 2 = n} 4 := by sorry
+theorem approx_by_integer_combinations (a b : ℝ) (h : Irrational (a / b)) : ∀ x : ℝ, ∀ ε : ℝ, 0 < ε → ∃ m n : ℤ, |(m : ℝ) * a + (n : ℝ) * b - x| < ε := by sorry
+theorem count_pairs : (((Finset.Icc 2 2021) ×ˢ (Finset.Icc 2 2021)).filter (fun p : ℕ × ℕ => ((p.1 : ℝ) ^ (Real.logb (p.2 : ℝ) (1 / (p.1 : ℝ) ^ 4)) = (p.2 : ℝ) ^ (Real.logb (p.1 : ℝ) ((p.2 : ℝ) / (p.1 : ℝ) ^ 3)))).card = 43 := by sorry
+theorem quartic_roots (z : ℂ) : z ^ 4 + 2 * z ^ 3 + 2 * z ^ 2 + 2 * z + 1 = 0 ↔ z = -1 ∨ z = Complex.I ∨ z = -Complex.I := by sorry
+theorem f_eq_id_or_neg_id (f : ℝ → ℝ) : (∀ x y : ℝ, f (x ^ 2) - f (y ^ 2) ≤ (f x + y) * (x - f y)) ↔ ((∀ x : ℝ, f x = x) ∨ (∀ x : ℝ, f x = -x)) := by sorry
+theorem f_eq_id (f : ℕ → ℕ) (h : ∀ n : ℕ, f (f n) < f (n + 1)) : ∀ n : ℕ, f n = n := by sorry
+theorem factorial_sum_eq : 8 * (Nat.factorial 9 / 4) + 4 * (Nat.factorial 7 / 2) + 4 * Nat.factorial 6 + 4 * Nat.factorial 4 + Nat.factorial 3 + Nat.factorial 2 + Nat.factorial 2 = 738826 := by sorry
+theorem sum_floor_two_pow_div_25 : (∑ n ∈ Finset.range 2016, (2 ^ n / 25 : ℕ)) % 100 = 14 := by sorry
+theorem card_powersetCard_nonneg_sum_ge (n k : ℕ) (hn : 2 ≤ n) (hk : 0 < k) (hkn : k ∣ n) (a : Fin n → ℝ) (hsum : ∑ i, a i = 0) : Nat.choose (n - 1) (k - 1) ≤ ((Finset.univ.powersetCard k).filter (fun s => 0 ≤ ∑ i ∈ s, a i)).card := by sorry
+theorem find_integer (z : ℂ) (n : ℕ) (hn : 0 < n) (him : z.im = 164) (heq : z / (z + (n : ℂ)) = 4 * Complex.I) : n = 697 := by sorry
+theorem quadratic_ineq_solution (x : ℝ) : 15 + 10 * x - 5 * x ^ 2 ≤ 0 ↔ x ≤ -1 ∨ 3 ≤ x := by sorry
+theorem sum_a_b (a b : ℝ) (h : ∀ x : ℝ, (x + a) * (x + 8) = x^2 + b * x + 24) : a + b = 14 := by sorry
+theorem pairs_char (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : (a + b + (Nat.gcd a b) ^ 2 = Nat.lcm a b ∧ Nat.lcm a b = 2 * Nat.lcm (a - 1) b) ↔ ((a, b) = (2, 3) ∨ (a, b) = (6, 15)) := by sorry
+theorem usamo_2003 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (2*a + b + c)^2 / (2*a^2 + (b + c)^2) + (2*b + c + a)^2 / (2*b^2 + (c + a)^2) + (2*c + a + b)^2 / (2*c^2 + (a + b)^2) ≤ 8 := by sorry
+theorem prod_diff_le_two (a b c : ℝ) (ha : 0 ≤ a) (ha2 : a ≤ 2) (hb : 0 ≤ b) (hb2 : b ≤ 2) (hc : 0 ≤ c) (hc2 : c ≤ 2) : (a - b) * (b - c) * (a - c) ≤ 2 := by sorry
+theorem f_g_three (f g : ℝ → ℝ) (hf : ∀ x : ℝ, 2 < x → x < 4 → 2 < f x ∧ f x < 4) (hg : ∀ x : ℝ, 2 < x → x < 4 → 2 < g x ∧ g x < 4) (hfg : ∀ x : ℝ, 2 < x → x < 4 → f (g x) = x) (hgf : ∀ x : ℝ, 2 < x → x < 4 → g (f x) = x) (hmul : ∀ x : ℝ, 2 < x → x < 4 → f x * g x = x ^ 2) : f 3 = 3 ∧ g 3 = 3 := by sorry
+theorem three_numbers (a b c : ℝ) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (hlt1 : a < b) (hlt2 : b < c) (hsum : a + b + c = 21 / 4) (hrecip : 1 / a + 1 / b + 1 / c = 21 / 4) (hprod : a * b * c = 1) : a = 1 / 4 ∧ b = 1 ∧ c = 4 := by sorry
+theorem exists_two_disjoint_triples : ∃ A B : Finset ℤ, A.card = 3 ∧ B.card = 3 ∧ Disjoint A B ∧ (∀ x ∈ A, 2003 < x) ∧ (∀ x ∈ B, 2003 < x) ∧ (∑ x ∈ A, x) = (∑ x ∈ B, x) ∧ (∑ x ∈ A, x ^ 2) = (∑ x ∈ B, x ^ 2) := by sorry
+theorem exists_n_with_2000_prime_factors_dvd_two_pow_add_one : ∃ n : ℕ, 0 < n ∧ n.primeFactors.card = 2000 ∧ n ∣ 2 ^ n + 1 := by sorry
+theorem antiderivative_x_arctan_sq (C : ℝ) : ∀ x : ℝ, HasDerivAt (fun x : ℝ => (1/16) * (2 * (Real.arctan (2*x))^2 + 2 * Real.log (1 + 4*x^2) + 8 * x^2 * (Real.arctan (2*x))^2 - 8 * x * Real.arctan (2*x)) + C) (x * (Real.arctan (2*x))^2) x := by sorry
+theorem sum_nonneg_of_prod_ge_one (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h : 1 ≤ x * y * z) : 0 ≤ (x^5 - x^2) / (x^5 + y^2 + z^2) + (y^5 - y^2) / (y^5 + z^2 + x^2) + (z^5 - z^2) / (z^5 + x^2 + y^2) := by sorry
+theorem card_rationals_num_add_den_eq_1000 : {q : ℚ | 0 < q ∧ q < 1 ∧ q.num + (q.den : ℤ) = 1000}.ncard = 200 := by sorry
+theorem sum_top_coeffs (ζ ω : ℂ) (hζ : IsPrimitiveRoot ζ 99) (hω : IsPrimitiveRoot ω 101) (P : Polynomial ℂ) (hP : P = ∏ i ∈ Finset.range 99, ∏ j ∈ Finset.range 101, (Polynomial.X - Polynomial.C (ζ ^ i + ω ^ j))) : ∑ k ∈ Finset.Ico 9799 9999, P.coeff k = (14849 : ℂ) - (9999 / 200 : ℂ) * (Nat.choose 200 99 : ℂ) := by sorry
+theorem exists_unique_index_avg (a : ℕ → ℕ) (hpos : ∀ i, 0 < a i) (hmono : StrictMono a) : ∃! n : ℕ, 1 ≤ n ∧ (a n : ℚ) < (∑ i ∈ Finset.range (n + 1), (a i : ℚ)) / (n : ℚ) ∧ (∑ i ∈ Finset.range (n + 1), (a i : ℚ)) / (n : ℚ) ≤ (a (n + 1) : ℚ) := by sorry
+theorem sum_inv_sqrt_tendsto_pi_div_two (S : ℕ → ℝ) (hS : ∀ n : ℕ, S n = ∑ k ∈ Finset.range n, 1 / Real.sqrt ((n : ℝ) ^ 2 - (k : ℝ) ^ 2)) : Filter.Tendsto S Filter.atTop (nhds (Real.pi / 2)) := by sorry
+theorem imo2011_p3 (f : ℝ → ℝ) (hf : ∀ x y : ℝ, f (x + y) ≤ y * f x + f (f x)) : ∀ x : ℝ, x ≤ 0 → f x = 0 := by sorry
+theorem sum_eq_one (x y : ℝ) (hx : -1 < x) (hx1 : x < 1) (hy : -1 < y) (hy1 : y < 1) (hxy : x < y) (h : ∑' n : ℕ, x * y ^ n = ∑' n : ℕ, y * x ^ n) : x + y = 1 := by sorry
+theorem product_ge_cube (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (a ^ 5 - a ^ 2 + 3) * (b ^ 5 - b ^ 2 + 3) * (c ^ 5 - c ^ 2 + 3) ≥ (a + b + c) ^ 3 := by sorry
+theorem infinite_product_of_sequence (a : ℕ → ℝ) (h0 : a 0 = 1 / 2) (hrec : ∀ n, a (n + 1) = (a n - 1) ^ 2 + 1) : Tendsto (fun N => ∏ i ∈ Finset.range N, a i) atTop (𝓝 (2 / 3)) := by sorry
+theorem find_polynomials (n : ℕ) (hn : 1 < n) (P : Polynomial ℝ) (hPnc : 0 < P.natDegree) : (∀ x : ℝ, (∏ i ∈ Finset.range n, P.eval (x ^ (i + 1))) = P.eval (x ^ (n * (n + 1) / 2))) ↔ ∃ k : ℕ, 0 < k ∧ (P = Polynomial.X ^ k ∨ (Odd n ∧ P = -(Polynomial.X ^ k))) := by sorry
+theorem cube_eq_of_cyclic_shift (a b c : ℝ) : (((2 * a - b - c : ℝ) : ℂ) + ((Real.sqrt 3 * (b - c) : ℝ) : ℂ) * Complex.I) ^ 3 = (((2 * b - c - a : ℝ) : ℂ) + ((Real.sqrt 3 * (c - a) : ℝ) : ℂ) * Complex.I) ^ 3 := by sorry
+theorem add_four_eq_nine (x : ℝ) (h : 2 * x + 6 = 16) : x + 4 = 9 := by sorry
+theorem all_zero_of_cyclic_fifth_powers (a b c d : ℝ) (h1 : a ^ 5 = b + b ^ 5) (h2 : b ^ 5 = c + c ^ 5) (h3 : c ^ 5 = d + d ^ 5) (h4 : d ^ 5 = a + a ^ 5) : a = 0 ∧ b = 0 ∧ c = 0 ∧ d = 0 := by sorry
+theorem find_pairs (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p) : (n ≤ 2 * p ∧ n ^ (p - 1) ∣ (p - 1) ^ n + 1) ↔ ((n = 2 ∧ p = 2) ∨ (n = 3 ∧ p = 3) ∨ n = 1) := by sorry
+theorem integral_neg_sin_pow_four_div_cos (C x : ℝ) (hx : Real.cos (2 * x) ≠ 0) (F : ℝ → ℝ) (hF : ∀ y : ℝ, F y = (1 / 2) * (C + (1 / 3) * (Real.sin (2 * y)) ^ 3 + Real.sin (2 * y) - (1 / 2) * Real.log |(1 + Real.sin (2 * y)) / (1 - Real.sin (2 * y))|)) : HasDerivAt F (-(Real.sin (2 * x)) ^ 4 / Real.cos (2 * x)) x := by sorry
+theorem volume_of_solid : volume {p : ℝ × ℝ × ℝ | 0 ≤ p.1 ∧ 0 ≤ p.2.1 ∧ 0 ≤ p.2.2 ∧ p.1 + p.2.1 ≤ 1 ∧ p.1 + p.2.2 ≤ 1 ∧ p.2.1 + p.2.2 ≤ 1} = 1 / 4 := by sorry
+theorem sum_fourth_powers_eq (a b c d : ℝ) (h : a ^ 2 + b ^ 2 + (a + b) ^ 2 = c ^ 2 + d ^ 2 + (c + d) ^ 2) : a ^ 4 + b ^ 4 + (a + b) ^ 4 = c ^ 4 + d ^ 4 + (c + d) ^ 4 := by sorry
+theorem min_reciprocal_sum : IsLeast {x : ℝ | ∃ a b c : ℝ, 1 ≤ a ∧ a ≤ 2 ∧ 1 ≤ b ∧ b ≤ 2 ∧ 1 ≤ c ∧ c ≤ 2 ∧ a + b + c = 5 ∧ x = 1 / (a + b) + 1 / (b + c)} (4 / 7) := by sorry
+theorem abs_sum_A_eq_40 (A : ℕ → ℝ) (hA : ∀ k : ℕ, A k = (k.choose 2 : ℝ) * Real.cos ((k.choose 2 : ℝ) * Real.pi)) : |∑ k ∈ Finset.Icc 19 98, A k| = 40 := by sorry
+theorem sum_sin_cube_div_pow_three (x : ℝ) (n : ℕ) : ∑ i ∈ Finset.range (n + 1), (Real.sin ((3 : ℝ) ^ i * x)) ^ 3 / (3 : ℝ) ^ i = 3 / 4 * Real.sin x - Real.sin ((3 : ℝ) ^ (n + 1) * x) / (4 * (3 : ℝ) ^ n) := by sorry
+theorem log_base_eq_216 (b x : ℝ) (hb : 2 ≤ b) (hx : 1 < x) (h1 : 3 * Real.logb b (Real.sqrt x * Real.logb b x) = 56) (h2 : Real.logb (Real.logb b x) x = 54) : b = 216 := by sorry
+theorem cyclic_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hmin : min (a + b) (min (b + c) (c + a)) > Real.sqrt 2) (hsq : a ^ 2 + b ^ 2 + c ^ 2 = 3) : a / (b + c - a) ^ 2 + b / (c + a - b) ^ 2 + c / (a + b - c) ^ 2 ≥ 3 / (a * b * c) ^ 2 := by sorry
+theorem sum_ineq (a b c : ℝ) (n : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) (hn : 0 < n) : 1 / (2 * a + 1) + 1 / (2 * b + 1) + 1 / (2 * c + 1) ≥ 1 ∧ a ^ n / (b + c) + b ^ n / (c + a) + c ^ n / (a + b) ≥ 3 / 2 := by sorry
+theorem largest_coord_sum : IsGreatest {s : ℝ | ∃ p q : ℝ, |12 * (20 - q) + 23 * (q - 19) + p * (19 - 20)| / 2 = 70 ∧ p ≠ 35 / 2 ∧ (q - 39 / 2) / (p - 35 / 2) = -5 ∧ s = p + q} 47 := by sorry
+theorem gcd_mul_choose_divisible (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (hnm : n ≤ m) : m ∣ Nat.gcd m n * Nat.choose m n := by sorry
+theorem f_eq (f : ℝ → ℝ) : (∀ x y : ℝ, f (f x + y) = f (x ^ 2 - y) + 4 * f x * y) ↔ (∀ x : ℝ, f x = 0 ∨ f x = x ^ 2) := by sorry
+theorem cube_add_two_ge_sq_add_two_sqrt (x : ℝ) (hx : 0 ≤ x) : x ^ 3 + 2 ≥ x ^ 2 + 2 * Real.sqrt x := by sorry
+theorem prod_rpow_le_one (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : a ^ (b + c) * b ^ (c + a) * c ^ (a + b) ≤ 1 := by sorry
+theorem right_triangle_perimeter (a b : ℝ) (ha : 0 < a) (hb : 0 < b) (harea : a * b / 2 = 5) (hyp : a ^ 2 + b ^ 2 = 5 ^ 2) : a + b + 5 = 5 + 3 * Real.sqrt 5 := by sorry
+theorem foo (x : ℝ) (hx : 0 < x) (hfrac : Int.fract (1 / x) = Int.fract (x ^ 2)) (hsq : 2 < x ^ 2 ∧ x ^ 2 < 3) : x ^ 12 - 144 * (1 / x) = 233 := by sorry
+theorem concyclic_2020_of_2021 (S : Finset (EuclideanSpace ℝ (Fin 2))) (hcard : S.card = 2021) (hgen : ∀ P ⊆ S, P.card = 3 → ¬ Collinear ℝ (P : Set (EuclideanSpace ℝ (Fin 2)))) (h5 : ∀ P ⊆ S, P.card = 5 → ∃ Q ⊆ P, Q.card = 4 ∧ ∃ (c : EuclideanSpace ℝ (Fin 2)) (r : ℝ), 0 < r ∧ ∀ p ∈ Q, dist p c = r) : ∃ (c : EuclideanSpace ℝ (Fin 2)) (r : ℝ) (T : Finset (EuclideanSpace ℝ (Fin 2))), T ⊆ S ∧ 2020 ≤ T.card ∧ ∀ p ∈ T, dist p c = r := by sorry
+theorem xyz_eq_of_conditions (a b c x y z : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hsum : x + y + z = a + b + c) (heq : 4 * x * y * z - (a ^ 2 * x + b ^ 2 * y + c ^ 2 * z) = a * b * c) : x = (b + c) / 2 ∧ y = (c + a) / 2 ∧ z = (a + b) / 2 := by sorry
+theorem least_sum_squared_midpoint_distances : IsLeast {s : ℝ | ∃ p : Fin 2015 → EuclideanSpace ℝ (Fin 2), Function.Injective p ∧ (∀ i, ‖p i‖ = 1) ∧ s = ∑ q ∈ (Finset.univ : Finset (Fin 2015 × Fin 2015)).filter (fun q => q.1 < q.2), ‖(1/2 : ℝ) • (p q.1 + p q.2)‖ ^ 2} ((2015 * 2013 : ℝ) / 4) := by sorry
+theorem sum_right_inversions_eq_sum_left_inversions (n : ℕ) (σ : Equiv.Perm (Fin n)) : (∑ i : Fin n, (Finset.univ.filter (fun j : Fin n => i < j ∧ σ j < σ i)).card) = ∑ i : Fin n, (Finset.univ.filter (fun j : Fin n => j < i ∧ σ i < σ j)).card := by sorry
+theorem exists_consecutive_pair_ge_quarter (n : ℕ) (hn : 2 ≤ n) (x : ℕ → ℝ) (hx : ∀ i < n, 0 ≤ x i ∧ x i ≤ 1) : ∃ i, i + 1 < n ∧ x i * (1 - x (i + 1)) ≥ (1 / 4) * (x 0 * (1 - x (n - 1))) := by sorry
+theorem sum_card_image_iterate_mod_prime : (∑ f : Fin 2021 → Fin 2021, (Finset.image (f^[2021]) Finset.univ).card) % 2017 = 255 := by sorry
+theorem prod_ratio_eq_373 : (∏ i ∈ Finset.range 5, ((10 + 12 * (i : ℤ)) ^ 4 + 324)) / (∏ i ∈ Finset.range 5, ((4 + 12 * (i : ℤ)) ^ 4 + 324)) = 373 := by sorry
+theorem exists_special_sequence : ∃ a : ℕ → ℕ, (∀ m : ℕ, ∃ n : ℕ, a n = m) ∧ (∀ m : ℕ, 0 < m → {n : ℕ | a n = m}.Infinite) ∧ (∀ n : ℕ, 2 ≤ n → a (a (n ^ 163)) = a (a n) + a (a 361)) := by sorry
+theorem geometric_log_three (a : ℕ → ℝ) (r : ℝ) (hpos : 0 < a 0) (hgeo : ∀ n, a (n + 1) = r * a n) (hpow : ∀ n, ∃ k : ℕ, a n = (3 : ℝ) ^ k) (hlogsum : ∑ n ∈ Finset.range 8, Real.logb 3 (a n) = 308) (hlow : 56 ≤ Real.logb 3 (∑ n ∈ Finset.range 8, a n)) (hhigh : Real.logb 3 (∑ n ∈ Finset.range 8, a n) ≤ 57) : Real.logb 3 (a 14) = 91 := by sorry
+theorem totient_mul_num_divisors_sum_eq_sigma (n : ℕ) : ∑ d ∈ n.divisors, Nat.totient d * (Nat.divisors (n / d)).card = ∑ d ∈ n.divisors, d := by sorry
+theorem exists_two_integers_cubes : ∃ a b : ℤ, (∃ x : ℤ, a ^ 5 * b + 3 = x ^ 3) ∧ (∃ y : ℤ, b ^ 5 * a + 3 = y ^ 3) := by sorry
+theorem ptolemy_like_inequality (A B C P : EuclideanSpace ℝ (Fin 2)) : dist A B * dist P A * dist P B + dist B C * dist P B * dist P C + dist C A * dist P C * dist P A ≥ dist A B * dist B C * dist C A := by sorry
+theorem cyclic_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a + b + c = 1) : (7 + 2 * b) / (1 + a) + (7 + 2 * c) / (1 + b) + (7 + 2 * a) / (1 + c) ≥ 69 / 4 := by sorry
+theorem sum_gt_three_halves {n : ℕ} (x : Fin n → ℝ) (hpos : ∀ i, 0 < x i) (h3 : ∑ i, (x i) ^ 3 = 3) (h5 : ∑ i, (x i) ^ 5 = 5) : ∑ i, x i > 3 / 2 := by sorry
+theorem min_donut_cost : IsLeast {c : ℚ | ∃ n : ℕ, 12 * n ≥ 550 ∧ c = (749 / 100) * n} (34454 / 100) := by sorry
+theorem twelve_pow_add_thirteen_pow_sub_fourteen_pow_eq_2013_pow (a b c d : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : (12 : ℤ) ^ a + 13 ^ b - 14 ^ c = 2013 ^ d ↔ (a = 1 ∧ b = 3 ∧ c = 2 ∧ d = 1) := by sorry
+theorem eight_digit_multiples_of_nine_no_repeat : ((Finset.Ico (10^7) (10^8)).filter (fun n => 9 ∣ n ∧ (Nat.digits 10 n).Nodup)).card = 181440 := by sorry
+theorem exactly_one_real_root_iff (k : ℝ) : (∃! x : ℝ, x ^ 4 + k * x ^ 3 + x ^ 2 + 4 * k * x + 16 = 0) ↔ (k = 9 / 4 ∨ k = -(9 / 4)) := by sorry
+theorem cyclic_cube_sum_le (n : ℕ) (hn : 4 < n) (x : Fin n → ℝ) (hx : ∀ i, x i ∈ Set.Icc (0 : ℝ) 1) : 2 * (∑ i, (x i) ^ 3) - (∑ i, (x i) ^ 2 * x (i + 1)) ≤ n := by sorry
+theorem f_eq_zero_or_sq (f : ℝ → ℝ) (h : ∀ x y : ℝ, f (x ^ 2 + f y) = f (f x) + f (y ^ 2) + 2 * f (x * y)) : (∀ x : ℝ, f x = 0) ∨ (∀ x : ℝ, f x = x ^ 2) := by sorry
+theorem prod_sin_eq (n : ℕ) : (2 : ℝ) ^ n * ∏ k ∈ Finset.Icc 1 n, Real.sin (k * (Real.pi / (2 * n + 1))) = Real.sqrt (2 * n + 1) := by sorry
+theorem func_eq (f : ℝ → ℝ) (h : ∀ x y : ℝ, f x * f y = f (x + y) + x * y) : (∀ x : ℝ, f x = 1 - x) ∨ (∀ x : ℝ, f x = 1 + x) := by sorry
+theorem sum_reciprocals_smooth : ∑' n : {n : ℕ // 0 < n ∧ ∀ p : ℕ, p.Prime → p ∣ n → p = 2 ∨ p = 2017}, (1 : ℝ) / (n : ℕ) = 2017 / 1008 := by sorry
+theorem poly_id_of_cube_shift (p : Polynomial ℝ) (h : p.eval 0 = 0) : (∀ x : ℝ, p.eval ((x + 1) ^ 3) = (p.eval x + 1) ^ 3) ↔ p = Polynomial.X := by sorry
+theorem factorial_sum_eq_two_pow (a b n : ℕ) (ha : 0 < a) (hb : 0 < b) (hn : 0 < n) : Nat.factorial a + Nat.factorial b = 2 ^ n ↔ (a, b, n) = (1, 1, 1) ∨ (a, b, n) = (2, 2, 2) ∨ (a, b, n) = (2, 3, 3) ∨ (a, b, n) = (3, 2, 3) := by sorry
+theorem largest_radius : IsGreatest {c : ℝ | ∀ x : ℝ, |x - 1| < c → -3 < x ∧ x < 7} 4 := by sorry
+theorem product_minus_one_dvd_sum_of_squares (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : ((a : ℤ) * b - 1) ∣ ((a : ℤ) ^ 2 + (b : ℤ) ^ 2) ↔ (a, b) = (2, 1) ∨ (a, b) = (1, 2) ∨ (a, b) = (3, 1) ∨ (a, b) = (1, 3) := by sorry
+theorem digits_eq (a b c : ℕ) (ha : a < 10) (hb : b < 10) (hc : c < 10) (h : (10 * a + b : ℚ) / 99 + (100 * a + 10 * b + c : ℚ) / 999 = 33 / 37) : 100 * a + 10 * b + c = 447 := by sorry
+theorem sum_pairwise_products_add_one_pos (a b c : ℝ) (ha : |a| < 1) (hb : |b| < 1) (hc : |c| < 1) : a * b + b * c + c * a + 1 > 0 := by sorry
+theorem cube_add_three_eighths_cubed_eq_sub_three_eighths (x : ℝ) : (x ^ 3 + 3 / 8) ^ 3 = x - 3 / 8 ↔ x = 1 / 2 ∨ x = (-1 + Real.sqrt 13) / 4 ∨ x = (-1 - Real.sqrt 13) / 4 := by sorry
+theorem cyclic_sum_le_quarter (a b c : ℝ) (h : a + b + c = 3) : 1 / (5 * a ^ 2 - 4 * a + 11) + 1 / (5 * b ^ 2 - 4 * b + 11) + 1 / (5 * c ^ 2 - 4 * c + 11) ≤ 1 / 4 := by sorry
+theorem exists_smaller_prime_dvd_sq_sub (p : ℕ) (hp : Nat.Prime p) (hp5 : 5 < p) : ∃ q n : ℕ, Nat.Prime q ∧ q < p ∧ p ∣ (n ^ 2 - q) := by sorry
+theorem cyclic_sum_ge_one (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : 1 ≤ (1 + x*y + x*z) / (1 + y + z)^2 + (1 + y*z + y*x) / (1 + z + x)^2 + (1 + z*x + z*y) / (1 + x + y)^2 := by sorry
+theorem five_pow_add_three_pow_mul_four_pow_eq_sq (t x y z : ℕ) : 5 ^ t + 3 ^ x * 4 ^ y = z ^ 2 ↔ (t, x, y, z) = (1, 0, 1, 3) ∨ (t, x, y, z) = (0, 1, 0, 2) ∨ (t, x, y, z) = (2, 2, 2, 13) ∨ (t, x, y, z) = (0, 1, 2, 7) := by sorry
+theorem marbles_white_prob_sum (b1 w1 b2 w2 : ℕ) (h1 : 0 < b1 + w1) (h2 : 0 < b2 + w2) (htotal : (b1 + w1) + (b2 + w2) = 25) (hblack : ((b1 : ℚ) / ((b1 : ℚ) + (w1 : ℚ))) * ((b2 : ℚ) / ((b2 : ℚ) + (w2 : ℚ))) = 27 / 50) (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (hcop : Nat.Coprime m n) (hwhite : ((w1 : ℚ) / ((b1 : ℚ) + (w1 : ℚ))) * ((w2 : ℚ) / ((b2 : ℚ) + (w2 : ℚ))) = (m : ℚ) / (n : ℚ)) : m + n = 26 := by sorry
+theorem pow_two_add_pow_three_eq_sq (m n k : ℕ) : 2 ^ m + 3 ^ n = k ^ 2 ↔ (m = 0 ∧ n = 1 ∧ k = 2) ∨ (m = 3 ∧ n = 0 ∧ k = 3) ∨ (m = 4 ∧ n = 2 ∧ k = 5) := by sorry
+theorem sum_powers_eq_iff (p q n : ℕ) (hp : p.Prime) (hq : q.Prime) (hn : Even n) (hn2 : 2 < n) : (∑ i ∈ Finset.range (n + 1), p ^ i) = 1 + q + q ^ 2 ↔ p = 2 ∧ q = 5 ∧ n = 4 := by sorry
+theorem exists_eq_of_sqrt_recursion (a b : ℕ → ℕ) (ha0 : 0 < a 0) (hb0 : 0 < b 0) (ha : ∀ n, a (n + 1) = a n + Nat.sqrt (b n)) (hb : ∀ n, b (n + 1) = b n + Nat.sqrt (a n)) : ∃ n, a n = b n := by sorry
+theorem cyclic_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : b ^ 3 / (a ^ 2 + 8 * b * c) + c ^ 3 / (b ^ 2 + 8 * c * a) + a ^ 3 / (c ^ 2 + 8 * a * b) ≥ (a + b + c) / 9 := by sorry
+theorem sum_pairwise_products_add_one_pos (a b c : ℝ) (ha : -1 < a) (ha' : a < 1) (hb : -1 < b) (hb' : b < 1) (hc : -1 < c) (hc' : c < 1) : 0 < a * b + b * c + c * a + 1 := by sorry
+theorem surj_ge_inj_eq (f g : ℕ+ → ℕ+) (hf : Function.Surjective f) (hg : Function.Injective g) (hfg : ∀ n : ℕ+, g n ≤ f n) : ∀ n : ℕ+, f n = g n := by sorry
+theorem three_x_plus_two_interval (x : ℝ) : (-4 < 3 * x + 2 ∧ 3 * x + 2 ≤ 18) ↔ x ∈ Set.Ioc (-2 : ℝ) (16 / 3) := by sorry
+theorem find_all_functions (f : ℕ → ℕ) (hf : ∀ n, 0 < n → 0 < f n) : (∀ m n : ℕ, 0 < m → 0 < n → 2019 < m + n → (m + f n) ∣ (m ^ 2 + n * f m)) ↔ ∃ c : ℕ, 0 < c ∧ ∀ n : ℕ, 0 < n → f n = c * n := by sorry
+theorem cyclic_sum_ge_three_mul_prod (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a * (b + c - a) ^ 2 + b * (c + a - b) ^ 2 + c * (a + b - c) ^ 2 ≥ 3 * (a * b * c) ∧ (a * (b + c - a) ^ 2 + b * (c + a - b) ^ 2 + c * (a + b - c) ^ 2 = 3 * (a * b * c) ↔ a = b ∧ b = c) := by sorry
+theorem cyclic_sum_le_two (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h : x ^ 2 + y ^ 2 + z ^ 2 = 3) : (x ^ 2 + y * z) / (1 + x ^ 2 + y * z) + (y ^ 2 + z * x) / (1 + y ^ 2 + z * x) + (z ^ 2 + x * y) / (1 + z ^ 2 + x * y) ≤ 2 := by sorry
+theorem exists_four_distinct_equal_sums (S : Finset ℕ) (hS : S ⊆ Finset.Icc 1 37) (hcard : S.card = 13) : ∃ a ∈ S, ∃ b ∈ S, ∃ c ∈ S, ∃ d ∈ S, a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ b ≠ c ∧ b ≠ d ∧ c ≠ d ∧ a + b = c + d := by sorry
+theorem find_all_n (n : ℕ) (hn : 1 < n) : (∀ a b : ℕ, 0 < a → a < b → b ≤ n → ¬ ((n : ℤ) ∣ ((b : ℤ) ^ (b - 1) - (a : ℤ) ^ (a - 1)))) ↔ n = 2 ∨ n = 3 := by sorry
+theorem prod_ineq (n : ℕ) (hn : 2 ≤ n) (x : Fin n → ℝ) (hx : ∀ i, 0 < x i) (hsum : ∑ i, x i < 1) : ((∏ i, x i) * (1 - ∑ i, x i)) / ((∑ i, x i) * ∏ i, (1 - x i)) ≤ 1 / (n : ℝ) ^ (n + 1) := by sorry
+theorem sum_b_mul_prod_a_le (p : ℝ) (hp1 : 1 / 2 ≤ p) (hp2 : p ≤ 1) (n : ℕ) (hn : 0 < n) (a b : Fin n → ℝ) (ha : ∀ i, 0 ≤ a i) (hb0 : ∀ i, 0 ≤ b i) (hbp : ∀ i, b i ≤ p) (hasum : ∑ i, a i = 1) (hbsum : ∑ i, b i = 1) : ∑ i : Fin n, b i * ∏ j ∈ univ.erase i, a j ≤ p / ((n : ℝ) - 1) ^ (n - 1) := by sorry
+theorem units_digit_17_pow_103_add_5 : (17 ^ 103 + 5) % 10 = 8 := by sorry
+theorem abs_cyclic_ratio_diff_lt_one (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a < b + c) (hbc : b < a + c) (hca : c < a + b) : |(a / b + b / c + c / a) - (b / a + c / b + a / c)| < 1 := by sorry
+theorem I_asymptotic (I : ℝ → ℝ) (hI : ∀ x : ℝ, I x = ∫ t in (0.7 : ℝ)..(0.8 : ℝ), (3.5 * t ^ 5 + 1.9 * t ^ 2) * Real.exp (-x * (1.6 * t ^ 2 + 2.6 * Real.arctan t - 0.1 * t ^ 4 - 0.4 * t ^ 3))) : Tendsto (fun x : ℝ => I x / (0.47 * Real.exp (-2.21 * x) / x)) atTop (nhds 1) := by sorry
+theorem thirteenth_root_min_value (ζ : ℂ) (hζ : ζ = Complex.exp (2 * Real.pi * Complex.I / 13)) : IsLeast {n : ℕ | ∃ a b c d : ℕ, 0 < d ∧ d < c ∧ c < b ∧ b < a ∧ Complex.abs (ζ ^ a + ζ ^ b + ζ ^ c + ζ ^ d) = Real.sqrt 3 ∧ n = 1000 * a + 100 * b + 10 * c + d} 7521 := by sorry
+theorem integral_sqrt_sec_sq_sub_one_eq_zero : ∫ x in (-(Real.pi / 3))..(Real.pi / 3), Real.sqrt ((1 / Real.cos x) ^ 2 - 1) = 0 := by sorry
+theorem subadditive_sum_div_ge (a : ℕ → ℝ) (hsub : ∀ m n : ℕ, 0 < m → 0 < n → a (m + n) ≤ a m + a n) : ∀ n : ℕ, 0 < n → a n ≤ ∑ i ∈ Finset.Icc 1 n, a i / i := by sorry
+theorem alternating_binomial_log_sum_asymptotics : Filter.Tendsto (fun n : ℕ => (∑ k ∈ Finset.Icc 1 n, (-1 : ℝ) ^ k * (n.choose k) * Real.log k) / Real.log (Real.log n)) Filter.atTop (nhds (1 : ℝ)) := by sorry
+theorem divisibility_forces_identity (f : ℕ → ℕ) (hpos : ∀ n, 0 < n → 0 < f n) : (∀ m, 0 < m → ∀ n, 0 < n → (m ^ 2 + f n) ∣ (m * f m + n)) ↔ (∀ n, 0 < n → f n = n) := by sorry
+theorem poly_ratio (P : Polynomial ℂ) (hdeg : P.natDegree = 5) (hroots : ∀ z : ℂ, z ^ 5 + 2004 * z = 1 → P.eval (z ^ 2) = 0) : P.eval 1 / P.eval (-1) = -(2010012 / 2010013) := by sorry
+theorem largest_k : IsGreatest {k : ℝ | 0 < k ∧ ∀ a b c : ℝ, a ^ 2 + b ^ 2 + c ^ 2 = 1 → |k * (a * b) + b * c| ≤ Real.sqrt 5 / 2} 2 := by sorry
+theorem chebyshev_integral_inequality (f g : ℝ → ℝ) (hf_mono : MonotoneOn f (Set.Icc (0:ℝ) 1)) (hg_mono : MonotoneOn g (Set.Icc (0:ℝ) 1)) (hf_cont : ContinuousOn f (Set.Icc (0:ℝ) 1)) (hg_cont : ContinuousOn g (Set.Icc (0:ℝ) 1)) : (∫ x in (0:ℝ)..1, f x) * (∫ x in (0:ℝ)..1, g x) ≤ ∫ x in (0:ℝ)..1, f x * g x := by sorry
+theorem no_such_partition : ¬ ∃ A B C : Set ℕ, A.Nonempty ∧ B.Nonempty ∧ C.Nonempty ∧ (A ∪ B ∪ C = Set.univ) ∧ (A ∩ B = ∅) ∧ (A ∩ C = ∅) ∧ (B ∩ C = ∅) ∧ (∀ x ∈ A, ∀ y ∈ B, (x * x - x * y) + y * y ∈ C) ∧ (∀ x ∈ A, ∀ y ∈ C, (x * x - x * y) + y * y ∈ B) ∧ (∀ x ∈ B, ∀ y ∈ C, (x * x - x * y) + y * y ∈ A) := by sorry
+theorem smallest_central_binom_div_by_49 : IsLeast {n : ℕ | 0 < n ∧ 7 ^ 2 ∣ Nat.choose (2 * n) n} 25 := by sorry
+theorem max_cyclic_ratio_sum : IsGreatest {x : ℝ | ∃ a b c : ℝ, 0 < a ∧ a ≤ b ∧ b ≤ c ∧ c ≤ 2 * a ∧ x = b / a + c / b + a / c} (7 / 2) := by sorry
+theorem f_eq_zero (f : ℝ → ℝ) (h : ∀ x y : ℝ, f (x ^ 2 * y) = f (x * y) + y * f (y + f x)) : ∀ x : ℝ, f x = 0 := by sorry
+theorem sum_eq_three (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h1 : x + y / z = 2) (h2 : y + z / x = 2) (h3 : z + x / y = 2) : x + y + z = 3 := by sorry
+theorem count_log_triangle : Set.ncard {n : ℕ | 0 < n ∧ Real.logb 10 n + Real.logb 10 12 > Real.logb 10 75 ∧ Real.logb 10 n + Real.logb 10 75 > Real.logb 10 12 ∧ Real.logb 10 12 + Real.logb 10 75 > Real.logb 10 n} = 893 := by sorry
+theorem cyclic_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a / (1 + 9 * b * c) + b / (1 + 9 * c * a) + c / (1 + 9 * a * b) ≥ (a + b + c) / (1 + (a + b + c) ^ 2) := by sorry
+theorem prod_rpow_two_self_ge_prod_rpow_sum_others (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a ^ (b + c) * b ^ (c + a) * c ^ (a + b) ≤ a ^ (2 * a) * b ^ (2 * b) * c ^ (2 * c) := by sorry
+theorem seq_value (a : ℕ → ℝ) (h : ∀ m n : ℕ, m ≥ n → a (m + n) + a (m - n) - (m : ℝ) + (n : ℝ) - 1 = (a (2 * m) + a (2 * n)) / 2) (h1 : a 1 = 3) : a 2004 = 4018021 := by sorry
+theorem sum_first_two_pow_n (a : ℕ → ℕ) (h0 : a 0 = 1) (h1 : ∀ k, a (2 * k + 1) = a k) (h2 : ∀ k, a (2 * k + 2) = a k + a (k + 1)) (n : ℕ) (hn : 0 < n) : 2 * (∑ i ∈ Finset.range (2 ^ n), a i) = 3 ^ n + 1 := by sorry
+theorem sum_of_squares_of_S (S : Finset ℝ) (hS : ∀ x : ℝ, x ∈ S ↔ ∃ y z : ℝ, x * y + 4 * z = 60 ∧ y * z + 4 * x = 60 ∧ z * x + 4 * y = 60) : ∑ x ∈ S, x ^ 2 = 273 := by sorry
+theorem factorial_prod_dvd (m n : ℕ) : (Nat.factorial m) * (Nat.factorial n) * (Nat.factorial (m + n)) ∣ (Nat.factorial (2 * m)) * (Nat.factorial (2 * n)) := by sorry
+theorem sum_sq_div_add_ge_half (n : ℕ) (hn : 0 < n) (a b : Fin n → ℝ) (ha : ∀ i, 0 < a i) (hb : ∀ i, 0 < b i) (hsum : ∑ i, a i = ∑ i, b i) : ∑ i, (a i) ^ 2 / (a i + b i) ≥ (∑ i, a i) / 2 := by sorry
+theorem sum_sq_sub_gt_six_mul (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a ^ 3 + b ^ 3 = c ^ 3) : a ^ 2 + b ^ 2 - c ^ 2 > 6 * ((c - a) * (c - b)) := by sorry
+theorem not_perfect_square_add_ceil_div (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : ¬ ∃ k : ℤ, ((a : ℤ) ^ 2 + ⌈(4 * (a : ℚ) ^ 2) / (b : ℚ)⌉) = k ^ 2 := by sorry
+theorem every_real_polynomial_is_sum_of_cubes (p : Polynomial ℝ) : ∃ (n : ℕ) (q : Fin n → Polynomial ℝ), 1 ≤ n ∧ p = ∑ i, (q i) ^ 3 := by sorry
+theorem sum_of_two_squares_9364 (a b : ℕ) (ha : 0 < a) (hb : 0 < b) (hint : 62 ^ 2 + 122 ^ 2 = 18728) : a ^ 2 + b ^ 2 = 9364 ↔ (a = 30 ∧ b = 92) ∨ (a = 92 ∧ b = 30) := by sorry
+theorem integral_square_sum : (∫ x in (1:ℝ)..Real.exp 1, ∫ y in (1:ℝ)..Real.exp 1, (x * Real.log y / Real.sqrt y + y * Real.log x / Real.sqrt x)) = 2 * Real.sqrt (Real.exp 1) + 4 * (Real.exp 1) ^ 2 - 4 - 2 * (Real.exp 1) ^ 2 * Real.sqrt (Real.exp 1) := by sorry
+theorem count_triples : {t : ℕ × ℕ × ℕ | 0 < t.1 ∧ 0 < t.2.1 ∧ 0 < t.2.2 ∧ t.1 ∣ t.2.1 ∧ t.1 ∣ t.2.2 ∧ t.1 + t.2.1 + t.2.2 = 100}.ncard = 200 := by sorry
+theorem isabella_vidur (a b : ℕ) (ha : 0 < a) (hb : 0 < b) (h : (∑ i ∈ Finset.range a, ∑ j ∈ Finset.range b, ((i * b + j + 1 : ℤ))) - (∑ i ∈ Finset.range a, ∑ j ∈ Finset.range b, (((i + 1) * (j + 1) : ℤ))) = 1200) : a + b = 21 := by sorry
+theorem prime_triple_cyclic_div (p q r : ℕ) (hp : p.Prime) (hq : q.Prime) (hr : r.Prime) : (p ∣ q ^ r + 1 ∧ q ∣ r ^ p + 1 ∧ r ∣ p ^ q + 1) ↔ ((p, q, r) = (2, 3, 5) ∨ (p, q, r) = (2, 5, 3) ∨ (p, q, r) = (3, 2, 5) ∨ (p, q, r) = (3, 5, 2) ∨ (p, q, r) = (5, 2, 3) ∨ (p, q, r) = (5, 3, 2)) := by sorry
+theorem sqrt_abs_sin_add_sqrt_abs_cos_bounds (x : ℝ) : 1 ≤ Real.sqrt |Real.sin x| + Real.sqrt |Real.cos x| ∧ Real.sqrt |Real.sin x| + Real.sqrt |Real.cos x| ≤ (8 : ℝ) ^ ((1 : ℝ) / 4) := by sorry
+theorem prefix_sum_residues_card_ge (n : ℕ) (hn : 5 ≤ n) (a : ℕ → ℕ) (ha : ∀ m ∈ Finset.Icc 1 n, ∃! i : ℕ, a i = m) : Nat.sqrt n + 1 ≤ Set.ncard {r : ℕ | ∃ k : ℕ, r = (∑ i in Finset.Icc 1 k, a i) % n} := by sorry
+theorem complete_binary_tree_power_of_two_labellings : Set.ncard {f : ℕ → ℕ | (∀ i, i ∉ Finset.Icc 1 2047 → f i = 0) ∧ (∀ i ∈ Finset.Icc 1 2047, f i = 0 ∨ ∃ k : ℕ, f i = 2 ^ k) ∧ (∀ i ∈ Finset.Icc 1 1023, f i = f (2 * i) + f (2 * i + 1)) ∧ f 1 = 1024} % 100 = 15 := by sorry
+theorem rows_eq_cols_of_balanced (m n : ℕ) (A : Fin m → Fin n → ℝ) (hnonneg : ∀ i j, 0 ≤ A i j) (hrow : ∀ i : Fin m, ∃ j : Fin n, 0 < A i j) (hcol : ∀ j : Fin n, ∃ i : Fin m, 0 < A i j) (hbal : ∀ (i : Fin m) (j : Fin n), 0 < A i j → (∑ k : Fin m, A k j) = (∑ l : Fin n, A i l)) : m = n := by sorry
+theorem x_sq_add_two_x_sub_x_mul_succ (x : ℤ) (hx : x = 2018) : x ^ 2 + 2 * x - x * (x + 1) = 2018 := by sorry
+theorem divisor_count_pow_two (n : ℕ) (hn : 0 < n) (k : ℕ) (h : ∑ d ∈ n.divisors, d = 2 ^ k) : ∃ m : ℕ, n.divisors.card = 2 ^ m := by sorry
+theorem exists_strictMono_seq_finitely_many_primes : ∃ a : ℕ → ℕ, StrictMono a ∧ ∀ k : ℕ, {n : ℕ | Nat.Prime (a n + k)}.Finite := by sorry
+theorem product_of_seventh_roots (w : ℂ) (hw : w = Complex.exp (2 * Real.pi * Complex.I / 7)) : ∏ k ∈ Finset.range 7, (1 + w ^ k + (w ^ k) ^ 3) = 24 := by sorry
+theorem sum_floor_multiples (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (h : Nat.Coprime m n) : 2 * (∑ k ∈ Finset.Ico 1 n, (k * m) / n) = (m - 1) * (n - 1) := by sorry
+theorem four_pow_three_x_add_two (x : ℝ) (hx : (2 : ℝ) ^ x = 3) : (4 : ℝ) ^ (3 * x + 2) = 11664 := by sorry
+theorem factorial_div_ineq (a b : ℕ) (ha : 0 < a) (hb : 0 < b) (h : (Nat.factorial a + Nat.factorial b) ∣ (Nat.factorial a * Nat.factorial b)) : 3 * a ≥ 2 * b + 2 := by sorry
+theorem min_cyclic_sum : IsLeast {x : ℝ | ∃ a b c d : ℝ, 0 ≤ a ∧ 0 ≤ b ∧ 0 ≤ c ∧ 0 ≤ d ∧ a + b + c + d = 4 ∧ x = a / (4 + b ^ 3) + b / (4 + c ^ 3) + c / (4 + d ^ 3) + d / (4 + a ^ 3)} (2 / 3) := by sorry
+theorem seventeen_pow_seventeen_mod_hundred : 17 ^ 17 % 100 = 77 := by sorry
+theorem exists_real_floor_rep (a : ℕ → ℕ) (h : ∀ m n : ℕ, m + n ≤ 2004 → a m + a n ≤ a (m + n) ∧ a (m + n) ≤ a m + a n + 1) : ∃ x : ℝ, ∀ n : ℕ, 1 ≤ n → n ≤ 2004 → (a n : ℤ) = ⌊(n : ℝ) * x⌋ := by sorry
+theorem exists_large_m_sub_two_adic_val_factorial_eq_1000 (f : ℕ → ℕ) (hf : ∀ m : ℕ, f m = (Nat.factorial m).factorization 2) (n : ℕ) : ∃ m : ℕ, n < m ∧ (m : ℤ) - (f m : ℤ) = 1000 := by sorry
+theorem exists_1990_pairwise_coprime_no_prime_subset_sums : ∃ a : Fin 1990 → ℕ, Function.Injective a ∧ (∀ i j, i ≠ j → Nat.Coprime (a i) (a j)) ∧ (∀ S : Finset (Fin 1990), 2 ≤ S.card → ¬ Nat.Prime (∑ i ∈ S, a i)) := by sorry
+theorem sin_cos_twelfth_power_sum (x : ℝ) (m n : ℕ) (hx : Real.sin x ^ 10 + Real.cos x ^ 10 = 11 / 36) (hm : 0 < m) (hn : 0 < n) (hcop : Nat.Coprime m n) (heq : Real.sin x ^ 12 + Real.cos x ^ 12 = (m : ℝ) / (n : ℝ)) : m + n = 67 := by sorry
+theorem sum_of_two_squares_of_quadratic (A B C D : MvPolynomial (Fin 2) ℝ) (hA : A.totalDegree = 2) (hB : B.totalDegree = 3) (hC : C.totalDegree = 4) (hdisc : ∀ x y : ℝ, (eval ![x, y] B) ^ 2 - 4 * (eval ![x, y] A) * (eval ![x, y] C) = -((eval ![x, y] D) ^ 2)) (hnonneg : ∀ x y z : ℝ, 0 ≤ (eval ![x, y] A) * z ^ 2 + (eval ![x, y] B) * z + (eval ![x, y] C)) : ∃ P Q : MvPolynomial (Fin 3) ℝ, ∀ x y z : ℝ, (eval ![x, y, z] P) ^ 2 + (eval ![x, y, z] Q) ^ 2 = (eval ![x, y] A) * z ^ 2 + (eval ![x, y] B) * z + (eval ![x, y] C) := by sorry
+theorem sum_eq_five (x y : ℝ) (h1 : x - y = 2) (h2 : x^2 - y^2 = 10) : x + y = 5 := by sorry
+theorem sin_cos_pow_ineq (θ : ℝ) (hθ₀ : 0 < θ) (hθ₁ : θ < Real.pi / 2) (n : ℕ) (hn : 1 < n) : (1 / (Real.sin θ) ^ n - 1) * (1 / (Real.cos θ) ^ n - 1) ≥ (2 : ℝ) ^ n - 2 * Real.sqrt ((2 : ℝ) ^ n) + 1 := by sorry
+theorem f_eq_neg (f : ℝ → ℝ) : (∀ x y : ℝ, f x * (y + 1) + f (x * f y + f (x + y)) = y) ↔ (∀ x : ℝ, f x = -x) := by sorry
+theorem balanced_constant_term (c : ℝ) : (∃ P : Polynomial ℝ, (∀ a b : ℝ, |b ^ 2 - P.eval a| ≤ 2 * |a| ↔ |a ^ 2 - P.eval b| ≤ 2 * |b|) ∧ P.eval 0 = c) ↔ (c < 0 ∨ c = 1) := by sorry
+theorem f_eq_zero_or_id (f : ℝ → ℝ) : (∀ x y : ℝ, f (x * y) + f (x ^ 2) = x * f (x + y)) ↔ (∀ x : ℝ, f x = 0 ∨ f x = x) := by sorry
+theorem exists_block_of_1000_consecutive_with_exactly_five_primes : ∃ n : ℕ, ((Finset.Ico n (n + 1000)).filter Nat.Prime).card = 5 := by sorry
+theorem sum_seven_div_two_n_three_pow_n (f : ℕ → ℝ) (h0 : f 0 = 0) (hn : ∀ n : ℕ, n ≠ 0 → f n = 7 / (2 * n * 3 ^ n)) : ∑' n : ℕ, f n = -(7 * Real.log (2 / 3)) / 2 := by sorry
+theorem sum_of_valid_a : (∑ a ∈ (Finset.Icc (1 : ℤ) 26).filter (fun a => ∃ b c : ℤ, (26 : ℤ) ∣ (a + 23 * b + 15 * c - 2) ∧ (26 : ℤ) ∣ (2 * a + 5 * b + 14 * c - 8)), a) = 31 := by sorry
+theorem four_p_sub_three_is_sq (n p : ℕ) (hn : 2 ≤ n) (hp : Nat.Prime p) (h1 : (n : ℤ) ∣ (p : ℤ) - 1) (h2 : (p : ℤ) ∣ (n : ℤ) ^ 3 - 1) : ∃ k : ℤ, 4 * (p : ℤ) - 3 = k ^ 2 := by sorry
+theorem sum_le_two_thirds_card {ι : Type*} (s : Finset ι) (hs : s.Nonempty) (f : ι → ℝ) (hbound : ∀ i ∈ s, |f i| ≤ 2) (hcubes : ∑ i ∈ s, (f i) ^ 3 = 0) : ∑ i ∈ s, f i ≤ (2 / 3) * (s.card : ℝ) := by sorry
+theorem integral_neg_three_div_s (C : ℝ) (s F : ℝ → ℝ) (hs : ∀ x : ℝ, s x = Real.exp (4 * x) + Real.sqrt (1 + Real.exp (8 * x))) (hF : ∀ x : ℝ, F x = C - (1 / 4) * (3 / s x + 3 * Real.log ((s x - 1) / (s x + 1)))) : ∀ x : ℝ, HasDerivAt F (-3 / s x) x := by sorry
+theorem pizza_payment (n m : ℕ) (h1 : n + m = 7) (h2 : 371 * n + 372 * m = 2600) : m = 3 := by sorry
+theorem angle_is_45_degrees (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hpos : 0 < a ^ 2 + b ^ 2 - c ^ 2) (hlog : 2 * Real.log (a ^ 2 + b ^ 2 - c ^ 2) = Real.log 2 + 2 * Real.log a + 2 * Real.log b) (hsq : (a ^ 2 + b ^ 2 - c ^ 2) ^ 2 = 2 * (a ^ 2 * b ^ 2)) : Real.arccos ((a ^ 2 + b ^ 2 - c ^ 2) / (2 * a * b)) = Real.pi / 4 := by sorry
+theorem smallest_sum_pell : IsLeast {n : ℤ | ∃ x y : ℤ, 1 ≤ x ∧ 1 ≤ y ∧ x ^ 2 = 29 * y ^ 2 + 1 ∧ n = x + y} 11621 := by sorry
+theorem weighted_sq_dist_ge_area_sq (A B C P : EuclideanSpace ℝ (Fin 2)) (a b c S : ℝ) (ha : a = dist B C) (hb : b = dist C A) (hc : c = dist A B) (hS : S = |(B 0 - A 0) * (C 1 - A 1) - (C 0 - A 0) * (B 1 - A 1)| / 2) (hnd : S ≠ 0) : (a ^ 2 + b ^ 2 - c ^ 2) * dist P A ^ 2 + (b ^ 2 + c ^ 2 - a ^ 2) * dist P B ^ 2 + (c ^ 2 + a ^ 2 - b ^ 2) * dist P C ^ 2 ≥ 16 / 3 * S ^ 2 := by sorry
+theorem integral_over_solid : ∫ p in {p : Fin 3 → ℝ | 0 ≤ p 0 ∧ 0 ≤ p 1 ∧ (p 0) ^ 2 + (p 1) ^ 2 ≤ 1 ∧ 0 ≤ p 2 ∧ p 2 ≤ 1 - p 0}, (p 0 + p 1) ∂(volume : Measure (Fin 3 → ℝ)) = (26 - 3 * Real.pi) / 48 := by sorry
+theorem a_2012_value (a b : ℕ → ℝ) (ha0 : a 0 = -2) (hb0 : b 0 = 1) (ha : ∀ n, a (n + 1) = a n + b n + Real.sqrt ((a n) ^ 2 + (b n) ^ 2)) (hb : ∀ n, b (n + 1) = a n + b n - Real.sqrt ((a n) ^ 2 + (b n) ^ 2)) : a 2012 = 2 ^ 1006 * Real.sqrt (2 ^ 2010 + 2) - 2 ^ 2011 := by sorry
+theorem imo1998_p6 : IsLeast {v : ℕ+ | ∃ f : ℕ+ → ℕ+, (∀ m n : ℕ+, f (n ^ 2 * f m) = m * (f n) ^ 2) ∧ f 1998 = v} 120 := by sorry
+theorem complex_pairwise_products (a b c : ℂ) (h1 : a^2 + b^2 + a*b = 1 + Complex.I) (h2 : b^2 + c^2 + b*c = -2) (h3 : c^2 + a^2 + c*a = 1) : (a*b + b*c + c*a)^2 = (-11 - 4*Complex.I) / 3 := by sorry
+theorem count_positive_even_floor_log2 : ((Finset.Ioo 0 1000).filter (fun n => 0 < Nat.log 2 n ∧ Even (Nat.log 2 n))).card = 340 := by sorry
+theorem seed_sequence_perfect_power (s : ℕ) (hs : 0 < s) (a : ℕ → ℕ) (h1 : a 1 = s) (hrec : ∀ n ≥ 1, a (n + 1) = (a n) ^ 2 + a n + s ^ 3) : (∃ n ≥ 1, ∃ m k : ℕ, 2 ≤ k ∧ (a n) ^ 2 + s ^ 3 = m ^ k) ↔ (∃ t : ℕ, 2 ≤ t ∧ s + 1 = t ^ 2) := by sorry
+theorem count_quadruples : {q : ℕ × ℕ × ℕ × ℕ | 0 < q.1 ∧ 0 < q.2.1 ∧ 0 < q.2.2.1 ∧ 0 < q.2.2.2 ∧ 12 * q.1 + 21 * q.2.1 + 28 * q.2.2.1 + 84 * q.2.2.2 = 2024}.ncard = 2024 := by sorry
+theorem smallest_odd_with_same_divisor_count : IsLeast {n : ℕ | 0 < n ∧ Odd n ∧ n.divisors.card = (360 : ℕ).divisors.card} 31185 := by sorry
+theorem unique_pair (a b : ℕ) (ha : 0 < a) (hab : a < b) : ((2020 - (a : ℚ)) / (a : ℚ)) * ((2020 - (b : ℚ)) / (b : ℚ)) = 2 ↔ a = 505 ∧ b = 1212 := by sorry
+theorem larger_minus_smaller (a b : ℕ) (ha : 0 < a) (hb : 0 < b) (hprod : a * b = 24) (hsum : a + b = 11) (hle : b ≤ a) : a - b = 5 := by sorry
+theorem smallest_integer_term (a : ℕ → ℝ) (h1 : a 1 = 1) (hrec : ∀ n : ℕ, 1 ≤ n → (5 : ℝ) ^ (a (n + 1) - a n) - 1 = 1 / ((n : ℝ) + 2 / 3)) : IsLeast {n : ℕ | 1 < n ∧ ∃ k : ℤ, a n = (k : ℝ)} 41 := by sorry
+theorem f_linear_iff (C : ℕ) (hC : 0 < C) (f : ℕ → ℕ) : (∀ a b : ℕ, 0 < a → 0 < b → C < a + b → (a + f b) ∣ (a ^ 2 + b * f a)) ↔ ∃ k : ℕ, ∀ a : ℕ, 0 < a → f a = k * a := by sorry
+theorem cyclic_sum_le (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b + b * c + c * a = 3) : a / Real.sqrt (a ^ 3 + 5) + b / Real.sqrt (b ^ 3 + 5) + c / Real.sqrt (c ^ 3 + 5) ≤ Real.sqrt 6 / 2 := by sorry
+theorem sum_powers_ge_four_pow_four (x : ℝ) (hx : 0 ≤ x) : 4 * x ^ 4 ≤ 1 + x ^ 2 + x ^ 6 + x ^ 8 ∧ (1 + x ^ 2 + x ^ 6 + x ^ 8 = 4 * x ^ 4 ↔ x = 1 ∨ x = 0) := by sorry
+theorem funeq_identity (f : ℝ → ℝ) (h : ∀ x y : ℝ, f (x ^ 2 + f y) = y + (f x) ^ 2) : ∀ x : ℝ, f x = x := by sorry
+theorem count_eq_six : {x : ℝ | |(|(|(|x| - 2)| - 2)| - 2)| = |(|(|(|x| - 3)| - 3)| - 3)|}.ncard = 6 := by sorry
+theorem sum_of_coeffs (P : Polynomial ℤ) (hcoeff : ∀ n : ℕ, 0 ≤ P.coeff n ∧ P.coeff n < 100) (h10 : P.eval 10 = 331633) (hneg10 : P.eval (-10) = 273373) : P.eval 1 = 100 := by sorry
+theorem find_triples (a b c : ℝ) : (0 < a ∧ 0 < b ∧ 0 < c ∧ (⌊a⌋ : ℝ) * b * c = 3 ∧ a * (⌊b⌋ : ℝ) * c = 4 ∧ a * b * (⌊c⌋ : ℝ) = 5) ↔ ((a, b, c) = (Real.sqrt 30 / 3, Real.sqrt 30 / 4, 2 * Real.sqrt 30 / 5) ∨ (a, b, c) = (Real.sqrt 30 / 3, Real.sqrt 30 / 2, Real.sqrt 30 / 5)) := by sorry
+theorem find_all_functions (f : ℝ → ℝ) : (∀ x y : ℝ, f (x ^ 2) - f (y ^ 2) ≤ (f x + y) * (x - f y)) ↔ ((∀ x : ℝ, f x = x) ∨ (∀ x : ℝ, f x = -x)) := by sorry
+theorem a_2002_eq_three (a : ℕ → ℕ) (hpos : ∀ n, 1 ≤ n → 0 < a n) (h1 : a 1 = 1) (hrec : ∀ n, 2 ≤ n → a n = Nat.gcd (a (n - 1)) n + 1) : a 2002 = 3 := by sorry
+theorem strictly_increasing_mirror_sum_closed (n : ℕ) (hn : 1 < n) (a : ℕ → ℕ) (hpos : ∀ i, 1 ≤ i → i ≤ n - 1 → 0 < a i) (hmono : ∀ i j, 1 ≤ i → i < j → j ≤ n - 1 → a i < a j) (hmirror : ∀ i, 1 ≤ i → i ≤ n - 1 → a i + a (n - i) = 2 * n) (hsum : ∀ i j, 1 ≤ i → i ≤ n - 1 → 1 ≤ j → j ≤ n - 1 → a i + a j < 2 * n → ∃ k, 1 ≤ k ∧ k ≤ n - 1 ∧ a i + a j = a k) : ∀ i, 1 ≤ i → i ≤ n - 1 → a i = 2 * i := by sorry
+theorem exists_reciprocal_basis_of_rationals : ∃ S : Set ℕ, (∀ n ∈ S, 0 < n) ∧ ∀ q : ℚ, 0 < q → q < 1 → ∃! T : Finset ℕ, (↑T : Set ℕ) ⊆ S ∧ ∑ n ∈ T, (1 : ℚ) / (n : ℚ) = q := by sorry
+theorem identity_of_div (f : ℕ → ℕ) (hpos : ∀ n, 0 < n → 0 < f n) (hdiv : ∀ m n, 0 < m → 0 < n → (m ^ 2 + f n) ∣ (m * f m + n)) : ∀ n, 0 < n → f n = n := by sorry
+theorem cyclic_sum_ineq (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 2 * a / (a ^ 2 + b * c) + 2 * b / (b ^ 2 + c * a) + 2 * c / (c ^ 2 + a * b) ≤ a / (b * c) + b / (c * a) + c / (a * b) := by sorry
+theorem f_condition_iff (f : ℕ → ℕ) : (∀ m n : ℕ, (n + f m) ∣ (f n + n * f m)) ↔ (∀ n : ℕ, f n = 1 ∨ f n = n ^ 2) := by sorry
+theorem circle_four_numbers (a b c d : ℝ) (h₁ : a = c * (b + d)) (h₂ : b = d * (a + c)) (h₃ : c = a * (b + d)) (h₄ : d = b * (a + c)) : (a = 0 ∧ b = 0 ∧ c = 0 ∧ d = 0) ∨ (a = 1/2 ∧ b = 1/2 ∧ c = 1/2 ∧ d = 1/2) := by sorry
+theorem product_divides (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : (a * b) ∣ (a ^ 2 + 2 * b - 1) ↔ (a = 1 ∨ a = 2 * b - 1 ∨ (a = 3 ∧ b = 8) ∨ (a = 5 ∧ b = 8)) := by sorry
+theorem count_triples (sgn : ℝ → ℝ) (hpos : ∀ t : ℝ, 0 < t → sgn t = 1) (hneg : ∀ t : ℝ, t < 0 → sgn t = -1) (hzero : sgn 0 = 0) : {p : ℝ × ℝ × ℝ | p.1 = 2018 - 2019 * sgn (p.2.1 + p.2.2) ∧ p.2.1 = 2018 - 2019 * sgn (p.1 + p.2.2) ∧ p.2.2 = 2018 - 2019 * sgn (p.1 + p.2.1)}.ncard = 3 := by sorry
+theorem count_divisible_by_seven : ((Finset.range 2013).filter (fun n => 7 ∣ (3 ^ (n + 1) - 1) / 2)).card = 335 := by sorry
+theorem count_triangle_free_graphs_on_ten_vertices_with_23_edges : Set.ncard {G : SimpleGraph (Fin 10) | G.edgeSet.ncard = 23 ∧ G.CliqueFree 3} = 42840 := by sorry
+theorem square_succ_sub_square (x : ℝ) : (x + 1)^2 - x^2 = 2*x + 1 := by sorry
+theorem product_bounds (a b c : ℝ) (hab : a ≠ b) (hc : 0 < c) (ha : a ^ 4 - 2019 * a = c) (hb : b ^ 4 - 2019 * b = c) : a * b < 0 ∧ -Real.sqrt c < a * b := by sorry
+theorem divisor_ratio_image (d d1 : ℕ → ℕ) (hd : ∀ n, d n = n.divisors.card) (hd1 : ∀ n, d1 n = (n.divisors.filter (fun k => k % 3 = 1)).card) : {m : ℕ | ∃ n : ℕ, m = d (10 * n) / d1 (10 * n)} = {2} ∪ {m : ℕ | ¬ Nat.Prime m} := by sorry
+theorem exists_angle_tan_factorization : ∃ θ : ℝ, -(Real.pi / 2) < θ ∧ θ < Real.pi / 2 ∧ ∀ z : ℂ, z ^ 2 + 8 * z + 9 = (z - (Real.tan θ : ℂ)) * (z - (Real.tan (3 * θ) : ℂ)) := by sorry
+theorem cyclic_sum_ineq (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h : x * y + y * z + z * x = 3) : (3 + x) / (y + z) + (3 + y) / (z + x) + (3 + z) / (x + y) + 3 ≥ 27 * (Real.sqrt x + Real.sqrt y + Real.sqrt z) ^ 2 / (x + y + z) ^ 3 := by sorry
+theorem thirty_seven_lattice_points_barycenter (P : Fin 37 → Fin 3 → ℤ) (hP : Function.Injective P) : ∃ i j k : Fin 37, i ≠ j ∧ i ≠ k ∧ j ≠ k ∧ ∃ g : Fin 3 → ℤ, ∀ d : Fin 3, P i d + P j d + P k d = 3 * g d := by sorry
+theorem min_sum_of_fib_constrained_list (n : ℕ) (hn : 2 ≤ n) : IsLeast {s : ℝ | ∃ a : ℕ → ℝ, (∀ i, i ≤ n → 0 ≤ a i) ∧ a 0 = 1 ∧ (∀ k, k + 2 ≤ n → a k ≤ a (k + 1) + a (k + 2)) ∧ s = ∑ i ∈ Finset.range (n + 1), a i} (((Nat.fib (n + 2) : ℝ) - 1) / (Nat.fib n : ℝ)) := by sorry
+theorem f_eq_iff (f : ℝ → ℝ) : (∀ x y : ℝ, f (f x + 3 * y) = 12 * x + f (f y - x)) ↔ ∃ a : ℝ, ∀ x : ℝ, f x = a + 3 * x := by sorry
+theorem two_thirds_mul_three_halves : (2 / 3 : ℝ) * (3 / 2 : ℝ) = 1 := by sorry
+theorem exists_sq_of_dvd (n p : ℕ) (hn : 1 < n) (hp : p.Prime) (h1 : n ∣ p - 1) (h2 : p ∣ n ^ 6 - 1) : ∃ k : ℕ, p + n = k ^ 2 ∨ p = n + k ^ 2 := by sorry
+theorem sin_sub_lt_sub_lt_tan_sub (x y : ℝ) (hy : 0 < y) (hxy : y < x) (hx : x < Real.pi / 2) : Real.sin x - Real.sin y < x - y ∧ x - y < Real.tan x - Real.tan y := by sorry
+theorem am_gm_pairwise (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : ((a + b + c) / 3) * (a * b * c) ^ ((1 : ℝ) / 3) ≤ (((a + b) / 2) * ((b + c) / 2) * ((c + a) / 2)) ^ ((2 : ℝ) / 3) := by sorry
+theorem two_pow_eq_seven_sq_add_sq (n : ℕ) (hn : 3 ≤ n) : ∃ x y : ℤ, (2 : ℤ) ^ n = 7 * x ^ 2 + y ^ 2 := by sorry
+theorem quadratic_at_most_two_small_values (a b c : ℝ) (ha : 2000 < a) (S : Set ℤ) (hS : S = {n : ℤ | |a * (n : ℝ) ^ 2 + b * (n : ℝ) + c| ≤ 1000}) : S.Finite ∧ S.ncard ≤ 2 := by sorry
+theorem cube_sum_eq_square_sum_add_42_mul (a b : ℕ) (ha : 0 < a) (hb : 0 < b) : a ^ 3 + b ^ 3 = a ^ 2 + b ^ 2 + 42 * (a * b) ↔ (a = 7 ∧ b = 1) ∨ (a = 1 ∧ b = 7) ∨ (a = 22 ∧ b = 22) := by sorry
+theorem sum_ge_sqrt_third_prod_add_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : a + b + c ≥ Real.sqrt (((a + 2) * (b + 2) * (c + 2)) / 3) := by sorry
+theorem exists_infinite_set_pairwise_sum_squarefree : ∃ S : Set ℕ, S.Infinite ∧ (∀ n ∈ S, 0 < n) ∧ ∀ a ∈ S, ∀ b ∈ S, a ≠ b → Squarefree (a + b) := by sorry
+theorem least_sum_of_next_powers (k : ℕ) (hk : 0 < k) : IsLeast {s : ℝ | ∃ x y z : ℝ, 0 ≤ x ∧ 0 ≤ y ∧ 0 ≤ z ∧ x ^ k + y ^ k + z ^ k = 1 ∧ s = x ^ (k + 1) + y ^ (k + 1) + z ^ (k + 1)} ((3 : ℝ) ^ (-(1 / (k : ℝ)))) := by sorry
+theorem cube_eq_mul_exp_solution_count (a : ℝ) : ((a ≤ 0 ∨ a = 27 / (Real.exp 1) ^ 3) → {x : ℝ | x ^ 3 = a * Real.exp x}.encard = 1) ∧ ((0 < a ∧ a < 27 / (Real.exp 1) ^ 3) → {x : ℝ | x ^ 3 = a * Real.exp x}.encard = 2) ∧ (27 / (Real.exp 1) ^ 3 < a → {x : ℝ | x ^ 3 = a * Real.exp x}.encard = 0) := by sorry
+theorem real_zpow_add_inv_integer (x : ℝ) (hx : x ≠ 0) : (∀ n : ℤ, ∃ k : ℤ, x ^ n + x ^ (-n) = (k : ℝ)) ↔ ∃ m : ℤ, 2 ≤ |m| ∧ (x = ((m : ℝ) + Real.sqrt ((m : ℝ) ^ 2 - 4)) / 2 ∨ x = ((m : ℝ) - Real.sqrt ((m : ℝ) ^ 2 - 4)) / 2) := by sorry
+theorem exists_three_with_dvd (m n : ℕ) (hm : 2 ≤ m) (hn : 2 ≤ n) (a : Fin m → ℕ) (b : Fin n → ℕ) (c : Fin (m + n - 1) → ℕ) (hc : ∀ k : Fin (m + n - 1), ∃ (i : Fin m) (j : Fin n), c k = a i * b j) : ∃ k₁ k₂ k₃ : Fin (m + n - 1), k₁ ≠ k₂ ∧ k₁ ≠ k₃ ∧ k₂ ≠ k₃ ∧ c k₁ ∣ c k₂ * c k₃ := by sorry
+theorem sum_fourth_power_fixed_points : ∑ σ : Equiv.Perm (Fin 2013), ((Finset.univ.filter (fun i : Fin 2013 => σ i = i)).card) ^ 4 = 15 * Nat.factorial 2013 := by sorry
+theorem antiderivative_cos_half_pow_four (C : ℝ) (x : ℝ) : HasDerivAt (fun t : ℝ => Real.sin (t / 2) * (Real.cos (t / 2)) ^ 3 / 2 + (3 / 4) * (Real.sin (t / 2) * Real.cos (t / 2) + t / 2) + C) ((Real.cos (x / 2)) ^ 4) x := by sorry
+theorem special_power_integral : ∫ x in (1:ℝ)..(Real.sqrt 3), (x ^ (2 * x ^ 2 + 1) + Real.log x * (2 * x ^ (2 * x ^ 2 + 1))) = ((Real.sqrt 3) ^ (2 * (Real.sqrt 3) ^ 2) - (1:ℝ) ^ (2 * (1:ℝ) ^ 2)) / 2 := by sorry
+theorem perfect_square_divisors_count : ((Nat.divisors (2^3 * 3^5 * 5^7 * 7^9)).filter (fun d => IsSquare d)).card = 2 * 3 * 4 * 5 := by sorry
+theorem find_function (f : ℝ → ℝ) : (∀ x y : ℝ, f x * f y - f (x - 1) - f (y + 1) = f (x * y) + 2 * x - 2 * y - 4) ↔ (∀ x : ℝ, f x = x ^ 2 + 1) := by sorry
+theorem log_sq_div_quadratic_limit (a b : ℝ) : Tendsto (fun x : ℝ => (Real.log (2 - x)) ^ 2 / (x ^ 2 + a * x + b)) (𝓝[≠] (1 : ℝ)) (𝓝 1) ↔ (a, b) = (-2, 1) := by sorry
+theorem ratio_identity (a b c : ℝ) (hab : a * b = 6) (hac : a - c = 2) (hsum : a + b + c = 9) : a / b - c / a - c ^ 2 / (a * b) = 2 := by sorry
+theorem cubic_swap_integer_roots (a b : ℤ) : ((∀ x : ℝ, x ^ 3 + (a : ℝ) * x + (b : ℝ) = 0 → ∃ n : ℤ, x = (n : ℝ)) ∧ (∀ x : ℝ, x ^ 3 + (b : ℝ) * x + (a : ℝ) = 0 → ∃ n : ℤ, x = (n : ℝ))) ↔ (a = 0 ∧ b = 0) := by sorry
+theorem matrix_eq_of_row_col_sums (n : ℕ) (x y : Fin n → ℝ) (A B : Matrix (Fin n) (Fin n) ℝ) (hA : ∀ i j, A i j = if 0 ≤ x i + y j then 1 else 0) (hB : ∀ i j, B i j = 0 ∨ B i j = 1) (hrow : ∀ i, ∑ j, B i j = ∑ j, A i j) (hcol : ∀ j, ∑ i, B i j = ∑ i, A i j) : B = A := by sorry
+theorem unique_triple (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (a ^ 2 + b - c = 100 ∧ a + b ^ 2 - c = 124 ∧ c ≤ a ^ 2 + b ∧ c ≤ a + b ^ 2) ↔ (a = 12 ∧ b = 13 ∧ c = 57) := by sorry
+theorem h_eq_36 (h j k : ℤ) (f g : ℤ → ℤ) (hf : ∀ x : ℤ, f x = 3 * (x - h) ^ 2 + j) (hg : ∀ x : ℤ, g x = 2 * (x - h) ^ 2 + k) (hf0 : f 0 = 2013) (hg0 : g 0 = 2014) (hfroots : ∃ x1 x2 : ℤ, 0 < x1 ∧ 0 < x2 ∧ f x1 = 0 ∧ f x2 = 0) (hgroots : ∃ y1 y2 : ℤ, 0 < y1 ∧ 0 < y2 ∧ g y1 = 0 ∧ g y2 = 0) : h = 36 := by sorry
+theorem exists_lists_of_sq_le_mul (a b : ℕ) (c : ℤ) (h : c ^ 2 ≤ (a : ℤ) * (b : ℤ)) : ∃ l₁ l₂ : List ℤ, l₁.length = l₂.length ∧ (l₁.map (fun x => x ^ 2)).sum = (a : ℤ) ∧ (l₂.map (fun x => x ^ 2)).sum = (b : ℤ) ∧ (List.zipWith (fun x y => x * y) l₁ l₂).sum = c := by sorry
+theorem largest_n_factorial_dvd : IsGreatest {n : ℕ | (Nat.factorial (Nat.factorial (Nat.factorial n))) ∣ Nat.factorial (Nat.factorial 2004)} 6 := by sorry
+theorem sum_sq_eq_prod_iff (a b : ℝ) : (a + b) ^ 2 = (a + 1) * (b - 1) ↔ a = -1 ∧ b = 1 := by sorry
+theorem sub_sq_2009_2008 : 2009 ^ 2 - 2008 ^ 2 = 4017 := by sorry
+theorem not_prime_of_gcd_add_lcm_eq_pow (a b n : ℕ) (ha : 0 < a) (hb : 0 < b) (hn : 0 < n) (h1 : Nat.gcd a b + Nat.lcm a b = 2021 ^ n) (h2 : Nat.Prime ((a : ℤ) - (b : ℤ)).natAbs) : ¬ Nat.Prime ((a + b) ^ 2 + 4) := by sorry
+theorem prod_pow_ineq (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (x y : Fin n → ℝ) (hx : ∀ i, 0 < x i) (hy : ∀ i, 0 < y i) (hxy : ∀ i, x i + y i = 1) : (1 - ∏ i, x i) ^ m + ∏ i, (1 - (y i) ^ m) ≥ 1 := by sorry
+theorem exists_continuous_seq_integral_tendsto_zero_nowhere_convergent : ∃ f : ℕ → ℝ → ℝ, (∀ n, Continuous (f n)) ∧ (∀ n, ∀ x ∈ Set.Icc (0:ℝ) 1, 0 ≤ f n x ∧ f n x ≤ 1) ∧ Tendsto (fun n => ∫ x in (0:ℝ)..1, f n x) atTop (nhds 0) ∧ (∀ x ∈ Set.Icc (0:ℝ) 1, ¬ ∃ L : ℝ, Tendsto (fun n => f n x) atTop (nhds L)) := by sorry
+theorem largest_n_dvd : IsGreatest {n : ℕ | 0 < n ∧ (n + 10) ∣ (n ^ 3 + 100)} 890 := by sorry
+theorem exists_integer_rounding (m n : ℕ) (A : Fin m → Fin n → ℝ) (hrow : ∀ i, ∃ k : ℤ, (∑ j, A i j) = (k : ℝ)) (hcol : ∀ j, ∃ k : ℤ, (∑ i, A i j) = (k : ℝ)) : ∃ B : Fin m → Fin n → ℤ, (∀ i j, B i j = ⌊A i j⌋ ∨ B i j = ⌈A i j⌉) ∧ (∀ i, (∑ j, (B i j : ℝ)) = ∑ j, A i j) ∧ (∀ j, (∑ i, (B i j : ℝ)) = ∑ i, A i j) := by sorry
+theorem min_x_of_sum_eq_prod : IsLeast {x : ℝ | 0 < x ∧ ∃ y : ℝ, 0 < y ∧ x + y ^ 2 = x * y} 4 := by sorry
+theorem sum_inv_one_add_ge_card_div_one_add_geom_mean (l : List ℝ) (hne : l ≠ []) (hx : ∀ x ∈ l, (1:ℝ) ≤ x) : (l.map (fun x => 1 / (1 + x))).sum ≥ (l.length : ℝ) / (1 + l.prod ^ ((1:ℝ) / (l.length : ℝ))) := by sorry
+theorem count_quadruples : ((Finset.Icc 1 499 ×ˢ Finset.Icc 1 499 ×ˢ Finset.Icc 1 499 ×ˢ Finset.Icc 1 499).filter (fun q : ℕ × ℕ × ℕ × ℕ => q.1 < q.2.1 ∧ q.2.1 < q.2.2.1 ∧ q.2.2.1 < q.2.2.2 ∧ q.1 + q.2.2.2 = q.2.1 + q.2.2.1 ∧ q.2.1 * q.2.2.1 = q.1 * q.2.2.2 + 93)).card = 870 := by sorry
+theorem sin_product_neg_quarter : Real.sin ((1998 + 237 : ℝ) * Real.pi / 180) * Real.sin ((1998 - 1653 : ℝ) * Real.pi / 180) = -1 / 4 := by sorry
+theorem midpoint_pentagon_perimeter (P M : Fin 5 → EuclideanSpace ℝ (Fin 2)) (hM : ∀ i : Fin 5, M i = midpoint ℝ (P i) (P (i + 1))) (hside : ∑ i : Fin 5, dist (P i) (P (i + 1)) = 64) (hdiag : ∑ i : Fin 5, dist (P i) (P (i + 2)) = 72) : ∑ i : Fin 5, dist (M i) (M (i + 1)) = 36 := by sorry
+theorem seq_eventually_periodic_two (a : ℕ → ℝ) (h : ∀ n, a (n + 1) = (⌊a n⌋ : ℝ) * (a n - (⌊a n⌋ : ℝ))) : ∃ N, ∀ n ≥ N, a n = a (n + 2) := by sorry
+theorem second_deriv_zero_linear (f : ℝ → ℝ) (hf : Differentiable ℝ f) (hf' : Differentiable ℝ (deriv f)) (hf'' : ∀ x : ℝ, deriv (deriv f) x = 0) (h0 : f 0 = 19) (h1 : f 1 = 99) : ∀ x : ℝ, f x = 80 * x + 19 := by sorry
+theorem midway_man_distance (t al bob cy m : ℝ) (ht : 4 ≤ t) (hal : al = 6 * t) (hbob : bob = 10 * (t - 2)) (hcy : cy = 8 * (t - 4)) (hmid : (al = (bob + cy) / 2 ∧ m = al) ∨ (bob = (al + cy) / 2 ∧ m = bob) ∨ (cy = (al + bob) / 2 ∧ m = cy)) : m = 52 := by sorry
+theorem greatest_sin_arctan_diff : IsGreatest {y : ℝ | ∃ x : ℝ, 0 < x ∧ y = Real.sin (Real.arctan (x / 9) - Real.arctan (x / 16))} (7 / 25) := by sorry
+theorem seq_formula (a : ℕ → ℝ) (h1 : a 1 = 1 / 2) (hsum : ∀ n : ℕ, 1 ≤ n → (∑ i ∈ Finset.Icc 1 n, a i) = (n : ℝ) ^ 2 * a n) : ∀ n : ℕ, 1 ≤ n → a n = 1 / ((n : ℝ) * (n + 1)) := by sorry
+theorem f_eq_id (f : ℕ → ℕ) (hpos : ∀ n, 0 < n → 0 < f n) (hdvd : ∀ m n, 0 < m → 0 < n → (m ^ 2 + f n) ∣ (n + m * f m)) : ∀ n, 0 < n → f n = n := by sorry
+theorem f_g_unique (f g : ℝ → ℝ) (h : ∀ x y : ℝ, f x + f y + g x - g y = Real.sin x + Real.cos y) : (∀ x : ℝ, f x = (Real.sin x + Real.cos x) / 2) ∧ (∃ c : ℝ, ∀ x : ℝ, g x = (Real.sin x - Real.cos x) / 2 + c) := by sorry
+theorem integral_solid_eq : ∫ p in {p : ℝ × ℝ × ℝ | 1 ≤ p.1 ∧ p.1 ≤ Real.exp 1 ∧ 0 ≤ p.2.1 ∧ p.2.1 ≤ Real.log p.1 ∧ 0 ≤ p.2.2 ∧ p.2.2 ≤ 1}, (p.2.1 * Real.log p.1 + p.2.2) = 7 / 2 - Real.exp 1 := by sorry
+theorem sq_one_sub_dot_ge (n : ℕ) (hn : 2 ≤ n) (a b : Fin n → ℝ) (ha : ∑ i, (a i) ^ 2 ≤ 1) : (1 - ∑ i, a i * b i) ^ 2 ≥ (1 - ∑ i, (a i) ^ 2) * (1 - ∑ i, (b i) ^ 2) := by sorry
+theorem trapezoid_parabola (a b : ℝ) (ha : 0 < a) (hb : 0 < b) (hab : b < a) (hleg : Real.sqrt ((a - b) ^ 2 + (a ^ 2 - b ^ 2) ^ 2) = 3 / 4) (hsum : 2 * a + 2 * b = 2 * (3 / 4)) : a = 27 / 40 := by sorry
+theorem smallest_strict_upper_bound_of_first_geometric_sequence : IsLeast {M : ℝ | ∀ a r b s : ℝ, |r| < 1 → |s| < 1 → (∑' n : ℕ, a * r ^ n) = 1 → (∑' n : ℕ, b * s ^ n) = 1 → ((∑' n : ℕ, (a * r ^ n) ^ 2) * (∑' n : ℕ, (b * s ^ n) ^ 2) = ∑' n : ℕ, (a * r ^ n) * (b * s ^ n)) → ∀ n : ℕ, a * r ^ n < M} (4 / 3) := by sorry
+theorem moebius_sum_div_eq_totient_div (n : ℕ) (hn : 0 < n) : ∑ d ∈ n.divisors, ((μ d : ℚ) / (d : ℚ)) = (Nat.totient n : ℚ) / (n : ℚ) := by sorry
+theorem rearrange_weighted_sum (n : ℕ) (x : Fin n → ℝ) (hsum : |∑ i, x i| = 1) (hbound : ∀ i, |x i| ≤ (n + 1) / 2) : ∃ σ : Equiv.Perm (Fin n), |∑ i, ((i : ℕ) + 1 : ℝ) * x (σ i)| ≤ (n + 1) / 2 := by sorry
+theorem circle_arrangement (a : ZMod 100 → ℝ) (ha : ∀ i, 0 ≤ a i) (hsum : ∑ i, a i = 1) : ∃ σ : Equiv.Perm (ZMod 100), ∑ i : ZMod 100, a (σ i) * a (σ (i + 1)) ≤ 1 / 100 := by sorry
+theorem cube_sum_eq_sq_sum_add_42_mul (x y : ℕ) (hx : 0 < x) (hy : 0 < y) : x ^ 3 + y ^ 3 = x ^ 2 + y ^ 2 + 42 * (x * y) ↔ (x = 22 ∧ y = 22) ∨ (x = 1 ∧ y = 7) ∨ (x = 7 ∧ y = 1) := by sorry
+theorem square_side_length (s : ℝ) (hs : 0 < s) (h : 4 * s = 28) : s = 7 := by sorry
+theorem sum_of_representable_numbers : (∑ n ∈ (Finset.Icc 1 2015).filter (fun n => ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ n = (a + 1) / 2 + b + a * b), n) = 2029906 := by sorry
+theorem sines_form_triangle_and_area_bound (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hsum : a + b + c < Real.pi) (hab : a < b + c) (hbc : b < a + c) (hca : c < a + b) : Real.sin a < Real.sin b + Real.sin c ∧ Real.sin b < Real.sin a + Real.sin c ∧ Real.sin c < Real.sin a + Real.sin b ∧ Real.sqrt (((Real.sin a + Real.sin b + Real.sin c) / 2) * ((Real.sin a + Real.sin b + Real.sin c) / 2 - Real.sin a) * ((Real.sin a + Real.sin b + Real.sin c) / 2 - Real.sin b) * ((Real.sin a + Real.sin b + Real.sin c) / 2 - Real.sin c)) ≤ (Real.sin (2 * a) + Real.sin (2 * b) + Real.sin (2 * c)) / 8 := by sorry
+theorem law_of_cosines_triangle_ineq (x y z α β γ : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hα : 0 ≤ α) (hα' : α < Real.pi) (hβ : 0 ≤ β) (hβ' : β < Real.pi) (hγ : 0 ≤ γ) (hγ' : γ < Real.pi) (h1 : γ < α + β) (h2 : α < β + γ) (h3 : β < γ + α) (f : ℝ → ℝ → ℝ → ℝ) (hf : ∀ a b θ, f a b θ = Real.sqrt (a ^ 2 + b ^ 2 - 2 * a * b * Real.cos θ)) : f z x γ ≤ f x y α + f y z β := by sorry
+theorem find_all_n (n : ℕ) (hn : 2 ≤ n) : (∀ a b : ℕ, Nat.Coprime a n → Nat.Coprime b n → (a % n = b % n ↔ (a * b) % n = 1 % n)) ↔ n = 2 ∨ n = 3 ∨ n = 4 ∨ n = 6 ∨ n = 8 ∨ n = 12 ∨ n = 24 := by sorry
+theorem harmonic_bounds (n : ℕ) (hn : 0 < n) : (n : ℝ) * (((n : ℝ) + 1) ^ ((1 : ℝ) / (n : ℝ)) - 1) ≤ ∑ k ∈ Finset.Icc 1 n, (1 : ℝ) / (k : ℝ) ∧ ∑ k ∈ Finset.Icc 1 n, (1 : ℝ) / (k : ℝ) ≤ (n : ℝ) - (if n = 1 then 0 else ((n : ℝ) - 1) * ((1 : ℝ) / (n : ℝ)) ^ ((1 : ℝ) / ((n : ℝ) - 1))) := by sorry
+theorem smallest_of_five_consecutive (n : ℤ) (h : (n + (n + 1) + (n + 2) + (n + 3) + (n + 4)) / 5 = 9) : n = 7 := by sorry
+theorem exists_irrational_pow_floor_dvd_2017 : ∃ α : ℝ, Irrational α ∧ 1 < α ∧ ∀ n : ℕ, 0 < n → (2017 : ℤ) ∣ ⌊α ^ n⌋ := by sorry
+theorem find_triples (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : (z + y ^ 2 + x ^ 3 = x * y * z ∧ x = Nat.gcd y z) ↔ (x, y, z) = (1, 2, 5) ∨ (x, y, z) = (1, 3, 5) ∨ (x, y, z) = (2, 2, 4) ∨ (x, y, z) = (2, 6, 4) := by sorry
+theorem smallest_index_div_99 (a : ℕ → ℕ) (h10 : a 10 = 10) (hrec : ∀ n, 10 < n → a n = 100 * a (n - 1) + n) : IsLeast {n : ℕ | 10 < n ∧ 99 ∣ a n} 45 := by sorry
+theorem count_prime_power_pairs : {p : ℕ × ℕ | 1 ≤ p.1 ∧ p.1 ≤ 2020 ∧ 1 ≤ p.2 ∧ p.2 ≤ 2020 ∧ ∃ q k : ℕ, Nat.Prime q ∧ 0 < k ∧ 10 * p.1 * p.2 + 3 * (p.1 ^ 2 + p.2 ^ 2) = q ^ k}.ncard = 29 := by sorry
+theorem triangle_inf_rpow_tendsto (A B C : EuclideanSpace ℝ (Fin 2)) (hAB : dist A B = 13) (hBC : dist B C = 14) (hCA : dist C A = 15) (f : ℝ → ℝ) (hf : ∀ n : ℝ, f n = sInf {x : ℝ | ∃ P : EuclideanSpace ℝ (Fin 2), x = ((dist P A) ^ n + (dist P B) ^ n + (dist P C) ^ n) ^ (1 / n)}) : Tendsto f atTop (𝓝 (65 / 8)) := by sorry
+theorem cube_sum_eq (x y : ℤ) (hx : 0 < x) (hy : 0 < y) : x ^ 3 + y ^ 3 = 4 * (x * y ^ 2 + y * x ^ 2 - 5) ↔ (x = 1 ∧ y = 3) ∨ (x = 3 ∧ y = 1) := by sorry
+theorem count_increasing_sequences : {a : Fin 200 → ℕ | StrictMono a ∧ (∀ i, a i ≤ 202) ∧ ∃ N : ℕ, 0 < N ∧ ∀ i, ∃ j, (a i + a j) % 203 = N % 203}.ncard = 20503 := by sorry
+theorem arctan_sum_of_quadratic_roots (θ : ℝ) (hθ0 : 0 < θ) (hθπ : θ < Real.pi) (a b : ℝ) (ha : a ^ 2 - Real.sin θ * a + Real.cos θ = 0) (hb : b ^ 2 - Real.sin θ * b + Real.cos θ = 0) : Real.arctan a + Real.arctan b = Real.pi / 2 - θ / 2 ∨ Real.arctan a + Real.arctan b = -(Real.pi / 2) - θ / 2 := by sorry
+theorem no_positive_root (n : ℕ) (hn : 0 < n) (a : Fin n → ℕ) (ha : ∀ i, 0 < a i) (S P : ℝ) (hS : S = ∑ i, (1 : ℝ) / (a i : ℝ)) (hP : P = ∏ i, (a i : ℝ)) (hP1 : 1 < P) : ∀ x : ℝ, 0 < x → P * (x + 1) ^ S - ∏ i, (x + (a i : ℝ)) ≠ 0 := by sorry
+theorem all_four_equal (w : ℝ → ℝ → ℝ) (hw : ∀ x y : ℝ, w x y = (x + y) * (x ^ 2 + y ^ 2)) (a b c d : ℝ) (h1 : w a b = w c d) (h2 : w a c = w b d) (h3 : w a d = w b c) : a = b ∧ b = c ∧ c = d := by sorry
+theorem volume_of_solid : volume {p : Fin 3 → ℝ | (∀ i, 0 ≤ p i) ∧ p 0 + p 1 ≤ 1 ∧ p 1 + p 2 ≤ 1 ∧ p 0 + p 2 ≤ 1} = ENNReal.ofReal (1 / 4) := by sorry
+theorem four_pow_eq_sixtyfour_sq (n : ℕ) (h : (4 : ℕ) ^ n = 64 ^ 2) : n = 6 := by sorry
+theorem min_mul_max_le (a : Fin 2019 → ℝ) (i j : Fin 2019) (hmin : ∀ k, a i ≤ a k) (hmax : ∀ k, a k ≤ a j) (hsum : ∑ k, a k = 0) (hsq : ∑ k, (a k) ^ 2 = 1) : a i * a j ≤ -1 / 2019 := by sorry
+theorem sum_of_fourth_powers (x y : ℝ) (h1 : x * y = 5) (h2 : x^2 + y^2 = 21) : x^4 + y^4 = 391 := by sorry
+theorem two_ST_gt_sqrt (a₁ a₂ a₃ a₄ a₅ a₆ S T : ℝ) (h₁ : 0 < a₁) (h₁₂ : a₁ < a₂) (h₂₃ : a₂ < a₃) (h₃₄ : a₃ < a₄) (h₄₅ : a₄ < a₅) (h₅₆ : a₅ < a₆) (hS : S = a₁ + a₃ + a₅) (hT : T = a₂ + a₄ + a₆) : 2 * (S * T) > Real.sqrt (3 * (S + T) * (S * (a₂ * a₄ + a₄ * a₆ + a₂ * a₆) + T * (a₁ * a₃ + a₃ * a₅ + a₁ * a₅))) := by sorry
+theorem at_most_1995_integer_roots (f g : Polynomial ℤ) (hmonic : f.Monic) (hdeg : f.natDegree = 1991) (hg : g = f ^ 2 - 9) : {x : ℤ | Polynomial.eval x g = 0}.Finite ∧ {x : ℤ | Polynomial.eval x g = 0}.ncard ≤ 1995 := by sorry
+theorem triples_agree (a b c x y z : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hab : a < b) (hbc : b < c) (hxy : x < y) (hyz : y < z) (hsum : a + b + c = x + y + z) (hprod : a * b * c = x * y * z) (hax : a ≤ x) (hzc : z ≤ c) : a = x ∧ b = y ∧ c = z := by sorry
+theorem deck_size (n : ℕ) (hn : 6 ≤ n) (h : Nat.choose n 6 = 6 * Nat.choose n 3) : n = 13 := by sorry
+theorem sum_abs_sub_le_two_sub_min_ratio_sub_min_inv_ratio (n : ℕ) (p q : Fin n → ℝ) (hne : (Finset.univ : Finset (Fin n)).Nonempty) (hp : ∀ i, 0 < p i) (hq : ∀ i, 0 < q i) (hps : ∑ i, p i = 1) (hqs : ∑ i, q i = 1) : ∑ i, |p i - q i| ≤ 2 - (Finset.univ.inf' hne fun i => p i / q i) - (Finset.univ.inf' hne fun i => q i / p i) := by sorry
+theorem functional_eq_char (f g : ℝ → ℝ) : (∀ x y : ℝ, g (f (x + y)) = f x + g y * (y + 2 * x)) ↔ ((∀ x : ℝ, f x = 0) ∧ (∀ x : ℝ, g x = 0)) ∨ (∃ c : ℝ, (∀ x : ℝ, g x = x) ∧ (∀ x : ℝ, f x = x ^ 2 + c)) := by sorry
+theorem prod_quadratic_ge_one (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a + b + c = 1) (x : Fin 5 → ℝ) (hx : ∀ i, 0 < x i) (hprod : ∏ i, x i = 1) : 1 ≤ ∏ i, (a * (x i)^2 + b * (x i) + c) := by sorry
+theorem poly_eval_six (P : Polynomial ℕ) (h1 : P.eval 1 = 4) (h2 : P.eval 5 = 152) : P.eval 6 = 254 := by sorry
+theorem harmonic_sq_gt (H : ℕ → ℝ) (hH : ∀ m, H m = ∑ k ∈ Finset.Icc 1 m, (1 : ℝ) / k) (n : ℕ) (hn : 2 ≤ n) : (H n) ^ 2 > 2 * ∑ k ∈ Finset.Icc 2 n, H k / k := by sorry
+theorem deriv_of_f (x : ℝ) : HasDerivAt (fun y : ℝ => (1 / 15) * (Real.cos y) ^ 3 * ((Real.cos y) ^ 2 - 5)) (-(1 / 15) * (Real.cos x) ^ 2 * (3 * Real.sin x * ((Real.cos x) ^ 2 - 5) + Real.cos x * Real.sin (2 * x))) x := by sorry
+theorem triangular_pairing_unique (n : ℕ) (hn : 0 < n) : ∃! p : ℕ × ℕ, 0 < p.1 ∧ 0 < p.2 ∧ n = (p.1 + p.2 - 2) * (p.1 + p.2 - 1) / 2 + p.1 := by sorry
+theorem integral_quotient : (∫ x in (0:ℝ)..1, ∫ y in (1:ℝ)..2, y / (x + y ^ 2)) = Real.log (25 * Real.sqrt 5 / 32) := by sorry
+theorem smallest_six_odd_twelve_even_divisors : IsLeast {n : ℕ | 0 < n ∧ (n.divisors.filter (fun d => Odd d)).card = 6 ∧ (n.divisors.filter (fun d => Even d)).card = 12} 180 := by sorry
+theorem arturo_bills (n : ℕ) (hn : n ≠ 0) (h : 5 * n + 10 * n + 20 * n = 700) : n = 20 := by sorry
+theorem smallest_hexagonal : IsLeast {n : ℕ | 1 < n ∧ (∃ k : ℕ, 0 < k ∧ n = k * (2 * k - 1)) ∧ ∀ m ∈ Finset.Icc 1 10, m ∣ ∑ i ∈ Finset.range n, i} 2016 := by sorry
+theorem weight_prod_le (w : ℝ → ℝ) (hw : ∀ x : ℝ, w x = (x - 1) ^ 2 + 1) (a b c : ℝ) (ha : 1 ≤ a) (hb : 1 ≤ b) (hc : 1 ≤ c) : w a * w b * w c ≤ w (a * b * c) := by sorry
+theorem no_such_collection : ¬ ∃ A : Finset ℕ, A.card = 2002 ∧ ∀ n : ℕ, 2001 ≤ n → ∃ a ∈ A, Nat.Prime (a * 2 ^ n + 1) := by sorry
+theorem weighted_angle_identity (a b c x y z : ℝ) (hcos : Real.cos (x + y + z) = a * Real.cos x + b * Real.cos y + c * Real.cos z) (hsin : Real.sin (x + y + z) = a * Real.sin x + b * Real.sin y + c * Real.sin z) : a * Real.cos (y + z) + b * Real.cos (x + z) + c * Real.cos (x + y) = 1 ∧ a * Real.sin (y + z) + b * Real.sin (x + z) + c * Real.sin (x + y) = 0 := by sorry
+theorem factorial_sum_eq_two_pow (a b n : ℕ) (ha : 0 < a) (hb : 0 < b) (hn : 0 < n) : Nat.factorial a + Nat.factorial b = 2 ^ n ↔ (a, b, n) = (1, 1, 1) ∨ (a, b, n) = (2, 2, 2) ∨ (a, b, n) = (2, 3, 3) ∨ (a, b, n) = (3, 2, 3) := by sorry
+theorem area_sum_of_num_denom (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (hmn : Nat.Coprime m n) (harea : MeasureTheory.volume {p : ℝ × ℝ | 0 < p.1 ∧ p.1 ≤ 1 ∧ 0 < p.2 ∧ p.2 ≤ 1 ∧ Even ⌊Real.logb 2 (1 / p.1)⌋ ∧ Even ⌊Real.logb 5 (1 / p.2)⌋} = (m : ENNReal) / (n : ENNReal)) : m + n = 14 := by sorry
+theorem cyclic_sums_nonpos (a₁ a₂ a₃ a₄ a₅ : ℝ) (hsum : a₁ + a₂ + a₃ + a₄ + a₅ = 0) (A B : ℝ) (hA : A = a₁ * a₂ + a₂ * a₃ + a₃ * a₄ + a₄ * a₅ + a₅ * a₁) (hB : B = a₁ * a₃ + a₂ * a₄ + a₃ * a₅ + a₄ * a₁ + a₅ * a₂) : A + 2025 * B ≤ 0 ∨ B + 2025 * A ≤ 0 := by sorry
+theorem tendsto_diff_quotient (x : ℝ) : Filter.Tendsto (fun h : ℝ => (x ^ 2 - (x + h) ^ 2) / h) (nhdsWithin 0 {(0 : ℝ)}ᶜ) (nhds (-(2 * x))) := by sorry
+theorem exists_consecutive_pair_ge_quarter (l : List ℝ) (h2 : 2 ≤ l.length) (hb : ∀ x ∈ l, 0 ≤ x ∧ x ≤ 1) : ∃ i : ℕ, i + 1 < l.length ∧ (1 / 4) * l.head! * (1 - l.getLast!) ≤ l[i]! * (1 - l[i + 1]!) := by sorry
+theorem count_subsets_more_primes_than_multiples_of_four (N : ℕ) (hN : N = ((Finset.Icc 1 100).powerset.filter (fun S => (S.filter Nat.Prime).card > (S.filter (fun x => 4 ∣ x)).card)).card) : IsGreatest {n : ℕ | 2 ^ n ∣ N} 52 := by sorry
+theorem sqrt_three_cos_ten_eq (x : ℝ) (hx : x ∈ Set.Icc (0 : ℝ) 360) : Real.sqrt 3 * Real.cos (10 * Real.pi / 180) = Real.cos (40 * Real.pi / 180) + Real.sin (x * Real.pi / 180) ↔ x = 70 ∨ x = 110 := by sorry
+theorem f_eq_add_one (f : ℝ → ℝ) (hpos : ∀ x : ℝ, 0 < x → 0 < f x) (hfe : ∀ x y : ℝ, 0 < x → 0 < y → f (x + f (x * y)) + y = f x * f y + 1) : ∀ x : ℝ, 0 < x → f x = x + 1 := by sorry
+theorem last_two_digits_1032_pow_1032 : 1032 ^ 1032 % 100 = 76 := by sorry
+theorem smallest_constant_six_pairwise_differences : IsLeast {C : ℝ | ∀ x : Fin 4 → ℝ, ∃ n : Fin 4 → ℤ, ∑ p ∈ Finset.univ.filter (fun p : Fin 4 × Fin 4 => p.1 < p.2), ((x p.1 - (n p.1 : ℝ)) - (x p.2 - (n p.2 : ℝ))) ^ 2 ≤ C} (5 / 4) := by sorry
+theorem cyclic_sum_ge_one (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a / Real.sqrt (a ^ 2 + 8 * b * c) + b / Real.sqrt (b ^ 2 + 8 * c * a) + c / Real.sqrt (c ^ 2 + 8 * a * b) ≥ 1 := by sorry
+theorem sum_two_pow_choose_choose_eq (n : ℕ) (hn : 0 < n) : ∑ k ∈ Finset.range (n + 1), 2 ^ k * n.choose k * (n - k).choose ((n - k) / 2) = (2 * n + 1).choose n := by sorry
+theorem greatest_run_of_nth_power_free (n : ℕ) (hn : 2 ≤ n) : IsGreatest {k : ℕ | ∃ m : ℕ, ∀ i < k, ∀ d : ℕ, 1 < d → ¬ (d ^ n ∣ (m + i))} (2 ^ n - 1) := by sorry
+theorem complex_div_sq (z : ℂ) (hz : z = 3 - Complex.I) : z ^ 2 / (starRingEnd ℂ z) ^ 2 = 7 / 25 - (24 / 25) * Complex.I := by sorry
+theorem fifth_power_diff_eq_sixteen_mul (x y : ℤ) : x ^ 5 - y ^ 5 = 16 * x * y ↔ (x = 0 ∧ y = 0) ∨ (x = -2 ∧ y = 2) := by sorry
+theorem infinitely_many_same_greatest_prime_factor : {n : ℕ | 0 < n ∧ ∃ p : ℕ, IsGreatest {q : ℕ | q.Prime ∧ q ∣ (n ^ 4 + n ^ 2 + 1)} p ∧ IsGreatest {q : ℕ | q.Prime ∧ q ∣ ((n + 1) ^ 4 + (n + 1) ^ 2 + 1)} p}.Infinite := by sorry
+theorem functional_eq_zero_or_id (f : ℝ → ℝ) : (∀ x y : ℝ, x * f (x * (1 + y)) = x * f x + f (x ^ 2) * f y) ↔ ((∀ x : ℝ, f x = 0) ∨ (∀ x : ℝ, f x = x)) := by sorry
+theorem cyclic_sum_ge_two (a b c : ℝ) (ha : -1 < a) (hb : -1 < b) (hc : -1 < c) : 2 ≤ (1 + a ^ 2) / (1 + b + c ^ 2) + (1 + b ^ 2) / (1 + c + a ^ 2) + (1 + c ^ 2) / (1 + a + b ^ 2) := by sorry
+theorem subadditive_sum_ge (a : ℕ → ℝ) (hpos : ∀ n : ℕ, 0 < a n) (hsub : ∀ m n : ℕ, a (m + n) ≤ a m + a n) : ∀ n : ℕ, 1 ≤ n → a n ≤ ∑ k ∈ Finset.Icc 1 n, a k / k := by sorry
+theorem f_zero (f : ℝ → ℝ) (hf : ∀ a b c d e : ℝ, f (a + b + c + d + e) = f a + f b + f c + f d + f e - 8) : f 0 = 2 := by sorry
+theorem gcd_two_pow_sub_two_pow (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (h : Nat.Coprime m n) : Int.gcd ((2 : ℤ) ^ m - 2 ^ n) ((2 : ℤ) ^ (m ^ 2 + m * n + n ^ 2) - 1) = 1 ∨ Int.gcd ((2 : ℤ) ^ m - 2 ^ n) ((2 : ℤ) ^ (m ^ 2 + m * n + n ^ 2) - 1) = 7 := by sorry
+theorem cyclic_sum_le_three (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a < b + c) (hbc : b < a + c) (hca : c < a + b) : Real.sqrt (a + b - c) / (Real.sqrt a + Real.sqrt b - Real.sqrt c) + Real.sqrt (b + c - a) / (Real.sqrt b + Real.sqrt c - Real.sqrt a) + Real.sqrt (c + a - b) / (Real.sqrt c + Real.sqrt a - Real.sqrt b) ≤ 3 := by sorry
+theorem cube_root_mean_le_quadratic_mean (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : ((a * b * c + a * b * d + a * c * d + b * c * d) / 4) ^ ((1 : ℝ) / 3) ≤ ((a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2) / 4) ^ ((1 : ℝ) / 2) := by sorry
+theorem sum_sqrt_sq_add_one_irrational : Irrational (∑ n ∈ Finset.Icc (1001 : ℕ) 2000, Real.sqrt ((n : ℝ) ^ 2 + 1)) := by sorry
+theorem count_digits_eq (n : ℕ) (hn : 5 ≤ n) : (Set.ncard {f : Fin n → ℕ | (∀ i, f i ∈ Finset.Icc 1 8) ∧ (∀ d ∈ Finset.Icc 1 5, ∃ i, f i = d)} : ℤ) = 8 ^ n - 5 * 7 ^ n + 10 * 6 ^ n - 10 * 5 ^ n + 5 * 4 ^ n - 3 ^ n := by sorry
+theorem smallest_seven_square : IsLeast {n : ℕ | 0 < n ∧ 7 ∈ Nat.digits 10 (n ^ 2) ∧ 7 ∈ Nat.digits 10 ((n + 1) ^ 2) ∧ 7 ∉ Nat.digits 10 ((n + 2) ^ 2)} 27 := by sorry
+theorem det_sum_representation_matrix (n : ℕ) (hn : 0 < n) (M : Matrix (Fin n) (Fin n) ℤ) (hM : ∀ i j : Fin n, M i j = (((Finset.range (n + 1) ×ˢ Finset.range (n + 1)).filter (fun p : ℕ × ℕ => p.1 * ((i : ℕ) + 1) + p.2 * ((j : ℕ) + 1) = n)).card : ℤ)) : M.det = (-1) ^ ((n + 1) / 2 + 1) * (2 * (((n + 1) / 2 : ℕ) : ℤ)) := by sorry
+theorem three_integers (a b c : ℤ) (h1 : a ^ 2 - b ^ 2 = c) (h2 : 3 * (a * b) + c * (a - b) = c ^ 2) : (a, b, c) = (2, 1, 3) ∨ (a, b, c) = (1, 2, -3) ∨ (a, b, c) = (1, 0, 1) ∨ (a, b, c) = (0, 1, -1) ∨ (a, b, c) = (0, 0, 0) := by sorry
+theorem integral_one_div_sin_eight_pow_five (C : ℝ) (x : ℝ) (h1 : Real.sin (8 * x) ≠ 0) (h2 : Real.cos (4 * x) ≠ 0) : HasDerivAt (fun t : ℝ => C + (1 / 128) * (2 * (Real.tan (4 * t)) ^ 2 + 6 * Real.log |Real.tan (4 * t)| + (1 / 4) * (Real.tan (4 * t)) ^ 4 - 2 / (Real.tan (4 * t)) ^ 2 - (1 / 4) / (Real.tan (4 * t)) ^ 4)) (1 / (Real.sin (8 * x)) ^ 5) x := by sorry
+theorem lattice_triangles_integer_area (S : Finset ((ℤ × ℤ) × (ℤ × ℤ))) (hS : ∀ pq : (ℤ × ℤ) × (ℤ × ℤ), pq ∈ S ↔ (0 ≤ pq.1.1 ∧ 0 ≤ pq.1.2 ∧ 41 * pq.1.1 + pq.1.2 = 2009 ∧ 0 ≤ pq.2.1 ∧ 0 ≤ pq.2.2 ∧ 41 * pq.2.1 + pq.2.2 = 2009 ∧ pq.1.1 < pq.2.1 ∧ ∃ n : ℤ, 0 < n ∧ 2 * n = |pq.1.1 * pq.2.2 - pq.2.1 * pq.1.2|)) : S.card = 600 := by sorry
+theorem median_cyclic_sum_nonneg (a b c m_a m_b m_c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a < b + c) (hbc : b < a + c) (hca : c < a + b) (hma : m_a = Real.sqrt (2 * b ^ 2 + 2 * c ^ 2 - a ^ 2) / 2) (hmb : m_b = Real.sqrt (2 * c ^ 2 + 2 * a ^ 2 - b ^ 2) / 2) (hmc : m_c = Real.sqrt (2 * a ^ 2 + 2 * b ^ 2 - c ^ 2) / 2) : 0 ≤ m_a * (b * c - a ^ 2) + m_b * (c * a - b ^ 2) + m_c * (a * b - c ^ 2) := by sorry
+theorem min_value_two : IsLeast {x : ℝ | ∃ s t : ℝ, x = (s + 5 - 3 * |Real.cos t|) ^ 2 + (s - 2 * |Real.sin t|) ^ 2} 2 := by sorry
+theorem two_thousand_fourteen_between_powers_of_ten : (10 : ℕ) ^ 3 < 2014 ∧ (2014 : ℕ) < 10 ^ 4 := by sorry
+theorem card_reciprocal_pairs : {p : ℕ × ℕ | 0 < p.1 ∧ p.1 < p.2 ∧ (1 : ℚ) / (p.1 : ℚ) + (1 : ℚ) / (p.2 : ℚ) = 3 / 2008}.ncard = 5 := by sorry
+theorem exists_eval_with_many_prime_factors (f : Polynomial ℤ) (hf : 1 ≤ f.natDegree) : ∃ n : ℤ, 2004 ≤ (f.eval n).natAbs.primeFactors.card := by sorry
+theorem harmonic_sums_1988 (H : ℕ → ℚ) (hH : ∀ n, H n = ∑ k ∈ Finset.Icc 1 n, (1 : ℚ) / k) (S : ℕ → ℚ) (hS : ∀ n, S n = ∑ i ∈ Finset.Icc 1 n, H i) (T : ℕ → ℚ) (hT : ∀ n, T n = ∑ i ∈ Finset.Icc 1 n, S i / (i + 1)) : ∃ a b c d : ℤ, 0 < a ∧ a < 1000000 ∧ 0 < b ∧ b < 1000000 ∧ 0 < c ∧ c < 1000000 ∧ 0 < d ∧ d < 1000000 ∧ S 1988 = (a : ℚ) * H 1989 - (b : ℚ) ∧ T 1988 = (c : ℚ) * H 1989 - (d : ℚ) ∧ (a, b, c, d) = (1989, 1989, 1990, 3978) := by sorry
+theorem sum_sqrt_ratios_gt_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : Real.sqrt (a / (b + c)) + Real.sqrt (b / (a + c)) + Real.sqrt (c / (a + b)) > 2 := by sorry
+theorem seq_diff_bound (a : ℕ → ℝ) (hnonneg : ∀ n, 0 ≤ a n) (hconvex : ∀ n, 2 * a (n + 1) ≤ a n + a (n + 2)) (hsum : ∀ n, (∑ i ∈ Finset.Icc 1 n, a i) ≤ 1) : ∀ n : ℕ, 0 ≤ a n - a (n + 1) ∧ a n - a (n + 1) < 2 / (n : ℝ) ^ 2 := by sorry
+theorem exists_three_perms_sqrt_close (n : ℕ) (hn : 0 < n) : ∃ a b c : Equiv.Perm (Fin n), ∀ i : Fin n, |Real.sqrt (((a i : ℕ) : ℝ) + 1) + Real.sqrt (((b i : ℕ) : ℝ) + 1) + Real.sqrt (((c i : ℕ) : ℝ) + 1) - 2 * Real.sqrt (n : ℝ)| < 2023 := by sorry
+theorem a_2013_eq_2016 (a : ℕ → ℤ) (h : ∀ p : ℕ, p.Prime → ∀ n : ℕ, 0 < n → a (p * n + 1) = p * a n - 3 * a p + 13) : a 2013 = 2016 := by sorry
+theorem divisors_of_two_pow_add_three_pow (p : ℕ) (hp : p.Prime) (hp5 : 5 ≤ p) (d : ℕ) (hd : 0 < d) (hdvd : d ∣ 2 ^ p + 3 ^ p) (hle : d ≤ p) : d = 1 ∨ d = 5 := by sorry
+theorem count_coprime_2001 : ((Finset.Icc 1 2000).filter (fun n => Nat.gcd n 2001 = 1)).card = 1232 := by sorry
+theorem f_eq (f : ℝ → ℝ) (hf : ∀ x : ℝ, x ≠ 0 → x ≠ 1 → f x + f (1 - 1 / x) = 1 + x) : ∀ x : ℝ, x ≠ 0 → x ≠ 1 → f x = (1 + x ^ 2 - x ^ 3) / (2 * x * (1 - x)) := by sorry
+theorem exists_unique_index (a : ℕ → ℕ) (hpos : ∀ n, 0 < a n) (hmono : StrictMono a) : ∃! n : ℕ, 0 < n ∧ n * a n < ∑ i ∈ Finset.range (n + 1), a i ∧ ∑ i ∈ Finset.range (n + 1), a i ≤ n * a (n + 1) := by sorry
+theorem temperature_range (low high : ℤ) (hlow : low = -11) (hhigh : high = 14) : high - low = 25 := by sorry
+theorem three_pow_two_add_four_eq_sq (n m : ℕ) (hn : 0 < n) (hm : 0 < m) : 3 * 2 ^ n + 4 = m ^ 2 ↔ (n = 2 ∧ m = 4) ∨ (n = 5 ∧ m = 10) ∨ (n = 6 ∧ m = 14) := by sorry
+theorem sum_of_exponents (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (h : 3 ^ m * 5 ^ n = 225) : m + n = 4 := by sorry
+theorem count_integers_between_sqrt15_and_sqrt50 : {n : ℤ | Real.sqrt 15 < (n : ℝ) ∧ (n : ℝ) < Real.sqrt 50}.ncard = 4 := by sorry
+theorem isosceles_trapezoid_perimeter_sum (p q : ℕ) (hp : 0 < p) (hq : 0 < q) (b₁ b₂ h leg perimeter : ℝ) (hb₁ : b₁ = Real.log 3) (hb₂ : b₂ = Real.log 192) (hh : h = Real.log 16) (hleg : leg = Real.sqrt (h ^ 2 + ((b₂ - b₁) / 2) ^ 2)) (hperim : perimeter = b₁ + b₂ + 2 * leg) (heq : perimeter = Real.log ((2 : ℝ) ^ p * (3 : ℝ) ^ q)) : p + q = 18 := by sorry
+theorem arith_mean_sq_ge_geom_mean (n : ℕ) (hn : 0 < n) : (∏ k ∈ Finset.range n, ((k : ℝ) + 1) ^ 2) ^ ((1 : ℝ) / n) ≤ (∑ k ∈ Finset.range n, ((k : ℝ) + 1) ^ 2) / n ∧ ((∏ k ∈ Finset.range n, ((k : ℝ) + 1) ^ 2) ^ ((1 : ℝ) / n) = (∑ k ∈ Finset.range n, ((k : ℝ) + 1) ^ 2) / n ↔ n = 1) := by sorry
+theorem count_ordered_pairs : {p : ℕ × ℕ | 25 < p.1 ∧ 0 < p.2 ∧ ∃ a b : ℕ, a < 10 ∧ b < 10 ∧ p.1 + p.2 = 10 * a + b ∧ 25 + p.2 = 10 * b + a}.ncard = 25 := by sorry
+theorem pow_two_add_nine_mul_pow_seven_eq_cube (a b c : ℕ) (h : 2 ^ a + 9 * 7 ^ b = c ^ 3) : a = 0 ∧ b = 1 ∧ c = 4 := by sorry
+theorem count_subsets_on_cubic_graph : (((Finset.Icc 1 5 ×ˢ Finset.Icc 1 3 : Finset (ℕ × ℕ)).powerset).filter (fun S => ∃ p : Polynomial ℝ, p.degree ≤ 3 ∧ ∀ q ∈ S, p.eval (q.1 : ℝ) = (q.2 : ℝ))).card = 796 := by sorry
+theorem f_eq_iff (f : ℝ → ℝ) : (∀ x y : ℝ, f (f y + x * f x) = y + (f x) ^ 2) ↔ (∀ x : ℝ, f x = x ∨ f x = -x) := by sorry
+theorem cyclic_sum_ge_three_halves (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : 1 / (a ^ 3 * (b + c)) + 1 / (b ^ 3 * (c + a)) + 1 / (c ^ 3 * (a + b)) ≥ 3 / 2 := by sorry
+theorem sum_diff_prod (x y : ℝ) (hs : x + y ≠ 0) (h1 : (x - y) / (x + y) = 9) (h2 : (x * y) / (x + y) = -60) : (x + y) + (x - y) + x * y = -150 := by sorry
+theorem weighted_total_fourth (a : Fin 7 → ℝ) (S : ℕ → ℝ) (hS : ∀ n : ℕ, S n = ∑ i : Fin 7, a i * ((n + (i : ℕ)) : ℝ) ^ 2) (h1 : S 1 = 1) (h2 : S 2 = 12) (h3 : S 3 = 123) : S 4 = 334 := by sorry
+theorem row_endpoints_max_ge_507 (a : ℕ → ℤ) (ha : Set.BijOn a (Set.Icc 1 2023) (Set.Icc 1 2023)) (hd : Set.BijOn (fun i : ℕ => |a (i + 1) - a i|) (Set.Icc 1 2022) (Set.Icc 1 2022)) : 507 ≤ max (a 1) (a 2023) := by sorry
+theorem exists_rational_scaling (a b : ℕ → ℚ) (ha : ¬ ∀ i j : ℕ, a i = a j) (hb : ¬ ∀ i j : ℕ, b i = b j) (hint : ∀ i j : ℕ, ∃ m : ℤ, (a i - a j) * (b i - b j) = (m : ℚ)) : ∃ r : ℚ, r ≠ 0 ∧ (∀ i j : ℕ, ∃ m : ℤ, r * (a i - a j) = (m : ℚ)) ∧ (∀ i j : ℕ, ∃ n : ℤ, (b i - b j) / r = (n : ℚ)) := by sorry
+theorem sum_of_three (x y z : ℝ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (h1 : x^2 + x*y + y^2 = 1) (h2 : y^2 + y*z + z^2 = 4) (h3 : z^2 + z*x + x^2 = 5) : x + y + z = Real.sqrt (5 + 2 * Real.sqrt 3) := by sorry
+theorem find_pairs (a b : ℤ) : (b ^ 2 + 7 * (a - b)) ^ 2 = b * a ^ 3 ↔ a = b ∨ (a, b) = (0, 7) ∨ (a, b) = (12, 3) ∨ (a, b) = (-18, -2) := by sorry
+theorem sum_of_cyclic_fractions_nonpos (a b c : ℝ) : (a ^ 2 - b ^ 2) / (1 + 2 * a ^ 2) + (b ^ 2 - c ^ 2) / (1 + 2 * b ^ 2) + (c ^ 2 - a ^ 2) / (1 + 2 * c ^ 2) ≤ 0 := by sorry
+theorem exists_coprime_pair_large (n : ℕ) (hn : 0 < n) (N : ℕ) : ∃ a b : ℕ, N < a ∧ N < b ∧ Nat.Coprime a b ∧ b ∣ a ^ 2 + n ∧ a ∣ b ^ 2 + n := by sorry
+theorem expected_min_of_three_uniform : (∫ x in (0:ℝ)..1, ∫ y in (0:ℝ)..1, ∫ z in (0:ℝ)..1, min x (min y z)) = 1 / 4 := by sorry
+theorem largest_product : IsGreatest {p : ℝ | ∃ a b : ℝ, 0 < a ∧ 0 < b ∧ a ^ 3 + b ^ 3 ≤ a ^ 2 + b ^ 2 ∧ p = a * b} 1 := by sorry
+theorem f_eq (f : ℝ → ℝ) (hd : Differentiable ℝ f) (h3 : f 3 = -3) (hde : ∀ x : ℝ, deriv f x = (4 + f x) / x) : ∀ x : ℝ, f x = |x| / 3 - 4 := by sorry
+theorem poly_value_avoids_intervals (P : Polynomial ℤ) (a : Fin 5 → ℤ) (ha : Function.Injective a) (hP : ∀ i, P.eval (a i) = 5) (n : ℤ) : ¬ (-6 ≤ P.eval n ∧ P.eval n ≤ 4) ∧ ¬ (6 ≤ P.eval n ∧ P.eval n ≤ 16) := by sorry
+theorem coins_last_month (M S : ℝ) (hM : (100 : ℝ) = M + (1/4) * M) (hS : (100 : ℝ) = S - (1/5) * S) : M + S = 205 := by sorry
+theorem multiples_of_seven_with_sqrt_between_17_and_18 : {n : ℕ | 0 < n ∧ 7 ∣ n ∧ 17 < Real.sqrt n ∧ Real.sqrt n < 18}.ncard = 5 := by sorry
+theorem red_k_subsets_exists_full_succ_set {α : Type*} [DecidableEq α] (k : ℕ) (hk : 0 < k) (X : Finset α) (hX : X.Nonempty) (Red : Finset (Finset α)) (hRed : ∀ A ∈ Red, A ⊆ X ∧ A.card = k) (h : (((X.card - k) * (k - 1) + k) / k ^ 2) * (Nat.choose X.card (k - 1)) < Red.card) : ∃ B ⊆ X, B.card = k + 1 ∧ ∀ A ⊆ B, A.card = k → A ∈ Red := by sorry
+theorem exists_consecutive_four_outer_gt_inner (a : ZMod 100 → ℝ) (ha : Function.Injective a) : ∃ i : ZMod 100, a i + a (i + 3) > a (i + 1) + a (i + 2) := by sorry
+theorem liminf_deriv_div_rpow_nonpos (f f' : ℝ → ℝ) (a : ℝ) (ha : 1 < a) (hpos : ∀ x : ℝ, 0 < x → 0 < f x) (hderiv : ∀ x : ℝ, 0 < x → HasDerivAt f (f' x) x) (hcont : ContinuousOn f' (Set.Ioi 0)) : Filter.liminf (fun x : ℝ => f' x / (f x) ^ a) Filter.atTop ≤ 0 := by sorry
+theorem cyclic_sum_nonneg (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a < b + c) (hbc : b < a + c) (hca : c < a + b) : 0 ≤ a ^ 2 * b * (a - b) + b ^ 2 * c * (b - c) + c ^ 2 * a * (c - a) := by sorry
+theorem prod_ge_two_mul_one_add_sum_div_geom_mean (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (1 + a / b) * (1 + b / c) * (1 + c / a) ≥ 2 * (1 + (a + b + c) / (a * b * c) ^ ((1 : ℝ) / 3)) := by sorry
+theorem smallest_denominator : IsLeast {q : ℕ | 0 < q ∧ ∃ p : ℕ, 0 < p ∧ p < q ∧ (43 : ℚ) / 197 < (p : ℚ) / (q : ℚ) ∧ (p : ℚ) / (q : ℚ) < (17 : ℚ) / 77} 32 := by sorry
+theorem count_pow_two_sum_eq_factorial : {t : ℕ × ℕ × ℕ | 2 ^ t.1 + 2 ^ t.2.1 = (t.2.2)!}.ncard = 5 := by sorry
+theorem cyclic_sum_ineq (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a + b + c = 1) : 1 / (1 - a) + 1 / (1 - b) + 1 / (1 - c) ≥ 2 * (1 / (1 + a) + 1 / (1 + b) + 1 / (1 + c)) := by sorry
+theorem sum_powers_i : ∑ n ∈ Finset.range 2010, (Complex.I) ^ n = 1 + Complex.I := by sorry
+theorem f_four_eq (f : ℕ → ℝ) (k : ℝ) (hk : 0 < k) (hmul : ∀ m n : ℕ, f (m + n) = f m * f n) (h19 : f 19 = 524288 * k) : f 4 = 16 * k ^ ((4 : ℝ) / 19) := by sorry
+theorem f_eq_inv (f : ℝ → ℝ) (h : ∀ x > 0, ∀ y > 0, f (x * f y) = y * f x) (hlim : Filter.Tendsto f Filter.atTop (nhds 0)) : ∀ x > 0, f x = 1 / x := by sorry
+theorem largest_sum_of_squares : IsGreatest {x : ℝ | ∃ a b c : ℝ, 0 ≤ a ∧ a ≤ b ∧ b ≤ c ∧ a + b + c = 1 ∧ x = (a - b * c) ^ 2 + (b - a * c) ^ 2 + (c - a * b) ^ 2} 1 := by sorry
+theorem ratio_identity (x y z : ℝ) (h1 : x * y = 6) (h2 : x = z + 2) (h3 : x + y + z = 9) : x / y - z / x - z ^ 2 / (x * y) = 2 := by sorry
+theorem cubic_distinct_real_roots : {x : ℝ | x ^ 3 - x ^ 2 - x + 2 = 0}.ncard = 1 := by sorry
+theorem smallest_is_one (a b c d : ℕ) (ha : 0 < a) (hodd_a : Odd a) (hodd_b : Odd b) (hodd_c : Odd c) (hodd_d : Odd d) (hab : a < b) (hbc : b < c) (hcd : c < d) (hprod : a * d = b * c) (m n : ℕ) (hsum1 : a + d = 2 ^ m) (hsum2 : b + c = 2 ^ n) : a = 1 := by sorry
+theorem exists_points_in_unit_interval (f g : ℝ → ℝ) : ∃ x y : ℝ, x ∈ Set.Icc (0 : ℝ) 1 ∧ y ∈ Set.Icc (0 : ℝ) 1 ∧ |x * y - f x - g y| ≥ 1 / 4 := by sorry
+theorem fahrenheit_difference (f : ℝ → ℝ) (hf : ∀ c : ℝ, f c = 1.8 * c + 32) (cBoston cNewYork : ℝ) (h : cNewYork = cBoston + 10) : f cNewYork - f cBoston = 18 := by sorry
+theorem divisors_card_pow_two_of_sigma_pow_two (n : ℕ) (hn : 0 < n) (k : ℕ) (h : ∑ d ∈ n.divisors, d = 2 ^ k) : ∃ m : ℕ, n.divisors.card = 2 ^ m := by sorry
+theorem integral_six_div_cos_pow_seven_mul_sin (C : ℝ) (F : ℝ → ℝ) (hF : ∀ t : ℝ, F t = C + (3 / 2) * (3 / (2 * (Real.cos (4 * t) / Real.sin (4 * t)) ^ 2) + 3 / (4 * (Real.cos (4 * t) / Real.sin (4 * t)) ^ 4) + 1 / (6 * (Real.cos (4 * t) / Real.sin (4 * t)) ^ 6) - Real.log |Real.cos (4 * t) / Real.sin (4 * t)|)) (x : ℝ) (hc : Real.cos (4 * x) ≠ 0) (hs : Real.sin (4 * x) ≠ 0) : HasDerivAt F (6 / (Real.cos (-(4 * x)) ^ 7 * Real.sin (4 * x))) x := by sorry
+theorem find_all_functions (f : ℝ → ℝ) : (∀ x y : ℝ, (x - y) * f (x + y) - (x + y) * f (x - y) = 4 * x * y * (x ^ 2 - y ^ 2)) ↔ ∃ c : ℝ, ∀ x : ℝ, f x = x ^ 3 + c * x := by sorry
+theorem exists_entry_not_dvd_det (M : Matrix (Fin 2) (Fin 2) ℤ) (hdet : 1 < M.det) : ∃ i j : Fin 2, ¬ (M.det ∣ M i j) := by sorry
+theorem min_sum_of_nested_radicals : IsLeast {n : ℕ | ∃ a b c : ℕ, 0 < a ∧ 0 < b ∧ 0 < c ∧ a ≠ b ∧ b ≠ c ∧ a ≠ c ∧ (∃ k : ℕ, 0 < k ∧ Real.sqrt (a * Real.sqrt (b * Real.sqrt c)) = k) ∧ n = a + b + c} 7 := by sorry
+theorem no_such_matrix : ¬ ∃ A : Matrix (Fin 3) (Fin 3) ℝ, A.trace = 0 ∧ A ^ 2 + A.transpose = 1 := by sorry
+theorem product_sub_first (a b : ℤ) (ha : a = 3) (hb : b = 4) : a * b - a = 9 := by sorry
+theorem reciprocal_avg_rate_of_change (f : ℝ → ℝ) (hf : ∀ x : ℝ, x ≠ 0 → f x = 1 / x) (b : ℝ) (hb0 : b ≠ 0) (hb2 : b ≠ 2) (h : (f b - f 2) / (b - 2) = -(1 / 10)) : b = 5 := by sorry
+theorem sum_sub_three_cbrt_ge_sum_sub_two_sqrt (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a + b + c - 3 * (a * b * c) ^ ((1 : ℝ) / 3) ≥ a + b - 2 * Real.sqrt (a * b) := by sorry
+theorem units_digit_five_pow_35_sub_six_pow_21 : (5 ^ 35 - 6 ^ 21) % 10 = 9 := by sorry
+theorem seq_periodic_of_block_sums (r : ℕ) (hr : 0 < r) (a : ℕ → ℝ) (h : ∀ n m : ℕ, ∃ k : ℕ, 1 ≤ k ∧ k ≤ r ∧ ∑ i ∈ Finset.range m, a (n + i) = ∑ i ∈ Finset.range m, a (n + k + i)) : ∃ p : ℕ, 0 < p ∧ ∀ n : ℕ, a (n + p) = a n := by sorry
+theorem exists_three_equal_of_polynomial_property (a : Fin 1996 → ℝ) (h : ∀ P : Polynomial ℝ, 2 ≤ P.natDegree → ∃ i j k : Fin 1996, i ≠ j ∧ j ≠ k ∧ i ≠ k ∧ P.eval (a i) = P.eval (a j) ∧ P.eval (a j) = P.eval (a k)) : ∃ i j k : Fin 1996, i ≠ j ∧ j ≠ k ∧ i ≠ k ∧ a i = a j ∧ a j = a k := by sorry
+theorem irrational_of_rpow_self_rat (x : ℝ) (k : ℕ) (hk : 0 < k) (hx : 1 ≤ x) (hrat : ∃ q : ℚ, (q : ℝ) = x ^ x) (h1 : (k : ℝ) ^ (k : ℝ) < x ^ x) (h2 : x ^ x < ((k : ℝ) + 1) ^ ((k : ℝ) + 1)) : Irrational x := by sorry
+theorem not_prime_of_quartic_eq_quintic (a b c d e : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (he : 0 < e) (hdist : [a, b, c, d, e].Pairwise (· ≠ ·)) (h1 : a ^ 4 + b ^ 4 = c ^ 4 + d ^ 4) (h2 : a ^ 4 + b ^ 4 = e ^ 5) : ¬ Nat.Prime (a * c + b * d) := by sorry
+theorem primes_collection_eq_all_primes (S : Set ℕ) (hprime : ∀ p ∈ S, Nat.Prime p) (hne : S.Nonempty) (hclosed : ∀ l : List ℕ, l ≠ [] → (∀ x ∈ l, x ∈ S) → ∀ p : ℕ, Nat.Prime p → p ∣ l.prod + 1 → p ∈ S) : ∀ p : ℕ, Nat.Prime p → p ∈ S := by sorry
+theorem cyclic_eq_of_pow_add_prime_mul (n : ℕ) (hn : 0 < n) (p : ℕ) (hp : Nat.Prime p) (a b c : ℤ) (h1 : a ^ n + (p : ℤ) * b = b ^ n + (p : ℤ) * c) (h2 : b ^ n + (p : ℤ) * c = c ^ n + (p : ℤ) * a) : a = b ∧ b = c := by sorry
+theorem area_le_equilateral_area_of_mean_side (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a < b + c) (hbc : b < a + c) (hca : c < a + b) (p : ℝ) (hp : p = (a + b + c) / 2) (area : ℝ) (harea : area = Real.sqrt (p * (p - a) * (p - b) * (p - c))) (m : ℝ) (hm : m = (a + b + c) / 3) (eqArea : ℝ) (heqArea : eqArea = Real.sqrt 3 / 4 * m ^ 2) : area ≤ eqArea ∧ (area = eqArea ↔ a = b ∧ b = c) := by sorry
+theorem sum_sq_bounds : IsGreatest {s : ℝ | ∃ x y z : ℝ, x ^ 4 + y ^ 4 + z ^ 4 = 1 ∧ s = x ^ 2 + y ^ 2 + z ^ 2} (Real.sqrt 3) ∧ IsLeast {s : ℝ | ∃ x y z : ℝ, x ^ 4 + y ^ 4 + z ^ 4 = 1 ∧ s = x ^ 2 + y ^ 2 + z ^ 2} 1 := by sorry
+theorem sum_of_digits_of_multiples_of_nine : ∑ n ∈ (Finset.Icc 9 999).filter (fun n => 9 ∣ n), (Nat.digits 10 n).sum = 1512 := by sorry
+theorem largest_sum : IsGreatest {q : ℚ | ∃ a b c d : ℕ, 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d ∧ Nat.Coprime a b ∧ Nat.Coprime c d ∧ a + c = 9 ∧ b + d = 10 ∧ q = (a : ℚ) / b + (c : ℚ) / d} (73 / 9) := by sorry
+theorem comp_pow_dvd (f : Polynomial ℂ) (n : ℕ) (hn : 0 < n) (g : Polynomial ℂ) (hg : g = f.comp (Polynomial.X ^ n)) (h : (Polynomial.X - 1 : Polynomial ℂ) ∣ g) : (Polynomial.X ^ n - 1 : Polynomial ℂ) ∣ g := by sorry
+theorem cube_plus_three_plus_fourteen_eq_two_prime_pow (n k p : ℕ) (hn : 0 < n) (hk : 0 < k) (hp : Nat.Prime p) : n ^ 3 + 3 * n + 14 = 2 * p ^ k ↔ (n = 1 ∧ k = 2 ∧ p = 3) ∨ (n = 3 ∧ k = 2 ∧ p = 5) := by sorry
+theorem limit_x_one_sub_cos_div_x_sub_sin : Filter.Tendsto (fun x : ℝ => x * (1 - Real.cos x) / (x - Real.sin x)) (nhdsWithin 0 {(0 : ℝ)}ᶜ) (nhds 3) := by sorry
+theorem exists_diff_eq_of_pos (n : ℕ) (hn : 0 < n) : ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ a = b + n ∧ a.primeFactors.card = b.primeFactors.card := by sorry
+theorem seq_nonpos_of_second_difference_eq_sq (n : ℕ) (a : ℕ → ℝ) (h0 : a 0 = 0) (hn : a n = 0) (hrec : ∀ i : ℕ, 0 < i → i < n → a (i + 1) - 2 * a i + a (i - 1) = (a i) ^ 2) : ∀ i : ℕ, 0 < i → i < n → a i ≤ 0 := by sorry
+theorem prob_image_in_unit_square (p q : ℕ) (hq : 0 < q) (hp : 0 < p) (hcop : Nat.Coprime p q) (h : (volume {z : ℝ × ℝ | z.1 ∈ Set.Icc (0:ℝ) 1 ∧ z.2 ∈ Set.Icc (0:ℝ) 1 ∧ (3 * z.1 + 2 * z.2) ∈ Set.Icc (0:ℝ) 1 ∧ (z.1 + 4 * z.2) ∈ Set.Icc (0:ℝ) 1}).toReal / (volume {z : ℝ × ℝ | z.1 ∈ Set.Icc (0:ℝ) 1 ∧ z.2 ∈ Set.Icc (0:ℝ) 1}).toReal = (p : ℝ) / (q : ℝ)) : 100 * p + q = 820 := by sorry
+theorem digits_unique (a b c d : ℤ) (ha : 0 ≤ a ∧ a ≤ 9) (hb : 0 ≤ b ∧ b ≤ 9) (hc : 0 ≤ c ∧ c ≤ 9) (hd : 0 ≤ d ∧ d ≤ 9) (h1 : 6 * a + 9 * b + 3 * c + d = 88) (h2 : a - b + c - d = -6) (h3 : a - 9 * b + 3 * c - d = -46) : 1000 * a + 100 * b + 10 * c + d = 6507 := by sorry
+theorem triangle_constant_characterization (t : ℝ) : (∀ a b c : ℝ, 0 < a → 0 < b → 0 < c → a + b > c → b + c > a → c + a > b → 0 < a^2 + t*b*c ∧ 0 < b^2 + t*c*a ∧ 0 < c^2 + t*a*b ∧ (a^2 + t*b*c) + (b^2 + t*c*a) > c^2 + t*a*b ∧ (b^2 + t*c*a) + (c^2 + t*a*b) > a^2 + t*b*c ∧ (c^2 + t*a*b) + (a^2 + t*b*c) > b^2 + t*c*a) ↔ (2/3 ≤ t ∧ t ≤ 2) := by sorry
+theorem greatest_sin_add : IsGreatest {s : ℝ | ∃ x y : ℝ, Real.sin (x - y) = 1 ∧ Real.sin (x + y) = s} 1 := by sorry
+theorem cot_ratio_lt_cos_ratio_lt_angle_ratio (a b : ℝ) (ha : 0 < a) (hab : a < b) (hb : b < Real.pi / 2) : (Real.cos b / Real.sin b) / (Real.cos a / Real.sin a) < Real.cos b / Real.cos a ∧ Real.cos b / Real.cos a < b / a := by sorry
+theorem ratio_values (k : ℕ) : (0 < k ∧ ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ b ^ 2 + a * b + 3 * a = k * (a ^ 2 + a * b + 3 * b)) ↔ k = 1 ∨ k = 3 ∨ k = 4 ∨ k = 9 := by sorry
+theorem sum_of_sides_ge_four_dist (A B C F D E : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (hF : F ∈ interior (convexHull ℝ ({A, B, C} : Set (EuclideanSpace ℝ (Fin 2))))) (h1 : ∠ A F B = ∠ B F C) (h2 : ∠ B F C = ∠ C F A) (hD : D ∈ segment ℝ A C ∩ segment ℝ B F) (hE : E ∈ segment ℝ A B ∩ segment ℝ C F) : 4 * dist D E ≤ dist A B + dist A C := by sorry
+theorem exists_two_committees_large_intersection {α : Type*} [DecidableEq α] (M : Finset α) (C : Fin 6 → Finset α) (hM : 0 < M.card) (hsub : ∀ i, C i ⊆ M) (hcard : ∀ i, M.card / 4 ≤ (C i).card) : ∃ i j : Fin 6, i ≠ j ∧ M.card / 30 ≤ ((C i) ∩ (C j)).card := by sorry
+theorem no_integer_solutions : ¬ ∃ x y : ℤ, 5 * x ^ 2 - 6 * x * y + 7 * y ^ 2 = 1985 := by sorry
+theorem deriv_iterate_cos_at_fixed_point (f : ℝ → ℝ) (hf : f = Real.cos ∘ Real.cos ∘ Real.cos ∘ Real.cos ∘ Real.cos ∘ Real.cos ∘ Real.cos ∘ Real.cos) (a : ℝ) (ha : Real.cos a = a) : deriv f a = a ^ 8 - 4 * a ^ 6 + 6 * a ^ 4 - 4 * a ^ 2 + 1 := by sorry
+theorem pos_of_sum_sum_prod_pos (a b c : ℝ) (h1 : 0 < a + b + c) (h2 : 0 < a * b + b * c + c * a) (h3 : 0 < a * b * c) : 0 < a ∧ 0 < b ∧ 0 < c := by sorry
+theorem product_ineq (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : (1 / (a * b) + b * c + c * a) * (1 / (b * c) + c * a + a * b) * (1 / (c * a) + a * b + b * c) ≥ (2 * a + 1) * (2 * b + 1) * (2 * c + 1) := by sorry
+theorem find_z (x y z : ℤ) (hx : x = 11) (hy : y = 8) (h : 2 * x + 3 * z = 5 * y) : z = 6 := by sorry
+theorem four_reals_product_one (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (hprod : a * b * c * d = 1) (h1 : a ^ 2012 + 2012 * b = 2012 * c + d ^ 2012) (h2 : 2012 * a + b ^ 2012 = c ^ 2012 + 2012 * d) : ∃ t : ℝ, 0 < t ∧ a = t ∧ d = t ∧ b = 1 / t ∧ c = 1 / t := by sorry
+theorem f_2015 (f : ℝ → ℝ) (hcont : ContinuousOn f (Set.Ioi 0)) (hmul : ∀ x y : ℝ, 0 < x → 0 < y → f (x * y) = f x + f y + 1) (h2 : f 2 = 0) : f 2015 = Real.logb 2 2015 - 1 := by sorry
+theorem no_such_continuous_functions : ¬ ∃ f g h : ℝ → ℝ, Continuous f ∧ Continuous g ∧ Continuous h ∧ ∀ x y : ℝ, h (f x + g y) = x * y := by sorry
+theorem log_div_sub_lt_one_div_sqrt_mul (a b : ℝ) (ha : 0 < a) (hb : 0 < b) (hab : a < b) : (Real.log b - Real.log a) / (b - a) < 1 / Real.sqrt (a * b) := by sorry
+theorem white_balls (w : ℕ) (hw : 0 < w) (h : (w : ℚ) / (8 + w) = 5 / 6) : w = 40 := by sorry
+theorem cyclic_cube_div_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a + b + c ≤ a ^ 3 / (b * c) + b ^ 3 / (c * a) + c ^ 3 / (a * b) ∧ (a ^ 3 / (b * c) + b ^ 3 / (c * a) + c ^ 3 / (a * b) = a + b + c ↔ a = b ∧ b = c) := by sorry
+theorem base_digits_unique (n a b c : ℕ) (ha : 0 < a) (h14 : a < 14 ∧ b < 14 ∧ c < 14) (h15 : a < 15 ∧ c < 15 ∧ b < 15) (h6 : a < 6 ∧ c < 6) (e14 : n = a * 14 ^ 2 + b * 14 + c) (e15 : n = a * 15 ^ 2 + c * 15 + b) (e6 : n = a * 6 ^ 3 + c * 6 ^ 2 + a * 6 + c) : n = 925 := by sorry
+theorem sin_eq_cos_two_fifths_pi (x : ℝ) : Real.sin x = Real.cos (2 * Real.pi / 5) ↔ ∃ k : ℤ, x = k * Real.pi + (-1 : ℝ) ^ k * (Real.pi / 10) := by sorry
+theorem polynomial_characterization (P : Polynomial ℝ) : (∀ a b c : ℝ, a * b + b * c + c * a = 0 → P.eval (a - b) + P.eval (b - c) + P.eval (c - a) = 2 * P.eval (a + b + c)) ↔ ∃ α β : ℝ, P = Polynomial.C α * Polynomial.X ^ 2 + Polynomial.C β * Polynomial.X ^ 4 := by sorry
+theorem isotropic_diagonal_form_represents_one_unboundedly (a b c : ℚ) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (x y z : ℚ) (hxyz : ¬ (x = 0 ∧ y = 0 ∧ z = 0)) (hvan : a * x ^ 2 + b * y ^ 2 + c * z ^ 2 = 0) (M : ℚ) (hM : 0 < M) : ∃ p q r : ℚ, a * p ^ 2 + b * q ^ 2 + c * r ^ 2 = 1 ∧ M < p ^ 2 + q ^ 2 + r ^ 2 := by sorry
+theorem f_eq_zero_or_three_mul (f : ℝ → ℝ) : (∀ x y : ℝ, f x * f y = x * f (f (y - x)) + x * f (2 * x) + f (x ^ 2)) ↔ ((∀ x : ℝ, f x = 0) ∨ (∀ x : ℝ, f x = 3 * x)) := by sorry
+theorem factorial_div_self_pow_supermultiplicative (m n : ℕ) (hm : 0 < m) (hn : 0 < n) : ((Nat.factorial (m + n) : ℝ) / ((m + n : ℝ) ^ (m + n))) < ((Nat.factorial m : ℝ) / (m : ℝ) ^ m) * ((Nat.factorial n : ℝ) / (n : ℝ) ^ n) := by sorry
+theorem degree_ge_of_prime_values (p : ℕ) (hp : p.Prime) (f : Polynomial ℤ) (h0 : f.eval 0 = 0) (h1 : f.eval 1 = 1) (hval : ∀ n : ℕ, 0 < n → f.eval (n : ℤ) % (p : ℤ) = 0 ∨ f.eval (n : ℤ) % (p : ℤ) = 1) : (p : ℕ) - 1 ≤ f.natDegree := by sorry
+theorem integral_r_sq_over_polar_region (a : ℝ) (ha : 0 < a) : (∫ θ in (0:ℝ)..Real.pi, ∫ r in (0:ℝ)..(a * Real.sin (2 * θ)), r ^ 2) = 8 / 9 * a ^ 3 := by sorry
+theorem foonies_count : IsGreatest {n : ℕ | (n : ℝ) * (5/2) ≤ 50} 20 := by sorry
+theorem largest_product : IsGreatest {p : ℝ | ∃ a b : ℝ, 0 < a ∧ 0 < b ∧ a + 1 / b = 3 ∧ b + 2 / a = 3 ∧ p = a * b} (3 + Real.sqrt 7) := by sorry
+theorem card_five_tuples_reciprocals_odd : {f : Fin 5 → ℕ | (∀ i, 0 < f i) ∧ ∑ i, (1 : ℚ) / (f i) = 1 / 5}.Finite ∧ Odd {f : Fin 5 → ℕ | (∀ i, 0 < f i) ∧ ∑ i, (1 : ℚ) / (f i) = 1 / 5}.ncard := by sorry
+theorem delegation_count (B G : Finset ℕ) (hB : B.card = 5) (hG : G.card = 4) (hBG : Disjoint B G) : (((B ∪ G).powersetCard 4).filter (fun s => 1 ≤ (s ∩ B).card ∧ 1 ≤ (s ∩ G).card)).card = Nat.choose 5 1 * Nat.choose 4 3 + Nat.choose 5 2 * Nat.choose 4 2 + Nat.choose 5 3 * Nat.choose 4 1 ∧ (((B ∪ G).powersetCard 4).filter (fun s => 1 ≤ (s ∩ B).card ∧ 1 ≤ (s ∩ G).card)).card = 120 := by sorry
+theorem f_eq_add_one (f : ℝ → ℝ) : (∀ x > 0, ∀ y > 0, f (x * y) + f x = x * f y + 2) ↔ (∀ x > 0, f x = x + 1) := by sorry
+theorem third_integer_values (a b c : ℤ) (h1 : a + b * c = 2017) (h2 : b + c * a = 8) : c = -6 ∨ c = 0 ∨ c = 2 ∨ c = 8 := by sorry
+theorem eventually_periodic_of_gcd_lcm_recurrence (a b : ℕ → ℕ) (ha_pos : ∀ n, 0 < a n) (hb_pos : ∀ n, 0 < b n) (ha0 : 2 ≤ a 0) (hb0 : 2 ≤ b 0) (ha : ∀ n, a (n + 1) = Nat.gcd (a n) (b n) + 1) (hb : ∀ n, b (n + 1) = Nat.lcm (a n) (b n) - 1) : ∃ N p, 0 < p ∧ ∀ n, N ≤ n → a (n + p) = a n := by sorry
+theorem exists_increasing_seqs : ∃ a b : ℕ → ℕ, StrictMono a ∧ StrictMono b ∧ ∀ n : ℕ, (a n) * (a n + 1) ∣ (b n) ^ 2 + 1 := by sorry
+theorem cyclic_sum_ineq (a b c d : ℝ) (h0 : 0 ≤ a) (hab : a ≤ b) (hbc : b ≤ c) (hcd : c ≤ d) : a * b ^ 3 + b * c ^ 3 + c * d ^ 3 + d * a ^ 3 ≥ (a * b) ^ 2 + (b * c) ^ 2 + (c * d) ^ 2 + (d * a) ^ 2 := by sorry
+theorem cyclic_sum_pow_div_ge_three_halves (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) (k : ℕ) (hk : 2 ≤ k) : a ^ k / (a + b) + b ^ k / (b + c) + c ^ k / (c + a) ≥ 3 / 2 := by sorry
+theorem no_such_triple : ¬ ∃ a b c : ℝ, 0 < a ∧ 0 < b ∧ 0 < c ∧ (2 * a ^ 2 + b * c) * (2 * b ^ 2 + c * a) * (2 * c ^ 2 + a * b) = 26 * (a * b * c) ^ 2 := by sorry
+theorem sum_pairs_le_sum_singles (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : 1 / (1 + a + b) + 1 / (1 + b + c) + 1 / (1 + c + a) ≤ 1 / (2 + a) + 1 / (2 + b) + 1 / (2 + c) := by sorry
+theorem exponent_eq_one (n m : ℤ) (k : ℕ) (hn : 0 < n) (hm : 0 < m) (hk : 0 < k) (h : (n - 1) * n * (n + 1) = m ^ k) : k = 1 := by sorry
+theorem least_cos_of_angles : IsLeast {x : ℝ | ∃ a b c : ℝ, Real.cos a + Real.cos b + Real.cos c = 1 ∧ Real.sin a + Real.sin b + Real.sin c = 1 ∧ x = Real.cos a} ((-1 - Real.sqrt 7) / 4) := by sorry
+theorem sum_of_values_at_product_mod_100 (S : Finset ℕ) (hS : ∀ n : ℕ, n ∈ S ↔ ∃ A B C p q : ℕ, 0 < A ∧ Nat.Prime p ∧ Nat.Prime q ∧ p < q ∧ A * p ^ 2 + B * p + C = 17 ∧ A * q ^ 2 + B * q + C = 17 ∧ A * (p + q) ^ 2 + B * (p + q) + C = 47 ∧ n = A * (p * q) ^ 2 + B * (p * q) + C) : (∑ n ∈ S, n) % 100 = 71 := by sorry
+theorem exists_strictMono_fib_like : ∃ f : ℕ → ℕ, StrictMono f ∧ f 1 = 2 ∧ ∀ n : ℕ, f (f n) = f n + n := by sorry
+theorem cyclic_sum_bounds (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : b * c / (a ^ 2 + 2 * (b * c)) + c * a / (b ^ 2 + 2 * (c * a)) + a * b / (c ^ 2 + 2 * (a * b)) ≤ 1 ∧ 1 ≤ a ^ 2 / (a ^ 2 + 2 * (b * c)) + b ^ 2 / (b ^ 2 + 2 * (c * a)) + c ^ 2 / (c ^ 2 + 2 * (a * b)) := by sorry
+theorem exists_four_pairwise_coprime (S : Finset ℕ) (hS : S ⊆ Finset.Icc 1 100) (hcard : S.card = 75) : ∃ a ∈ S, ∃ b ∈ S, ∃ c ∈ S, ∃ d ∈ S, a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ b ≠ c ∧ b ≠ d ∧ c ≠ d ∧ Nat.Coprime a b ∧ Nat.Coprime a c ∧ Nat.Coprime a d ∧ Nat.Coprime b c ∧ Nat.Coprime b d ∧ Nat.Coprime c d := by sorry
+theorem cube_diff_eq_twice_product_add_eight (x y : ℤ) : x ^ 3 - y ^ 3 = 2 * x * y + 8 ↔ (x = 2 ∧ y = 0) ∨ (x = 0 ∧ y = -2) := by sorry
+theorem area_union_four_disks_sub_area_big_disk_outside (r : ℝ) (hr : 0 < r) (U B : Set (ℝ × ℝ)) (hU : U = {p : ℝ × ℝ | (p.1 - r) ^ 2 + p.2 ^ 2 < r ^ 2 ∨ (p.1 + r) ^ 2 + p.2 ^ 2 < r ^ 2 ∨ p.1 ^ 2 + (p.2 - r) ^ 2 < r ^ 2 ∨ p.1 ^ 2 + (p.2 + r) ^ 2 < r ^ 2}) (hB : B = {p : ℝ × ℝ | p.1 ^ 2 + p.2 ^ 2 < (2 * r) ^ 2}) : (volume U).toReal - (volume (B \ U)).toReal = 8 * r ^ 2 := by sorry
+theorem completing_the_square (z : ℝ) : 3 + 2 * z - 5 * z ^ 2 = -5 * (z - 1 / 5) ^ 2 + 16 / 5 := by sorry
+theorem count_perms_no_decreasing_subseq_three : (Finset.univ.filter (fun σ : Equiv.Perm (Fin 7) => ∀ i j k : Fin 7, i < j → j < k → ¬ (σ k < σ j ∧ σ j < σ i))).card = 429 := by sorry
+theorem cyclic_sum_ge_inv_sum (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h : a * b + b * c + c * a = 1 / 3) : a / (a ^ 2 - b * c + 1) + b / (b ^ 2 - c * a + 1) + c / (c ^ 2 - a * b + 1) ≥ 1 / (a + b + c) := by sorry
+theorem prime_pair_div (p q : ℕ) (hp : Nat.Prime p) (hq : Nat.Prime q) : (3 * p ^ (q - 1) + 1) ∣ (11 ^ p + 17 ^ p) ↔ p = 3 ∧ q = 3 := by sorry
+theorem last_entry (a : ℕ → ℝ) (hpos : ∀ n, 1 ≤ n → n ≤ 100 → 0 < a n) (hrec : ∀ n, 2 ≤ n → n ≤ 100 → a n = (n : ℝ) * a (n - 1) / (a (n - 1) - ((n : ℝ) - 1))) (heq : a 20 = a 23) : a 100 = 215 := by sorry
+theorem fract_sq_integral : ∫ x in Set.Ioi (0:ℝ), (Int.fract x) ^ 2 * (1 - Int.fract x) ^ 2 / (1 + x) ^ 5 = 7 / 12 - Real.eulerMascheroniConstant := by sorry
+theorem count_quadruples (p n : ℕ) (hp : p.Prime) (hn : 0 < n) : (((Finset.range (p ^ n) ×ˢ Finset.range (p ^ n) ×ˢ Finset.range (p ^ n) ×ˢ Finset.range (p ^ n)).filter (fun x => p ^ n ∣ x.1 * x.2.1 + x.2.2.1 * x.2.2.2 + 1)).card) = (p ^ n) ^ 3 - (p ^ n) ^ 3 / p ^ 2 := by sorry
+theorem product_minus_one_dvd (a b c : ℤ) : (1 < a ∧ a < b ∧ b < c ∧ (a - 1) * (b - 1) * (c - 1) ∣ a * b * c - 1) ↔ ((a, b, c) = (2, 4, 8) ∨ (a, b, c) = (3, 5, 15)) := by sorry
+theorem sum_sq_eq_sixteen_sum (x y z : ℤ) : x ^ 2 + y ^ 2 + z ^ 2 = 16 * (x + y + z) ↔ ((x = 0 ∨ x = 16) ∧ (y = 0 ∨ y = 16) ∧ (z = 0 ∨ z = 16)) := by sorry
+theorem num_four_by_four_pm_one_matrices_zero_sums : {M : Matrix (Fin 4) (Fin 4) ℤ | (∀ i j, M i j = 1 ∨ M i j = -1) ∧ (∀ i, ∑ j, M i j = 0) ∧ (∀ j, ∑ i, M i j = 0)}.ncard = 90 := by sorry
+theorem sum_of_three (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : a ^ 2 + 2 * (b - 1) * (c - 1) = 85) (h2 : b ^ 2 + 2 * (a - 1) * (c - 1) = 84) (h3 : c ^ 2 + 2 * (a - 1) * (b - 1) = 89) : a + b + c = 18 := by sorry
+theorem exp_integral_eq : Real.exp (∫ x in (0:ℝ)..Real.log 2, (2 * (Real.exp x) ^ 3 + (Real.exp x) ^ 2 - 1) / ((Real.exp x) ^ 3 + (Real.exp x) ^ 2 - Real.exp x + 1)) = 11 / 4 := by sorry
+theorem sin_arctan (x : ℝ) : Real.sin (Real.arctan x) = x / Real.sqrt (1 + x ^ 2) := by sorry
+theorem smallest_abs_value : IsLeast {n : ℕ | ∃ P : Polynomial ℤ, P.eval 0 + P.eval 90 = 2018 ∧ n = (P.eval 20 + P.eval 70).natAbs} 782 := by sorry
+theorem whoosits (rw rh : ℝ) (hrw : 0 < rw) (hrh : 0 < rh) (N : ℝ) (h1 : 300 / rw + 200 / rh = 100 * 1) (h2 : 240 / rw + 300 / rh = 60 * 2) (h3 : 150 / rw + N / rh = 50 * 3) : N = 450 := by sorry
+theorem exp_integral_eq (A : ℝ) (hA : A = ∫ x in (3/4 : ℝ)..(4/3 : ℝ), (2 * x ^ 2 + x + 1) / (x ^ 3 + x ^ 2 + x + 1)) : Real.exp A = 16 / 9 := by sorry
+theorem iteratedDeriv_25_two_sq_mul_sin (x : ℝ) : iteratedDeriv 25 (fun t : ℝ => 2 * t ^ 2 * Real.sin t) x = (2 * x ^ 2 - 1200) * Real.cos x + 100 * x * Real.sin x := by sorry
+theorem avg_divisor_expr : (∑ d ∈ Nat.divisors 2016, ((d : ℚ)^2 / ((d : ℚ)^2 + 2016))) / ((Nat.divisors 2016).card : ℚ) = 1 / 2 := by sorry
+theorem at_most_one_factorization (n : ℕ) (hn : 0 < n) (hmod : n % 4 = 2) (a b c d : ℕ) (hab : a * b = n) (hcd : c * d = n) (hb : 0 < b) (hd : 0 < d) (hlt1 : b < a) (hlt2 : d < c) (hbound1 : ((a : ℝ) - b) < Real.sqrt (4 * Real.sqrt (4 * (n : ℝ) + 1) + 5)) (hbound2 : ((c : ℝ) - d) < Real.sqrt (4 * Real.sqrt (4 * (n : ℝ) + 1) + 5)) : a = c ∧ b = d := by sorry
+theorem imo2003_p2 (a b : ℤ) (ha : 0 < a) (hb : 0 < b) : (∃ k : ℤ, 0 < k ∧ a ^ 2 = k * (2 * a * b ^ 2 - b ^ 3 + 1)) ↔ ((∃ l : ℤ, 0 < l ∧ a = 2 * l ∧ b = 1) ∨ (∃ l : ℤ, 0 < l ∧ a = l ∧ b = 2 * l) ∨ (∃ l : ℤ, 0 < l ∧ a = 8 * l ^ 4 - l ∧ b = 2 * l)) := by sorry
+theorem cyclic_sum_nonneg (A B C : ℝ) (hA : 0 < A) (hA' : A < Real.pi / 2) (hB : 0 < B) (hB' : B < Real.pi / 2) (hC : 0 < C) (hC' : C < Real.pi / 2) : 0 ≤ Real.sin A * Real.sin (A - B) * Real.sin (A - C) / Real.sin (B + C) + Real.sin B * Real.sin (B - C) * Real.sin (B - A) / Real.sin (C + A) + Real.sin C * Real.sin (C - A) * Real.sin (C - B) / Real.sin (A + B) := by sorry
+theorem rearrangements_mod_1000 : (Finset.univ.filter (fun σ : Equiv.Perm (Fin 30) => ∀ m ∈ ({2, 3, 5} : Finset ℕ), ∀ i j : Fin 30, (j : ℕ) = (i : ℕ) + m → ((σ j : ℕ) + 1) ≡ ((σ i : ℕ) + 1) [MOD m])).card % 1000 = 440 := by sorry
+theorem sum_sq_diff_le_of_sorted (n : ℕ) (hn : 0 < n) (x y : Fin n → ℝ) (hx : ∀ i j : Fin n, i ≤ j → x j ≤ x i) (hy : ∀ i j : Fin n, i ≤ j → y j ≤ y i) (σ : Equiv.Perm (Fin n)) : ∑ i : Fin n, (x i - y i) ^ 2 ≤ ∑ i : Fin n, (x i - y (σ i)) ^ 2 := by sorry
+theorem dice_product_twelve : (((Finset.Icc 1 6 ×ˢ Finset.Icc 1 6).filter (fun p : ℕ × ℕ => p.1 * p.2 = 12)).card = 4) ∧ ((((Finset.Icc 1 6 ×ˢ Finset.Icc 1 6).filter (fun p : ℕ × ℕ => p.1 * p.2 = 12)).card : ℚ) / ((Finset.Icc 1 6 ×ˢ Finset.Icc 1 6).card : ℚ) = 4 / 36) := by sorry
+theorem prod_ratio_le (n : ℕ) (hn : 0 < n) (a : Fin n → ℝ) (ha : ∀ i, 0 < a i) (hsum : ∑ i, a i < 1) : ((∏ i, a i) * (1 - ∑ i, a i)) / ((∑ i, a i) * ∏ i, (1 - a i)) ≤ 1 / (n : ℝ) ^ (n + 1) := by sorry
+theorem sum_eight_cubes_eight (a b c : ℤ) : (a + b + c = 8 ∧ a ^ 3 + b ^ 3 + c ^ 3 = 8) ↔ ({a, b, c} : Multiset ℤ) = {15, 9, -16} := by sorry
+theorem exists_n_omega_ratio (k : ℕ) (hk : 0 < k) (α β : ℝ) (hα : 0 < α) (hβ : 0 < β) : ∃ n : ℕ, 1 < n ∧ (α < ((n + k).primeFactors.card : ℝ) / (n.primeFactors.card : ℝ)) ∧ (((Nat.primeFactorsList (n + k)).length : ℝ) / ((Nat.primeFactorsList n).length : ℝ) < β) := by sorry
+theorem box_balls_day_seven (b g : ℕ → ℕ) (hb0 : b 0 = 1) (hg0 : g 0 = 1) (hb : ∀ n, b (n + 1) = b n + 2 * g n) (hg : ∀ n, g (n + 1) = g n + g n) : b 7 + g 7 = 383 := by sorry
+theorem completed_square (x : ℝ) : x ^ 2 + (2 / 5) * x - 1 / 5 = (x + 1 / 5) ^ 2 - 6 / 25 := by sorry
+theorem abs_neg_six_mul_sub_six_le_one (x : ℝ) : |(-6 : ℝ) * x - 6| ≤ 1 ↔ x ∈ Set.Icc (-7/6 : ℝ) (-5/6 : ℝ) := by sorry
+theorem third_integer (a b c : ℤ) (ha : a = 2) (hb : b = a ^ 2 - 5) (hc : c = b ^ 2 - 5) : c = -4 := by sorry
+theorem annulus_sector_area : MeasureTheory.volume {p : ℝ × ℝ | 1 ≤ p.1 ^ 2 + p.2 ^ 2 ∧ p.1 ^ 2 + p.2 ^ 2 ≤ 4 ∧ p.1 ≤ p.2 ∧ p.2 ≤ Real.sqrt 3 * p.1} = ENNReal.ofReal (Real.pi / 8) := by sorry
+theorem sum_sq_add_sum_sq_prod_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1 / 8) : a ^ 2 + b ^ 2 + c ^ 2 + (a * b) ^ 2 + (b * c) ^ 2 + (c * a) ^ 2 ≥ 15 / 16 ∧ (a ^ 2 + b ^ 2 + c ^ 2 + (a * b) ^ 2 + (b * c) ^ 2 + (c * a) ^ 2 = 15 / 16 ↔ a = 1 / 2 ∧ b = 1 / 2 ∧ c = 1 / 2) := by sorry
+theorem sum_sqrt_abs_sub_le_sum_sqrt_abs_add (n : ℕ) (a : Fin n → ℝ) : ∑ i : Fin n, ∑ j : Fin n, Real.sqrt |a i - a j| ≤ ∑ i : Fin n, ∑ j : Fin n, Real.sqrt |a i + a j| := by sorry
+theorem infinitely_many_triples : {t : ℕ × ℕ × ℕ | 0 < t.1 ∧ 0 < t.2.1 ∧ 0 < t.2.2 ∧ t.1 ^ 2 + t.2.1 ^ 2 = t.2.2 ^ 6}.Infinite := by sorry
+theorem cube_sub_seven_mul_dvd_six (n : ℤ) : (6 : ℤ) ∣ n ^ 3 - 7 * n := by sorry
+theorem cyclic_sum_sq_div_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 2 * a ^ 2 / (b + c) + 2 * b ^ 2 / (c + a) + 2 * c ^ 2 / (a + b) ≥ a + b + c := by sorry
+theorem average_arctan_over_unit_square : (∫ x in (0:ℝ)..1, ∫ y in (0:ℝ)..1, Real.arctan (x * y)) / ((1 - 0) * (1 - 0)) = (Real.pi - Real.log 4) / 4 - Real.pi ^ 2 / 48 := by sorry
+theorem cos_diff_prod_ge_eight_cos_prod (A B C : ℝ) (hA : 0 < A) (hB : 0 < B) (hC : 0 < C) (hA2 : A < Real.pi / 2) (hB2 : B < Real.pi / 2) (hC2 : C < Real.pi / 2) (hsum : A + B + C = Real.pi) : Real.cos (A - B) * Real.cos (B - C) * Real.cos (C - A) ≥ 8 * (Real.cos A * Real.cos B * Real.cos C) := by sorry
+theorem highest_power_of_two_dividing : IsGreatest {n : ℕ | (2 ^ n : ℕ) ∣ 7 ^ 2048 - 1} 14 := by sorry
+theorem no_such_integers : ¬ ∃ a b : ℤ, Prime (16 * a - 9 * b) ∧ (∃ k : ℤ, a * b = k ^ 2) ∧ (∃ m : ℤ, a + b = m ^ 2) := by sorry
+theorem a_range (a : ℝ) (A B : Set ℝ) (hA : A = {x : ℝ | x ^ 2 - 4 * x + 3 < 0}) (hB : B = {x : ℝ | (2 : ℝ) ^ (1 - x) + a ≤ 0 ∧ x ^ 2 - 2 * (a + 7) * x + 5 ≤ 0}) (hsub : A ⊆ B) : -4 ≤ a ∧ a ≤ -1 := by sorry
+theorem divides_of_le_of_sub_dvd_sub (f : ℤ → ℤ) (hpos : ∀ n : ℤ, 0 < f n) (hdvd : ∀ m n : ℤ, f (m - n) ∣ f m - f n) : ∀ m n : ℤ, f m ≤ f n → f m ∣ f n := by sorry
+theorem cauchy_schwarz_lists (n : ℕ) (hn : 0 < n) (a b : Fin n → ℝ) : (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) ≥ (∑ i, a i * b i) ^ 2 := by sorry
+theorem pair_encoding_injective (m n p q : ℕ) (h : (m + n) ^ 2 + 3 * m + 2 * n = (p + q) ^ 2 + 3 * p + 2 * q) : m = p ∧ n = q := by sorry
+theorem a_eq_b_at_n (n : ℕ) (hn : 0 < n) (c : ℕ → ℕ) (a b : ℕ → ℤ) (ha0 : a 0 = 1) (ha1 : a 1 = 7) (hb0 : b 0 = 1) (hb1 : b 1 = 7) (ha : ∀ i, 1 ≤ i → i ≤ n - 1 → a (i + 1) = if c i = 0 then 2 * a (i - 1) + 3 * a i else 3 * a (i - 1) + a i) (hb : ∀ i, 1 ≤ i → i ≤ n - 1 → b (i + 1) = if c (n - i) = 0 then 2 * b (i - 1) + 3 * b i else 3 * b (i - 1) + b i) : a n = b n := by sorry
+theorem sub_five_times_eq_iff (x : ℝ) : 12 - 5 * (x + 3) = 2 * x - 5 ↔ x = 2 / 7 := by sorry
+theorem median_angle_eq (A B C : EuclideanSpace ℝ (Fin 2)) (hABC : AffineIndependent ℝ ![A, B, C]) (h : ∠ A (midpoint ℝ A B) C = ∠ A (midpoint ℝ B C) B) : ∠ C A (midpoint ℝ B C) = ∠ (midpoint ℝ C A) B A := by sorry
+theorem f_eq_iff (f : ℝ → ℝ) : (∀ x y : ℝ, f (x ^ 2 + x * y + f (y ^ 2)) = x * f y + f (x ^ 2) + y ^ 2) ↔ (∀ x : ℝ, f x = x ∨ f x = -x) := by sorry
+theorem twice_is_least (x : ℝ) (hx : x < -2) : IsLeast {x, x + 2, x / 2, x - 2, 2 * x} (2 * x) := by sorry
+theorem sum_sq_le_neg_card_mul_min_mul_max (n : ℕ) (hn : 0 < n) (a : Fin n → ℝ) (m M : ℝ) (hsum : ∑ i, a i = 0) (hmin : ∀ i, m ≤ a i) (hmax : ∀ i, a i ≤ M) (hm : ∃ i, a i = m) (hM : ∃ i, a i = M) : ∑ i, (a i) ^ 2 ≤ -(n * m * M) := by sorry
+theorem number_is_neg_one (x : ℝ) (h : 3 * x + 4 = x + 2) : x = -1 := by sorry
+theorem cos_sq_sum_eq_one (x : ℝ) : Real.cos x ^ 2 + Real.cos (2 * x) ^ 2 + Real.cos (3 * x) ^ 2 = 1 ↔ ∃ k : ℤ, x = (2 * k + 1) * (Real.pi / 2) ∨ x = (2 * k + 1) * (Real.pi / 4) ∨ x = (2 * k + 1) * (Real.pi / 6) := by sorry
+theorem count_periodic_functions : Set.ncard {f : ℕ → ZMod 17 | (∀ n : ℕ, f (n + 17) = f n) ∧ (∀ n : ℕ, 0 < n → f (n ^ 2) = (f n) ^ 2 + 15)} = 12066 := by sorry
+theorem digit_sum_of_digit_sum_of_4444_pow_4444 : (Nat.digits 10 ((Nat.digits 10 (4444 ^ 4444)).sum)).sum = 7 := by sorry
+theorem tan_product_seventh : Real.tan (Real.pi / 7) * Real.tan (2 * Real.pi / 7) * Real.tan (3 * Real.pi / 7) = Real.sqrt 7 := by sorry
+theorem sqrt_add_one_gt_sqrt_iff (a b : ℝ) (ha : 0 < a) (hb : 0 < b) : 1 + Real.sqrt a > Real.sqrt b ↔ ∀ x : ℝ, x > 1 → a * x + x / (x - 1) > b := by sorry
+theorem P_eq_const_mul_id (m : ℤ) (hm : m ≠ 0) (P : ℝ → ℝ) : (∀ x : ℝ, P (x + 1) * (x ^ 3 - (m : ℝ) * x ^ 2 + 1) + P (x - 1) * (x ^ 3 + (m : ℝ) * x ^ 2 + 1) = 2 * P x * (x ^ 3 - (m : ℝ) * x + 1)) ↔ (∃ c : ℝ, ∀ x : ℝ, P x = c * x) := by sorry
+theorem funcEq_iff (f : ℝ → ℝ) : (∀ x y : ℝ, f (x * (x + f y)) = (x + y) * f x) ↔ ((∀ x : ℝ, f x = 0) ∨ (∀ x : ℝ, f x = x)) := by sorry
+theorem f_eq_id (f : ℝ → ℝ) (h : ∀ x y : ℝ, (f x + y) * (f y + x) = f (x ^ 2) + f (y ^ 2) + 2 * f (x * y)) : ∀ x : ℝ, f x = x := by sorry
+theorem exists_set_unique_representation : ∃ S : Set ℤ, ∀ n : ℤ, ∃! p : ℤ × ℤ, p.1 ∈ S ∧ p.2 ∈ S ∧ n = p.1 + 2 * p.2 := by sorry
+theorem determine_f (f : ℤ → ℤ) : (∀ m n : ℤ, f (m - f n) = f (f m) - f n - 1) ↔ (∀ x : ℤ, f x = x + 1) := by sorry
+theorem cos_series_sum (θ : ℝ) (hθ : Real.cos θ = 1 / 5) : ∑' n : ℕ, Real.cos (n * θ) / 2 ^ n = 6 / 7 := by sorry
+theorem smallest_prime_not_diff_pow_three_pow_two : IsLeast {p : ℕ | p.Prime ∧ ¬ ∃ m n : ℕ, |(3 : ℤ) ^ m - 2 ^ n| = (p : ℤ)} 41 := by sorry
+theorem sum_num_den (x y z : ℚ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) (hprod : x * y * z = 1) (h1 : x + 1 / z = 5) (h2 : y + 1 / x = 29) : (z + 1 / y).num + ((z + 1 / y).den : ℤ) = 5 := by sorry
+theorem f_eq_id (f : ℝ → ℝ) (hfin : {x : ℝ | f x = 0}.Finite) (hfe : ∀ a b : ℝ, f (a ^ 4 + b) = a ^ 3 * f a + f (f b)) : ∀ x : ℝ, f x = x := by sorry
+theorem exists_prime_dividing_infinitely_many_terms (a : ℕ → ℕ) (h2 : ∀ n, 2 ≤ a n) (hdvd : ∀ n, a (n + 2) ∣ a n + a (n + 1)) : ∃ p : ℕ, p.Prime ∧ {n : ℕ | p ∣ a n}.Infinite := by sorry
+theorem exists_n_with_2000_prime_factors_dvd_two_pow_add_one : ∃ n : ℕ, 0 < n ∧ n.primeFactors.card = 2000 ∧ n ∣ 2 ^ n + 1 := by sorry
+theorem labeling_iff_lt_sqrt_two (c : ℝ) (hc : 0 < c) : (∃ f : ℤ × ℤ → ℕ, (∀ p, 0 < f p) ∧ (Set.range f).Finite ∧ ∀ p q : ℤ × ℤ, p ≠ q → f p = f q → c ^ (f p) ≤ Real.sqrt (((p.1 : ℝ) - (q.1 : ℝ)) ^ 2 + ((p.2 : ℝ) - (q.2 : ℝ)) ^ 2)) ↔ c < Real.sqrt 2 := by sorry
+theorem count_triples : (((Finset.range 101) ×ˢ (Finset.range 101) ×ˢ (Finset.range 101)).filter (fun t : ℕ × ℕ × ℕ => (t.2.2 : ℤ) * 2 ^ t.2.1 - (t.2.1 : ℤ) * 2 ^ t.2.2 = 2 ^ t.1)).card = 22 := by sorry
+theorem no_positive_solutions : ¬ ∃ a b c : ℕ, 0 < a ∧ 0 < b ∧ 0 < c ∧ a ^ 3 + 2 * b ^ 3 = 4 * c ^ 3 := by sorry
+theorem integral_iterate_eq_half (P : ℝ → ℝ) (hP : ∀ x : ℝ, P x = x ^ 3 - (3 / 2) * x ^ 2 + x + 1 / 4) (Q : ℕ → ℝ → ℝ) (hQ1 : Q 1 = P) (hQ : ∀ n : ℕ, 1 ≤ n → ∀ x : ℝ, Q (n + 1) x = Q n (P x)) : ∫ x in (0:ℝ)..1, Q 2004 x = 1 / 2 := by sorry
+theorem sum_of_squares_eq (a b c : ℝ) (h1 : 2*a + b + 4*(a*b) + 6*(a*c) = -6) (h2 : b + 2*c + 2*(a*b) + 6*(b*c) = 4) (h3 : a - c + 2*(a*c) - 4*(b*c) = -3) : a^2 + b^2 + c^2 = 29 := by sorry
+theorem subadditive_sum_div_ge (a : ℕ → ℝ) (hsub : ∀ m n : ℕ, a (m + n) ≤ a m + a n) (n : ℕ) (hn : 0 < n) : a n ≤ ∑ i ∈ Finset.Icc 1 n, a i / i := by sorry
+theorem sum_reciprocals_nearest_sqrt (f : ℕ → ℤ) (hf : ∀ n : ℕ, f n = round (Real.sqrt n)) : ∑ n ∈ Finset.Icc 1 2010, (1 : ℚ) / (f n : ℚ) = 88 + 2 / 3 := by sorry
+theorem sum_n_theta_mod : (∑ n ∈ Finset.range 2010, n * (((Finset.range 2010).filter (fun x => 2010 ∣ (x ^ 2 - n))).card)) % 2010 = 335 := by sorry
+theorem cube_diff_ge_prod_ratios (a b c : ℝ) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (hab : b ≤ a) (hbc : c ≤ b) : (a ^ 3 - c ^ 3) / 3 ≥ a * b * c * ((a - b) / c + (b - c) / a) ∧ ((a ^ 3 - c ^ 3) / 3 = a * b * c * ((a - b) / c + (b - c) / a) ↔ a = b ∧ b = c) := by sorry
+theorem sum_of_consecutive_squares (n : ℕ) (hn : 0 < n) (k : ℕ) (hk : 2 * n + 1 = k ^ 2) : ∃ m : ℕ, n + 1 = m ^ 2 + (m + 1) ^ 2 := by sorry
+theorem dist_ratio (a b c d : ℝ) (hab : a < b) (hbc : b < c) (hcd : c < d) (h1 : b - a = (1/5) * (c - a)) (h2 : c - b = 2 * (d - c)) : (b - a) / (d - c) = 1 / 2 := by sorry
+theorem even_of_degree_six_conditions (c : Fin 7 → ℝ) (p : ℝ → ℝ) (hp : ∀ x, p x = ∑ i : Fin 7, c i * x ^ (i : ℕ)) (hdeg : c 6 ≠ 0) (a b : ℝ) (ha : 0 < a) (hab : a < b) (h1 : p a = p (-a)) (h2 : p b = p (-b)) (h3 : deriv p 0 = 0) : ∀ x : ℝ, p (-x) = p x := by sorry
+theorem intercepts (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = 53000 + 2100 * x) : f (-(530 / 21)) = 0 ∧ f 0 = 53000 := by sorry
+theorem antiderivative_sin6_cos2 (C : ℝ) (x : ℝ) : HasDerivAt (fun t : ℝ => t / 32 - Real.sin (20 * t) / 640 - (Real.sin (10 * t)) ^ 3 / 240 + t / 128 - Real.sin (40 * t) / 5120 + C) ((Real.sin (5 * x)) ^ 6 * (Real.cos (5 * x)) ^ 2) x := by sorry
+theorem larger_is_v (u v : ℝ) (hu : (∑ i ∈ Finset.Icc 1 8, u ^ i) + 10 * u ^ 9 = 8) (hv : (∑ i ∈ Finset.Icc 1 10, v ^ i) + 10 * v ^ 11 = 8) : v > u := by sorry
+theorem sum_sqrt_two_pow_lt (S : Finset ℕ) (hS : S.Nonempty) (hpos : ∀ k ∈ S, 0 < k) (M : ℝ) (hM : M = ∑ k ∈ S, (2 : ℝ) ^ k) : ∑ k ∈ S, Real.sqrt ((2 : ℝ) ^ k) < (1 + Real.sqrt 2) * Real.sqrt M := by sorry
+theorem smallest_n_sum_squares_div_100 : IsLeast {n : ℕ | 0 < n ∧ 100 ∣ ∑ k ∈ Finset.Icc 1 n, k ^ 2} 24 := by sorry
+theorem no_solution_iff_m_eq_seven (m : ℝ) : (¬ ∃ x : ℝ, m * x + 4 ≤ 2 * x + 5 * (x - 1)) ↔ m = 7 := by sorry
+theorem cyclic_sum_ge_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (1 + a ^ 4) / (b + b ^ 2 + b ^ 3) + (1 + b ^ 4) / (c + c ^ 2 + c ^ 3) + (1 + c ^ 4) / (a + a ^ 2 + a ^ 3) ≥ 2 := by sorry
+theorem sum_even_indexed_args_eq_840 (n : ℕ) (θ : Fin (2 * n) → ℝ) (hrange : ∀ i, θ i ∈ Set.Ico (0 : ℝ) 360) (hmono : StrictMono θ) (hsol : ∀ z : ℂ, (z ^ 28 - z ^ 8 - 1 = 0 ∧ ‖z‖ = 1) ↔ ∃ i : Fin (2 * n), z = Complex.exp ((θ i * (Real.pi / 180) : ℝ) * Complex.I)) : ∑ i : Fin (2 * n), (if i.val % 2 = 1 then θ i else 0) = 840 := by sorry
+theorem cyclic_sum_sq_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) : (a + 1 / b) ^ 2 + (b + 1 / c) ^ 2 + (c + 1 / a) ^ 2 ≥ 3 * (a + b + c + 1) ∧ ((a + 1 / b) ^ 2 + (b + 1 / c) ^ 2 + (c + 1 / a) ^ 2 = 3 * (a + b + c + 1) ↔ a = 1 ∧ b = 1 ∧ c = 1) := by sorry
+theorem find_pairs (x y : ℝ) : (x ^ 2 * y = 3 ∧ x + x * y = 4) ↔ ((x = 1 ∧ y = 3) ∨ (x = 3 ∧ y = 1 / 3)) := by sorry
+theorem rat_eq_two_thirds_of_cos_eq (q : ℚ) (hq0 : 0 < q) (hq1 : q < 1) (h : Real.cos (3 * Real.pi * (q : ℝ)) + 2 * Real.cos (2 * Real.pi * (q : ℝ)) = 0) : q = 2 / 3 := by sorry
+theorem largest_divisor_of_five_consecutive : IsGreatest {n : ℕ | ∀ m : ℕ, 5 ≤ m → n ∣ (m - 2) * (m - 1) * m * (m + 1) * (m + 2)} 120 := by sorry
+theorem floor_functional_eq (f : ℝ → ℝ) : (∀ x y : ℝ, f ((⌊x⌋ : ℝ) * y) = f x * (⌊f y⌋ : ℝ)) ↔ ((∀ x : ℝ, f x = 0) ∨ ∃ c : ℝ, 1 ≤ c ∧ c < 2 ∧ ∀ x : ℝ, f x = c) := by sorry
+theorem seq_ineq (a : ℕ → ℤ) (h0 : a 0 = 0) (hconv : ∀ k : ℕ, a (k + 2) + a k ≥ 2 * a (k + 1)) : ∀ n m : ℕ, 1 ≤ n → m ≤ n → (n : ℤ) * a m ≤ (m : ℤ) * a n := by sorry
+theorem seq_gt_sqrt_two_n (a : ℕ → ℝ) (h1 : a 1 = 1) (h2 : a 2 = 2) (hrec : ∀ n ≥ 1, a (n + 2) = (1 + a (n + 1) * a n) / a n) : ∀ n ≥ 3, a n > Real.sqrt (2 * n) := by sorry
+theorem sum_eq_power_iff (n : ℕ) (p : ℕ) (hn : 0 < n) (hp : Nat.Prime p) : (∃ k : ℕ, n + p = n ^ k) ↔ (n = 2 ∧ p = 2) := by sorry
+theorem fourth_root_of_sum_of_cubes (n : ℕ) (hn : 0 < n) (h : n ^ 4 = 5508 ^ 3 + 5625 ^ 3 + 5742 ^ 3) : n = 855 := by sorry
+theorem triples_characterization (x y z : ℝ) : (x * y + z = 40 ∧ x * z + y = 51 ∧ x + y + z = 19) ↔ ((x, y, z) = (12, 3, 4) ∨ (x, y, z) = (6, 27/5, 38/5)) := by sorry
+theorem sq_sub_sq_eq_neg_four (x y z : ℝ) (hx : x = (2001 : ℝ) ^ (1002 : ℕ)) (hy : y = x - 1 / x) (hz : z = x + 1 / x) : y ^ 2 - z ^ 2 = -4 := by sorry
+theorem prod_one_add_sq_eq (x y z : ℝ) (h : (1 + x ^ 2) * (1 + y ^ 2) * (1 + z ^ 2) = 4 * x * y * (1 - z ^ 2)) : (x = 1 ∧ y = 1 ∧ z = 0) ∨ (x = -1 ∧ y = -1 ∧ z = 0) := by sorry
+theorem expected_binom_mod_three : (∑ n ∈ Finset.range 81, ∑ k ∈ Finset.range 81, ((Nat.choose n k % 3 : ℕ) : ℚ)) / ((81 : ℚ) * 81) = 1816 / 6561 := by sorry
+theorem sum_of_squares_fraction (a b c d : ℝ) (h1 : a + b = -3) (h2 : a * b + a * c + b * c = -4) (h3 : a * b * c + a * b * d + a * c * d + b * c * d = 14) (h4 : a * b * c * d = 30) : ∃ p q : ℕ, 0 < p ∧ 0 < q ∧ Nat.Coprime p q ∧ a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 = (p : ℝ) / (q : ℝ) ∧ p + q = 145 := by sorry
+theorem sum_inv_add_nine_div_sum_ge (a b c d : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) (habcd : a * b * c * d = 1) : 1 / a + 1 / b + 1 / c + 1 / d + 9 / (a + b + c + d) ≥ 25 / 4 := by sorry
+theorem sum_fraction : ∑ n ∈ Finset.Icc (2 : ℕ) 17, ((n ^ 2 + n + 1 : ℚ) / ((n - 1) * n * (n + 1) * (n + 2))) = 592 / 969 := by sorry
+theorem pow_three_add_pow_four_eq_pow_five (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : 3 ^ x + 4 ^ y = 5 ^ z ↔ x = 2 ∧ y = 2 ∧ z = 2 := by sorry
+theorem janice_age (x : ℕ) (h : x + 12 = 8 * (x - 2)) (h2 : 2 ≤ x) : x = 4 := by sorry
+theorem odd_of_even (n : ℤ) (h : Even (3 * n + 1)) : Odd (7 * n + 4) := by sorry
+theorem sum_num_denom_eq_913 (S : Finset ℕ) (hS : S = (Finset.Icc 1 (2 ^ 40)).filter (fun n => (Nat.digits 2 n).count 1 = 2)) (p q : ℕ) (hp : 0 < p) (hq : 0 < q) (hcop : Nat.Coprime p q) (hprob : (p : ℚ) / (q : ℚ) = ((S.filter (fun n => 9 ∣ n)).card : ℚ) / (S.card : ℚ)) : p + q = 913 := by sorry
+theorem smallest_auto_morphic : IsLeast {n : ℕ | 1 < n ∧ n ^ 2 % 1000 = n % 1000} 376 := by sorry
+theorem infinitely_many_multiples (a : ℕ → ℕ) (h0 : a 0 = 1) (hrec : ∀ n : ℕ, a n = a (n + 1) + a (n / 3)) (p : ℕ) (hp : Nat.Prime p) (hple : p ≤ 13) : {n : ℕ | p ∣ a n}.Infinite := by sorry
+theorem min_sum_dist : IsLeast {s : ℝ | ∃ x y : ℝ, s = Real.sqrt ((x - 3)^2 + (y - 4)^2) + Real.sqrt ((x - 9)^2 + (y + 40)^2) + Real.sqrt ((x + 5)^2 + (y + 12)^2) + Real.sqrt ((x + 7)^2 + (y - 24)^2)} (16 * Real.sqrt 17 + 8 * Real.sqrt 5) := by sorry
+theorem quotient_repr_iff (d : ℕ) (hd : 0 < d) (hdsq : ¬ ∃ m : ℕ, m ^ 2 = d) (n : ℕ) (hn : 0 < n) : (∃ x y : ℤ, Real.sqrt d < (x : ℝ) ∧ x ^ 2 - y ^ 2 ≠ 0 ∧ (n : ℤ) * (x ^ 2 - y ^ 2) = x ^ 2 - (d : ℤ)) ↔ (∃ x y : ℤ, 0 ≤ x ∧ (x : ℝ) < Real.sqrt d ∧ x ^ 2 - y ^ 2 ≠ 0 ∧ (n : ℤ) * (x ^ 2 - y ^ 2) = x ^ 2 - (d : ℤ)) := by sorry
+theorem f_eq_sq_or_one (f : ℕ → ℕ) (h : ∀ m n : ℕ, (m + f n) ∣ (f m + m * f n)) : (∀ n : ℕ, f n = n ^ 2) ∨ (∀ n : ℕ, f n = 1) := by sorry
+theorem eleven_dvd_of_squares (a b m n : ℤ) (h1 : 5 * a + 6 * b = m ^ 2) (h2 : 6 * a + 5 * b = n ^ 2) : (11 : ℤ) ∣ a ∧ (11 : ℤ) ∣ b := by sorry
+theorem binomial_inversion (a b : ℕ → ℝ) : (∀ n : ℕ, a n = ∑ k ∈ Finset.range (n + 1), (n.choose k : ℝ) * b k) ↔ (∀ n : ℕ, b n = ∑ k ∈ Finset.range (n + 1), (-1 : ℝ) ^ (n - k) * (n.choose k : ℝ) * a k) := by sorry
+theorem a_is_perfect_square (a b : ℕ) (ha : 0 < a) (hb : 0 < b) (hab : b < a) (n : ℕ) (h : Real.sqrt (Real.sqrt a + Real.sqrt b) + Real.sqrt (Real.sqrt a - Real.sqrt b) = n) : ∃ k : ℕ, a = k ^ 2 := by sorry
+theorem grid_count : (Finset.filter (fun x : ℕ × ℕ × ℕ × ℕ × ℕ × ℕ => (100 * x.1 + 10 * x.2.1 + x.2.2.1) + (100 * x.2.2.2.1 + 10 * x.2.2.2.2.1 + x.2.2.2.2.2) = 999 ∧ (10 * x.1 + x.2.2.2.1) + (10 * x.2.1 + x.2.2.2.2.1) + (10 * x.2.2.1 + x.2.2.2.2.2) = 99) (Finset.range 10 ×ˢ Finset.range 10 ×ˢ Finset.range 10 ×ˢ Finset.range 10 ×ˢ Finset.range 10 ×ˢ Finset.range 10)).card = 45 := by sorry
+theorem lattice_points_in_disk : Set.ncard {p : ℤ × ℤ | p.1 ^ 2 + p.2 ^ 2 ≤ 2009 ^ 2} = 12679605 := by sorry
+theorem no_cube_plus_fourth_power_eq_seven (a b : ℤ) : a ^ 3 + b ^ 4 ≠ 7 := by sorry
+theorem six_by_six_two_red_per_row_and_column : (Finset.univ.filter (fun M : Fin 6 → Fin 6 → Bool => (∀ i : Fin 6, (Finset.univ.filter (fun j : Fin 6 => M i j = true)).card = 2) ∧ (∀ j : Fin 6, (Finset.univ.filter (fun i : Fin 6 => M i j = true)).card = 2))).card = 67950 := by sorry
+theorem cyclic_sum_ge (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a + b + c = 3) : a ^ 4 / (b + c) ^ 2 + b ^ 4 / (c + a) ^ 2 + c ^ 4 / (a + b) ^ 2 ≥ 3 / 2 := by sorry
+theorem no_perfect_square (m n : ℕ) (hm : 0 < m) (hn : 0 < n) : ¬ ∃ k : ℤ, (m : ℤ)^2 + ⌈(4 * (m : ℚ)^2) / (n : ℚ)⌉ = k^2 := by sorry
+theorem f_eq_id_or_neg (f : ℝ → ℝ) : (∀ x y : ℝ, f (x * f y) + x = f x * f (y + 1)) ↔ (∀ x : ℝ, f x = x ∨ f x = -x) := by sorry
+theorem largest_lower_bound_ratio : IsGreatest {m : ℝ | ∀ a b c d : ℕ, 0 < a → 0 < b → 0 < c → 0 < d → a + b = c + d → 2 * a * b = c * d → b ≤ a → m ≤ (a : ℝ) / (b : ℝ)} (3 + 2 * Real.sqrt 2) := by sorry
+theorem four_mul_const_mul_root_le_sq_coeff (p q r : ℝ) (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = x ^ 3 + p * x + q) (hr : f r = 0) : 4 * (q * r) ≤ p ^ 2 := by sorry
+theorem four_reals_product_bounds : IsLeast {p : ℝ | ∃ a b c d : ℝ, a + b + c + d = 2 ∧ a*b + a*c + a*d + b*c + b*d + c*d = 0 ∧ p = a*b*c*d} (-1) ∧ IsGreatest {p : ℝ | ∃ a b c d : ℝ, a + b + c + d = 2 ∧ a*b + a*c + a*d + b*c + b*d + c*d = 0 ∧ p = a*b*c*d} (1/4) := by sorry
+theorem cyclic_sum_le (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 1 / (a^3 + b^3 + a*b*c) + 1 / (b^3 + c^3 + a*b*c) + 1 / (c^3 + a^3 + a*b*c) ≤ 1 / (a*b*c) := by sorry
+theorem count_eq_f_pow_two (f : ℕ → ℕ) (h1 : ∀ n : ℕ, f (4 * n) = f (2 * n) + f n) (h2 : ∀ n : ℕ, f (4 * n + 2) = f (4 * n) + 1) (h3 : ∀ n : ℕ, f (2 * n + 1) = f (2 * n) + 1) (n : ℕ) (hn : 0 < n) : ((Finset.range (2 ^ n)).filter (fun k => f (4 * k) = f (3 * k))).card = f (2 ^ (n + 1)) := by sorry
+theorem find_n (n : ℕ) (hn : 0 < n) : (∀ a : Fin n → ℝ, (∀ i, 0 < a i) → (∑ i, (a i) ^ 2) * (∑ i, a i) - (∑ i, (a i) ^ 3) ≥ 6 * ∏ i, a i) ↔ n = 3 := by sorry
+theorem triple_char (k : ℕ) (hk : 0 < k) (x y z : ℕ) (hx : 0 < x) (hy : 0 < y) (hz : 0 < z) : (x + y + z = 3 * k + 1 ∧ x * y + y * z + z * x = k * (3 * k + 2)) ↔ ((x, y, z) = (k + 1, k, k) ∨ (x, y, z) = (k, k + 1, k) ∨ (x, y, z) = (k, k, k + 1)) := by sorry
+theorem sum_fourteen_fractions : ∑ n ∈ Finset.Icc (1 : ℕ) 14, ((n : ℚ) + (n + 1)) / ((n : ℚ)^2 * ((n : ℚ) + 1)^2) = 224 / 225 := by sorry
+theorem two_pow_pred_mod (p n : ℕ) (hp : Nat.Prime p) (hodd : Odd p) (hn : 3 * n = 2 ^ (2 * p) - 1) : 2 ^ (n - 1) % n = 1 := by sorry
+theorem modulus_sum (z w : ℂ) (hz : Complex.abs z = 2) (hw : Complex.abs w = 9) (hzw : Complex.abs (5 * z - w) = 9) : Complex.abs (5 * z + w) = Real.sqrt 281 := by sorry
+theorem gcd_two_pow_sub_one_two_pow_add_one (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (hodd : Odd m) : Nat.gcd (2 ^ m - 1) (2 ^ n + 1) = 1 := by sorry
+theorem angle_of_triangle (A B C : ℝ) (hA : 0 < A) (hA' : A < Real.pi) (hB : 0 < B) (hB' : B < Real.pi) (hC : 0 < C) (hC' : C < Real.pi) (hsum : A + B + C = Real.pi) (harea : (1 / 2) * 4 * 6 * Real.sin C = 6 * Real.sqrt 2) : C = Real.pi / 4 ∨ C = 3 * Real.pi / 4 := by sorry
+theorem cone_liquid_depth (V d : ℝ) (m n p : ℕ) (hV : V = (1 / 3) * Real.pi * (5 * 9 / 12) ^ 2 * 9) (hd0 : 0 ≤ d) (hd12 : d ≤ 12) (hfill : (1 / 3) * Real.pi * 5 ^ 2 * 12 - (1 / 3) * Real.pi * (5 * (12 - d) / 12) ^ 2 * (12 - d) = V) (hm : 0 < m) (hn : 0 < n) (hp : 0 < p) (hcube : ∀ q : ℕ, q.Prime → ¬ (q ^ 3 ∣ p)) (hrep : d = (m : ℝ) - (n : ℝ) * (p : ℝ) ^ ((1 : ℝ) / 3)) : m + n + p = 52 := by sorry
+theorem sum_inv_prod_coprime_pairs (n : ℕ) (hn : 2 ≤ n) : ∑ p ∈ (Finset.Icc 1 n ×ˢ Finset.Icc 1 n).filter (fun p => p.1 < p.2 ∧ Nat.Coprime p.1 p.2 ∧ n < p.1 + p.2), (1 : ℚ) / (p.1 * p.2) = 1 / 2 := by sorry
+theorem sq_eq_of_cos_arctan_self (x θ : ℝ) (hx : 0 < x) (hθ : θ ∈ Set.Ioo 0 (Real.pi / 2)) (htan : Real.tan θ = x) (hcos : Real.cos θ = x) : x ^ 2 = (-1 + Real.sqrt 5) / 2 := by sorry
+theorem pow_two_add_two_eq_sq_iff (n : ℤ) (q : ℚ) : (2 : ℚ) ^ n + 2 = q ^ 2 ↔ (n = -2 ∧ (q = 3 / 2 ∨ q = -(3 / 2))) ∨ (n = 1 ∧ (q = 2 ∨ q = -2)) := by sorry
+theorem first_coord_eq_fifteen (x y : ℝ) (hx : 0 < x) (h1 : y = (2 / 5) * x) (h2 : x * y = 90) : x = 15 := by sorry
+theorem exponential_value_at_twelve (f : ℝ → ℝ) (A k : ℝ) (hf : ∀ t : ℝ, f t = A * Real.exp (k * t)) (h4 : f 4 = 100) (h8 : f 8 = 10) : f 12 = 1 := by sorry
+theorem a_sq_dvd_bc (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (h1 : a ^ b ∣ b ^ c) (h2 : a ^ c ∣ c ^ b) : a ^ 2 ∣ b * c := by sorry
+theorem sqrt_diff_lt_one_count : Set.ncard {n : ℕ | 0 < n ∧ |Real.sqrt n - Real.sqrt 100| < 1} = 39 := by sorry
+theorem f_value (f : ℕ → ℝ) (hf : ∀ n : ℕ, 1 < n → ∃ p : ℕ, p.Prime ∧ p ∣ n ∧ f n = f (n / p) - f p) (h : f (2 ^ 2014) + f (3 ^ 2015) + f (5 ^ 2016) = 2013) : f (2014 ^ 2) + f (2015 ^ 3) + f (2016 ^ 5) = 49 / 3 := by sorry
+theorem committee_count : ∑ k ∈ Finset.Icc 1 4, (Nat.choose 10 k) * (Nat.choose (10 - k) (5 - k)) = 7560 := by sorry
+theorem antiderivative_of_fraction (C : ℝ) (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = (1 / 25) * Real.sqrt (6 + 10 * x + 25 * x ^ 2) + (9 / 25) * Real.log (1 + 5 * x + Real.sqrt (1 + (1 + 5 * x) ^ 2)) + C) : ∀ x : ℝ, HasDerivAt f ((x + 2) / Real.sqrt (6 + 10 * x + 25 * x ^ 2)) x := by sorry
+theorem iteratedDeriv_27_two_sq_mul_sin (f : ℝ → ℝ) (hf : ∀ x : ℝ, f x = 2 * (x ^ 2 * Real.sin x)) : ∀ x : ℝ, iteratedDeriv 27 f x = 1404 * Real.cos x - 2 * x ^ 2 * Real.cos x - 108 * x * Real.sin x := by sorry
+theorem sq_sub_two_abs_sub_three_eq_zero_iff (x : ℝ) : x ^ 2 - 2 * |x| - 3 = 0 ↔ x = -3 ∨ x = 3 := by sorry
+theorem third_angle_lt_fourth (α β γ δ : ℝ) (hα : α ∈ Set.Ioo 0 (Real.pi / 2)) (hβ : β ∈ Set.Ioo 0 (Real.pi / 2)) (hγ : γ ∈ Set.Ioo 0 (Real.pi / 2)) (hδ : δ ∈ Set.Ioo 0 (Real.pi / 2)) (hlt : α < β) (htan : Real.tan γ = (Real.tan α + Real.tan β) / 2) (hsec : 1 / Real.cos δ = (1 / Real.cos α + 1 / Real.cos β) / 2) : γ < δ := by sorry
+theorem sum_inv_ge_one_add_six_div_sum (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c ≤ 1) : 1 / a + 1 / b + 1 / c ≥ 1 + 6 / (a + b + c) := by sorry
+theorem exists_shift_avoiding_monic_quadratic_values (b c : ℤ) : ∃ k : ℤ, ∀ x y : ℤ, x ^ 2 + b * x + c ≠ k + 2 * (y * (y + 1)) := by sorry
+theorem arctan_sum_eq_pi_div_four : Real.arctan (1 / 3) + Real.arctan (1 / 5) + Real.arctan (1 / 7) + Real.arctan (1 / 8) = Real.pi / 4 := by sorry
+theorem blue_socks (b : ℕ) (hb : 0 < b) (h : ((3 + b.choose 2 : ℚ)) / ((6 + b).choose 2 : ℚ) = 1 / 5) : b = 4 := by sorry
+theorem max_ratio_eq_n_sub_one (n : ℕ) (hn : 4 ≤ n) : IsGreatest {r : ℝ | ∃ x y : Fin n → ℝ, (∀ i, 0 ≤ x i) ∧ (∀ i, 0 ≤ y i) ∧ (∑ i, x i) = (∑ i, y i) ∧ 0 < ∑ i, x i ∧ r = (∑ i, x i * (x i + y i)) / (∑ i, y i * (x i + y i))} ((n : ℝ) - 1) := by sorry
+theorem laplace_asymptotic (I : ℝ → ℝ) (hI : ∀ x : ℝ, I x = ∫ t in (-0.6 : ℝ)..(-0.2 : ℝ), (2.1 * t ^ 5 + Real.sin t) * Real.exp (x * (1.5 * Real.cos t - 1.1 * t ^ 2))) : Filter.Tendsto (fun x : ℝ => I x / (-0.27 * Real.exp (1.43 * x) / x)) Filter.atTop (nhds 1) := by sorry
+theorem cos_pi_div_seven_alternating_sum : Real.cos (Real.pi / 7) - Real.cos (2 * Real.pi / 7) + Real.cos (3 * Real.pi / 7) = 1 / 2 := by sorry
+theorem unique_intersection_iff (c : ℝ) : (∃! x : ℝ, |x - 20| + |x + 18| = x + c) ↔ c = 18 := by sorry
+theorem mean_sq_diff_reciprocal (n : ℕ) (hn : 0 < n) (a A : ℕ → ℝ) (ha : ∀ k, 1 ≤ k → k ≤ n → 0 < a k) (hA : ∀ k, 1 ≤ k → k ≤ n → A k = (∑ i ∈ Finset.Icc 1 k, a i) / k) : (A n - 1 / A n) ^ 2 ≤ (∑ i ∈ Finset.Icc 1 n, (a i - 1 / a i) ^ 2) / n := by sorry
+theorem sqrt_sq_sub_add_sqrt_sq_add (x y : ℝ) (hx : x < 0) (hy : y < 0) (hxy : x < y) : Real.sqrt ((x - y) ^ 2) + Real.sqrt ((x + y) ^ 2) = -(2 * x) := by sorry
+theorem cube_plus_four_eq_eight_imp (x : ℝ) (h : x ^ 3 + 4 * x = 8) : x ^ 7 + 64 * x ^ 2 = 128 := by sorry
+theorem four_numbers (a b c d : ℝ) (h1 : a + b + c + d + a = 1) (h2 : a + b + c + d + 2 * b = 2) (h3 : a + b + c + d + 3 * c = 3) (h4 : a + b + c + d + 4 * d = 25) : d = 11 / 2 := by sorry
+theorem coprime_twelve_add_five_nine_add_four (n : ℤ) : IsCoprime (12 * n + 5) (9 * n + 4) := by sorry
+theorem sum_quotient_ge (n : ℕ) (hn : 0 < n) (x : ℝ) (hx : (n : ℝ) ≤ x) : (n : ℝ) + 1 ≤ x + n / x ∧ (x + n / x = (n : ℝ) + 1 ↔ x = (n : ℝ)) := by sorry
+theorem primes_pairwise_products (p q r n : ℕ) (hp : p.Prime) (hq : q.Prime) (hr : r.Prime) (h : p * q + q * r + r * p = 12 * n + 1) : n = 5 ∧ ({p, q, r} : Multiset ℕ) = {2, 3, 11} := by sorry
+theorem min_value_of_expr : IsLeast {y : ℝ | ∃ x ∈ Ioo (0:ℝ) π, y = (9 * (x * Real.sin x) ^ 2 + 4) / (x * Real.sin x)} 12 := by sorry
+theorem pi_div_two_add_two_sin_cos_gt_sum_sin_two (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (ha' : a < Real.pi / 2) (hb' : b < Real.pi / 2) (hc' : c < Real.pi / 2) : Real.pi / 2 + 2 * Real.sin a * Real.cos b + 2 * Real.sin b * Real.cos c > Real.sin (2 * a) + Real.sin (2 * b) + Real.sin (2 * c) := by sorry
+theorem sum_sin_le_sum_cos (θ : Fin 10 → ℝ) (h₀ : ∀ i, 0 ≤ θ i) (h₁ : ∀ i, θ i ≤ Real.pi / 2) (h₂ : ∑ i, (Real.sin (θ i))^2 = 1) : 3 * ∑ i, Real.sin (θ i) ≤ ∑ i, Real.cos (θ i) := by sorry
+theorem neg_four_mul_prod_nonpos_iff (x : ℝ) : -4 * (x - 5) * (x + 4) * (x - 1) ≤ 0 ↔ x ∈ Set.Icc (-4 : ℝ) 1 ∪ Set.Ici (5 : ℝ) := by sorry
+theorem sum_triple_products_le (a b c d : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (hd : 0 ≤ d) (hsum : a + b + c + d = 1) : a * b * c + a * b * d + a * c * d + b * c * d ≤ 1 / 27 + 176 / 27 * (a * b * c * d) := by sorry
+theorem count_ordered_pairs : ((Finset.Icc (-20 : ℤ) 20 ×ˢ Finset.Icc (-20 : ℤ) 20).filter (fun p : ℤ × ℤ => p.1 ^ 2 + p.2 ^ 2 < 16 ∧ p.1 ^ 2 + p.2 ^ 2 < 8 * p.1 ∧ p.1 ^ 2 + p.2 ^ 2 < 8 * p.2)).card = 6 := by sorry
+theorem quadruple_unique (a b c d : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hd : 0 < d) : 20 ^ a + 14 ^ (2 * b) = (a + 2 * b + c) ^ (c * d) ↔ (a = 1 ∧ b = 1 ∧ c = 3 ∧ d = 1) := by sorry
+theorem exists_prefix_sum_ge_poly_on_unit_interval (a : List ℝ) (ha : a ≠ []) : ∃ k : ℕ, 1 ≤ k ∧ k ≤ a.length ∧ ∀ x ∈ Set.Icc (0 : ℝ) 1, (∑ i ∈ Finset.range a.length, a.getD i 0 * x ^ i) ≤ (a.take k).sum := by sorry
+theorem largest_prime_below_100_dividing_central_binom : IsGreatest {p : ℕ | p.Prime ∧ p < 100 ∧ p ∣ Nat.choose 200 100} 61 := by sorry
+theorem min_value_sqrt_sum : IsLeast {y : ℝ | ∃ x : ℝ, x ∈ Set.Icc (-1 : ℝ) 1 ∧ y = Real.sqrt (58 - 42 * x) + Real.sqrt (149 - 140 * Real.sqrt (1 - x ^ 2))} (Real.sqrt 109) := by sorry

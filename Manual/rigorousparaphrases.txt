@@ -1,0 +1,50 @@
+Let $a,b,c$ be positive real numbers .Prove that $ \frac{b+c}{\sqrt{a^2 + 8bc}} + \frac{c+a}{\sqrt{b^2 + 8ca}} + \frac{a+b}{\sqrt{c^2 + 8ab}} \geq 2. $
+Find all functions $ f: \mathbb{R} \to \mathbb{R} $ such that $ f\left(x+f\left(x+y\right)\right)=f\left(f\left(x\right)\right)+f\left(y+1\right) $ holds for all $ x,y \in \mathbb{R} $ Prove that the only answer is $f(x)=0$.
+Prove that for integer $m\geq 5$, $\sum_{k=1}^{m} k!\neq\prod_{k=1}^{m} (2k-1)!$.
+Prove that if natural number $n>1$, then $ n((n+1)^{\frac{1}{n}}-1)<\sum_{k=1}^{n} \frac{1}{k}$.
+For $a, b, c, d>0, abcd=1$ prove that \n $\frac{1}{1+(1+a)^2}+\frac{1}{1+(1+b)^2}+\frac{1}{1+(1+c)^2}+\frac{1}{1+(1+d)^2}\le\frac{4}{5}$
+For every p prime number show that $ p^2 \mid \binom{2p}{p}-2 $
+Prove that $x-1 \geq \ln x$ for $x>0$.
+Let set $B\subseteq \{1, 2, ..., 100\}$. Suppose that for any $a, b\in B$, $a+b\neq 125$. What is the maximum size of $B$? Prove that the answer is $50$.
+Prove that $a^{4} + b^{4} + 2 \geq 4ab$ for $a, b \in R$.
+Let $p$ be a odd prime. Show that if $p \equiv 1 (\mod 4)$ , then $x^2 \equiv -1 (\mod p)$ has a solution. Show that if $x^2 \equiv -1 (\mod p)$ has a solution, then $p \equiv 1 (\mod 4)$ .
+Prove Wilson's Theorem: for every prime $p$, $(p-1)! \equiv -1 \pmod p$.
+Prove that if $P\equiv 3\pmod{4}$ and $P\mid x^2 + y^2 $, then $P\mid x$ and $P\mid y$.
+Prove that if $4k+1=p$ is a prime then $k^{2k}\equiv 1\pmod{p}$ .
+Find the value of $\sin(2\theta)$ given $\sin(\theta)=\frac{3}{5}$. Show that it is $\frac{24}{25}$.
+Prove that: $\sum_{k=0}^{n} \binom{n}{k} = 2^n$
+If $t\in\mathbb Z$ then $t^3\equiv0,\pm1(mod9).$
+How many ordered pairs of integers $(x, y)$ satisfy the equation $x^2-y^2=2000^2$? Show that the answer is 98.
+Given a function f for which f(x) = f(46 - x) = f(398 - x) for all real x, what is the largest number of different values that can appear in the list f(0), f(1), f(2), ..., f(999)? Prove that the answer is $177$.
+For how many ordered pairs $(x,y)$ of integers is it true that $0 < x < y < 10^6$ and that $\frac{x+y}{2}=2+\sqrt{xy}$? Prove that the answer is 997.
+Find the sum of all positive integers $N=10a+b$, where $1\le a\le 9$ and $0\le b\le 9$, and where $a\mid N$ and $b\mid N$. Show that the answer is $630$.
+Find the sum of all positive integers a=2^n3^m where n and m are non-negative integers, for which $a^6\nmid 6^a$. Prove that the answer is $42$.
+Find the smallest positive integer k such $200 \mid\sum_{x=1}^{k}x^2$. Prove that the answer is $112$.
+Two different positive numbers a and b each differ from their reciprocals by 1. What is a + b? Show that the answer is $\sqrt{5}$
+If for a certain number $\frac{x-9}{3}=43$, then what is $\frac{x-3}{9}$? Prove that the answer is 15.
+Find the number of ordered pairs of real numbers (a,b) such that (a+bi)^{2002} = a-bi. Show that the answer is $2004$.
+Find the angle $\theta$ for which $(90-\theta)=\frac{1}{4} \cdot (180 - \theta)$. Show that the answer is $60$.
+For how many positive integers m does there exist at least one positive integer n such that $m \\cdot n \\le m + n$? Prove that there are infinitely many.
+For a positive integer $x$, we have $x(x+1)(x+2)=8(x+(x+1)+(x+2))$. Then what is $x^2+(x+1)^2+(x+2)^2$? Prove that the answer is $77$.
+Suppose for two positive integers $a, b$ that $|a-b|=60$. If $\sqrt{a}+\sqrt{b}=\sqrt{c}$ for an integer $c$ that is not a perfect square, then what is the maximum possible value of $a+b$? Prove that the answer is 156.
+For positive integers $a<b<c<d$, $a, b, c$ form an arithmetic progression, while $b, c, d$ form a geometric progression. If $d-a=30$, then find $a+b+c+d$. Prove that the answer is 129.
+Suppose that $(n+3)^{x_n}=(n+4)$ for all integers $1\le n\le 124$. What is $\prod_{k=1}^{124} x_k$? Prove that the answer is $\frac{7}{2}$.
+Let $P=\prod_{x=1}^{100} (2x-1)$. Find the largest integer $K$ such that $3^k\mid P$. Prove that the answer is $49$.
+How many positive integers $k$ are there such that $k^2<10^6$ and $24\mid k^2$? Prove that the answer is 83.
+Suppose $n$ is an odd integer. We know that $n+2=3n$. Then what is $n+(n+2)$? Prove that the answer is $4$.
+Find the largest integer n satisfying the following conditions: n^2 = (m + 1)^3 - m^3 for some integer m. Prove that the answer is $181$.
+Suppose a three digit number $N=100a+10b+c$ is geometric if $a\neq b\neq c$ and $a, b, c$ form a geometric sequence. Find the difference between the largest and smallest geometric numbers. Prove that the answer is $840$.
+Prove that for any positive integer $n$, $n^5\neq x(x+1)(x+2)(x+3)(x+4)(x+5)$ for any positive integer $x$.
+Suppose that $a+b=26, a+b+c+d=41$, and $a+b+c+d+e+f=57$ for integers $a, b, c, d, e, f$. What is the minimum number of even integers among the 6 integers? Prove that the answer is 1.
+Given that x and y are distinct nonzero real numbers such that $x + \\frac{2}{x} = y + \\frac{2}{y}$, what is $xy$? Prove that the answer is $2$.
+Suppose for $x, y>0$ that $x+y=5(x-y)$. Then what is $\frac{x}{y}$? Prove that the answer is $\frac{3}{2}$.
+Suppose that $a+b+c=96$, $a=6c$, and $c=b-40$. Then what is $|a-b|$? Prove that the ansewr is $5$.
+How many possible values are there for $k^{100}\pmod{125}$, where $k$ is any integer? Prove that the answer is 2.
+Let $a$ , $b$ and $c$ be non-negative numbers such that $a+b+c=3$ . Prove that: \\n $$\\sqrt{a}+\\sqrt{b}+\\sqrt{c}\\geq ab+ac+bc$$
+Let $x,y,z$ are real numbers such that $x^2+y^2+z^2=2$ . Prove that : $x+y+z \\le 2+xyz$ .
+if $ x^2 + y^2 + z^2 = 2$ then $ x + y + z \\le 2 + xyz.$
+Let $p>3$ be a prime. Then prove that $p^2\\equiv 1(\\mod 24)$.
+Prove that \\n $a+b+c\\geq \\frac{a^3+b^3+c^3}{a^2+b^2+c^2}$
+Let $a,b,c$ be the side-lengths of a triangle. Prove that $\\frac{a}{3a-b+c}+\\frac{b}{3b-c+a}+\\frac{c}{3c-a+b}\\geq 1$
+Prove that $\\frac{a^2+b^2+c^2}{a+b+c}\\ge 1
+Prove that $2\mid n^5-n$ for all $n$.

@@ -1,0 +1,44 @@
+{
+  "generator_model": "claude-opus-5",
+  "verifier_models": [
+    "claude-opus-5",
+    "gpt-5.6-sol"
+  ],
+  "confidence_threshold": 0.8,
+  "judge_mode": "both",
+  "max_attempts": 3,
+  "formal_hint_shown_to_models": true,
+  "source_dataset": "SphereLab/FormalMATH-All",
+  "source_split": "train",
+  "problems_processed": 1203,
+  "problems_accepted": 1000,
+  "acceptance_rate": 0.8313,
+  "status_counts": {
+    "accepted": 1000,
+    "generator_rejected_source": 65,
+    "rejected_after_max_attempts": 138
+  },
+  "accepted_on_attempt": {
+    "1": 714,
+    "3": 25,
+    "2": 261
+  },
+  "accepted_by_source_origin": {
+    "omni": 227,
+    "olympid": 441,
+    "u-math": 70,
+    "blue_prove": 159,
+    "aime": 72,
+    "blue_quant": 20,
+    "hardmath": 4,
+    "DEMIMATH": 7
+  },
+  "judge_threshold_disagreements": 678,
+  "pruning": {
+    "rule": "removed if any of the four configurations ended in a judge disagreement",
+    "problems_before_pruning": 1000,
+    "problems_removed": 110,
+    "problems_after_pruning": 890,
+    "detail": "removed_problems/"
+  }
+}
